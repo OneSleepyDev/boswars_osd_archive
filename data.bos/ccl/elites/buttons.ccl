@@ -40,29 +40,29 @@
 (define-button 'pos 1 'level 0 'icon 'icon-move-peasant
   'action 'move
   'key "m" 'hint "~!MOVE"
-  'for-unit '(unit-engineer unit-harvester unit-lancer
+  'for-unit '(unit-engineer unit-harvester unit-lancer unit-grenadier
     elites-group))
 
 (define-button 'pos 2 'level 0 'icon 'icon-elites-shield1
   'action 'stop
   'key "s" 'hint "~!STOP"
-  'for-unit '(unit-engineer unit-harvester unit-lancer
+  'for-unit '(unit-engineer unit-harvester unit-lancer unit-grenadier
     elites-group))
 
 (define-button 'pos 3 'level 0 'icon 'icon-sword1
   'action 'attack
   'key "a" 'hint "~!ATTACK"
-  'for-unit '(unit-lancer elites-group))
+  'for-unit '(unit-lancer unit-grenadier elites-group))
 
 (define-button 'pos 4 'level 0 'icon 'icon-elites-patrol-land
   'action 'patrol
   'key "p" 'hint "~!PATROL"
-  'for-unit '(unit-lancer elites-group))
+  'for-unit '(unit-lancer unit-grenadier elites-group))
 
 (define-button 'pos 5 'level 0 'icon 'icon-elites-stand-ground
   'action 'stand-ground
   'key "t" 'hint "S~!TAND GROUND"
-  'for-unit '(unit-lancer elites-group))
+  'for-unit '(unit-lancer unit-grenadier elites-group))
 
 ;; peasant specific actions ---------------------------------------------------
 

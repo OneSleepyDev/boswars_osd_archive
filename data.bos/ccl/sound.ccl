@@ -73,6 +73,13 @@
 (make-sound "lancer-die" "elites/units/lancer_die.wav")
 (make-sound "lancer-attack" "elites/units/lancer_attack.wav")
 
+(make-sound "grenadier-selected" "elites/units/grenadier_select.wav")
+(make-sound "grenadier-acknowledge" "elites/units/grenadier_action.wav")
+(make-sound "grenadier-ready" "elites/computer_voice/assault.unit.ready.wav")
+(make-sound "grenadier-help" "elites/computer_voice/assault.unit.underattack.wav")
+(make-sound "grenadier-die" "elites/units/grenadier_die.wav")
+(make-sound "grenadier-attack" "elites/units/grenadier_attack.wav")
+
 (make-sound "engineer-selected" "elites/units/engineer_select.wav")
 (make-sound "engineer-acknowledge" "elites/units/engineer_action.wav")
 (make-sound "engineer-ready" "elites/computer_voice/engineer.ready.wav")
@@ -108,6 +115,8 @@
 (make-sound "rfac-help" "elites/computer_voice/research.facility.underattack.wav")
 (make-sound "rfac-dead" "elites/buildings/sfx_rfac.die.wav")
 
+
+(make-sound "grenade-impact" "elites/units/grenadier_g_hit.wav")
 
 ;;	Simple elites sounds.
 (make-sound "basic elites voices ready" "elites/basic_voices/ready.wav")

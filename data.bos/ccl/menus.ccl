@@ -37,8 +37,8 @@
 ;; define the menu graphics
 ;;
 (define-menu-graphics
-  '(file "elites/ui/ui_buttons.png" size (300 144))
-  '(file "terras/ui/ui_buttons.png" size (300 144)))
+  '(file "general/ui_buttons.png" size (300 144))
+  '(file "general/ui_buttons.png" size (300 144)))
 
 ;;
 ;; menu-game

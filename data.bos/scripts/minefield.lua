@@ -30,7 +30,7 @@
 
 
 DefineMissileType("missile-minefield",
-  { File = "minefield.png", Size = {64, 64}, Frames = 1, NumDirections = 1,
+  { File = "minefield.png", Size = {32, 32}, Frames = 1, NumDirections = 1,
   DrawLevel = 20, Class = "missile-class-land-mine", Sleep = 5, Speed = 16, 
   Range = 10,  ImpactMissile = "missile-explosion", CanHitOwner = true } )
 

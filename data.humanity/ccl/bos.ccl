@@ -98,6 +98,7 @@
   'unit-engineer 'unit-peon 'unit-elites-oil-tanker 'unit-terras-oil-tanker
   'unit-miner
   'unit-gold-mine2 'unit-gold-mine3 'unit-gold-mine4
+  'unit-stone-field 'unit-stone-field2 'unit-stone-field3 'unit-stone-field4
 )
 
 (define-missiletype-wc-names

@@ -58,6 +58,10 @@
   'unit-gold-mine2
   'unit-gold-mine3
   'unit-gold-mine4
+  'unit-stone-field
+  'unit-stone-field2
+  'unit-stone-field3
+  'unit-stone-field4
 
 ; Placing this unit-types on map is not (yet?) supported.
 ;  'unit-dead-body

@@ -346,8 +346,8 @@
 
 (define-default-resource-amounts
   'titanium 2500
-  'crystal 150
-  'gas 150)
+  'crystal 2500
+  'gas 2500)
 
 ;;-----------------------------------------------------------------------------
 

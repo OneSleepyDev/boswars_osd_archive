@@ -144,8 +144,110 @@
     attack "gold-mine-attack"))
 
 
-
-
+(define-unit-type 'unit-stone-field 'name "Stone Field"
+  'files '(tileset-desert "ub/r_rock.png")
+  'size '(42 42)
+  'shadow '(file "ub/r_rock.png" size (42 42) offset (2 -4))
+  'animations 'animations-resource 'icon 'icon-stone
+  'costs '(time 150)
+  'construction 'construction-land2
+  'speed 0
+  'hit-points 999999
+  'draw-level 1
+  'tile-size '(1 1) 'box-size '(32 32)
+  'sight-range 1
+  'armor 20 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
+  'priority 0
+  'corpse '(unit-destroyed-3x3-place 0)
+  'explode-when-killed 'missile-explosion
+  'type-land
+  'building
+  'gives-resource 'crystal 'can-harvest
+  'sounds '(
+    selected "gold-mine-selected"
+    acknowledge "gold-mine-acknowledge"
+    ready "gold-mine-ready"
+    help "gold-mine-help"
+    dead "building destroyed"
+    attack "gold-mine-attack"))
+(define-unit-type 'unit-stone-field2 'name "Stone Field"
+  'files '(tileset-desert "ub/r_rock2.png")
+  'size '(42 42)
+  'shadow '(file "ub/r_rock2.png" size (42 42) offset (2 -4))
+  'animations 'animations-resource 'icon 'icon-stone
+  'costs '(time 150)
+  'construction 'construction-land2
+  'speed 0
+  'hit-points 999999
+  'draw-level 1
+  'tile-size '(1 1) 'box-size '(32 32)
+  'sight-range 1
+  'armor 20 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
+  'priority 0
+  'corpse '(unit-destroyed-3x3-place 0)
+  'explode-when-killed 'missile-explosion
+  'type-land
+  'building
+  'gives-resource 'crystal 'can-harvest
+  'sounds '(
+    selected "gold-mine-selected"
+    acknowledge "gold-mine-acknowledge"
+    ready "gold-mine-ready"
+    help "gold-mine-help"
+    dead "building destroyed"
+    attack "gold-mine-attack"))
+(define-unit-type 'unit-stone-field3 'name "Stone Field"
+  'files '(tileset-desert "ub/r_rock3.png")
+  'size '(42 42)
+  'shadow '(file "ub/r_rock3.png" size (42 42) offset (2 -4))
+  'animations 'animations-resource 'icon 'icon-stone
+  'costs '(time 150)
+  'construction 'construction-land2
+  'speed 0
+  'hit-points 999999
+  'draw-level 1
+  'tile-size '(1 1) 'box-size '(32 32)
+  'sight-range 1
+  'armor 20 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
+  'priority 0
+  'corpse '(unit-destroyed-3x3-place 0)
+  'explode-when-killed 'missile-explosion
+  'type-land
+  'building
+  'gives-resource 'crystal 'can-harvest
+  'sounds '(
+    selected "gold-mine-selected"
+    acknowledge "gold-mine-acknowledge"
+    ready "gold-mine-ready"
+    help "gold-mine-help"
+    dead "building destroyed"
+    attack "gold-mine-attack"))
+(define-unit-type 'unit-stone-field4 'name "Stone Field"
+  'files '(tileset-desert "ub/r_rock4.png")
+  'size '(42 42)
+  'shadow '(file "ub/r_rock4.png" size (42 42) offset (2 -4))
+  'animations 'animations-resource 'icon 'icon-stone
+  'costs '(time 150)
+  'construction 'construction-land2
+  'speed 0
+  'hit-points 999999
+  'draw-level 1
+  'tile-size '(1 1) 'box-size '(32 32)
+  'sight-range 1
+  'armor 20 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
+  'priority 0
+  'corpse '(unit-destroyed-3x3-place 0)
+  'explode-when-killed 'missile-explosion
+  'type-land
+  'building
+  'gives-resource 'crystal 'can-harvest
+  'sounds '(
+    selected "gold-mine-selected"
+    acknowledge "gold-mine-acknowledge"
+    ready "gold-mine-ready"
+    help "gold-mine-help"
+    dead "building destroyed"
+    attack "gold-mine-attack"))
 
 
 

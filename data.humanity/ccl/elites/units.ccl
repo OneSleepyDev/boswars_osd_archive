@@ -40,7 +40,7 @@
   'costs '(time 150 titanium 175 crystal 25)
   'speed 10
   'hit-points 30
-  'draw-level 110
+  'draw-level 100
   'tile-size '(1 1) 'box-size '(28 28)
   'sight-range 5 'computer-reaction-range 6 'person-reaction-range 4
   'armor 1 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
@@ -89,7 +89,7 @@
   'costs '(time 150 titanium 175 crystal 25)
   'speed 10
   'hit-points 30
-  'draw-level 110
+  'draw-level 100
   'tile-size '(1 1) 'box-size '(28 28)
   'sight-range 5 'computer-reaction-range 6 'person-reaction-range 4
   'armor 1 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
@@ -138,10 +138,10 @@
   'vanishes
   'sounds '())
 
-(define-unit-type 'unit-yard 'name "Development Yard"
-  'files '(tileset-desert "elites/build/development_yard.png")
-  'size '(224 196)
-  'shadow '(file "elites/build/development_yard_s.png" size (224 196))
+(define-unit-type 'unit-yard 'name "Castle"
+  'files '(tileset-desert "units/b_castle.png")
+  'size '(320 448)
+  'shadow '(file "units/b_castle_s.png" size (320 448))
   'animations 'animations-dev 'icon 'icon-dev
   'costs '(time 1000 titanium 1000 crystal 1000 gas 0)
   'repair-hp 4
@@ -149,8 +149,9 @@
   'construction 'construction-dev
   'speed 0
   'hit-points 1800
-  'draw-level 120
-  'tile-size '(7 6) 'box-size '(220 192)
+  'builder-outside
+  'draw-level 100
+  'tile-size '(10 9) 'box-size '(320 288)
   'sight-range 4
   'armor 30 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
   'priority 35 'annoy-computer-factor 45
@@ -168,16 +169,15 @@
     help "dev-help"
     dead "dev-dead"
 ;    attack "town-hall-attack"
-  ))
-
+))
 (define-unit-type 'build-dead-body1 'name "DevelopmentyardCrater"
-  'files '(tileset-desert "elites/build/development_yard.png")
-  'size '(224 196)
+  'files '(tileset-desert "units/b_castle.png")
+  'size '(320 448)
   'animations 'animations-elitebuild1 'icon 'icon-cancel
   'speed 0
   'hit-points 999
   'draw-level 30
-  'tile-size '(7 6) 'box-size '(220 192)
+  'tile-size '(7 6) 'box-size '(320 320)
   'sight-range 1
   'basic-damage 0 'piercing-damage 0 'missile 'missile-none
   'priority 0
@@ -185,6 +185,19 @@
   'building
   'vanishes
   'sounds '())
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 (define-unit-type 'unit-elites-start-location 'name "Start Location"
   'files '(tileset-desert "elites/x_startpoint.png")

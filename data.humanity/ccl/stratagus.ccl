@@ -345,7 +345,7 @@
   'time 'titanium 'crystal 'gas 'ore 'stone 'coal)
 
 (define-default-resource-amounts
-  'titanium 150
+  'titanium 2500
   'crystal 150
   'gas 150)
 

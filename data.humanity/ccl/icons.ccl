@@ -48,8 +48,10 @@
   'size '(23 38) 'normal '(0 "units/u_builder_i.png"))
 (define-icon 'icon-miner
   'size '(23 38) 'normal '(0 "units/u_miner_i.png"))
-
-
+(define-icon 'icon-dev
+  'size '(23 38) 'normal '(0 "units/b_castle_i.png"))
+(define-icon 'icon-dev_b
+  'size '(23 38) 'normal '(0 "units/b_castle_i.png"))
 
 
 
@@ -66,10 +68,6 @@
 
 ; ELITES
 
-(define-icon 'icon-dev
-  'size '(46 38) 'normal '(0 "elites/build/development_yard_i.png"))
-(define-icon 'icon-dev_b
-  'size '(46 38) 'normal '(0 "elites/units/engineer_icons.png"))
 
 
 (define-icon 'icon-build-lvl1

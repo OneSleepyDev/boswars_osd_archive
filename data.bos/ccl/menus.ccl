@@ -290,23 +290,12 @@
     func replay-game-menu
     style gm-full)
   'menu 'menu-program-start)
-(if (symbol-bound? 'stratagus-feature-sdl ())
 (define-menu-item 'pos (list 208 (+ 109 (* 36 5))) 'font 'large
   'button '(size (224 27)
     caption "~!Options"
     hotkey "o"
     func global-options-menu
     style gm-full)
-  'menu 'menu-program-start)
-(define-menu-item 'pos (list 208 (+ 109 (* 36 5))) 'font 'large
-  'flags '(disabled)
-  'button '(size (224 27)
-    caption "~!Options"
-    hotkey "o"
-    func global-options-menu
-    style gm-full)
-  'menu 'menu-program-start)
-)
 (define-menu-item 'pos (list 208 (+ 109 (* 36 6))) 'font 'large
   'button '(size (224 27)
     caption "~!Editor"

@@ -45,13 +45,13 @@
 ;;
 
 (define-icon 'icon-engineer
-  'size '(23 38) 'normal '(0 "units/u_builder_i.png"))
+  'size '(23 38) 'normal '(0 "ub/u_builder_i.png"))
 (define-icon 'icon-miner
-  'size '(23 38) 'normal '(0 "units/u_miner_i.png"))
+  'size '(23 38) 'normal '(0 "ub/u_miner_i.png"))
 (define-icon 'icon-dev
-  'size '(23 38) 'normal '(0 "units/b_castle_i.png"))
+  'size '(23 38) 'normal '(0 "ub/b_castle_i.png"))
 (define-icon 'icon-dev_b
-  'size '(23 38) 'normal '(0 "units/b_castle_i.png"))
+  'size '(23 38) 'normal '(0 "ub/b_castle_i.png"))
 
 
 

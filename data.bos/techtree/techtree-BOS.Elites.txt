@@ -101,5 +101,5 @@ BOS.Elites
 				Attack elites\units\grenadier_attack.wav; Die elites\units\grenadier_die.wav;
 			Missile: Parabolic point to point
 			Anim: Stand 0; Walk 5, 10, 15, 20; Attack 25, 30, 35, 40, slp_10 0; Die 45, 50, 55, 60,(Corpse);
-				Other: Grenade explode on hit; SFX: elites\units\grenadier_g_hit.wav; GFX: Explode nature\effects\expl_64x64x1.png; Range 2;
+				Other: Grenade explode on hit; SFX: elites\units\grenadier_g_hit.wav; GFX: Missile elites/missiles/grenade.png; Explode nature\effects\expl_64x64x1.png; Range 2;
 			Trained At: TRN_CAMP/pos2;

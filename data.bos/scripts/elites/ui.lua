@@ -75,19 +75,19 @@ function DefineEliteScreen(screen_width, screen_height)
 			{"graphics/elites/ui/ui_" .. screen_width .. "_respanel.png", 0, 0},
 		"resources", {
 			"titanium", {
-				"file", "graphics/elites/ui/ui_res_icons.png", "row", 0,
+				"file", "graphics/elites/ui/ui_res_icons.png", "frame", 0,
 				"pos", {67 +   0, 0}, "size", {14, 14}, "text-pos", {85 +   0, 1}},
 			"crystal", {
-				"file", "graphics/elites/ui/ui_res_icons.png", "row", 1,
+				"file", "graphics/elites/ui/ui_res_icons.png", "frame", 1,
 				"pos", {67 +  75, 0}, "size", {14, 14}, "text-pos", {85 +  75, 1}},
 --			"gas", {
---				"file", "graphics/elites/ui/ui_res_icons.png", "row", 1,
+--				"file", "graphics/elites/ui/ui_res_icons.png", "frame", 1,
 --				"pos", {67 + 150, 0}, "size", {14, 14}, "text-pos", {85 + 150, 1}},
 			"food", {
-				"file", "graphics/elites/ui/ui_res_icons.png", "row", 3,
+				"file", "graphics/elites/ui/ui_res_icons.png", "frame", 3,
 				"pos", {67 + 150, 0}, "size", {14, 14}, "text-pos", {85 + 150, 1}},
 			"score", {
-				"file", "graphics/elites/ui/ui_res_icons.png", "row", 4,
+				"file", "graphics/elites/ui/ui_res_icons.png", "frame", 4,
 				"pos", {67 + 300, 0}, "size", {14, 14}, "text-pos", {85 + 300, 1}}},
 		"info-panel", {
 			"panel", {

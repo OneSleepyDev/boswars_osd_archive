@@ -103,12 +103,12 @@
 
 (define-button 'pos 3 'level 1 'icon 'icon-fort
   'action 'build 'value 'unit-fort
-  'key "f" 'hint "BUILD ~!ELITE FORT"
+  'key "f" 'hint "BUILD ELITE ~!FORT"
   'for-unit '(unit-engineer))
 
 (define-button 'pos 4 'level 1 'icon 'icon-rfac
   'action 'build 'value 'unit-rfac
-  'key "f" 'hint "BUILD ~!RESEARCH FACILITY"
+  'key "r" 'hint "BUILD ~!RESEARCH FACILITY"
   'for-unit '(unit-engineer))
 
 
@@ -128,7 +128,13 @@
 (define-button 'pos 1 'level 0 'icon 'icon-engineer
   'action 'train-unit 'value 'unit-engineer
   'allowed 'check-no-research
-  'key "p" 'hint "TRAIN ~!PEASANT"
+  'key "e" 'hint "TRAIN ~!ENGINEER"
+  'for-unit '(unit-fort))
+
+(define-button 'pos 2 'level 0 'icon 'icon-harvester
+  'action 'train-unit 'value 'unit-harvester
+  'allowed 'check-no-research
+  'key "h" 'hint "TRAIN MINERAL ~!HARVESTER"
   'for-unit '(unit-fort))
 
 ;; town hall upgrades ---------------------------------------------------------

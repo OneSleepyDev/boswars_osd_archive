@@ -75,8 +75,8 @@
 
 (make-sound "grenadier-selected" "elites/units/grenadier_select.wav")
 (make-sound "grenadier-acknowledge" "elites/units/grenadier_action.wav")
-(make-sound "grenadier-ready" "elites/computer_voice/assault.unit.ready.wav")
-(make-sound "grenadier-help" "elites/computer_voice/assault.unit.underattack.wav")
+(make-sound "grenadier-ready" "elites/computer_voice/grenadier.ready.wav")
+(make-sound "grenadier-help" "elites/computer_voice/grenadier.underattack.wav")
 (make-sound "grenadier-die" "elites/units/grenadier_die.wav")
 (make-sound "grenadier-attack" "elites/units/grenadier_attack.wav")
 

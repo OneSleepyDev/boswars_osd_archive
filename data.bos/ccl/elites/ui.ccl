@@ -97,7 +97,10 @@
             (list 'pos (list (- screen_width 112) 176) 'size icon_size)
             (list 'pos (list (- screen_width  97) 176) 'size icon_size)
             (list 'pos (list (- screen_width  82) 176) 'size icon_size)
-            (list 'pos (list (- screen_width  67) 176) 'size icon_size)))
+            (list 'pos (list (- screen_width  67) 176) 'size icon_size))
+          'max-text (list
+            'font 'game
+            'pos (list (+ info_panel_x 10) (+ info_panel_y 10))))
       )
       'training (list
         'single (list
@@ -107,8 +110,7 @@
             'pos (list (- screen_width 187) 204))
           'icon (list
             'pos (list (- screen_width 187) 243)
-            'size icon_size)
-        )
+            'size icon_size))
         'multiple (list
           'icons (list
             (list 'pos (list (- screen_width 187) 243) 'size icon_size)

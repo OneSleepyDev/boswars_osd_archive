@@ -32,13 +32,13 @@
     'image "terras/ui/terras_claw.png"
     'hot-spot '( 3  2) 'size '(26 32) )
 (define-cursor	'cursor-green-hair	'terras
-    'image "terras/ui/green_crosshairs.png"
+    'image "general/green.png"
     'hot-spot '(15 15) 'size '(32 32) )
 (define-cursor	'cursor-yellow-hair	'terras
-    'image "terras/ui/yellow_crosshairs.png"
+    'image "general/yellow.png"
     'hot-spot '(15 15) 'size '(32 32) )
 (define-cursor	'cursor-red-hair	'terras
-    'image "terras/ui/red_crosshairs.png"
+    'image "general/red"
     'hot-spot '(15 15) 'size '(32 32) )
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

@@ -32,13 +32,13 @@
     'image "elites/ui/elites_claw.png"
     'hot-spot '( 1  1) 'size '(28 32) )
 (define-cursor	'cursor-green-hair	'elites
-    'image "elites/ui/green_eagle.png"
+    'image "general/green.png"
     'hot-spot '(15 15) 'size '(32 32) )
 (define-cursor	'cursor-yellow-hair	'elites
-    'image "elites/ui/yellow_eagle.png"
+    'image "general/yellow.png"
     'hot-spot '(15 15) 'size '(32 32) )
 (define-cursor	'cursor-red-hair	'elites
-    'image "elites/ui/red_eagle.png"
+    'image "general/red.png"
     'hot-spot '(15 15) 'size '(32 32) )
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

@@ -121,7 +121,7 @@
   'key "r" 'hint "BUILD ~!RESEARCH FACILITY"
   'for-unit '(unit-engineer))
 
-(define-button 'pos 5 'level 1 'icon 'icon-hosp
+(define-button 'pos 5 'level 1 'icon 'icon-hosp_b
   'action 'build 'value 'unit-hosp
   'key "h" 'hint "BUILD ~!HOSPITAL"
   'for-unit '(unit-engineer))

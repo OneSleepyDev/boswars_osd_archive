@@ -411,9 +411,9 @@
   ))
 
 (define-unit-type 'unit-hosp 'name "Hospital"
-  'files '(tileset-desert "elites/build/bld_hosp.png")
-  'size '(96 96)
-  'shadow '(file "elites/build/bld_hosp_s.png" size (96 96))
+  'files '(tileset-desert "elites/build/hospital.png")
+  'size '(128 96)
+  'shadow '(file "elites/build/hospital_s.png" size (128 96))
   'animations 'animations-hosp 'icon 'icon-hosp
   'costs '(time 500 titanium 800 crystal 300)
   'repair-hp 2
@@ -422,13 +422,14 @@
   'speed 0
   'hit-points 350
   'draw-level 110
-  'tile-size '(3 3) 'box-size '(96 96)
+  'tile-size '(4 3) 'box-size '(124 92)
   'sight-range 2
   'armor 30 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
   'priority 35 'annoy-computer-factor 45
   'demand 200
   'points 200
   'explode-when-killed 'missile-160x128-explosion
+  'corpse '(build-dead-body5 0)
   'type-land
   'building 
   'sounds '(
@@ -601,6 +602,22 @@
   'hit-points 999
   'draw-level 30
   'tile-size '(4 4) 'box-size '(124 124)
+  'sight-range 1
+  'basic-damage 0 'piercing-damage 0 'missile 'missile-none
+  'priority 0
+  'type-land
+  'building
+  'vanishes
+  'sounds '())
+
+(define-unit-type 'build-dead-body5 'name "HospCrater"
+  'files '(tileset-desert "elites/build/hospital.png")
+  'size '(128 96)
+  'animations 'animations-elitebuild5 'icon 'icon-cancel
+  'speed 0
+  'hit-points 999
+  'draw-level 30
+  'tile-size '(4 3) 'box-size '(124 92)
   'sight-range 1
   'basic-damage 0 'piercing-damage 0 'missile 'missile-none
   'priority 0

@@ -1,5 +1,18 @@
 BOS.Resources 
-	Titanium - Metal/Mine
+	Titanium Spikes - Metal/Mine
+		!Titanium Spike TAG TITA1
+			Stats: Resource; Hitpoints 50;
+			GFX: Icon nature\res\ico_spike.png; Unit nature\res\spike_1.png;
+				shadow nature\res\spike_1_s.png
+			Anim: Stand 0; Die 0;
+			Other: Resource/Crystal (a150)
+
+		!Titanium Spike TAG TITA2
+			GFX: Icon nature\res\ico_spike.png; Unit nature\res\spike_2.png;
+				shadow nature\res\spike_2_s.png
+			Anim: Stand 0; Die 0;
+			Other: Resource/Crystal (a150)
+
 	Crystals - Power/Fields
 		!Crystal Field TAG CRYS1
 			Stats: Resource; Hitpoints 50;

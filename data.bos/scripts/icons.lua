@@ -35,199 +35,199 @@
 DefineIcon({
 	Name = "icon-assault", 
 	Size = {46, 38},
-	Index = 0,
+	Frame = 0,
 	File = "elites/units/ico_assault.png"})
 
 DefineIcon({
 	Name = "icon-apcs",
 	Size = {46, 38},
-	Index = 0,
+	Frame = 0,
 	File = "elites/units/ico_apcs.png"})
 
 DefineIcon({
 	Name = "icon-grenadier",
 	Size = {46, 38},
-	Index = 0,
+	Frame = 0,
 	File = "elites/units/ico_grenadier.png"})
 
 DefineIcon({
 	Name = "icon-bazoo",
 	Size = {46, 38},
-	Index = 0,
+	Frame = 0,
 	File = "elites/units/ico_bazoo.png"})
 
 DefineIcon({
 	Name = "icon-medic",
 	Size = {46, 38},
-	Index = 0,
+	Frame = 0,
 	File = "elites/units/ico_medic.png"})
 
 DefineIcon({
 	Name = "icon-engineer",
 	Size = {46, 38},
-	Index = 0,
+	Frame = 0,
 	File = "elites/units/ico_engineer.png"})
 
 DefineIcon({
 	Name = "icon-harvester",
 	Size = {46, 38},
-	Index = 0,
+	Frame = 0,
 	File = "elites/units/ico_harv.png"})
 
 DefineIcon({
 	Name = "icon-gen",
 	Size = {46, 38},
-	Index = 0,
+	Frame = 0,
 	File = "elites/build/generator_i.png"})
 
 DefineIcon({
 	Name = "icon-gen_b",
 	Size = {46, 38},
-	Index = 1,
+	Frame = 1,
 	File = "elites/units/engineer_icons.png"})
 
 DefineIcon({
 	Name = "icon-camp",
 	Size = {46, 38},
-	Index = 0,
+	Frame = 0,
 	File = "elites/build/training_camp_i.png"})
 
 DefineIcon({
 	Name = "icon-camp_b",
 	Size = {46, 38},
-	Index = 2,
+	Frame = 2,
 	File = "elites/units/engineer_icons.png"})
 
 DefineIcon({
 	Name = "icon-vault",
 	Size = {46, 38},
-	Index = 0,
+	Frame = 0,
 	File = "elites/buildings/vault-i.png"})
 
 DefineIcon({
 	Name = "icon-dev",
 	Size = {46, 38},
-	Index = 0,
+	Frame = 0,
 	File = "elites/build/development_yard_i.png"})
 	
 DefineIcon({
 	Name = "icon-dev_b",
 	Size = {46, 38},
-	Index = 0,
+	Frame = 0,
 	File = "elites/units/engineer_icons.png"})
 
 DefineIcon({
 	Name = "icon-rfac",
 	Size = {46, 38},
-	Index = 0,
+	Frame = 0,
 	File = "elites/build/research_facility_i.png"})
 
 DefineIcon({
 	Name = "icon-rfac_b",
 	Size = {46, 38},
-	Index = 6,
+	Frame = 6,
 	File = "elites/units/engineer_icons.png"})
 
 DefineIcon({
 	Name = "icon-hosp",
 	Size = {46, 38},
-	Index = 0,
+	Frame = 0,
 	File = "elites/build/hospital_i.png"})
 
 DefineIcon({
 	Name = "icon-hosp_b",
 	Size = {46, 38},
-	Index = 7,
+	Frame = 7,
 	File = "elites/units/engineer_icons.png"})
 
 DefineIcon({
 	Name = "icon-vfac",
 	Size = {46, 38},
-	Index = 0,
+	Frame = 0,
 	File = "elites/build/vehicle_factory_i.png"})
 
 DefineIcon({
 	Name = "icon-vfac_b",
 	Size = {46, 38},
-	Index = 8,
+	Frame = 8,
 	File = "elites/units/engineer_icons.png"})
 
 DefineIcon({
 	Name = "icon-msilo",
 	Size = {46, 38},
-	Index = 0,
+	Frame = 0,
 	File = "elites/build/missile_silo_i.png"})
 
 DefineIcon({
 	Name = "icon-msilo_b",
 	Size = {46, 38},
-	Index = 9,
+	Frame = 9,
 	File = "elites/units/engineer_icons.png"})
 
 DefineIcon({
 	Name = "icon-plate1",
 	Size = {46, 38},
-	Index = 0,
+	Frame = 0,
 	File = "elites/buildings/plate-i.png"})
 
 DefineIcon({
 	Name = "icon-expl",
 	Size = {46, 38},
-	Index = 0,
+	Frame = 0,
 	File = "elites/research/res_expl.png"})
 
 DefineIcon({
 	Name = "icon-expl2",
 	Size = {46, 38},
-	Index = 0,
+	Frame = 0,
 	File = "elites/research/res_expl2.png"})
 
 DefineIcon({
 	Name = "icon-tdril",
 	Size = {46, 38},
-	Index = 0,
+	Frame = 0,
 	File = "elites/research/res_tdril.png"})
 
 DefineIcon({
 	Name = "icon-ddril",
 	Size = {46, 38},
-	Index = 0,
+	Frame = 0,
 	File = "elites/research/res_ddril.png"})
 
 DefineIcon({
 	Name = "icon-pdril",
 	Size = {46, 38},
-	Index = 0,
+	Frame = 0,
 	File = "elites/research/res_pdril.png"})
 
 DefineIcon({
 	Name = "icon-void",
 	Size = {46, 38},
-	Index = 0,
+	Frame = 0,
 	File = "elites/research/res_avoid.png"})
 
 DefineIcon({
 	Name = "icon-heal",
 	Size = {46, 38},
-	Index = 0,
+	Frame = 0,
 	File = "elites/special/ico_heal.png"})
 
 DefineIcon({
 	Name = "icon-build-lvl1",
 	Size = {46, 38},
-	Index = 3,
+	Frame = 3,
 	File = "elites/units/engineer_icons.png"})
 
 DefineIcon({
 	Name = "icon-build-lvl2",
 	Size = {46, 38},
-	Index = 4,
+	Frame = 4,
 	File = "elites/units/engineer_icons.png"})
 
 DefineIcon({
 	Name = "icon-build-lvl3",
 	Size = {46, 38},
-	Index = 5,
+	Frame = 5,
 	File = "elites/units/engineer_icons.png"})
 
 --
@@ -237,7 +237,7 @@ DefineIcon({
 DefineIcon({
 	Name = "icon-dorcoz",
 	Size = {46, 38},
-	Index = 0,
+	Frame = 0,
 	File = "elites/units/ico_dorcoz.png"})
 
 --
@@ -247,13 +247,13 @@ DefineIcon({
 DefineIcon({
 	Name = "icon-crystal-field",
 	Size = {46, 38},
-	Index = 0,
+	Frame = 0,
 	File = "nature/res/ico_crys.png"})
 
 DefineIcon({
 	Name = "icon-tita",
 	Size = {46, 38},
-	Index = 0,
+	Frame = 0,
 	File = "nature/res/ico_spike.png"})
 
 --
@@ -263,72 +263,72 @@ DefineIcon({
 DefineIcon({
 	Name = "icon-cancel",
 	Size = {46, 38},
-	Index = 0,
+	Frame = 0,
 	File = "general/commands.png"})
 
 DefineIcon({
 	Name = "icon-stop",
 	Size = {46, 38},
-	Index = 1,
+	Frame = 1,
 	File = "general/commands.png"})
 
 DefineIcon({
 	Name = "icon-move",
 	Size = {46, 38},
-	Index = 2,
+	Frame = 2,
 	File = "general/commands.png"})
 
 DefineIcon({
 	Name = "icon-attack",
 	Size = {46, 38},
-	Index = 3,
+	Frame = 3,
 	File = "general/commands.png"})
 
 DefineIcon({
 	Name = "icon-patrol",
 	Size = {46, 38},
-	Index = 4,
+	Frame = 4,
 	File = "general/commands.png"})
 
 DefineIcon({
 	Name = "icon-attack-ground",
 	Size = {46, 38},
-	Index = 5,
+	Frame = 5,
 	File = "general/commands.png"})
 
 
 DefineIcon({
 	Name = "icon-repair",
 	Size = {46, 38},
-	Index = 6,
+	Frame = 6,
 	File = "general/commands.png"})
 
 DefineIcon({
 	Name = "icon-harvest",
 	Size = {46, 38},
-	Index = 8,
+	Frame = 8,
 	File = "general/commands.png"})
 
 DefineIcon({
 	Name = "icon-build-advanced",
 	Size = {46, 38},
-	Index = 13,
+	Frame = 13,
 	File = "general/commands.png"})
 
 DefineIcon({
 	Name = "icon-return-goods-peasant",
 	Size = {46, 38},
-	Index = 9,
+	Frame = 9,
 	File = "general/commands.png"})
 
 DefineIcon({
 	Name = "icon-return-goods-peon",
 	Size = {46, 38},
-	Index = 9,
+	Frame = 9,
 	File = "general/commands.png"})
 
 DefineIcon({
 	Name = "icon-stand-ground",
 	Size = {46, 38},
-	Index = 10,
+	Frame = 10,
 	File = "general/commands.png"})

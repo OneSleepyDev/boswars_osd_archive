@@ -53,11 +53,7 @@
         'manacost 300
         'range 128
         'target 'position
-        'action '(
-	     (spawn-missile ttl 1000 damage 500
-	     start-point (base target add-x 0 add-y -320)
-	     end-point   (base target add-x 0 add-y 0))
-	)
+        'action '((adjust-vitals hit-points -500))
         'sound-when-cast "bazoo-attack"
         'missile-when-cast "missile-nuke"
         'autocast '(range 128)

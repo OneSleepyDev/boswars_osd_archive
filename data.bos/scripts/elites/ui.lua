@@ -159,8 +159,8 @@ function DefineEliteScreen(screen_width, screen_height)
 				{"pos", {screen_width - 67, 385}, "size", {46, 38}},
 				{"pos", {screen_width - 177, 430}, "size", {46, 38}},
 				{"pos", {screen_width - 122, 430}, "size", {46, 38}},
-				{"pos", {screen_width - 67, 430}, "size", {46, 38}}}},
-			"command-key-font", "game",
+				{"pos", {screen_width - 67, 430}, "size", {46, 38}}},
+			"command-key-font", "game"},
 		"map-area", {
 			"pos", {24, 16},
 			"size", {

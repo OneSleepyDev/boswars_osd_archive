@@ -284,34 +284,35 @@
     help "harvester-help"
     dead "harvester-die"))
 
-(define-unit-type 'unit-pplnt 'name "Power Plant"
-  'files '(tileset-desert "elites/build/bld_pplnt.png")
-  'size '(96 96)
-  'shadow '(file "elites/build/bld_pplnt_s.png" size (96 96))
-  'animations 'animations-pplnt 'icon 'icon-pplnt
+(define-unit-type 'unit-gen 'name "Generator"
+  'files '(tileset-desert "elites/build/generator.png")
+  'size '(64 64)
+  'shadow '(file "elites/build/generator_s.png" size (64 64))
+  'animations 'animations-gen 'icon 'icon-gen
   'costs '(time 250 titanium 300 crystal 30 gas 50)
   'repair-hp 2
   'repair-costs '(titanium 2)
-  'construction 'construction-pplnt
+  'construction 'construction-gen
   'speed 0
   'hit-points 250
   'draw-level 110
-  'tile-size '(3 3) 'box-size '(95 95)
+  'tile-size '(2 2) 'box-size '(60 60)
   'sight-range 1
   'armor 10 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
   'priority 20 'annoy-computer-factor 45
   'points 100
   'supply 150
   'explode-when-killed 'missile-160x128-explosion
+  'corpse '(build-dead-body2 0)
   'type-land
   'demand 25
   'building 
   'sounds '(
-    selected "pplnt-selected"
+    selected "gen-selected"
 ;    acknowledge "pplnt-acknowledge"
-    ready "pplnt-ready"
-    help "pplnt-help"
-    dead "pplnt-dead"
+    ready "gen-ready"
+    help "gen-help"
+    dead "gen-dead"
 ;    attack "pplnt-attack"
   ))
 
@@ -345,34 +346,35 @@
 ;    attack "camp-attack"
   ))
 
-(define-unit-type 'unit-fort 'name "Elite Fort"
-  'files '(tileset-desert "elites/build/bld_fort.png")
-  'size '(224 300)
-  'shadow '(file "elites/build/bld_fort_s.png" size (224 300))
-  'animations 'animations-fort 'icon 'icon-fort
+(define-unit-type 'unit-yard 'name "Developement Yard"
+  'files '(tileset-desert "elites/build/developement_yard.png")
+  'size '(224 196)
+  'shadow '(file "elites/build/developement_yard_s.png" size (224 196))
+  'animations 'animations-dev 'icon 'icon-dev
   'costs '(time 1000 titanium 1000 crystal 1000 gas 0)
   'repair-hp 4
   'repair-costs '(titanium 4)
-  'construction 'construction-fort
+  'construction 'construction-dev
   'speed 0
   'hit-points 1800
-  'draw-level 110
-  'tile-size '(7 4) 'box-size '(223 128)
+  'draw-level 120
+  'tile-size '(7 6) 'box-size '(220 192)
   'sight-range 4
   'armor 30 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
   'priority 35 'annoy-computer-factor 45
   'points 200
   'supply 200
   'explode-when-killed 'missile-288x288-explosion
+  'corpse '(build-dead-body1 0)
   'type-land
   'building 
   'can-store '(crystal titanium gas)
   'sounds '(
-    selected "fort-selected"
+    selected "dev-selected"
 ;    acknowledge "fort-acknowledge"
-    ready "fort-ready"
-    help "fort-help"
-    dead "fort-dead"
+    ready "dev-ready"
+    help "dev-help"
+    dead "dev-dead"
 ;    attack "town-hall-attack"
   ))
 
@@ -538,6 +540,38 @@
   'basic-damage 0 'piercing-damage 0 'missile 'missile-none
   'priority 0
   'type-land
+  'vanishes
+  'sounds '())
+
+(define-unit-type 'build-dead-body1 'name "DevelopmentyardCrater"
+  'files '(tileset-desert "elites/build/developement_yard.png")
+  'size '(224 196)
+  'animations 'animations-elitebuild1 'icon 'icon-cancel
+  'speed 0
+  'hit-points 999
+  'draw-level 30
+  'tile-size '(7 6) 'box-size '(220 192)
+  'sight-range 1
+  'basic-damage 0 'piercing-damage 0 'missile 'missile-none
+  'priority 0
+  'type-land
+  'building
+  'vanishes
+  'sounds '())
+
+(define-unit-type 'build-dead-body2 'name "GeneratorCrater"
+  'files '(tileset-desert "elites/build/generator.png")
+  'size '(64 64)
+  'animations 'animations-elitebuild2 'icon 'icon-cancel
+  'speed 0
+  'hit-points 999
+  'draw-level 30
+  'tile-size '(2 2) 'box-size '(60 60)
+  'sight-range 1
+  'basic-damage 0 'piercing-damage 0 'missile 'missile-none
+  'priority 0
+  'type-land
+  'building
   'vanishes
   'sounds '())
 

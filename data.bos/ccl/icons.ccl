@@ -61,12 +61,16 @@
   'size '(46 38) 'normal '(0 "elites/units/ico_engineer.png"))
 (define-icon 'icon-harvester
   'size '(46 38) 'normal '(0 "elites/units/ico_harv.png"))
-(define-icon 'icon-pplnt
-  'size '(46 38) 'normal '(0 "elites/build/ico_pplnt.png"))
+(define-icon 'icon-gen
+  'size '(46 38) 'normal '(0 "elites/build/generator_i.png"))
+(define-icon 'icon-gen_b
+  'size '(46 38) 'normal '(1 "elites/units/engineer_icons.png"))
 (define-icon 'icon-camp
   'size '(46 38) 'normal '(0 "elites/build/ico_camp.png"))
-(define-icon 'icon-fort
-  'size '(46 38) 'normal '(0 "elites/build/ico_fort.png"))
+(define-icon 'icon-dev
+  'size '(46 38) 'normal '(0 "elites/build/developement_yard_i.png"))
+(define-icon 'icon-dev_b
+  'size '(46 38) 'normal '(0 "elites/units/engineer_icons.png"))
 (define-icon 'icon-rfac
   'size '(46 38) 'normal '(0 "elites/build/ico_rfac.png"))
 (define-icon 'icon-hosp

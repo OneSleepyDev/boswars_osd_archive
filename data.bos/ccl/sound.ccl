@@ -123,20 +123,20 @@
 (make-sound "medic-attack" "elites/units/medic_attack.wav")
 
 ;; BUILDINGS
-(make-sound "pplnt-selected" "elites/buildings/sfx_pplnt.select.wav")
-(make-sound "pplnt-ready" "elites/computer_voice/power.plant.completed.wav")
-(make-sound "pplnt-help" "elites/computer_voice/power.plant.underattack.wav")
-(make-sound "pplnt-dead" "elites/buildings/sfx_pplnt.die.wav")
+(make-sound "gen-selected" "elites/buildings/sfx_pplnt.select.wav")
+(make-sound "gen-ready" "elites/computer_voice/power.plant.completed.wav")
+(make-sound "gen-help" "elites/computer_voice/power.plant.underattack.wav")
+(make-sound "gen-dead" "elites/buildings/sfx_pplnt.die.wav")
 
 (make-sound "camp-selected" "elites/buildings/sfx_camp.select.wav")
 (make-sound "camp-ready" "elites/computer_voice/training.camp.completed.wav")
 (make-sound "camp-help" "elites/computer_voice/training.camp.underattack.wav")
 (make-sound "camp-dead" "elites/buildings/sfx_camp.die.wav")
 
-(make-sound "fort-selected" "elites/buildings/sfx_fort.select.wav")
-(make-sound "fort-ready" "elites/computer_voice/elite.fort.completed.wav")
-(make-sound "fort-help" "elites/computer_voice/elite.fort.underattack.wav")
-(make-sound "fort-dead" "elites/buildings/sfx_fort.die.wav")
+(make-sound "dev-selected" "elites/buildings/sfx_fort.select.wav")
+(make-sound "dev-ready" "elites/computer_voice/elite.fort.completed.wav")
+(make-sound "dev-help" "elites/computer_voice/elite.fort.underattack.wav")
+(make-sound "dev-dead" "elites/buildings/sfx_fort.die.wav")
 
 (make-sound "rfac-selected" "elites/buildings/sfx_rfac.select.wav")
 (make-sound "rfac-ready" "elites/computer_voice/research.facility.completed.wav")

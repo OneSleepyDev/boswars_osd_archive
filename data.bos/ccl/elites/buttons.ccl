@@ -101,9 +101,9 @@
 
 ;; simple buildings elites -----------------------------------------------------
 
-(define-button 'pos 1 'level 1 'icon 'icon-fort
+(define-button 'pos 1 'level 1 'icon 'icon-dev_b
   'action 'build 'value 'unit-fort
-  'key "f" 'hint "BUILD ELITE ~!FORT"
+  'key "y" 'hint "BUILD DEVELOPEMENT ~!YARD"
   'for-unit '(unit-engineer))
 
 (define-button 'pos 2 'level 1 'icon 'icon-camp
@@ -111,9 +111,9 @@
   'key "c" 'hint "BUILD TRAINING ~!CAMP"
   'for-unit '(unit-engineer))
 
-(define-button 'pos 3 'level 1 'icon 'icon-pplnt
+(define-button 'pos 3 'level 1 'icon 'icon-gen_b
   'action 'build 'value 'unit-pplnt
-  'key "p" 'hint "BUILD POWER ~!PLANT"
+  'key "g" 'hint "BUILD ~!GENERATOR"
   'for-unit '(unit-engineer))
 
 (define-button 'pos 4 'level 1 'icon 'icon-rfac

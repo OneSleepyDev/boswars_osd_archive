@@ -35,9 +35,9 @@
 (define-allow 'unit-engineer			"AAAAAAAAAAAAAAAA")
 (define-allow 'unit-medic			"AAAAAAAAAAAAAAAA")
 (define-allow 'unit-harvester			"AAAAAAAAAAAAAAAA")
-(define-allow 'unit-pplnt			"AAAAAAAAAAAAAAAA")
+(define-allow 'unit-gen 			"AAAAAAAAAAAAAAAA")
 (define-allow 'unit-camp			"AAAAAAAAAAAAAAAA")
-(define-allow 'unit-fort			"AAAAAAAAAAAAAAAA")
+(define-allow 'unit-yard			"AAAAAAAAAAAAAAAA")
 (define-allow 'unit-rfac			"AAAAAAAAAAAAAAAA")
 (define-allow 'unit-hosp			"AAAAAAAAAAAAAAAA")
 (define-allow 'unit-vfac			"AAAAAAAAAAAAAAAA")
@@ -105,16 +105,16 @@
   '(upgrade-ddril))
 
 (define-dependency 'unit-camp
-  '(unit-fort))
+  '(unit-yard))
 
 (define-dependency 'unit-rfac
-  '(unit-fort))
+  '(unit-yard))
 
 (define-dependency 'unit-pplnt
-  '(unit-fort))
+  '(unit-yard))
 
 (define-dependency 'unit-hosp
-  '(unit-fort))
+  '(unit-yard))
 
 (define-dependency 'unit-vfac
-  '(unit-fort upgrade-void))
+  '(unit-yard upgrade-void))

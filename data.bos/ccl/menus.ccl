@@ -296,6 +296,7 @@
     hotkey "o"
     func global-options-menu
     style gm-full)
+   'menu 'menu-program-start)
 (define-menu-item 'pos (list 208 (+ 109 (* 36 6))) 'font 'large
   'button '(size (224 27)
     caption "~!Editor"

@@ -44,5 +44,6 @@
 
 (display "Using Scheme: SIOD\n")
 
+(gc-status #f)
 ;; EOF ;;
 

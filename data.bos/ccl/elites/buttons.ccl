@@ -112,7 +112,7 @@
   'for-unit '(unit-engineer))
 
 (define-button 'pos 3 'level 1 'icon 'icon-gen_b
-  'action 'build 'value 'unit-pplnt
+  'action 'build 'value 'unit-gen
   'key "g" 'hint "BUILD ~!GENERATOR"
   'for-unit '(unit-engineer))
 

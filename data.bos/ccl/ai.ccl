@@ -54,22 +54,22 @@
     ;;	Unit can build which buildings.
     ;;
     (list 'build 'unit-engineer
-	'unit-pplnt 'unit-camp 'unit-fort 'unit-rfac 'unit-human-wall)
+	'unit-gen 'unit-camp 'unit-fort 'unit-rfac 'unit-human-wall)
     ;;
     ;;	Building can train which units.
     ;;
-;    (list 'train 'unit-pplnt 'unit-critter)
+;    (list 'train 'unit-gen 'unit-critter)
     (list 'train 'unit-fort 'unit-engineer 'unit-harvester)
     (list 'train 'unit-camp 'unit-assault)
     ;;
     ;;	Unit can repair which units.
     ;;
     (list 'repair 'unit-engineer
-	'unit-pplnt 'unit-camp 'unit-fort 'unit-rfac 'unit-harvester 'unit-human-wall)
+	'unit-gen 'unit-camp 'unit-fort 'unit-rfac 'unit-harvester 'unit-human-wall)
     ;;
     ;;	Reduce unit limits.
     ;;
-    (list 'unit-limit 'unit-pplnt 'food) )
+    (list 'unit-limit 'unit-gen 'food) )
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;	* Race terras.
@@ -105,13 +105,13 @@
 ;;
 ;;		Enables printing of the AI commands.
 ;;
-;;	(ai:need unit-type) (ai:need 'unit-pplnt)
+;;	(ai:need unit-type) (ai:need 'unit-gen)
 ;;
 ;;		Tells the ai that it should have this type of unit.
 ;;		They are build in the ordered of the commands.
 ;;		If lost automatic rebuild.
 ;;
-;;	(ai:set unit-type count) (ai:set 'unit-pplnt 4)
+;;	(ai:set unit-type count) (ai:set 'unit-gen 4)
 ;;
 ;;		Tells the ai that it should have count units of this type.
 ;;		If there is already a request of this unit-type it number is

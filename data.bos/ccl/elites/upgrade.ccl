@@ -110,7 +110,7 @@
 (define-dependency 'unit-rfac
   '(unit-yard))
 
-(define-dependency 'unit-pplnt
+(define-dependency 'unit-gen
   '(unit-yard))
 
 (define-dependency 'unit-hosp

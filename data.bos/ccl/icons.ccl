@@ -48,6 +48,8 @@
 ;;
 
 
+; ELITES
+
 (define-icon 'icon-assault
   'size '(46 38) 'normal '(0 "elites/units/ico_assault.png"))
 (define-icon 'icon-grenadier
@@ -65,14 +67,6 @@
 (define-icon 'icon-rfac
   'size '(46 38) 'normal '(0 "elites/build/ico_rfac.png"))
 
-(define-icon 'icon-dorcoz
-  'size '(46 38) 'normal '(0 "terras/units/ico_dorcoz.png"))
-
-(define-icon 'icon-crystal-field
-  'size '(46 38) 'normal '(0 "nature/res/ico_crys.png"))
-(define-icon 'icon-tita
-  'size '(46 38) 'normal '(0 "nature/res/ico_spike.png"))
-
 (define-icon 'icon-expl
   'size '(46 38) 'normal '(0 "elites/research/res_expl.png"))
 (define-icon 'icon-expl2
@@ -85,177 +79,44 @@
   'size '(46 38) 'normal '(0 "elites/research/res_pdril.png"))
 
 
+; TERRAS
+
+(define-icon 'icon-dorcoz
+  'size '(46 38) 'normal '(0 "terras/units/ico_dorcoz.png"))
 
 
+; NEUTRAL
 
-(define-icon 'icon-peasant
-  'size '(46 38) 'normal '(0 "tilesets/desert/icons.png"))
-(define-icon 'icon-peon
-  'size '(46 38) 'normal '(1 "tilesets/desert/icons.png"))
-(define-icon 'icon-footman
-  'size '(46 38) 'normal '(2 "tilesets/desert/icons.png"))
-(define-icon 'icon-grunt
-  'size '(46 38) 'normal '(3 "tilesets/desert/icons.png"))
-(define-icon 'icon-archer
-  'size '(46 38) 'normal '(4 "tilesets/desert/icons.png"))
-(define-icon 'icon-axethrower
-  'size '(46 38) 'normal '(5 "tilesets/desert/icons.png"))
-(define-icon 'icon-ranger
-  'size '(46 38) 'normal '(6 "tilesets/desert/icons.png"))
-(define-icon 'icon-berserker
-  'size '(46 38) 'normal '(7 "tilesets/desert/icons.png"))
-(define-icon 'icon-knight
-  'size '(46 38) 'normal '(8 "tilesets/desert/icons.png"))
-(define-icon 'icon-ogre
-  'size '(46 38) 'normal '(9 "tilesets/desert/icons.png"))
-(define-icon 'icon-paladin
-  'size '(46 38) 'normal '(10 "tilesets/desert/icons.png"))
-(define-icon 'icon-ogre-mage
-  'size '(46 38) 'normal '(11 "tilesets/desert/icons.png"))
-(define-icon 'icon-dwarves
-  'size '(46 38) 'normal '(12 "tilesets/desert/icons.png"))
-(define-icon 'icon-goblin-sappers
-  'size '(46 38) 'normal '(13 "tilesets/desert/icons.png"))
-(define-icon 'icon-mage
-  'size '(46 38) 'normal '(14 "tilesets/desert/icons.png"))
-(define-icon 'icon-death-knight
-  'size '(46 38) 'normal '(15 "tilesets/desert/icons.png"))
-(define-icon 'icon-ballista
-  'size '(46 38) 'normal '(16 "tilesets/desert/icons.png"))
-(define-icon 'icon-catapult
-  'size '(46 38) 'normal '(17 "tilesets/desert/icons.png"))
-(define-icon 'icon-elites-oil-tanker
-  'size '(46 38) 'normal '(18 "tilesets/desert/icons.png"))
-(define-icon 'icon-terras-oil-tanker
-  'size '(46 38) 'normal '(19 "tilesets/desert/icons.png"))
-(define-icon 'icon-elites-transport
-  'size '(46 38) 'normal '(20 "tilesets/desert/icons.png"))
-(define-icon 'icon-terras-transport
-  'size '(46 38) 'normal '(21 "tilesets/desert/icons.png"))
-(define-icon 'icon-elites-destroyer
-  'size '(46 38) 'normal '(22 "tilesets/desert/icons.png"))
-(define-icon 'icon-terras-destroyer
-  'size '(46 38) 'normal '(23 "tilesets/desert/icons.png"))
-(define-icon 'icon-battleship
-  'size '(46 38) 'normal '(24 "tilesets/desert/icons.png"))
-(define-icon 'icon-ogre-juggernaught
-  'size '(46 38) 'normal '(25 "tilesets/desert/icons.png"))
-(define-icon 'icon-elites-submarine
-  'size '(46 38) 'normal '(26 "tilesets/desert/icons.png"))
-(define-icon 'icon-terras-submarine
-  'size '(46 38) 'normal '(27 "tilesets/desert/icons.png"))
-(define-icon 'icon-balloon
-  'size '(46 38) 'normal '(28 "tilesets/desert/icons.png"))
-(define-icon 'icon-zeppelin
-  'size '(46 38) 'normal '(29 "tilesets/desert/icons.png"))
-(define-icon 'icon-gryphon-rider
-  'size '(46 38) 'normal '(30 "tilesets/desert/icons.png"))
-(define-icon 'icon-dragon
-  'size '(46 38) 'normal '(31 "tilesets/desert/icons.png"))
-(define-icon 'icon-wise-man
-  'size '(46 38) 'normal '(32 "tilesets/desert/icons.png"))
-(define-icon 'icon-ice-bringer
-  'size '(46 38) 'normal '(33 "tilesets/desert/icons.png"))
-(define-icon 'icon-man-of-light
-  'size '(46 38) 'normal '(34 "tilesets/desert/icons.png"))
-(define-icon 'icon-sharp-axe
-  'size '(46 38) 'normal '(35 "tilesets/desert/icons.png"))
-(define-icon 'icon-double-head
-  'size '(46 38) 'normal '(36 "tilesets/desert/icons.png"))
-(define-icon 'icon-daemon
-  'size '(46 38) 'normal '(37 "tilesets/desert/icons.png"))
-(define-icon 'icon-farm
-  'size '(46 38) 'normal '(0 "elites/build/ico_pplnt.png"))
-(define-icon 'icon-pig-farm
-  'size '(46 38) 'normal '(39 "tilesets/desert/icons.png"))
-(define-icon 'icon-town-hall
-  'size '(46 38) 'normal '(40 "tilesets/desert/icons.png"))
-(define-icon 'icon-great-hall
-  'size '(46 38) 'normal '(41 "tilesets/desert/icons.png"))
-(define-icon 'icon-terras-barracks
-  'size '(46 38) 'normal '(43 "tilesets/desert/icons.png"))
-(define-icon 'icon-elven-lumber-mill
-  'size '(46 38) 'normal '(44 "tilesets/desert/icons.png"))
-(define-icon 'icon-troll-lumber-mill
-  'size '(46 38) 'normal '(45 "tilesets/desert/icons.png"))
-(define-icon 'icon-elites-blacksmith
-  'size '(46 38) 'normal '(46 "tilesets/desert/icons.png"))
-(define-icon 'icon-terras-blacksmith
-  'size '(46 38) 'normal '(47 "tilesets/desert/icons.png"))
-(define-icon 'icon-elites-shipyard
-  'size '(46 38) 'normal '(48 "tilesets/desert/icons.png"))
-(define-icon 'icon-terras-shipyard
-  'size '(46 38) 'normal '(49 "tilesets/desert/icons.png"))
-(define-icon 'icon-elites-refinery
-  'size '(46 38) 'normal '(50 "tilesets/desert/icons.png"))
-(define-icon 'icon-terras-refinery
-  'size '(46 38) 'normal '(51 "tilesets/desert/icons.png"))
-(define-icon 'icon-elites-foundry
-  'size '(46 38) 'normal '(52 "tilesets/desert/icons.png"))
-(define-icon 'icon-terras-foundry
-  'size '(46 38) 'normal '(53 "tilesets/desert/icons.png"))
-(define-icon 'icon-elites-oil-platform
-  'size '(46 38) 'normal '(54 "tilesets/desert/icons.png"))
-(define-icon 'icon-terras-oil-platform
-  'size '(46 38) 'normal '(55 "tilesets/desert/icons.png"))
-(define-icon 'icon-stables
-  'size '(46 38) 'normal '(56 "tilesets/desert/icons.png"))
-(define-icon 'icon-ogre-mound
-  'size '(46 38) 'normal '(57 "tilesets/desert/icons.png"))
-(define-icon 'icon-inventor
-  'size '(46 38) 'normal '(58 "tilesets/desert/icons.png"))
-(define-icon 'icon-alchemist
-  'size '(46 38) 'normal '(59 "tilesets/desert/icons.png"))
-(define-icon 'icon-elites-watch-tower
-  'size '(46 38) 'normal '(60 "tilesets/desert/icons.png"))
-(define-icon 'icon-terras-watch-tower
-  'size '(46 38) 'normal '(61 "tilesets/desert/icons.png"))
-(define-icon 'icon-church
-  'size '(46 38) 'normal '(62 "tilesets/desert/icons.png"))
-(define-icon 'icon-altar-of-storms
-  'size '(46 38) 'normal '(63 "tilesets/desert/icons.png"))
-(define-icon 'icon-mage-tower
-  'size '(46 38) 'normal '(64 "tilesets/desert/icons.png"))
-(define-icon 'icon-temple-of-the-damned
-  'size '(46 38) 'normal '(65 "tilesets/desert/icons.png"))
-(define-icon 'icon-keep
-  'size '(46 38) 'normal '(66 "tilesets/desert/icons.png"))
-(define-icon 'icon-stronghold
-  'size '(46 38) 'normal '(67 "tilesets/desert/icons.png"))
-(define-icon 'icon-castle-upgrade
-  'size '(46 38) 'normal '(68 "tilesets/desert/icons.png"))
-(define-icon 'icon-fortress-upgrade
-  'size '(46 38) 'normal '(69 "tilesets/desert/icons.png"))
-(define-icon 'icon-castle
-  'size '(46 38) 'normal '(70 "tilesets/desert/icons.png"))
-(define-icon 'icon-fortress
-  'size '(46 38) 'normal '(71 "tilesets/desert/icons.png"))
-(define-icon 'icon-gryphon-aviary
-  'size '(46 38) 'normal '(72 "tilesets/desert/icons.png"))
-(define-icon 'icon-dragon-roost
-  'size '(46 38) 'normal '(73 "tilesets/desert/icons.png"))
-(define-icon 'icon-gold-mine
-  'size '(46 38) 'normal '(74 "tilesets/desert/icons.png"))
-(define-icon 'icon-elites-guard-tower
-  'size '(46 38) 'normal '(75 "tilesets/desert/icons.png"))
-(define-icon 'icon-elites-cannon-tower
-  'size '(46 38) 'normal '(76 "tilesets/desert/icons.png"))
-(define-icon 'icon-terras-guard-tower
-  'size '(46 38) 'normal '(77 "tilesets/desert/icons.png"))
-(define-icon 'icon-terras-cannon-tower
-  'size '(46 38) 'normal '(78 "tilesets/desert/icons.png"))
-(define-icon 'icon-oil-patch
-  'size '(46 38) 'normal '(79 "tilesets/desert/icons.png"))
-(define-icon 'icon-dark-portal
-  'size '(46 38) 'normal '(80 "tilesets/desert/icons.png"))
-(define-icon 'icon-circle-of-power
-  'size '(46 38) 'normal '(81 "tilesets/desert/icons.png"))
-(define-icon 'icon-runestone
-  'size '(46 38) 'normal '(82 "tilesets/desert/icons.png"))
-(define-icon 'icon-move-peasant
+(define-icon 'icon-crystal-field
+  'size '(46 38) 'normal '(0 "nature/res/ico_crys.png"))
+(define-icon 'icon-tita
+  'size '(46 38) 'normal '(0 "nature/res/ico_spike.png"))
+
+
+; MISC
+
+(define-icon 'icon-cancel
+  'size '(46 38) 'normal '(0 "general/commands.png"))
+(define-icon 'icon-stop
+  'size '(46 38) 'normal '(1 "general/commands.png"))
+(define-icon 'icon-move
   'size '(46 38) 'normal '(2 "general/commands.png"))
-(define-icon 'icon-move-peon
-  'size '(46 38) 'normal '(84 "tilesets/desert/icons.png"))
+(define-icon 'icon-attack
+  'size '(46 38) 'normal '(3 "general/commands.png"))
+(define-icon 'icon-patrol
+  'size '(46 38) 'normal '(4 "general/commands.png"))
+(define-icon 'icon-attack-ground
+  'size '(46 38) 'normal '(5 "general/commands.png"))
+(define-icon 'icon-patrol
+  'size '(46 38) 'normal '(5 "general/commands.png"))
+
+(define-icon 'icon-stand-ground
+  'size '(46 38) 'normal '(180 "tilesets/desert/icons.png"))
+
+
+; OLD, REMOVE
+
+
 (define-icon 'icon-repair
   'size '(46 38) 'normal '(85 "tilesets/desert/icons.png"))
 (define-icon 'icon-harvest
@@ -268,214 +129,4 @@
   'size '(46 38) 'normal '(89 "tilesets/desert/icons.png"))
 (define-icon 'icon-return-goods-peon
   'size '(46 38) 'normal '(90 "tilesets/desert/icons.png"))
-(define-icon 'icon-cancel
-  'size '(46 38) 'normal '(0 "general/commands.png"))
-(define-icon 'icon-elites-wall
-  'size '(46 38) 'normal '(92 "tilesets/desert/icons.png"))
-(define-icon 'icon-terras-wall
-  'size '(46 38) 'normal '(93 "tilesets/desert/icons.png"))
-(define-icon 'icon-slow
-  'size '(46 38) 'normal '(94 "tilesets/desert/icons.png"))
-(define-icon 'icon-invisibility
-  'size '(46 38) 'normal '(95 "tilesets/desert/icons.png"))
-(define-icon 'icon-haste
-  'size '(46 38) 'normal '(96 "tilesets/desert/icons.png"))
-(define-icon 'icon-runes
-  'size '(46 38) 'normal '(97 "tilesets/desert/icons.png"))
-(define-icon 'icon-unholy-armor
-  'size '(46 38) 'normal '(98 "tilesets/desert/icons.png"))
-(define-icon 'icon-lightning
-  'size '(46 38) 'normal '(99 "tilesets/desert/icons.png"))
-(define-icon 'icon-flame-shield
-  'size '(46 38) 'normal '(100 "tilesets/desert/icons.png"))
-(define-icon 'icon-fireball
-  'size '(46 38) 'normal '(101 "tilesets/desert/icons.png"))
-(define-icon 'icon-touch-of-darkness
-  'size '(46 38) 'normal '(102 "tilesets/desert/icons.png"))
-(define-icon 'icon-death-coil
-  'size '(46 38) 'normal '(103 "tilesets/desert/icons.png"))
-(define-icon 'icon-whirlwind
-  'size '(46 38) 'normal '(104 "tilesets/desert/icons.png"))
-(define-icon 'icon-blizzard
-  'size '(46 38) 'normal '(105 "tilesets/desert/icons.png"))
-(define-icon 'icon-holy-vision
-  'size '(46 38) 'normal '(106 "tilesets/desert/icons.png"))
-(define-icon 'icon-heal
-  'size '(46 38) 'normal '(107 "tilesets/desert/icons.png"))
-(define-icon 'icon-death-and-decay
-  'size '(46 38) 'normal '(108 "tilesets/desert/icons.png"))
-(define-icon 'icon-109
-  'size '(46 38) 'normal '(109 "tilesets/desert/icons.png"))
-(define-icon 'icon-exorcism
-  'size '(46 38) 'normal '(110 "tilesets/desert/icons.png"))
-(define-icon 'icon-eye-of-kilrogg
-  'size '(46 38) 'normal '(111 "tilesets/desert/icons.png"))
-(define-icon 'icon-bloodlust
-  'size '(46 38) 'normal '(112 "tilesets/desert/icons.png"))
-(define-icon 'icon-unknown113
-  'size '(46 38) 'normal '(113 "tilesets/desert/icons.png"))
-(define-icon 'icon-skeleton
-  'size '(46 38) 'normal '(114 "tilesets/desert/icons.png"))
-(define-icon 'icon-critter
-  'size '(46 38) 'normal '(115 "tilesets/desert/icons.png"))
-(define-icon 'icon-sword1
-  'size '(46 38) 'normal '(116 "tilesets/desert/icons.png"))
-(define-icon 'icon-sword2
-  'size '(46 38) 'normal '(117 "tilesets/desert/icons.png"))
-(define-icon 'icon-sword3
-  'size '(46 38) 'normal '(118 "tilesets/desert/icons.png"))
-(define-icon 'icon-battle-axe1
-  'size '(46 38) 'normal '(119 "tilesets/desert/icons.png"))
-(define-icon 'icon-battle-axe2
-  'size '(46 38) 'normal '(120 "tilesets/desert/icons.png"))
-(define-icon 'icon-battle-axe3
-  'size '(46 38) 'normal '(121 "tilesets/desert/icons.png"))
-(define-icon 'icon-122
-  'size '(46 38) 'normal '(122 "tilesets/desert/icons.png"))
-(define-icon 'icon-123
-  'size '(46 38) 'normal '(123 "tilesets/desert/icons.png"))
-(define-icon 'icon-arrow1
-  'size '(46 38) 'normal '(124 "tilesets/desert/icons.png"))
-(define-icon 'icon-arrow2
-  'size '(46 38) 'normal '(125 "tilesets/desert/icons.png"))
-(define-icon 'icon-arrow3
-  'size '(46 38) 'normal '(126 "tilesets/desert/icons.png"))
-(define-icon 'icon-throwing-axe1
-  'size '(46 38) 'normal '(127 "tilesets/desert/icons.png"))
-(define-icon 'icon-throwing-axe2
-  'size '(46 38) 'normal '(128 "tilesets/desert/icons.png"))
-(define-icon 'icon-throwing-axe3
-  'size '(46 38) 'normal '(129 "tilesets/desert/icons.png"))
-(define-icon 'icon-horse1
-  'size '(46 38) 'normal '(130 "tilesets/desert/icons.png"))
-(define-icon 'icon-horse2
-  'size '(46 38) 'normal '(131 "tilesets/desert/icons.png"))
-(define-icon 'icon-longbow
-  'size '(46 38) 'normal '(132 "tilesets/desert/icons.png"))
-(define-icon 'icon-ranger-scouting
-  'size '(46 38) 'normal '(133 "tilesets/desert/icons.png"))
-(define-icon 'icon-ranger-marksmanship
-  'size '(46 38) 'normal '(134 "tilesets/desert/icons.png"))
-(define-icon 'icon-light-axes
-  'size '(46 38) 'normal '(135 "tilesets/desert/icons.png"))
-(define-icon 'icon-berserker-scouting
-  'size '(46 38) 'normal '(136 "tilesets/desert/icons.png"))
-(define-icon 'icon-berserker-regeneration
-  'size '(46 38) 'normal '(137 "tilesets/desert/icons.png"))
-(define-icon 'icon-catapult1
-  'size '(46 38) 'normal '(138 "tilesets/desert/icons.png"))
-(define-icon 'icon-catapult2
-  'size '(46 38) 'normal '(139 "tilesets/desert/icons.png"))
-(define-icon 'icon-ballista1
-  'size '(46 38) 'normal '(140 "tilesets/desert/icons.png"))
-(define-icon 'icon-ballista2
-  'size '(46 38) 'normal '(141 "tilesets/desert/icons.png"))
-(define-icon 'icon-elites-demolish
-  'size '(46 38) 'normal '(142 "tilesets/desert/icons.png"))
-(define-icon 'icon-terras-demolish
-  'size '(46 38) 'normal '(143 "tilesets/desert/icons.png"))
-(define-icon 'icon-elites-ship-cannon1
-  'size '(46 38) 'normal '(144 "tilesets/desert/icons.png"))
-(define-icon 'icon-elites-ship-cannon2
-  'size '(46 38) 'normal '(145 "tilesets/desert/icons.png"))
-(define-icon 'icon-elites-ship-cannon3
-  'size '(46 38) 'normal '(146 "tilesets/desert/icons.png"))
-(define-icon 'icon-terras-ship-cannon1
-  'size '(46 38) 'normal '(147 "tilesets/desert/icons.png"))
-(define-icon 'icon-terras-ship-cannon2
-  'size '(46 38) 'normal '(148 "tilesets/desert/icons.png"))
-(define-icon 'icon-terras-ship-cannon3
-  'size '(46 38) 'normal '(149 "tilesets/desert/icons.png"))
-(define-icon 'icon-terras-ship-armor1
-  'size '(46 38) 'normal '(150 "tilesets/desert/icons.png"))
-(define-icon 'icon-terras-ship-armor2
-  'size '(46 38) 'normal '(151 "tilesets/desert/icons.png"))
-(define-icon 'icon-terras-ship-armor3
-  'size '(46 38) 'normal '(152 "tilesets/desert/icons.png"))
-(define-icon 'icon-elites-ship-armor1
-  'size '(46 38) 'normal '(153 "tilesets/desert/icons.png"))
-(define-icon 'icon-elites-ship-armor2
-  'size '(46 38) 'normal '(154 "tilesets/desert/icons.png"))
-(define-icon 'icon-elites-ship-armor3
-  'size '(46 38) 'normal '(155 "tilesets/desert/icons.png"))
-(define-icon 'icon-terras-ship-move
-  'size '(46 38) 'normal '(2 "general/commands.png"))
-(define-icon 'icon-elites-ship-move
-  'size '(46 38) 'normal '(2 "general/commands.png"))
-(define-icon 'icon-terras-ship-return-oil
-  'size '(46 38) 'normal '(158 "tilesets/desert/icons.png"))
-(define-icon 'icon-elites-ship-return-oil
-  'size '(46 38) 'normal '(159 "tilesets/desert/icons.png"))
-(define-icon 'icon-terras-ship-haul-oil
-  'size '(46 38) 'normal '(160 "tilesets/desert/icons.png"))
-(define-icon 'icon-elites-ship-haul-oil
-  'size '(46 38) 'normal '(161 "tilesets/desert/icons.png"))
-(define-icon 'icon-elites-unload
-  'size '(46 38) 'normal '(162 "tilesets/desert/icons.png"))
-(define-icon 'icon-terras-unload
-  'size '(46 38) 'normal '(163 "tilesets/desert/icons.png"))
-(define-icon 'icon-elites-shield1
-  'size '(46 38) 'normal '(164 "tilesets/desert/icons.png"))
-(define-icon 'icon-elites-shield2
-  'size '(46 38) 'normal '(165 "tilesets/desert/icons.png"))
-(define-icon 'icon-elites-shield3
-  'size '(46 38) 'normal '(166 "tilesets/desert/icons.png"))
-(define-icon 'icon-terras-shield1
-  'size '(46 38) 'normal '(167 "tilesets/desert/icons.png"))
-(define-icon 'icon-terras-shield2
-  'size '(46 38) 'normal '(168 "tilesets/desert/icons.png"))
-(define-icon 'icon-terras-shield3
-  'size '(46 38) 'normal '(169 "tilesets/desert/icons.png"))
-(define-icon 'icon-170
-  'size '(46 38) 'normal '(170 "tilesets/desert/icons.png"))
-(define-icon 'icon-171
-  'size '(46 38) 'normal '(171 "tilesets/desert/icons.png"))
-(define-icon 'icon-172
-  'size '(46 38) 'normal '(172 "tilesets/desert/icons.png"))
-(define-icon 'icon-173
-  'size '(46 38) 'normal '(173 "tilesets/desert/icons.png"))
-(define-icon 'icon-174
-  'size '(46 38) 'normal '(174 "tilesets/desert/icons.png"))
-(define-icon 'icon-175
-  'size '(46 38) 'normal '(175 "tilesets/desert/icons.png"))
-(define-icon 'icon-176
-  'size '(46 38) 'normal '(176 "tilesets/desert/icons.png"))
-(define-icon 'icon-177
-  'size '(46 38) 'normal '(177 "tilesets/desert/icons.png"))
-(define-icon 'icon-elites-patrol-land
-  'size '(46 38) 'normal '(4 "general/commands.png"))
-(define-icon 'icon-terras-patrol-land
-  'size '(46 38) 'normal '(179 "tilesets/desert/icons.png"))
-(define-icon 'icon-elites-stand-ground
-  'size '(46 38) 'normal '(180 "tilesets/desert/icons.png"))
-(define-icon 'icon-terras-stand-ground
-  'size '(46 38) 'normal '(181 "tilesets/desert/icons.png"))
-(define-icon 'icon-elites-attack-ground
-  'size '(46 38) 'normal '(5 "general/commands.png"))
-(define-icon 'icon-terras-attack-ground
-  'size '(46 38) 'normal '(183 "tilesets/desert/icons.png"))
-(define-icon 'icon-elites-patrol-naval
-  'size '(46 38) 'normal '(5 "general/commands.png"))
-(define-icon 'icon-terras-patrol-naval
-  'size '(46 38) 'normal '(185 "tilesets/desert/icons.png"))
-(define-icon 'icon-quick-blade
-  'size '(46 38) 'normal '(186 "tilesets/desert/icons.png"))
-(define-icon 'icon-female-hero
-  'size '(46 38) 'normal '(187 "tilesets/desert/icons.png"))
-(define-icon 'icon-ugly-guy
-  'size '(46 38) 'normal '(188 "tilesets/desert/icons.png"))
-(define-icon 'icon-evil-knight
-  'size '(46 38) 'normal '(189 "tilesets/desert/icons.png"))
-(define-icon 'icon-beast-cry
-  'size '(46 38) 'normal '(190 "tilesets/desert/icons.png"))
-(define-icon 'icon-flying-angle
-  'size '(46 38) 'normal '(191 "tilesets/desert/icons.png"))
-(define-icon 'icon-fire-breeze
-  'size '(46 38) 'normal '(192 "tilesets/desert/icons.png"))
-(define-icon 'icon-white-mage
-  'size '(46 38) 'normal '(193 "tilesets/desert/icons.png"))
-(define-icon 'icon-fad-man
-  'size '(46 38) 'normal '(194 "tilesets/desert/icons.png"))
-(define-icon 'icon-knight-rider
-  'size '(46 38) 'normal '(195 "tilesets/desert/icons.png"))
 

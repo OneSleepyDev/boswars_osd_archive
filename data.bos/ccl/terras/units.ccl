@@ -65,7 +65,7 @@
 (define-unit-type 'unit-peon 'name "Faun"
   'files '(tileset-desert "terras/units/faun.png")
   'size '(72 72)
-  'animations 'animations-peasant 'icon 'icon-peon
+  'animations 'animations-peasant 'icon 'icon-cancel
   'costs '(time 45 titanium 400)
   'speed 10
   'hit-points 30
@@ -113,7 +113,7 @@
   'files '(tileset-desert "tilesets/desert/terras/buildings/farm.png"
     tileset-winter "tilesets/winter/terras/buildings/farm.png")
   'size '(64 64)
-  'animations 'animations-building 'icon 'icon-pig-farm
+  'animations 'animations-building 'icon 'icon-cancel
   'costs '(time 100 titanium 500 crystal 250)
   'repair-hp 4
   'repair-costs '(titanium 1 crystal 1)
@@ -143,7 +143,7 @@
   'files '(tileset-desert "tilesets/desert/terras/buildings/barracks.png"
     tileset-winter "tilesets/winter/terras/buildings/barracks.png")
   'size '(96 96)
-  'animations 'animations-building 'icon 'icon-terras-barracks
+  'animations 'animations-building 'icon 'icon-cancel
   'costs '(time 200 titanium 700 crystal 450)
   'repair-hp 4
   'repair-costs '(titanium 1 crystal 1)
@@ -172,7 +172,7 @@
   'files '(tileset-desert "tilesets/desert/terras/buildings/great_hall.png"
     tileset-winter "tilesets/winter/terras/buildings/great_hall.png")
   'size '(128 128)
-  'animations 'animations-building 'icon 'icon-great-hall
+  'animations 'animations-building 'icon 'icon-cancel
   'costs '(time 255 titanium 1200 crystal 800)
   'repair-hp 4
   'repair-costs '(titanium 1 crystal 1)
@@ -219,30 +219,4 @@
     help "basic terras voices help 2"
     dead "building destroyed"
     attack "terras-start-location-attack"))
-
-(define-unit-type 'unit-orc-wall 'name "Wall"
-  'use 'unit-human-wall
-  'size '(32 32)
-  'animations 'animations-building 'icon 'icon-terras-wall
-  'costs '(time 30 titanium 20 crystal 10)
-  'construction 'construction-wall
-  'speed 0
-  'hit-points 40
-  'draw-level 39
-  'tile-size '(1 1) 'box-size '(31 31)
-  'sight-range 1
-  'armor 20 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
-  'priority 0 'annoy-computer-factor 45
-  'points 1
-  'corpse '(unit-destroyed-1x1-place 0)
-  'explode-when-killed 'missile-explosion
-  'type-land
-  'building 
-  'sounds '(
-    selected "terras-wall-selected"
-    acknowledge "terras-wall-acknowledge"
-    ready "terras-wall-ready"
-    help "basic terras voices help 2"
-    dead "building destroyed"
-    attack "terras-wall-attack"))
 

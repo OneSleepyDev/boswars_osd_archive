@@ -30,8 +30,8 @@
 
 
 ;;	Set which icons to display
-(set-editor-select-icon! 'icon-elites-patrol-land)
-(set-editor-units-icon! 'icon-footman)
+(set-editor-select-icon! 'icon-patrol)
+(set-editor-units-icon! 'icon-assault)
 
 
 ;;

@@ -368,31 +368,3 @@
     dead "building destroyed"
     attack "elites-start-location-attack"))
 
-(define-unit-type 'unit-human-wall 'name "Wall"
-  'files '(tileset-desert "tilesets/desert/neutral/buildings/wall.png"
-    tileset-winter "tilesets/winter/neutral/buildings/wall.png")
-  'size '(32 32)
-  'animations 'animations-building 'icon 'icon-elites-wall
-  'costs '(time 30 titanium 20 crystal 10)
-  'construction 'construction-wall
-  'speed 0
-  'hit-points 40
-  'draw-level 39
-  'tile-size '(1 1) 'box-size '(31 31)
-  'sight-range 1
-  'armor 20 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
-  'priority 0 'annoy-computer-factor 45
-  'points 1
-  'corpse '(unit-destroyed-1x1-place 0)
-  'explode-when-killed 'missile-explosion
-  'type-land
-  'building 
-  'sounds '(
-    selected "elites-wall-selected"
-    acknowledge "elites-wall-acknowledge"
-    ready "elites-wall-ready"
-    help "basic elites voices help 2"
-    dead "building destroyed"
-    attack "elites-wall-attack"))
-
-

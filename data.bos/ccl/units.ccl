@@ -348,7 +348,7 @@
 (define-unit-type 'unit-dead-body 'name "Dead Body"
   'files '(tileset-desert "neutral/units/corpses.png")
   'size '(72 72)
-  'animations 'animations-dead-body 'icon 'icon-peasant
+  'animations 'animations-dead-body 'icon 'icon-cancel
   'speed 0
   'hit-points 255
   'draw-level 30
@@ -365,7 +365,7 @@
     tileset-desert "tilesets/desert/neutral/buildings/small_destroyed_site.png"
     tileset-winter "tilesets/winter/neutral/buildings/small_destroyed_site.png")
   'size '(32 32)
-  'animations 'animations-destroyed-place 'icon 'icon-peasant
+  'animations 'animations-destroyed-place 'icon 'icon-cancel
   'speed 0
   'hit-points 255
   'draw-level 10
@@ -382,7 +382,7 @@
   'files '(tileset-desert "tilesets/desert/neutral/buildings/destroyed_site.png"
     tileset-winter "tilesets/winter/neutral/buildings/destroyed_site.png")
   'size '(64 64)
-  'animations 'animations-destroyed-place 'icon 'icon-peasant
+  'animations 'animations-destroyed-place 'icon 'icon-cancel
   'speed 0
   'hit-points 255
   'draw-level 10
@@ -398,7 +398,7 @@
 (define-unit-type 'unit-destroyed-3x3-place 'name "Destroyed 3x3 Place"
   'use 'unit-destroyed-2x2-place
   'size '(96 96)
-  'animations 'animations-destroyed-place 'icon 'icon-peasant
+  'animations 'animations-destroyed-place 'icon 'icon-cancel
   'speed 0
   'hit-points 255
   'draw-level 10
@@ -414,7 +414,7 @@
 (define-unit-type 'unit-destroyed-4x4-place 'name "Destroyed 4x4 Place"
   'use 'unit-destroyed-2x2-place
   'size '(128 128)
-  'animations 'animations-destroyed-place 'icon 'icon-peasant
+  'animations 'animations-destroyed-place 'icon 'icon-cancel
   'speed 0
   'hit-points 255
   'draw-level 10
@@ -429,7 +429,7 @@
 
 (define-unit-type 'unit-revealer 'name "Dummy unit"
   'size '(0 0)
-  'animations 'animations-building 'icon 'icon-holy-vision
+  'animations 'animations-building 'icon 'icon-cancel
   'speed 0
   'hit-points 0
   'tile-size '(1 1) 'box-size '(1 1)
@@ -445,7 +445,7 @@
 
 (define-unit-type 'unit-reveal-attacker 'name "Dummy unit"
   'size '(0 0)
-  'animations 'animations-building 'icon 'icon-holy-vision
+  'animations 'animations-building 'icon 'icon-cancel
   'speed 0
   'hit-points 0
   'tile-size '(1 1) 'box-size '(1 1)
@@ -455,6 +455,46 @@
   'decay-rate 1
   'type-land
   'building
+  'sounds '())
+
+(define-unit-type 'unit-human-wall 'name "Wall"
+  'files '(tileset-desert "tilesets/desert/neutral/buildings/wall.png")
+  'size '(32 32)
+  'animations 'animations-building 'icon 'icon-cancel
+  'costs '(time 30)
+  'construction 'construction-wall
+  'speed 0
+  'hit-points 40
+  'draw-level 39
+  'tile-size '(1 1) 'box-size '(31 31)
+  'sight-range 1
+  'armor 20 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
+  'priority 0 'annoy-computer-factor 45
+  'points 1
+  'corpse '(unit-destroyed-1x1-place 0)
+  'explode-when-killed 'missile-explosion
+  'type-land
+  'building 
+  'sounds '())
+
+(define-unit-type 'unit-orc-wall 'name "Wall"
+  'use 'unit-human-wall
+  'size '(32 32)
+  'animations 'animations-building 'icon 'icon-cancel
+  'costs '(time 30)
+  'construction 'construction-wall
+  'speed 0
+  'hit-points 40
+  'draw-level 39
+  'tile-size '(1 1) 'box-size '(31 31)
+  'sight-range 1
+  'armor 20 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
+  'priority 0 'annoy-computer-factor 45
+  'points 1
+  'corpse '(unit-destroyed-1x1-place 0)
+  'explode-when-killed 'missile-explosion
+  'type-land
+  'building 
   'sounds '())
 
 ;; Load the different races

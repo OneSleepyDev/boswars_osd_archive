@@ -96,53 +96,54 @@ function DefineEliteScreen(screen_width, screen_height)
 				"pos", {info_panel_x, info_panel_y},
 				"size", {200, 176}},
 			"selected", {
-				"single", {"icon",
-					{"pos", {screen_width - 187, 176}, "size", icon_size}
+				"single", {
+                                     "icon", {
+                                         "pos", {screen_width - 187, 176}, "size", icon_size, "style", "icon"}
 				},
 				"multiple", {
 					"icons", {
-						{"pos", {screen_width - 187, 176}, "size", icon_size},
-						{"pos", {screen_width - 172, 176}, "size", icon_size},
-						{"pos", {screen_width - 157, 176}, "size", icon_size},
-						{"pos", {screen_width - 142, 176}, "size", icon_size},
-						{"pos", {screen_width - 112, 176}, "size", icon_size},
-						{"pos", {screen_width -  97, 176}, "size", icon_size},
-						{"pos", {screen_width -  82, 176}, "size", icon_size},
-						{"pos", {screen_width -  67, 176}, "size", icon_size}},
+						{"pos", {screen_width - 187, 176}, "size", icon_size, "style", "icon"},
+						{"pos", {screen_width - 172, 176}, "size", icon_size, "style", "icon"},
+						{"pos", {screen_width - 157, 176}, "size", icon_size, "style", "icon"},
+						{"pos", {screen_width - 142, 176}, "size", icon_size, "style", "icon"},
+						{"pos", {screen_width - 112, 176}, "size", icon_size, "style", "icon"},
+						{"pos", {screen_width -  97, 176}, "size", icon_size, "style", "icon"},
+						{"pos", {screen_width -  82, 176}, "size", icon_size, "style", "icon"},
+						{"pos", {screen_width -  67, 176}, "size", icon_size, "style", "icon"}},
 					"max-text", {
 						"font", "game",
 						"pos", {info_panel_x + 10, info_panel_y + 10}}}},
 			"training", {
 				"single", {
 					"text", {"text", "", "font", "game", "pos", {screen_width - 187, 204}},
-					"icon", {"pos", {screen_width - 187, 243}, "size", icon_size}},
+					"icon", {"pos", {screen_width - 187, 243}, "style", "icon"}},
 				"multiple", {
 					"icons", {
-						{"pos", {screen_width - 187, 243}, "size", icon_size},
-						{"pos", {screen_width - 172, 243}, "size", icon_size},
-						{"pos", {screen_width - 157, 243}, "size", icon_size},
-						{"pos", {screen_width - 142, 243}, "size", icon_size},
-						{"pos", {screen_width - 127, 243}, "size", icon_size},
-						{"pos", {screen_width - 112, 243}, "size", icon_size}}}},
+						{"pos", {screen_width - 187, 243}, "size", icon_size, "style", "icon"},
+						{"pos", {screen_width - 172, 243}, "size", icon_size, "style", "icon"},
+						{"pos", {screen_width - 157, 243}, "size", icon_size, "style", "icon"},
+						{"pos", {screen_width - 142, 243}, "size", icon_size, "style", "icon"},
+						{"pos", {screen_width - 127, 243}, "size", icon_size, "style", "icon"},
+						{"pos", {screen_width - 112, 243}, "size", icon_size, "style", "icon"}}}},
 			"upgrading", {
 				"text", {
 					"text", "",
 					"font", "game",
 					"pos", {info_panel_x + 29, info_panel_y + 8 + 78}},
-				"icon", {"pos", {screen_width - 187, 243}, "size", icon_size}},
+				"icon", {"pos", {screen_width - 187, 243}, "size", icon_size, "style", "icon"}},
 			"researching", {
 				"text", {
 					"text", "",
 					"font", "game",
 					"pos", {info_panel_x + 16, info_panel_y + 8 + 78}},
-				"icon", {"pos", {screen_width - 187, 243}, "size", icon_size}},
+				"icon", {"pos", {screen_width - 187, 243}, "size", icon_size, "style", "icon"}},
 			"transporting", {"icons", {
-					{"pos", {screen_width - 187, 243}, "size", icon_size},
-					{"pos", {screen_width - 172, 243}, "size", icon_size},
-					{"pos", {screen_width - 157, 243}, "size", icon_size},
-					{"pos", {screen_width - 142, 243}, "size", icon_size},
-					{"pos", {screen_width - 127, 243}, "size", icon_size},
-					{"pos", {screen_width - 112, 243}, "size", icon_size}}},
+					{"pos", {screen_width - 187, 243}, "size", icon_size, "style", "icon"},
+					{"pos", {screen_width - 172, 243}, "size", icon_size, "style", "icon"},
+					{"pos", {screen_width - 157, 243}, "size", icon_size, "style", "icon"},
+					{"pos", {screen_width - 142, 243}, "size", icon_size, "style", "icon"},
+					{"pos", {screen_width - 127, 243}, "size", icon_size, "style", "icon"},
+					{"pos", {screen_width - 112, 243}, "size", icon_size, "style", "icon"}}},
 			"completed-bar", {
 				"color", {50, 50, 80},
 				"pos", {screen_width - 187, 299},
@@ -152,15 +153,15 @@ function DefineEliteScreen(screen_width, screen_height)
 				"file", "graphics/elites/ui/ui_" .. screen_width .. "_bpanel.png",
 				"pos", {screen_width - 200, 336}},
 			"icons", {
-				{"pos", {screen_width - 177, 340}, "size", {46, 38}},
-				{"pos", {screen_width - 122, 340}, "size", {46, 38}},
-				{"pos", {screen_width - 67, 340}, "size", {46, 38}},
-				{"pos", {screen_width - 177, 385}, "size", {46, 38}},
-				{"pos", {screen_width - 122, 385}, "size", {46, 38}},
-				{"pos", {screen_width - 67, 385}, "size", {46, 38}},
-				{"pos", {screen_width - 177, 430}, "size", {46, 38}},
-				{"pos", {screen_width - 122, 430}, "size", {46, 38}},
-				{"pos", {screen_width - 67, 430}, "size", {46,38}}},
+				{"pos", {screen_width - 177+4, 340+4}, "size", {46, 38}, "style", "icon"},
+				{"pos", {screen_width - 122+4, 340+4}, "size", {46, 38}, "style", "icon"},
+				{"pos", {screen_width - 67+4, 340+4}, "size", {46, 38}, "style", "icon"},
+				{"pos", {screen_width - 177+4, 385+4}, "size", {46, 38}, "style", "icon"},
+				{"pos", {screen_width - 122+4, 385+4}, "size", {46, 38}, "style", "icon"},
+				{"pos", {screen_width - 67+4, 385+4}, "size", {46, 38}, "style", "icon"},
+				{"pos", {screen_width - 177+4, 430+4}, "size", {46, 38}, "style", "icon"},
+				{"pos", {screen_width - 122+4, 430+4}, "size", {46, 38}, "style", "icon"},
+				{"pos", {screen_width - 67+4, 430+4}, "size", {46,38}, "style", "icon"}},
 		        "auto-cast-border-color", {0, 0, 252}},
 		"piemenu", {
 			"radius", 70,

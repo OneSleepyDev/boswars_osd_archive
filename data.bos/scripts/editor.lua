@@ -58,6 +58,7 @@ DefineEditorUnitTypes(
    "unit-vfac",
    "unit-gturret",
    "unit-cam",
+   "unit-buggy",
 
    "unit-gold-mine",
    "unit-crystal-field1",

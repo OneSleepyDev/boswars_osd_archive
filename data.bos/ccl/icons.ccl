@@ -82,6 +82,8 @@
 (define-icon 'icon-pdril
   'size '(46 38) 'normal '(0 "elites/research/res_pdril.png"))
 
+(define-icon 'icon-heal
+  'size '(46 38) 'normal '(0 "elites/special/ico_heal.png"))
 
 ; TERRAS
 

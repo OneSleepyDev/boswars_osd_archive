@@ -31,3 +31,19 @@
 ;; For documentation see stratagus/doc/ccl/ccl.html ;; FIXME write and move doc.
 
 (define-bool-flags 'organic)
+
+(define-spell "spell-healing"
+        'showname "Bandage"
+        'manacost 3
+        'range  1
+        'target 'unit
+        'action '((adjust-vitals hit-points 1))
+        'condition '(
+         organic only
+         building false
+         max-hp-percent 100)
+        'sound-when-cast "medic-attack"
+        'missile-when-cast "missile-heal"
+        'autocast '(range 6 condition (alliance only max-hp-percent 90 )
+        )
+)

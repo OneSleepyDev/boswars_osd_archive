@@ -41,6 +41,8 @@
   'costs '(time 500 titanium 400 crystal 50)
   'speed 15
   'hit-points 100
+  'max-mana 100
+  'can-cast-spell '(spell-healing)
   'draw-level 40
   'tile-size '(1 1) 'box-size '(17 28)
   'sight-range 3 'computer-reaction-range 6 'person-reaction-range 6

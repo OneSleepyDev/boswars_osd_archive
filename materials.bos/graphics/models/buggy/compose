@@ -17,7 +17,7 @@
 
 function create
 {
-  for i in `seq 1 8 129`; do
+  for i in `seq 1 8 105`; do
     ji=1
     for j in `seq -f "%03g" $i $[$i+7]`; do
       n[$ji]=$j

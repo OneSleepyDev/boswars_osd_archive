@@ -57,7 +57,7 @@
   'construction-land2)
 
 (define-unittype-wc-names
-  'unit-assault 'unit-grunt 'unit-engineer 'unit-peon 'unit-ballista
+'unit-grunt 'unit-engineer 'unit-peon 'unit-ballista
   'unit-catapult 'unit-knight 'unit-ogre 'unit-archer 'unit-axethrower
   'unit-mage 'unit-death-knight 'unit-paladin 'unit-ogre-mage
   'unit-dwarves 'unit-goblin-sappers 'unit-engineer
@@ -91,27 +91,6 @@
   'unit-destroyed-1x1-place 'unit-destroyed-2x2-place
   'unit-destroyed-3x3-place 'unit-destroyed-4x4-place
   'unit-engineer 'unit-peon 'unit-engineer 'unit-peon 'unit-elites-oil-tanker 'unit-terras-oil-tanker
-  'unit-harvester
-  'unit-crystal-field1
-  'unit-rfac
-  'unit-grenadier
-  'unit-crystal-field2
-  'unit-crystal-field3
-  'unit-crystal-field4
-  'unit-crystal-field5
-  'unit-crystal-field6
-  'unit-crystal-field7
-  'unit-crystal-field8
-  'unit-crystal-field9
-  'unit-crystal-field10
-  'unit-crystal-field11
-  'unit-crystal-field12
-  'unit-crystal-field13
-  'unit-bazoo
-  'unit-medic
-  'unit-hosp
-  'unit-vfac
-  'unit-apcs
   'unit-miner
 )
 

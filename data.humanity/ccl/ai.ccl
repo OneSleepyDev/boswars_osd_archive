@@ -54,18 +54,16 @@
     ;;	Unit can build which buildings.
     ;;
     (list 'build 'unit-engineer
-	'unit-gen 'unit-camp 'unit-yard 'unit-rfac 'unit-human-wall)
+	'unit-yard)
     ;;
     ;;	Building can train which units.
     ;;
-;    (list 'train 'unit-gen 'unit-critter)
-    (list 'train 'unit-yard 'unit-engineer 'unit-harvester)
-    (list 'train 'unit-camp 'unit-assault)
+    (list 'train 'unit-yard 'unit-engineer 'unit-miner)
     ;;
     ;;	Unit can repair which units.
     ;;
     (list 'repair 'unit-engineer
-	'unit-gen 'unit-camp 'unit-yard 'unit-rfac 'unit-harvester 'unit-human-wall)
+	'unit-yard)
     ;;
     ;;	Reduce unit limits.
     ;;

@@ -66,66 +66,15 @@
 
 ; ELITES
 
-(define-icon 'icon-assault
-  'size '(46 38) 'normal '(0 "elites/units/ico_assault.png"))
-(define-icon 'icon-apcs
-  'size '(46 38) 'normal '(0 "elites/units/ico_apcs.png"))
-(define-icon 'icon-grenadier
-  'size '(46 38) 'normal '(0 "elites/units/ico_grenadier.png"))
-(define-icon 'icon-bazoo
-  'size '(46 38) 'normal '(0 "elites/units/ico_bazoo.png"))
-(define-icon 'icon-medic
-  'size '(46 38) 'normal '(0 "elites/units/ico_medic.png"))
-
-(define-icon 'icon-harvester
-  'size '(46 38) 'normal '(0 "elites/units/ico_harv.png"))
-(define-icon 'icon-gen
-  'size '(46 38) 'normal '(0 "elites/build/generator_i.png"))
-(define-icon 'icon-gen_b
-  'size '(46 38) 'normal '(1 "elites/units/engineer_icons.png"))
-(define-icon 'icon-camp
-  'size '(46 38) 'normal '(0 "elites/build/training_camp_i.png"))
-(define-icon 'icon-camp_b
-  'size '(46 38) 'normal '(2 "elites/units/engineer_icons.png"))
 (define-icon 'icon-dev
   'size '(46 38) 'normal '(0 "elites/build/development_yard_i.png"))
 (define-icon 'icon-dev_b
   'size '(46 38) 'normal '(0 "elites/units/engineer_icons.png"))
-(define-icon 'icon-rfac
-  'size '(46 38) 'normal '(0 "elites/build/research_facility_i.png"))
-(define-icon 'icon-rfac_b
-  'size '(46 38) 'normal '(6 "elites/units/engineer_icons.png"))
-(define-icon 'icon-hosp
-  'size '(46 38) 'normal '(0 "elites/build/hospital_i.png"))
-(define-icon 'icon-hosp_b
-  'size '(46 38) 'normal '(7 "elites/units/engineer_icons.png"))
-(define-icon 'icon-vfac
-  'size '(46 38) 'normal '(0 "elites/build/vehicle_factory_i.png"))
-(define-icon 'icon-vfac_b
-  'size '(46 38) 'normal '(8 "elites/units/engineer_icons.png"))
 
-(define-icon 'icon-expl
-  'size '(46 38) 'normal '(0 "elites/research/res_expl.png"))
-(define-icon 'icon-expl2
-  'size '(46 38) 'normal '(0 "elites/research/res_expl2.png"))
-(define-icon 'icon-tdril
-  'size '(46 38) 'normal '(0 "elites/research/res_tdril.png"))
-(define-icon 'icon-ddril
-  'size '(46 38) 'normal '(0 "elites/research/res_ddril.png"))
-(define-icon 'icon-pdril
-  'size '(46 38) 'normal '(0 "elites/research/res_pdril.png"))
-(define-icon 'icon-void
-  'size '(46 38) 'normal '(0 "elites/research/res_avoid.png"))
-
-(define-icon 'icon-heal
-  'size '(46 38) 'normal '(0 "elites/special/ico_heal.png"))
 
 (define-icon 'icon-build-lvl1
   'size '(46 38) 'normal '(3 "elites/units/engineer_icons.png"))
-(define-icon 'icon-build-lvl2
-  'size '(46 38) 'normal '(4 "elites/units/engineer_icons.png"))
-(define-icon 'icon-build-lvl3
-  'size '(46 38) 'normal '(5 "elites/units/engineer_icons.png"))
+
 
 ; TERRAS
 
@@ -135,8 +84,6 @@
 
 ; NEUTRAL
 
-(define-icon 'icon-crystal-field
-  'size '(46 38) 'normal '(0 "nature/res/ico_crys.png"))
 (define-icon 'icon-tita
   'size '(46 38) 'normal '(0 "nature/res/ico_spike.png"))
 

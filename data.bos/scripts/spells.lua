@@ -29,6 +29,7 @@
 --	$Id$
 
 DefineBoolFlags("organic")
+DefineVariables("Speed")
 
 DefineSpell("spell-healing",
 	"showname", "Bandage",

@@ -46,12 +46,12 @@ DefineButton({
 	Pos = 2, Level = 0, Icon = "icon-stop",
 	Action = "stop", Key = "s", Hint = "~!STOP",
 	ForUnit = {"unit-engineer", "unit-harvester", "unit-assault", "unit-grenadier",
-		"unit-bazoo", "unit-medic", "unit-apcs", "elites-group"}})
+		"unit-bazoo", "unit-medic", "unit-apcs", "unit-gturret", "elites-group"}})
 
 DefineButton({
 	Pos = 3, Level = 0, Icon = "icon-attack",
 	Action = "attack", Key = "a", Hint = "~!ATTACK",
-	ForUnit = {"unit-assault", "unit-grenadier", "unit-bazoo", "unit-apcs",
+	ForUnit = {"unit-assault", "unit-grenadier", "unit-bazoo", "unit-apcs", "unit-gturret",
 		"elites-group"}})
 
 DefineButton({
@@ -140,6 +140,11 @@ DefineButton({
 DefineButton({
 	Pos = 3, Level = 2, Icon = "icon-vfac_b", Action = "build",
 	Value = "unit-vfac", Key = "v", Hint = "BUILD ~!VEHICLE FACTORY",
+	ForUnit = {"unit-engineer"}})
+
+DefineButton({
+	Pos = 2, Level = 3, Icon = "icon-gturret_b", Action = "build",
+	Value = "unit-gturret", Key = "g", Hint = "BUILD ~!GUN TURRET",
 	ForUnit = {"unit-engineer"}})
 
 DefineButton({

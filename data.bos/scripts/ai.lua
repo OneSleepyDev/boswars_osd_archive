@@ -35,7 +35,7 @@ DefineAiHelper(
   --
   {"build", "unit-engineer",
    "unit-msilo", "unit-dev-yard", "unit-gen", "unit-camp",
-   "unit-rfac", "unit-hosp", "unit-vfac", "unit-vault", "unit-plate1"},
+   "unit-rfac", "unit-hosp", "unit-vfac", "unit-vault", "unit-gturret", "unit-plate1"},
   --
   -- Building can train which units.
   --

@@ -208,6 +208,7 @@ Load("scripts/ui.lua")
 --Load("scripts/unit-drone.lua")
 
 Load("scripts/ai.lua")
+Load("scripts/campaigns.lua")
 Load("scripts/credits.lua")
 Load("scripts/tips.lua")
 Load("scripts/ranks.lua")

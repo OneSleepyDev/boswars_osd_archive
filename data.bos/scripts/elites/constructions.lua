@@ -152,3 +152,14 @@ DefineConstruction("construction-vfac", {
 		{Percent = 90, File = "main", Frame = 0}
 	}
 })
+
+DefineConstruction("construction-gturret", {
+	Constructions = {
+		{Percent = 0, File = "main", Frame = 10},
+		{Percent = 20, File = "main", Frame = 11},
+		{Percent = 40, File = "main", Frame = 12},
+		{Percent = 60, File = "main", Frame = 13},
+		{Percent = 80, File = "main", Frame = 14}
+}
+})
+

@@ -56,6 +56,7 @@ DefineEditorUnitTypes(
    "unit-rfac",
    "unit-hosp",
    "unit-vfac",
+   "unit-gturret",
 
    "unit-gold-mine",
    "unit-crystal-field1",

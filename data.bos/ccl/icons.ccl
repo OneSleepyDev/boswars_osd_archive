@@ -50,6 +50,8 @@
 
 (define-icon 'icon-lancer
   'size '(46 38) 'normal '(0 "elites/units/ico_lancer.png"))
+(define-icon 'icon-grenadier
+  'size '(46 38) 'normal '(0 "elites/units/ico_lancer.png"))
 (define-icon 'icon-engineer
   'size '(46 38) 'normal '(0 "elites/units/ico_engineer.png"))
 (define-icon 'icon-harvester
@@ -71,6 +73,8 @@
 (define-icon 'icon-tita
   'size '(46 38) 'normal '(0 "nature/res/ico_spike.png"))
 
+(define-icon 'icon-expl
+  'size '(46 38) 'normal '(0 "elites/research/res_expl.png"))
 
 
 

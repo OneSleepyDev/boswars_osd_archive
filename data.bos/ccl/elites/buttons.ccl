@@ -129,6 +129,24 @@
   'key "h" 'hint "TRAIN MINERAL ~!HARVESTER"
   'for-unit '(unit-fort))
 
+(define-button 'pos 1 'level 0 'icon 'icon-lancer
+  'action 'train-unit 'value 'unit-lancer
+  'key "l" 'hint "TRAIN ~!LANCER ASSAULT"
+  'for-unit '(unit-camp))
+
+(define-button 'pos 2 'level 0 'icon 'icon-grenadier
+  'action 'train-unit 'value 'unit-grenadier
+  'key "g" 'hint "TRAIN ~!GRENADIER"
+  'for-unit '(unit-camp))
+
+;; upgrades -------------------------------------------------------------------
+
+(define-button 'pos 1 'level 0 'icon 'icon-expl
+  'action 'research 'value 'upgrade-expl
+  'allowed 'check-single-research
+  'key "e" 'hint "RESEARCH ~!EXPLOSIVES"
+  'for-unit '(unit-rfac))
+
 ;; town hall upgrades ---------------------------------------------------------
 
 (if extensions (begin
@@ -151,9 +169,4 @@
   'action 'attack
   'key "e" 'hint "S~!ET ATTACK"
   'for-unit '(unit-fort unit-camp)) ))
-
-(define-button 'pos 1 'level 0 'icon 'icon-lancer
-  'action 'train-unit 'value 'unit-lancer
-  'key "l" 'hint "TRAIN ~!LANCER ASSAULT"
-  'for-unit '(unit-camp))
 

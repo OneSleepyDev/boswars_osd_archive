@@ -65,6 +65,37 @@
     dead "lancer-die"
     attack "lancer-attack"))
 
+(define-unit-type 'unit-grenadier 'name "Grenadier"
+  'files '(tileset-desert "elites/units/unit_lancer.png")
+  'size '(64 64)
+  'shadow '(file "elites/units/unit_lancer_s.png" size (64 64))
+  'animations 'animations-lancer 'icon 'icon-grenadier
+  'costs '(time 60 titanium 300)
+  'speed 10
+  'hit-points 60
+  'draw-level 40
+  'tile-size '(1 1) 'box-size '(17 28)
+  'sight-range 6 'computer-reaction-range 6 'person-reaction-range 6
+  'armor 2 'basic-damage 6 'piercing-damage 3 'missile 'missile-none
+  'max-attack-range 5
+  'priority 60
+  'points 50
+  'corpse '(unit-dead-body 6)
+  'type-land
+  'right-attack
+  'can-attack 'repair-range 1
+  'can-target-land
+  'land-unit
+  'organic
+  'selectable-by-rectangle
+  'sounds '(
+    selected "grenadier-selected"
+    acknowledge "grenadier-acknowledge"
+    ready "grenadier-ready"
+    help "grenadier-help"
+    dead "grenadier-die"
+    attack "grenadier-attack"))
+
 (define-unit-type 'unit-engineer 'name "Engineer"
   'files '(tileset-desert "elites/units/unit_engineer.png")
   'size '(64 64)

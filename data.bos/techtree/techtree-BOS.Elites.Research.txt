@@ -4,3 +4,9 @@ BOS.Elites.Research
 		At: Research Facility res_grp1/pos1;
 		Effect: Enables Training Camp To Build Grenadiers
 		GFX: elites/research/res_expl.png
+	!Explosives TAG RES_EXP2
+		Reqs: Time 800; Crystals 700; Titanium 500;
+			RES_EXP
+		At: Research Facility res_grp1/pos1;
+		Effect: Grenadier gives 5 more PDam; Range set to 2
+		GFX: elites/research/res_expl2.png

@@ -67,7 +67,8 @@
     ;;
     ;;	Reduce unit limits.
     ;;
-    (list 'unit-limit 'unit-gen 'food) )
+    ;(list 'unit-limit 'unit-gen 'food)
+    )
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;	* Race terras.

@@ -44,9 +44,9 @@
   'impact-sound "fireball hit"
   'draw-level 50 'class 'missile-class-point-to-point 'sleep 1 'speed 32 'range 1)
 
-(define-missile-type 'missile-heal
-  'file "elites/special/heal.png" 'size '(32 32) 'frames 5 'num-directions 1
-  'draw-level 50 'class 'missile-class-stay 'sleep 2 'speed 5 'range 1)
+;(define-missile-type 'missile-heal
+;  'file "elites/special/heal.png" 'size '(32 32) 'frames 5 'num-directions 1
+;  'draw-level 50 'class 'missile-class-stay 'sleep 2 'speed 5 'range 1)
 
 (define-missile-type 'missile-64x64-explosion
   'file "nature/effects/expl_64x64x1.png" 'size '(64 64) 'frames 7 'num-directions 1

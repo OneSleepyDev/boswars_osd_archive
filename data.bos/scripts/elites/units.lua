@@ -269,7 +269,7 @@ DefineUnitType("unit-msilo", {
 	SightRange = 1, Armor = 10, BasicDamage = 0, PiercingDamage = 0,
 	Missile = "missile-none", Priority = 20, AnnoyComputerFactor = 45,
 	Points = 100, ExplodeWhenKilled = "missile-160x128-explosion",
-	Corpse = {"build-dead-body2", 0}, Type = land,
+	Corpse = {"build-dead-body4", 0}, Type = land,
 	MaxMana = 1000, CanCastSpell = {"spell-nuke"},
 	Demand = 400, Building = true,
 	Sounds = {
@@ -349,7 +349,7 @@ DefineUnitType("unit-rfac", {
 	SightRange = 1, Armor = 30, BasicDamage = 0, PiercingDamage = 0,
 	Missile = "missile-none", Priority = 35, AnnoyComputerFactor = 45,
 	Demand = 300, Points = 200, ExplodeWhenKilled = "missile-160x128-explosion",
-	Corpse = {"build-dead-body4", 0}, Type = "land", Building = false,
+	Corpse = {"build-dead-body4", 0}, Type = "land", Building = true,
 	Sounds = {
 		"selected", "rfac-selected",
 		"ready", "rfac-ready",

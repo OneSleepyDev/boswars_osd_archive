@@ -43,7 +43,7 @@
   'speed 10
   'hit-points 60
   'draw-level 40
-  'tile-size '(1 1) 'box-size '(31 31)
+  'tile-size '(1 1) 'box-size '(18 18)
   'sight-range 6 'computer-reaction-range 6 'person-reaction-range 6
   'armor 2 'basic-damage 6 'piercing-damage 3 'missile 'missile-none
   'max-attack-range 5
@@ -75,7 +75,7 @@
   'speed 10
   'hit-points 100
   'draw-level 40
-  'tile-size '(1 1) 'box-size '(31 31)
+  'tile-size '(1 1) 'box-size '(18 18)
   'sight-range 5 'computer-reaction-range 6 'person-reaction-range 4
   'armor 0 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
   'max-attack-range 1

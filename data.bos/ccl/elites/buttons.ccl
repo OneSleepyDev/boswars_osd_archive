@@ -153,6 +153,24 @@
   'key "e" 'hint "RESEARCH ~!EXPLOSIVES2"
   'for-unit '(unit-rfac))
 
+(define-button 'pos 2 'level 0 'icon 'icon-tdril
+  'action 'research 'value 'upgrade-tdril
+  'allowed 'check-single-research
+  'key "d" 'hint "RESEARCH TITANIUM ~!DRILL"
+  'for-unit '(unit-rfac))
+
+(define-button 'pos 2 'level 0 'icon 'icon-ddril
+  'action 'research 'value 'upgrade-ddril
+  'allowed 'check-single-research
+  'key "d" 'hint "RESEARCH DIAMOND ~!DRILL"
+  'for-unit '(unit-rfac))
+
+(define-button 'pos 2 'level 0 'icon 'icon-pdril
+  'action 'research 'value 'upgrade-pdril
+  'allowed 'check-single-research
+  'key "d" 'hint "RESEARCH POWER ~!DRILL"
+  'for-unit '(unit-rfac))
+
 ;; town hall upgrades ---------------------------------------------------------
 
 (if extensions (begin

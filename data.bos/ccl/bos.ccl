@@ -195,8 +195,7 @@
   'upgrade-invisibility 'upgrade-polymorph 'upgrade-blizzard
   'upgrade-eye-of-kilrogg 'upgrade-bloodlust 'upgrade-raise-dead
   'upgrade-death-coil 'upgrade-whirlwind 'upgrade-haste 'upgrade-unholy-armor
-  'upgrade-runes 'upgrade-death-and-decay
-  'upgrade-expl)
+  'upgrade-runes 'upgrade-death-and-decay)
 
 (define-ai-wc-names
   'land-attack 'passive 'terras-03 'hum-04 'orc-04 'hum-05 'orc-05

@@ -47,14 +47,36 @@
 (define-upgrade 'upgrade-expl2 'icon 'icon-expl2
   'costs #(   800   700   500     0     0     0     0))
 
+(define-upgrade 'upgrade-tdril 'icon 'icon-tdril
+  'costs #(   500   200   200     0     0     0     0))
+(define-upgrade 'upgrade-ddril 'icon 'icon-ddril
+  'costs #(   600   300   300     0     0     0     0))
+(define-upgrade 'upgrade-pdril 'icon 'icon-pdril
+  'costs #(   700   400   400     0     0     0     0))
+
 
 (define-modifier 'upgrade-expl2
   '(piercing-damage 5)
   '(apply-to unit-grenadier))
 
+(define-modifier 'upgrade-tdril
+;  '(harvesting 10)
+  '(apply-to unit-engineer) '(apply-to unit-harvester))
+
+(define-modifier 'upgrade-ddril
+;  '(harvesting 20)
+  '(apply-to unit-engineer) '(apply-to unit-harvester))
+
+(define-modifier 'upgrade-pdril
+;  '(harvesting 30)
+  '(apply-to unit-engineer) '(apply-to unit-harvester))
+
 
 (define-allow 'upgrade-expl			"AAAAAAAAAAAAAAAA")
 (define-allow 'upgrade-expl2			"AAAAAAAAAAAAAAAA")
+(define-allow 'upgrade-tdril			"AAAAAAAAAAAAAAAA")
+(define-allow 'upgrade-ddril			"AAAAAAAAAAAAAAAA")
+(define-allow 'upgrade-pdril			"AAAAAAAAAAAAAAAA")
 
 
 (define-dependency 'unit-grenadier
@@ -63,3 +85,7 @@
 (define-dependency 'upgrade-expl2
   '(upgrade-expl))
 
+(define-dependency 'upgrade-ddril
+  '(upgrade-tdril))
+(define-dependency 'upgrade-pdril
+  '(upgrade-ddril))

@@ -77,6 +77,12 @@
   'size '(46 38) 'normal '(0 "elites/research/res_expl.png"))
 (define-icon 'icon-expl2
   'size '(46 38) 'normal '(0 "elites/research/res_expl2.png"))
+(define-icon 'icon-tdril
+  'size '(46 38) 'normal '(0 "elites/research/res_tdril.png"))
+(define-icon 'icon-ddril
+  'size '(46 38) 'normal '(0 "elites/research/res_ddril.png"))
+(define-icon 'icon-pdril
+  'size '(46 38) 'normal '(0 "elites/research/res_pdril.png"))
 
 
 

@@ -31,6 +31,7 @@
 DefineAllow("unit-assault", "AAAAAAAAAAAAAAAA")
 DefineAllow("unit-grenadier", "AAAAAAAAAAAAAAAA")
 DefineAllow("unit-bazoo", "AAAAAAAAAAAAAAAA")
+DefineAllow("unit-dorcoz", "AAAAAAAAAAAAAAAA")
 DefineAllow("unit-engineer", "AAAAAAAAAAAAAAAA")
 DefineAllow("unit-medic", "AAAAAAAAAAAAAAAA")
 DefineAllow("unit-harvester", "AAAAAAAAAAAAAAAA")

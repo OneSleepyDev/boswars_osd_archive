@@ -106,6 +106,7 @@ DefineUnitTypeWcNames(
 	"unit-apcs",
 	"unit-msilo",
 	"unit-gturret",
+	"unit-cam",
 	"unit-plate1")
 
 DefineMissileTypeWcNames(

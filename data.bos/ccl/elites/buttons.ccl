@@ -52,8 +52,7 @@
 (define-button 'pos 3 'level 0 'icon 'icon-sword1
   'action 'attack
   'key "a" 'hint "~!ATTACK"
-  'for-unit '(unit-engineer unit-lancer
-    elites-group))
+  'for-unit '(unit-lancer elites-group))
 
 (define-button 'pos 4 'level 0 'icon 'icon-elites-patrol-land
   'action 'patrol

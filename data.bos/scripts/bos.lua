@@ -130,7 +130,7 @@ DefineUpgradeWcNames(
 	"upgrade-expl", "upgrade-expl2", "upgrade-tdril",
 	"upgrade-ddril", "upgrade-pdril", "upgrade-void")
 
-DefineAiWcNames()
+DefineAiWcNames("ai-rush", "ai-passive")
 
 SetColorWaterCycleStart(38)
 SetColorWaterCycleEnd(47)

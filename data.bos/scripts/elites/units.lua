@@ -63,7 +63,7 @@ DefineUnitType("unit-apcs", {
 	ComputerReactionRange = 5, PersonReactionRange = 5,
 	Armor = 10, BasicDamage = 5, PiercingDamage = 5, Missile = "missile-none",
 	MaxAttackRange = 4, Priority = 60, Points = 50,
-	Transporter = true, AttackFromTransporter = true, MaxOnBoard = 10,
+	Transporter = true, AttackFromTransporter = true, MaxOnBoard = 6,
 	Type = "land", RepairHp = 2, RepairCosts = {titanium, 2},
 	RightMouseAction = "attack",
 	ExplodeWhenKilled = "missile-160x128-explosion",
@@ -433,7 +433,7 @@ for i = 1, table.getn(CorpseTable) do
 		Files = {"tileset-desert", "elites/units/unit_" .. CorpseTable[i] .. "_c.png"},
 		Size = {64, 64},
 		Animations = "animations-elitecorpse1", Icon = "icon-cancel",
-		Speed = 0, HitPoints = 999, DrawLevel = 30, TileSize = {1, 1},
+		Speed = 0, HitPoints = 999, DrawLevel = 10, TileSize = {1, 1},
 		BoxSize = {31, 31}, SightRange = 1, BasicDamage = 0,
 		PiercingDamage = 0, Missile = "missile-none",
 		Priority = 0, Type = "land", Vanishes = true})
@@ -443,7 +443,7 @@ DefineUnitType("build-dead-body1", {
 	Name = "DevelopmentyardCrater",
 	Files = {"tileset-desert", "elites/build/development_yard.png"}, Size = {224, 196},
 	Animations = "animations-elitebuild1", Icon = "icon-cancel",
-	Speed = 0, HitPoints = 999, DrawLevel = 30,
+	Speed = 0, HitPoints = 999, DrawLevel = 10,
 	TileSize = {7, 6}, BoxSize = {220, 192},
 	SightRange = 1, BasicDamage = 0, PiercingDamage = 0,
 	Missile = "missile-none", Priority = 0, Type = "land",
@@ -453,7 +453,7 @@ DefineUnitType("build-dead-body2", {
 	Name = "GeneratorCrater",
 	Files = {"tileset-desert", "elites/build/generator.png"}, Size = {64, 64},
 	Animations = "animations-elitebuild2", Icon = "icon-cancel",
-	Speed = 0, HitPoints = 999, DrawLevel = 30,
+	Speed = 0, HitPoints = 999, DrawLevel = 10,
 	TileSize = {2, 2}, BoxSize = {60, 60}, SightRange = 1,
 	BasicDamage = 0, PiercingDamage = 0, Missile = "missile-none",
 	Priority = 0, Type = "land", Building = true, Vanishes = true
@@ -463,7 +463,7 @@ DefineUnitType("build-dead-body3", {
 	Name = "CampCrater",
 	Files = {"tileset-desert", "elites/build/training_camp.png"}, Size = {160, 128},
 	Animations = "animations-elitebuild3", Icon = "icon-cancel",
-	Speed = 0, HitPoints = 999, DrawLevel = 30,
+	Speed = 0, HitPoints = 999, DrawLevel = 10,
 	TileSize = {5, 4}, BoxSize = {156, 124}, SightRange = 1,
 	BasicDamage = 0, PiercingDamage = 0, Missile = "missile-none",
 	Priority = 0, Type = "land", Building = true, Vanishes = true
@@ -473,7 +473,7 @@ DefineUnitType("build-dead-body4", {
 	Name = "RfacCrater",
 	Files = {"tileset-desert", "elites/build/research_facility.png"}, Size = {128, 128},
 	Animations = "animations-elitebuild4", Icon = "icon-cancel",
-	Speed = 0, HitPoints = 999, DrawLevel = 30,
+	Speed = 0, HitPoints = 999, DrawLevel = 10,
 	TileSize = {4, 4}, BoxSize = {124, 124}, SightRange = 1,
 	BasicDamage = 0, PiercingDamage = 0, Missile = "missile-none",
 	Priority = 0, Type = "land", Building = true, Vanishes = true
@@ -483,7 +483,7 @@ DefineUnitType("build-dead-body5", {
 	Name = "HospCrater",
 	Files = {"tileset-desert", "elites/build/hospital.png"}, Size = {128, 96},
 	Animations = "animations-elitebuild5", Icon = "icon-cancel",
-	Speed = 0, HitPoints = 999, DrawLevel = 30, TileSize = {4, 3},
+	Speed = 0, HitPoints = 999, DrawLevel = 10, TileSize = {4, 3},
 	BoxSize = {124, 92}, SightRange = 1, BasicDamage = 0,
 	PiercingDamage = 0, Missile = "missile-none",
 	Priority = 0, Type = "land", Building = true, Vanishes = true
@@ -493,7 +493,7 @@ DefineUnitType("build-dead-body6", {
 	Name = "FactoryCrater",
 	Files = {"tileset-desert", "elites/build/vehicle_factory.png"}, Size = {224, 160},
 	Animations = "animations-elitebuild6", Icon = "icon-cancel",
-	Speed = 0, HitPoints = 999, DrawLevel = 30, TileSize = {7, 5},
+	Speed = 0, HitPoints = 999, DrawLevel = 10, TileSize = {7, 5},
 	BoxSize = {220, 156}, SightRange = 1, BasicDamage = 0,
 	PiercingDamage = 0, Missile = "missile-none",
 	Priority = 0, Type = "land", Building = true, Vanishes = true
@@ -503,7 +503,7 @@ DefineUnitType("build-dead-body7", {
 	Name = "SiloCrater",
 	Files = {"tileset-desert", "elites/build/missile_silo.png"}, Size = {128, 128},
 	Animations = "animations-elitebuild7", Icon = "icon-cancel",
-	Speed = 0, HitPoints = 999, DrawLevel = 30,	TileSize = {4, 4},
+	Speed = 0, HitPoints = 999, DrawLevel = 10,	TileSize = {4, 4},
 	BoxSize = {124, 124}, SightRange = 1, BasicDamage = 0,
 	PiercingDamage = 0, Missile = "missile-none", Priority = 0,
 	Type = "land" , Building = true, Vanishes = true})

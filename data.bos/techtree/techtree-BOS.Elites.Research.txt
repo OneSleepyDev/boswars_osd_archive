@@ -1,1 +1,5 @@
 BOS.Elites.Research 
+	!Explosives TAG RES_EXP
+		Reqs: Time 1000; Crystals 500; Titanium 200;
+		At: Research Facility res_grp1/pos1;
+		Effect: Enables Training Camp To Build Grenadiers

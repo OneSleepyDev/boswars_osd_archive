@@ -41,7 +41,7 @@
 (define-missile-type 'missile-nuke
   'file "elites/missile/nuke.png" 'size '(128 128) 'frames 5 'num-directions 5
   'impact-sound "dev-dead"
-  'draw-level 300 'class 'missile-class-point-to-point 'sleep 1 'speed 16 'range 15
+  'draw-level 300 'class 'missile-class-point-to-point 'sleep 1 'speed 64 'range 1
   'impact-missile 'missile-288x288-explosion)
 
 (define-missile-type 'missile-grenadier

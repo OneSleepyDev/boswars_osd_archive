@@ -51,9 +51,14 @@
 (define-spell "spell-nuke"
         'showname "Nuclear Attack"
         'manacost 300
-        'range 128
+        'range 'infinite
         'target 'position
-        'action '((demolish damage 500 range 10))
+        'action '(
+	(spawn-missile ttl 800 damage 0
+	     start-point (base target add-x 0 add-y -300)
+	     end-point   (base target add-x 0 add-y 32))
+	(demolish range 4 damage 250)
+	)
         'sound-when-cast "bazoo-attack"
         'missile-when-cast "missile-nuke"
         'autocast '(range 128)

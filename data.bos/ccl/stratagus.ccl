@@ -55,7 +55,7 @@
 ;(set-contrast! 110) (set-brightness! 15) (set-saturation! 100)
 
 ;;	Enter your default title screen.
-(set-title-screen! "video/skyline_logo.avi" "graphics/screens/int_logo_bos.png")
+(set-title-screen! "graphics/screens/int_logo_bos.png")
 
 ;;	Enter your title music.
 (set-title-music! "music/title.ogg")

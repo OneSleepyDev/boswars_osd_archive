@@ -8,7 +8,7 @@
 --			  T H E   W A R   B E G I N S
 --	   Stratagus - A free fantasy real time strategy game engine
 --
---	buttons.ccl	-	Define the general unit-buttons.
+--	buttons.lua	-	Define the general unit-buttons.
 --
 --	(c) Copyright 2001 by Vladi Belperchinov-Shabanski, Lutz Sammer and
 --							Crestez Leonard

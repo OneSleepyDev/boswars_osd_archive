@@ -131,7 +131,7 @@ DefineButton({
 
 DefineButton({
 	Pos = 6, Level = 1, Icon = "icon-rfac_b", Action = "build",
-	Value = "unit-rfac", Key = "r", Hint = "BUILD ~!RESEARCH FACILITY",
+	Value = "unit-rfac", Key = "f", Hint = "BUILD RESEARCH ~!FACILITY",
 	ForUnit = {"unit-engineer"}})
 
 DefineButton({

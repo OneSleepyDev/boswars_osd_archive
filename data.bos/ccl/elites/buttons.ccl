@@ -102,7 +102,7 @@
 ;; simple buildings elites -----------------------------------------------------
 
 (define-button 'pos 1 'level 1 'icon 'icon-dev_b
-  'action 'build 'value 'unit-fort
+  'action 'build 'value 'unit-yard
   'key "y" 'hint "BUILD DEVELOPEMENT ~!YARD"
   'for-unit '(unit-engineer))
 
@@ -142,13 +142,13 @@
   'action 'train-unit 'value 'unit-engineer
   'allowed 'check-no-research
   'key "e" 'hint "TRAIN ~!ENGINEER"
-  'for-unit '(unit-fort))
+  'for-unit '(unit-yard))
 
 (define-button 'pos 2 'level 0 'icon 'icon-harvester
   'action 'train-unit 'value 'unit-harvester
   'allowed 'check-no-research
   'key "h" 'hint "BUILD MINERAL ~!HARVESTER"
-  'for-unit '(unit-fort))
+  'for-unit '(unit-yard))
 
 (define-button 'pos 1 'level 0 'icon 'icon-assault
   'action 'train-unit 'value 'unit-assault
@@ -219,22 +219,22 @@
 (define-button 'pos 5 'level 0 'icon 'icon-harvest
   'action 'harvest
   'key "h" 'hint "SET ~!HARVEST/MINE"
-  'for-unit '(unit-fort))
+  'for-unit '(unit-yard))
 
 (define-button 'pos 7 'level 0 'icon 'icon-move
   'action 'move
   'key "n" 'hint "SET ~!NEW UNITS TARGET"
-  'for-unit '(unit-fort unit-camp))
+  'for-unit '(unit-yard unit-camp))
 
 (define-button 'pos 8 'level 0 'icon 'icon-stop
   'action 'stop
   'key "c" 'hint "SET ~!CANCEL UNIT TARGET"
-  'for-unit '(unit-fort unit-camp))
+  'for-unit '(unit-yard unit-camp))
 
 (define-button 'pos 9 'level 0 'icon 'icon-attack
   'action 'attack
   'key "i" 'hint "UN~!IT ATTACK"
-  'for-unit '(unit-fort unit-camp)) ))
+  'for-unit '(unit-yard unit-camp)) ))
 
 ; spells --------------------------------
 (define-button 'pos 3 'level 0 'icon 'icon-heal

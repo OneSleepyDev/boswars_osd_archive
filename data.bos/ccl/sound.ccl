@@ -107,6 +107,13 @@
 (make-sound "harvester-die" "elites/units/harvester_die.wav")
 (make-sound "harvester-attack" "elites/units/harvester_attack.wav")
 
+(make-sound "medic-selected" "elites/units/medic_select.wav")
+(make-sound "medic-acknowledge" "elites/units/medic_action.wav")
+(make-sound "medic-ready" "elites/computer_voice/medic.ready.wav")
+(make-sound "medic-help" "elites/computer_voice/medic.underattack.wav")
+(make-sound "medic-die" "elites/units/medic_die.wav")
+(make-sound "medic-attack" "elites/units/medic_attack.wav")
+
 ;; BUILDINGS
 (make-sound "pplnt-selected" "elites/buildings/sfx_pplnt.select.wav")
 (make-sound "pplnt-ready" "elites/computer_voice/power.plant.completed.wav")

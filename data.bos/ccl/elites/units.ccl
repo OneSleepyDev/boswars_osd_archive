@@ -33,6 +33,38 @@
 ;;
 ;;	NOTE: Save can generate this table.
 ;;
+(define-unit-type 'unit-medic 'name "Medic"
+  'files '(tileset-desert "elites/units/unit_medic.png")
+  'size '(64 64)
+  'shadow '(file "elites/units/unit_medic_s.png" size (64 64))
+  'animations 'animations-medic 'icon 'icon-medic
+  'costs '(time 500 titanium 400 crystal 50)
+  'speed 15
+  'hit-points 100
+  'draw-level 40
+  'tile-size '(1 1) 'box-size '(17 28)
+  'sight-range 3 'computer-reaction-range 6 'person-reaction-range 6
+  'armor 1 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
+  'max-attack-range 1
+  'priority 60
+  'points 50
+  'corpse '(unit-dead-body5 0)
+  'type-land
+  'right-attack
+  'repair-range 1
+  'can-target-land
+  'land-unit
+  'demand 0
+  'organic
+  'selectable-by-rectangle
+  'sounds '(
+    selected "medic-selected"
+    acknowledge "medic-acknowledge"
+    ready "medic-ready"
+    help "medic-help"
+    dead "medic-die"
+    attack "medic-attack"))
+
 (define-unit-type 'unit-bazoo 'name "Bazoo"
   'files '(tileset-desert "elites/units/unit_bazoo.png")
   'size '(64 64)
@@ -50,6 +82,7 @@
   'points 50
   'corpse '(unit-dead-body4 0)
   'type-land
+  'demand 0
   'right-attack
   'can-attack 'repair-range 1
   'can-target-land
@@ -82,6 +115,7 @@
   'points 50
   'corpse '(unit-dead-body1 0)
   'type-land
+  'demand 0
   'right-attack
   'can-attack 'repair-range 1
   'can-target-land
@@ -118,6 +152,7 @@
   'can-target-land
   'land-unit
   'organic
+  'demand 0
   'selectable-by-rectangle
   'sounds '(
     selected "grenadier-selected"
@@ -145,6 +180,7 @@
   'points 30
   'corpse '(unit-dead-body2 0)
   'type-land
+  'demand 0
   'right-harvest
   'repair-range 1
   'can-target-land
@@ -188,6 +224,7 @@
   'points 30
   'explode-when-killed 'missile-160x128-explosion
   'type-land
+  'demand 50
   'right-harvest
   'can-attack 'repair-range 1
   'can-target-land
@@ -379,6 +416,21 @@
 
 (define-unit-type 'unit-dead-body4 'name "Bazoobody"
   'files '(tileset-desert "elites/units/unit_bazoo_c.png")
+  'size '(64 64)
+  'animations 'animations-elitecorpse1 'icon 'icon-cancel
+  'speed 0
+  'hit-points 999
+  'draw-level 30
+  'tile-size '(1 1) 'box-size '(31 31)
+  'sight-range 1
+  'basic-damage 0 'piercing-damage 0 'missile 'missile-none
+  'priority 0
+  'type-land
+  'vanishes
+  'sounds '())
+
+(define-unit-type 'unit-dead-body5 'name "Medicbody"
+  'files '(tileset-desert "elites/units/unit_medic_c.png")
   'size '(64 64)
   'animations 'animations-elitecorpse1 'icon 'icon-cancel
   'speed 0

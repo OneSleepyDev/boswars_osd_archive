@@ -207,6 +207,7 @@ Load("scripts/buttons.lua")
 Load("scripts/ui.lua")
 --Load("scripts/unit-drone.lua")
 Load("scripts/elites/unit-camera.lua")
+Load("scripts/elites/unit-buggy.lua")
 
 Load("scripts/ai.lua")
 --Load("scripts/campaigns.lua")

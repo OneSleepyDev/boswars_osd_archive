@@ -30,7 +30,7 @@
 
 Credits(
 	"background", "graphics/screens/general.png",
-	"title", "BATTLE OF STURNAX",
+	"title", "BATTLE OF SURVIVAL",
 	"title", "(c) skyline software",
 	"name", " ",
 	"title", "Graphics:",

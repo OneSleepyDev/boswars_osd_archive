@@ -28,9 +28,6 @@
 --
 --	$Id$
 
-
-SetIconSize(46, 38)
-
 --
 --  ELITES
 -- 

@@ -10,3 +10,8 @@ BOS.Elites.Research
 		At: Research Facility res_grp1/pos1;
 		Effect: Grenadier gives 5 more PDam; Range set to 2
 		GFX: elites/research/res_expl2.png
+	!Alien Void TAG RES_ALTEC
+		Reqs: Time 800; Crystals 800; Titanium 800;
+		At: Research Facility res_grp1/pos2;
+		Effect: Enables Building Of Vehicle Factory
+		GFX: elites/research/res_avoid.png

@@ -35,7 +35,7 @@ DefineFont({
 DefineFont({
 	Name = "game",
 	File = "graphics/general/game.png",
-	Size = {18, 14}})
+	Size = {14, 14}})
 DefineFont({
 	Name = "large",
 	File = "graphics/general/large.png",

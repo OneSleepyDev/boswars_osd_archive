@@ -34,7 +34,7 @@
 ;;	NOTE: Save can generate this table.
 ;;
 
-(define-unit-type 'unit-lancer 'name "Lancer Assault"
+(define-unit-type 'unit-lancer 'name "Assault Unit"
   'files '(tileset-desert "elites/units/unit_lancer.png")
   'size '(64 64)
   'shadow '(file "elites/units/unit_lancer_s.png" size (64 64))
@@ -94,10 +94,9 @@
     file-when-loaded "elites/units/unit_engineer.png"  
     resource-id titanium
     resource-capacity 100
-    wait-at-resource 200
-    wait-at-depot 200
-    resource-step 1
-    harvest-from-outside)
+    wait-at-resource 10
+    wait-at-depot 5
+    resource-step 1)
   'organic
   'selectable-by-rectangle
   'sounds '(

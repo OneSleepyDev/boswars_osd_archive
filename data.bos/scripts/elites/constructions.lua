@@ -79,6 +79,20 @@ DefineConstruction("construction-vault", {
 	}
 })
 
+DefineConstruction("construction-dev-yard", {
+	Constructions = {
+		{Percent = 0, File = "main", Frame = 7},
+		{Percent = 11, File = "main", Frame = 8},
+		{Percent = 22, File = "main", Frame = 9},
+		{Percent = 33, File = "main", Frame = 10},
+		{Percent = 44, File = "main", Frame = 11},
+		{Percent = 55, File = "main", Frame = 12},
+		{Percent = 66, File = "main", Frame = 13},
+		{Percent = 77, File = "main", Frame = 14},
+		{Percent = 88, File = "main", Frame = 14}
+	}
+})
+
 DefineConstruction("construction-camp", {
 	Constructions = {
 		{Percent = 0, File = "main", Frame = 5},

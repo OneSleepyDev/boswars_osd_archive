@@ -155,6 +155,11 @@ DefineAnimations("animations-gen",
 		{0, 0, 2, 4}, {0, 0, 2, 5}, {0, 0, 2, 6}, {0, 0, 2, 7},
 		{3, 0, 2, 8}})
 
+DefineAnimations("animations-dev-yard",
+	"still", {
+		{0, 0, 20, 1}, {0, 0, 20, 2}, {0, 0, 20, 3}, {0, 0, 50, 4},
+		{0, 0, 20, 5}, {3, 0, 50, 6}})
+
 DefineAnimations("animations-rfac",
 	"still", {{3, 0, 3, 0}})
 

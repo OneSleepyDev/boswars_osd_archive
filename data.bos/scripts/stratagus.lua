@@ -81,7 +81,7 @@ ShowNoFull()
 SpellSprite("graphics/general/spells1.png", 1, 1, 16, 16)
 
 --	Enable fancy building (random mirroring buildings)
-SetFancyBuildings(true)
+SetFancyBuildings(false)
 
 --	Enable show tips at the start of a level
 SetShowTips(true)
@@ -216,6 +216,7 @@ Load("scripts/credits.lua")
 Load("scripts/tips.lua")
 Load("scripts/ranks.lua")
 Load("scripts/menus.lua")
+Load("scripts/cheats.lua")
 
 Load("preferences2.lua")
 

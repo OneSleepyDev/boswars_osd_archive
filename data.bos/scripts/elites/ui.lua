@@ -80,14 +80,14 @@ function DefineEliteScreen(screen_width, screen_height)
 			"crystal", {
 				"file", "graphics/elites/ui/ui_res_icons.png", "row", 1,
 				"pos", {67 +  75, 0}, "size", {14, 14}, "text-pos", {85 +  75, 1}},
-			"gas", {
-				"file", "graphics/elites/ui/ui_res_icons.png", "row", 1,
-				"pos", {67 + 150, 0}, "size", {14, 14}, "text-pos", {85 + 150, 1}},
+--			"gas", {
+--				"file", "graphics/elites/ui/ui_res_icons.png", "row", 1,
+--				"pos", {67 + 150, 0}, "size", {14, 14}, "text-pos", {85 + 150, 1}},
 			"food", {
-				"file", "graphics/elites/ui/ui_res_icons.png", "row", 1,
-				"pos", {67 + 225, 0}, "size", {14, 14}, "text-pos", {85 + 225, 1}},
+				"file", "graphics/elites/ui/ui_res_icons.png", "row", 3,
+				"pos", {67 + 150, 0}, "size", {14, 14}, "text-pos", {85 + 150, 1}},
 			"score", {
-				"file", "graphics/elites/ui/ui_res_icons.png", "row", 1,
+				"file", "graphics/elites/ui/ui_res_icons.png", "row", 4,
 				"pos", {67 + 300, 0}, "size", {14, 14}, "text-pos", {85 + 300, 1}}},
 		"info-panel", {
 			"panel", {

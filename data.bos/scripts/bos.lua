@@ -51,7 +51,7 @@ DefineConstructionWcNames(
 DefineUnitTypeWcNames(
 	"unit-assault", "unit-grunt", "unit-engineer", "unit-peon", "unit-ballista",
 	"unit-catapult", "unit-knight", "unit-ogre", "unit-archer", "unit-axethrower",
-	"unit-mage", "unit-death-knight", "unit-paladin", "unit-ogre-mage",
+	"unit-mage", "unit-death-knight", "unit-paladin", "unit-dev-yard",
 	"unit-dwarves", "unit-goblin-sappers", "unit-engineer",
 	"unit-peon", "unit-ranger", "unit-berserker", "unit-female-hero",
 	"unit-evil-knight", "unit-flying-angle", "unit-fad-man",

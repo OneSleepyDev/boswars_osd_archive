@@ -50,12 +50,14 @@ DefineEditorUnitTypes(
    "unit-engineer",
    "unit-harvester",
    "unit-msilo",
+   "unit-dev-yard",
    "unit-gen",
    "unit-camp",
    "unit-rfac",
    "unit-hosp",
    "unit-vfac",
 
+   "unit-gold-mine",
    "unit-crystal-field1",
    "unit-crystal-field2",
    "unit-crystal-field3",
@@ -69,7 +71,6 @@ DefineEditorUnitTypes(
    "unit-crystal-field11",   
    "unit-crystal-field12",
    "unit-crystal-field13",
-   "unit-gold-mine",
 
    "unit-elites-start-location"
 )

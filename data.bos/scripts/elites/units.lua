@@ -66,7 +66,7 @@ DefineUnitType("unit-apcs", {
 	Type = "land", RepairHp = 2, RepairCosts = {titanium, 2},
 	RightMouseAction = "attack",
 	ExplodeWhenKilled = "missile-160x128-explosion",
-	Demand = 0, CanAttack = true, CanTargetLand = true,
+	LandUnit = true, Demand = 0, CanAttack = true, CanTargetLand = true,
 	SelectableByRectangle = true,
 	Sounds = {
 		"selected", "apcs-selected",

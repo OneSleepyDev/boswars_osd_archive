@@ -71,8 +71,19 @@ function DefineEliteScreen(screen_width, screen_height)
 		"filler", {
 			"file", "graphics/elites/ui/ui_" .. screen_width .. "_filler.png",
 			"pos", {0, 0}},
-		"resource-line",
-			{"graphics/elites/ui/ui_" .. screen_width .. "_respanel.png", 0, 0},
+		-- resource line
+		"filler", {
+			"file", "graphics/elites/ui/ui_" .. screen_width .. "_respanel.png", 
+			"pos", {0, 0}},
+		-- no menu panel ?
+		-- minimap
+		"filler", {
+			"file", "graphics/elites/ui/ui_minimap.png",
+			"pos", {screen_width - 200, 24}},
+		-- status line
+		"filler", {
+			"file", "graphics/elites/ui/ui_" .. screen_width .. "_stat.png",
+			"pos", {0, screen_height - 16}},
 		"resources", {
 			"titanium", {
 				"file", "graphics/elites/ui/ui_res_icons.png", "frame", 0,
@@ -182,13 +193,9 @@ function DefineEliteScreen(screen_width, screen_height)
 				"pos", {screen_width - 100, 2},
 				"caption", "Diplomacy", "style", "network"}},
 		"minimap", {
-			"file", "graphics/elites/ui/ui_minimap.png",
-			"panel-pos", {screen_width - 200, 24},
 			"pos", {screen_width - 200 + 46, 24 + 17},
 			"size", {121, 105}},
 		"status-line", {
-			"file", "graphics/elites/ui/ui_" .. screen_width .. "_stat.png",
-			"pos", {0, screen_height - 16},
 			"text-pos", {2 + 36, screen_height - 14},
 			"font", "game",
 			"width", screen_width - 200 - 100},

@@ -148,7 +148,7 @@
     acknowledge "harvester-acknowledge"
     ready "harvester-ready"
     help "harvester-help"
-    dead "basic elites voices dead"
+    dead "harvester-die"
     attack "harvester-attack"))
 
 (define-unit-type 'unit-pplnt 'name "Power Plant"

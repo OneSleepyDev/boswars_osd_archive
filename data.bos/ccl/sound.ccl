@@ -80,8 +80,12 @@
 (make-sound "engineer-die" "elites/units/engineer_die.wav")
 (make-sound "engineer-attack" "elites/units/engineer_attack.wav")
 
+(make-sound "harvester-selected" "elites/units/harvester_select.wav")
+(make-sound "harvester-acknowledge" "elites/units/harvester_action.wav")
 (make-sound "harvester-ready" "elites/computer_voice/harvester.completed.wav")
 (make-sound "harvester-help" "elites/computer_voice/harvester.underattack.wav")
+(make-sound "harvester-die" "elites/units/harvester_die.wav")
+(make-sound "harvester-attack" "elites/units/harvester_attack.wav")
 
 ;; BUILDINGS
 (make-sound "pplnt-selected" "elites/buildings/sfx_pplnt.select.wav")

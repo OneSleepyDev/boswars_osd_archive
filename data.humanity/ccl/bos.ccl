@@ -97,6 +97,7 @@
   'unit-destroyed-3x3-place 'unit-destroyed-4x4-place
   'unit-engineer 'unit-peon 'unit-elites-oil-tanker 'unit-terras-oil-tanker
   'unit-miner
+  'unit-gold-mine2 'unit-gold-mine3 'unit-gold-mine4
 )
 
 (define-missiletype-wc-names

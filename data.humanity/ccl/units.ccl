@@ -38,17 +38,17 @@
 ;;
 ;;=========
 
-(define-unit-type 'unit-gold-mine 'name "Titanium Spike"
-  'files '(tileset-desert "nature/res/spike_1.png")
-  'size '(128 128)
-  'shadow '(file "nature/res/spike_1_s.png" size (128 128) offset (0 0))
-  'animations 'animations-building 'icon 'icon-tita
+(define-unit-type 'unit-gold-mine 'name "Gold Field"
+  'files '(tileset-desert "ub/r_gold.png")
+  'size '(80 80)
+  'shadow '(file "ub/r_gold.png" size (80 80) offset (-1 -4))
+  'animations 'animations-resource 'icon 'icon-gold
   'costs '(time 150)
   'construction 'construction-land2
   'speed 0
-  'hit-points 25500
-  'draw-level 40
-  'tile-size '(4 4) 'box-size '(127 127)
+  'hit-points 999999
+  'draw-level 1
+  'tile-size '(2 2) 'box-size '(60 60)
   'sight-range 1
   'armor 20 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
   'priority 0
@@ -64,6 +64,98 @@
     help "gold-mine-help"
     dead "building destroyed"
     attack "gold-mine-attack"))
+(define-unit-type 'unit-gold-mine2 'name "Gold Field"
+  'files '(tileset-desert "ub/r_gold2.png")
+  'size '(80 80)
+  'shadow '(file "ub/r_gold2.png" size (80 80) offset (-1 -4))
+  'animations 'animations-resource 'icon 'icon-gold
+  'costs '(time 150)
+  'construction 'construction-land2
+  'speed 0
+  'hit-points 999999
+  'draw-level 1
+  'tile-size '(2 2) 'box-size '(60 60)
+  'sight-range 1
+  'armor 20 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
+  'priority 0
+  'corpse '(unit-destroyed-3x3-place 0)
+  'explode-when-killed 'missile-explosion
+  'type-land
+  'building
+  'gives-resource 'titanium 'can-harvest
+  'sounds '(
+    selected "gold-mine-selected"
+    acknowledge "gold-mine-acknowledge"
+    ready "gold-mine-ready"
+    help "gold-mine-help"
+    dead "building destroyed"
+    attack "gold-mine-attack"))
+(define-unit-type 'unit-gold-mine3 'name "Gold Field"
+  'files '(tileset-desert "ub/r_gold3.png")
+  'size '(80 80)
+  'shadow '(file "ub/r_gold3.png" size (80 80) offset (-1 -4))
+  'animations 'animations-resource 'icon 'icon-gold
+  'costs '(time 150)
+  'construction 'construction-land2
+  'speed 0
+  'hit-points 999999
+  'draw-level 1
+  'tile-size '(2 2) 'box-size '(60 60)
+  'sight-range 1
+  'armor 20 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
+  'priority 0
+  'corpse '(unit-destroyed-3x3-place 0)
+  'explode-when-killed 'missile-explosion
+  'type-land
+  'building
+  'gives-resource 'titanium 'can-harvest
+  'sounds '(
+    selected "gold-mine-selected"
+    acknowledge "gold-mine-acknowledge"
+    ready "gold-mine-ready"
+    help "gold-mine-help"
+    dead "building destroyed"
+    attack "gold-mine-attack"))
+(define-unit-type 'unit-gold-mine4 'name "Gold Field"
+  'files '(tileset-desert "ub/r_gold4.png")
+  'size '(80 80)
+  'shadow '(file "ub/r_gold4.png" size (80 80) offset (-1 -4))
+  'animations 'animations-resource 'icon 'icon-gold
+  'costs '(time 150)
+  'construction 'construction-land2
+  'speed 0
+  'hit-points 999999
+  'draw-level 1
+  'tile-size '(2 2) 'box-size '(60 60)
+  'sight-range 1
+  'armor 20 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
+  'priority 0
+  'corpse '(unit-destroyed-3x3-place 0)
+  'explode-when-killed 'missile-explosion
+  'type-land
+  'building
+  'gives-resource 'titanium 'can-harvest
+  'sounds '(
+    selected "gold-mine-selected"
+    acknowledge "gold-mine-acknowledge"
+    ready "gold-mine-ready"
+    help "gold-mine-help"
+    dead "building destroyed"
+    attack "gold-mine-attack"))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 (define-unit-type 'unit-dead-body 'name "Dead Body"
   'files '(tileset-desert "neutral/units/corpses.png")

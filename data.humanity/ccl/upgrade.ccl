@@ -36,6 +36,9 @@
 
 
 (define-allow 'unit-gold-mine			"AAAAAAAAAAAAAAAA")
+(define-allow 'unit-gold-mine2			"AAAAAAAAAAAAAAAA")
+(define-allow 'unit-gold-mine3			"AAAAAAAAAAAAAAAA")
+(define-allow 'unit-gold-mine4			"AAAAAAAAAAAAAAAA")
 
 (define-allow 'unit-dead-body			"AAAAAAAAAAAAAAAA")
 (define-allow 'unit-destroyed-1x1-place		"AAAAAAAAAAAAAAAA")

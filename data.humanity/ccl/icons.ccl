@@ -54,7 +54,8 @@
   'size '(23 38) 'normal '(0 "ub/b_castle_i.png"))
 
 
-
+(define-icon 'icon-gold
+  'size '(23 38) 'normal '(0 "ub/r_gold_i.png"))
 
 
 

@@ -8,10 +8,10 @@
 --			  T H E   W A R   B E G I N S
 --	   Stratagus - A free fantasy real time strategy game engine
 --
---	buttons.ccl	-	Define the unit-buttons of the elites race.
+--	buttons.lua	-	Define the unit-buttons of the elites race.
 --
---	(c) Copyright 2001-2003 by Vladi Belperchinov-Shabanski, Lutz Sammer
---					and Crestez Leonard
+--	(c) Copyright 2001-2003 by Vladi Belperchinov-Shabanski, Lutz Sammer,
+--				François Beerten and Crestez Leonard
 --
 --      This program is free software; you can redistribute it and/or modify
 --      it under the terms of the GNU General Public License as published by
@@ -77,6 +77,7 @@ DefineButton({
 	Action = "harvest", Key = "h", Hint = "~!MINE TITANIUM",
 	ForUnit = {"unit-engineer"}})
 
+-- TODO !!!!!
 DefineButton({
 	Pos = 5, Level = 0, Icon = "icon-harvest",
 	Action = "harvest", Key = "h", Hint = "~!HARVEST CRYSTALS",
@@ -94,9 +95,19 @@ DefineButton({
 	Value = 1, Key = "b", Hint = "~!BUILD",
 	ForUnit = {"unit-engineer"}})
 
+DefineButton({
+	Pos = 8, Level = 0, Icon = "icon-build-lvl2", Action = "button",
+	Value = 2, Key = "b", Hint = "~!BUILD Level 2",
+	ForUnit = {"unit-engineer"}})
+
+DefineButton({
+	Pos = 9, Level = 0, Icon = "icon-build-lvl3", Action = "button",
+	Value = 3, Key = "b", Hint = "~!BUILD Level 3",
+	ForUnit = {"unit-engineer"}})
+
 -- simple buildings elites -----------------------------------------------------
 
- DefineButton({
+DefineButton({
         Pos = 1, Level = 1, Icon = "icon-vault", Action = "build",
         Value = "unit-vault", Key = "a", Hint = "BUILD V~!AULT",
         ForUnit = {"unit-engineer"}})
@@ -141,6 +152,15 @@ DefineButton({
 	Value = 0, Key = "\033", Hint = "~<ESC~> CANCEL",
 	ForUnit = {"unit-engineer"}})
 
+DefineButton({
+	Pos = 9, Level = 2, Icon = "icon-cancel", Action = "button",
+	Value = 0, Key = "\033", Hint = "~<ESC~> CANCEL",
+	ForUnit = {"unit-engineer"}})
+
+DefineButton({
+	Pos = 9, Level = 3, Icon = "icon-cancel", Action = "button",
+	Value = 0, Key = "\033", Hint = "~<ESC~> CANCEL",
+	ForUnit = {"unit-engineer"}})
 -- buildings commands ---------------------------------------------------------
 
 DefineButton({

@@ -66,16 +66,16 @@ SetShowReactionRange(false)
 
 SetShowOrders(2)
 
-ManaSprite("graphics/general/mana2.png", 0, -1, 31, 4)
-HealthSprite("graphics/general/health2.png", 0, -4, 31, 4)
+ManaSprite("general/mana2.png", 0, -1, 31, 4)
+HealthSprite("general/health2.png", 0, -4, 31, 4)
 
 ShowHealthDot()
 ShowManaDot()
 ShowNoFull()
 
 --	Define shadow-sprite.
---ShadowSprite("graphics/missiles/unit_shadow.png",3, 42, 32, 32)
-SpellSprite("graphics/general/spells1.png", 1, 1, 16, 16)
+--ShadowSprite("missiles/unit_shadow.png",3, 42, 32, 32)
+SpellSprite("general/spells1.png", 1, 1, 16, 16)
 
 --	Enable fancy building (random mirroring buildings)
 SetFancyBuildings(false)

@@ -34,7 +34,7 @@ Load("scripts/anim.lua")
 -- Define all of the crystal fields. Only Ident and animations differ.
 for i = 1, 13 do
 	DefineUnitType("unit-crystal-field" .. i, {
-		Name = "Crystal Field",
+		Name = "Crystal Field" .. i,
 		Files = {"default", "nature/res/res_crys.png"}, Size = {32, 32},
 		Shadow = {"file", "nature/res/res_crys_s.png", "size", {32, 32}, "offset", {5, 5}},
 		Animations = "animations-crystal-field" .. i, Icon = "icon-crystal-field",

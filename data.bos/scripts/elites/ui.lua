@@ -83,45 +83,45 @@ function DefineEliteScreen(screen_width, screen_height)
 	ui = {"elites", screen_width, screen_height,
 		"normal-font-color", "light-green",
 		"reverse-font-color", "yellow"}
-	AddFiller(ui, "graphics/elites/ui/ui_" .. screen_width .. "_filler.png", {0, 0})
+	AddFiller(ui, "elites/ui/ui_" .. screen_width .. "_filler.png", {0, 0})
 	-- resource line
-	AddFiller(ui, "graphics/elites/ui/ui_" .. screen_width .. "_respanel.png", {0, 0})
+	AddFiller(ui, "elites/ui/ui_" .. screen_width .. "_respanel.png", {0, 0})
 	-- no menu panel ?
 	-- minimap
-	AddFiller(ui, "graphics/elites/ui/ui_minimap.png", 
+	AddFiller(ui, "elites/ui/ui_minimap.png", 
 			{screen_width - 200, 24})
 	-- status line
-	AddFiller(ui, "graphics/elites/ui/ui_" .. screen_width .. "_stat.png",
+	AddFiller(ui, "elites/ui/ui_" .. screen_width .. "_stat.png",
 			{0, screen_height - 16})
 
 	ui2 = {
 		"resources", {
 			"titanium", {
-				File = "graphics/elites/ui/ui_res_icons.png", Frame = 0,
+				File = "elites/ui/ui_res_icons.png", Frame = 0,
 				Pos = {67 +   0, 0}, 
 				Size = {14, 14}, 
 				TextPos = {85 +   0, 1}},
 			"crystal", {
-				File = "graphics/elites/ui/ui_res_icons.png", Frame = 1,
+				File = "elites/ui/ui_res_icons.png", Frame = 1,
 				Pos = {67 +  75, 0},
 				Size = {14, 14},
 				TextPos =  {85 +  75, 1}},
 --			"gas", {
---				File = "graphics/elites/ui/ui_res_icons.png", Frame = 1,
+--				File = "elites/ui/ui_res_icons.png", Frame = 1,
 --				Pos = {67 + 150, 0}, "size", {14, 14}, "text-pos", {85 + 150, 1}},
 			"food", {
-				File = "graphics/elites/ui/ui_res_icons.png", Frame = 3,
+				File = "elites/ui/ui_res_icons.png", Frame = 3,
 				Pos =  {67 + 150, 0}, 
 				Size = {14, 14}, 
 				TextPos = {85 + 150, 1}},
 			"score", {
-				File = "graphics/elites/ui/ui_res_icons.png", Frame = 4,
+				File = "elites/ui/ui_res_icons.png", Frame = 4,
 				Pos = {67 + 300, 0}, 
 				Size = {14, 14}, 
 				TextPos = {85 + 300, 1}}},
 		"info-panel", {
 			"panel", {
-				"file", "graphics/elites/ui/ui_info.png",
+				"file", "elites/ui/ui_info.png",
 				"pos", {info_panel_x, info_panel_y},
 				"size", {200, 176}},
 			"selected", {
@@ -179,7 +179,7 @@ function DefineEliteScreen(screen_width, screen_height)
 				"size", {140, 15}}},
 		"button-panel", {
 			"panel", {
-				"file", "graphics/elites/ui/ui_" .. screen_width .. "_bpanel.png",
+				"file", "elites/ui/ui_" .. screen_width .. "_bpanel.png",
 				"pos", {screen_width - 200, 336}},
 			"icons", {
 				{"pos", {screen_width - 177+4, 340+4}, "style", "icon"},
@@ -194,7 +194,7 @@ function DefineEliteScreen(screen_width, screen_height)
 		        "auto-cast-border-color", {0, 0, 252}},
 		"piemenu", {
 			"radius", 70,
-			"file", "graphics/ui/rosace1.png",
+			"file", "ui/rosace1.png",
 			"mouse-button", "middle"},
 		"map-area", {
 			Pos = {24, 16},
@@ -238,13 +238,13 @@ function DefineEliteScreen(screen_width, screen_height)
                          ArrowS = "cursor-arrow-s",
                          ArrowSE = "cursor-arrow-se"},
 		"menu-panels", {
-			"panel1", "graphics/general/panel_1.png",
-			"panel2", "graphics/general/panel_2.png",
-			"panel3", "graphics/general/panel_3.png",
-			"panel4", "graphics/general/panel_4.png",
-			"panel5", "graphics/general/panel_5.png"},
-		"victory-background", "graphics/screens/general.png",
-		"defeat-background", "graphics/screens/general.png"
+			"panel1", "general/panel_1.png",
+			"panel2", "general/panel_2.png",
+			"panel3", "general/panel_3.png",
+			"panel4", "general/panel_4.png",
+			"panel5", "general/panel_5.png"},
+		"victory-background", "screens/general.png",
+		"defeat-background", "screens/general.png"
 	}
 	AppendElements(ui,ui2)
 	print(unpack(ui))

@@ -30,23 +30,23 @@
 
 DefineFont({
 	Name = "small",
-	File = "graphics/general/small.png",
+	File = "general/small.png",
 	Size = {7, 6}})
 DefineFont({
 	Name = "game",
-	File = "graphics/general/game.png",
+	File = "general/game.png",
 	Size = {14, 14}})
 DefineFont({
 	Name = "large",
-	File = "graphics/general/large.png",
+	File = "general/large.png",
 	Size = {20, 20}})
 DefineFont({
 	Name = "small-title",
-	File = "graphics/general/large.png",
+	File = "general/large.png",
 	Size = {20, 20}})
 DefineFont({
 	Name = "large-title",
-	File = "graphics/general/large.png",
+	File = "general/large.png",
 	Size = {20, 20}})
 
 --	FIXME: only yellow, white, and grey are correct.

@@ -129,7 +129,7 @@ DefineAnimations("animations-harvester",
 		{0, 1, 1, 0}, {0, 1, 1, 0}, {0, 1, 1, 0}, {0, 1, 1, 0},
 		{0, 1, 1, 0}, {0, 1, 1, 0}, {0, 1, 1, 0}, {0, 1, 1, 0},
 		{0, 1, 1, 0}, {0, 1, 1, 0}, {0, 1, 1, 0}, {0, 1, 1, 0},
-		{0, 1, 1, 0}, {0, 1, 1, 0}, {0, 1, 1, 0}, {0, 1, 1, 0}} ,
+		{0, 1, 1, 0}, {0, 1, 1, 0}, {0, 1, 1, 0}, {3, 1, 1, 0}},
 	"harvest", "crystal", {
 		{4, 0, 6, 5}, {0, 0, 3, 10}, {0, 0, 3, 15}, {0, 0, 3, 20},
 		{4, 0, 6, 25}, {0, 0, 3, 20}, {0, 0, 3, 15}, {3, 0, 3, 10}},
@@ -234,7 +234,7 @@ DefineAnimations("animations-crystal-field4",
 DefineAnimations("animations-crystal-field5",
 	"still", {{0, 0, 4, 0}, {3, 0, 1, 0}})
 DefineAnimations("animations-crystal-field6",
-	"still", {{0, 0, 4, 11}, {3, 0, 1, 1}})
+	"still", {{0, 0, 4, 1}, {3, 0, 1, 1}})
 DefineAnimations("animations-crystal-field7",
 	"still", {{0, 0, 4, 5}, {3, 0, 1, 5}})
 DefineAnimations("animations-crystal-field8",

@@ -39,10 +39,10 @@ function HandleCheats(str)
     AddMessage("cheat enabled")
 
   elseif (str == "glittering prizes") then
-    SetPlayerResource(GetThisPlayer(), "titanium",
-      GetPlayerResource(GetThisPlayer(), "titanium") + 12000)
-    SetPlayerResource(GetThisPlayer(), "crystal",
-      GetPlayerResource(GetThisPlayer(), "crystal") + 5000)
+    SetPlayerData(GetThisPlayer(), "Resources", "titanium",
+      GetPlayerData(GetThisPlayer(), "Resources", "titanium") + 12000)
+    SetPlayerData(GetThisPlayer(), "Resources", "crystal",
+      GetPlayerData(GetThisPlayer(), "Resources", "crystal") + 5000)
     AddMessage("!!! :)")
 
   elseif (str == "on screen") then
@@ -102,8 +102,8 @@ function HandleCheats(str)
       SetSpeedUpgrade(10)
       SetSpeedResearch(10)
       for i = 1,table.getn(resources) do
-        SetPlayerResource(GetThisPlayer(), resources[i],
-          GetPlayerResource(GetThisPlayer(), resources[i]) + 32000)
+        SetPlayerData(GetThisPlayer(), "Resources", resources[i],
+          GetPlayerData(GetThisPlayer(), "Resources", resources[i]) + 32000)
       end
       AddMessage("SO!")
     end

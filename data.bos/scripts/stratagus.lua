@@ -142,7 +142,7 @@ SetMinimapTerrain(true)
 
 --  Alpha fog of war by default
 AlphaFogOfWar()
-SetFogOfWarOpacity(192)
+SetFogOfWarOpacity(128)
 
 -------------------------------------------------------------------------------
 --	Define default resources

@@ -59,6 +59,7 @@ DefineEditorUnitTypes(
    "unit-gturret",
    "unit-cam",
    "unit-buggy",
+   "unit-radar",
 
    "unit-gold-mine",
    "unit-crystal-field1",

@@ -8,9 +8,9 @@
 --			  T H E   W A R   B E G I N S
 --	   Stratagus - A free fantasy real time strategy game engine
 --
---	stratagus.ccl	-	The craft configuration language.
+--	stratagus.lua	-	The craft configuration language.
 --
---	(c) Copyright 1998-2003 by Crestez Leonard
+--	(c) Copyright 1998-2004 by Crestez Leonard and François Beerten
 --
 --      This program is free software; you can redistribute it and/or modify
 --      it under the terms of the GNU General Public License as published by
@@ -207,6 +207,7 @@ Load("scripts/buttons.lua")
 Load("scripts/ui.lua")
 --Load("scripts/unit-drone.lua")
 Load("scripts/elites/unit-camera.lua")
+Load("scripts/elites/unit-radar.lua")
 Load("scripts/elites/unit-buggy.lua")
 
 Load("scripts/ai.lua")

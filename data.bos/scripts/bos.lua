@@ -107,7 +107,8 @@ DefineUnitTypeWcNames(
 	"unit-msilo",
 	"unit-gturret",
 	"unit-cam",
-	"unit-plate1")
+	"unit-plate1",
+	"unit-radar")
 
 DefineIconWcNames(
 	"icon-assault", "icon-apcs", "icon-grenadier", "icon-bazoo",

@@ -168,7 +168,7 @@
   'supply 150
   'explode-when-killed 'missile-160x128-explosion
   'type-land
-  !demand 25
+  'demand 25
   'building 
   'sounds '(
     selected "pplnt-selected"

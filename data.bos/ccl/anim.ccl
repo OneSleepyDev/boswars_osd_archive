@@ -168,6 +168,10 @@
 ;;------ Elite Buildings ------
 ;;-----------------------------
 
+(define-animations 'animations-msilo
+  'still '(	; #32
+    #( 3 0   1   0)))
+
 (define-animations 'animations-gen
   'still '(	; #32
     #( 0 0   1   0) #( 0 0   1   1) #( 0 0   1   2) #( 0 0   1   3)
@@ -236,6 +240,11 @@
   'die '(	; #2801
     #( 0 0 2000 30) #( 0 0 200   30) #( 0 0 200   30) #( 0 0 200  31)
     #( 0 0 200  31) #( 3 0   1  31)))
+
+(define-animations 'animations-elitebuild7
+  'die '(	; #2801
+    #( 0 0 2000 14) #( 0 0 200   14) #( 0 0 200   14) #( 0 0 200  15)
+    #( 0 0 200  15) #( 3 0   1   15)))
 
 
 (define-animations 'animations-crystal-field1

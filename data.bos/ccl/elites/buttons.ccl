@@ -134,9 +134,14 @@
   'key "h" 'hint "BUILD ~!HOSPITAL"
   'for-unit '(unit-engineer))
 
-(define-button 'pos 5 'level 2 'icon 'icon-vfac_b
+(define-button 'pos 2 'level 2 'icon 'icon-vfac_b
   'action 'build 'value 'unit-vfac
   'key "v" 'hint "BUILD ~!VEHICLE FACTORY"
+  'for-unit '(unit-engineer))
+
+(define-button 'pos 3 'level 2 'icon 'icon-msilo_b
+  'action 'build 'value 'unit-msilo
+  'key "m" 'hint "BUILD ~!MISSILE SILO"
   'for-unit '(unit-engineer))
 
 (define-button 'pos 9 'level 1 'icon 'icon-cancel
@@ -181,10 +186,10 @@
   'key "b" 'hint "TRAIN ~!BAZOO"
   'for-unit '(unit-camp))
 
-(define-button 'pos 1 'level 0 'icon 'icon-medic
+(define-button 'pos 4 'level 0 'icon 'icon-medic
   'action 'train-unit 'value 'unit-medic
   'key "m" 'hint "TRAIN ~!MEDIC"
-  'for-unit '(unit-hosp))
+  'for-unit '(unit-camp))
 
 (define-button 'pos 1 'level 0 'icon 'icon-apcs
   'action 'train-unit 'value 'unit-apcs

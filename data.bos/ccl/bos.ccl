@@ -112,6 +112,7 @@
   'unit-hosp
   'unit-vfac
   'unit-apcs
+  'unit-msilo
 )
 
 (define-missiletype-wc-names

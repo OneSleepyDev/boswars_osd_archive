@@ -43,6 +43,7 @@
 (define-allow 'unit-vfac			"AAAAAAAAAAAAAAAA")
 (define-allow 'unit-apcs			"AAAAAAAAAAAAAAAA")
 (define-allow 'unit-human-wall			"AAAAAAAAAAAAAAAA")
+(define-allow 'unit-msilo			"AAAAAAAAAAAAAAAA")
 
 
 ;;	- upgrades
@@ -110,11 +111,17 @@
 (define-dependency 'unit-rfac
   '(unit-yard))
 
+(define-dependency 'unit-medic
+  '(unit-hosp))
+
 (define-dependency 'unit-gen
   '(unit-yard))
 
 (define-dependency 'unit-hosp
-  '(unit-yard))
+  '(unit-yard upgrade-void))
 
 (define-dependency 'unit-vfac
+  '(unit-yard upgrade-void))
+
+(define-dependency 'unit-msilo
   '(unit-yard upgrade-void))

@@ -283,6 +283,37 @@
     help "harvester-help"
     dead "harvester-die"))
 
+(define-unit-type 'unit-msilo 'name "Missile Silo"
+  'files '(tileset-desert "elites/build/missile_silo.png")
+  'size '(128 128)
+  'shadow '(file "elites/build/missile_silo_s.png" size (128 128))
+  'animations 'animations-msilo 'icon 'icon-msilo
+  'costs '(time 1000 titanium 1500 crystal 1500 gas 500)
+  'repair-hp 2
+  'repair-costs '(titanium 2)
+  'construction 'construction-msilo
+  'speed 0
+  'hit-points 450
+  'draw-level 110
+  'tile-size '(4 4) 'box-size '(124 124)
+  'sight-range 1
+  'armor 10 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
+  'priority 20 'annoy-computer-factor 45
+  'points 100
+  'explode-when-killed 'missile-160x128-explosion
+  'corpse '(build-dead-body2 0)
+  'type-land
+  'demand 400
+  'building 
+  'sounds '(
+    selected "gen-selected"
+;    acknowledge "pplnt-acknowledge"
+    ready "gen-ready"
+    help "gen-help"
+    dead "gen-dead"
+;    attack "pplnt-attack"
+  ))
+
 (define-unit-type 'unit-gen 'name "Generator"
   'files '(tileset-desert "elites/build/generator.png")
   'size '(64 64)
@@ -302,7 +333,7 @@
   'points 100
   'supply 150
   'explode-when-killed 'missile-160x128-explosion
-  'corpse '(build-dead-body2 0)
+  'corpse '(build-dead-body7 0)
   'type-land
   'demand 25
   'building 
@@ -634,6 +665,22 @@
   'hit-points 999
   'draw-level 30
   'tile-size '(7 5) 'box-size '(220 156)
+  'sight-range 1
+  'basic-damage 0 'piercing-damage 0 'missile 'missile-none
+  'priority 0
+  'type-land
+  'building
+  'vanishes
+  'sounds '())
+
+(define-unit-type 'build-dead-body7 'name "SiloCrater"
+  'files '(tileset-desert "elites/build/missile_silo.png")
+  'size '(128 128)
+  'animations 'animations-elitebuild7 'icon 'icon-cancel
+  'speed 0
+  'hit-points 999
+  'draw-level 30
+  'tile-size '(4 4) 'box-size '(124 124)
   'sight-range 1
   'basic-damage 0 'piercing-damage 0 'missile 'missile-none
   'priority 0

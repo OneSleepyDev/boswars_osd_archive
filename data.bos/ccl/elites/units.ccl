@@ -203,11 +203,12 @@
   'building 
   'sounds '(
     selected "camp-selected"
-    acknowledge "camp-acknowledge"
+;    acknowledge "camp-acknowledge"
     ready "camp-ready"
     help "basic elites voices help 2"
     dead "camp-dead"
-    attack "camp-attack"))
+;    attack "camp-attack"
+  ))
 
 (define-unit-type 'unit-fort 'name "Fort"
   'files '(tileset-desert "elites/build/bld_fort.png")
@@ -233,11 +234,12 @@
   'can-store '(crystal titanium gas)
   'sounds '(
     selected "fort-selected"
-    acknowledge "town-hall-acknowledge"
-    ready "town-hall-ready"
+;    acknowledge "fort-acknowledge"
+    ready "fort-ready"
     help "basic elites voices help 2"
     dead "fort-dead"
-    attack "town-hall-attack"))
+;    attack "town-hall-attack"
+  ))
 
 (define-unit-type 'unit-rfac 'name "Research Facility"
   'files '(tileset-desert "elites/build/bld_rfac.png")
@@ -262,12 +264,13 @@
   'type-land
   'building 
   'sounds '(
-    selected "fort-selected"
-    acknowledge "town-hall-acknowledge"
-    ready "town-hall-ready"
+    selected "rfac-selected"
+;    acknowledge "town-hall-acknowledge"
+    ready "rfac-ready"
     help "basic elites voices help 2"
-    dead "fort-dead"
-    attack "town-hall-attack"))
+    dead "rfac-dead"
+;    attack "town-hall-attack"
+  ))
 
 
 (define-unit-type 'unit-elites-start-location 'name "Start Location"

@@ -59,14 +59,13 @@
 ;;
 (define sound-click (make-sound "click" "ui/click.wav"))
 
+
+
 ;;----------------------------------------------------------------------------
-;;	Define simple sounds. (FIXME: somebody must clean the order.)
+;;	ELITES
 ;;
 
-
-;; ELITES
 ;; UNITS
-;; LANCER
 (make-sound "lancer-die" "elites/unit_lancer_die.wav")
 (make-sound "lancer-acknowledge" "elites/unit_lancer_yes.wav")
 (make-sound "lancer-help" "elites/unit_lancer_help.wav")
@@ -74,38 +73,46 @@
 (make-sound "lancer-ready" "elites/unit_lancer_ready.wav")
 (make-sound "lancer-attack" "elites/unit_lancer_fire.wav")
 
-(make-sound "fort-selected" "elites/buildings/sfx_fort.select.wav")
-(make-sound "fort-dead" "elites/buildings/sfx_fort.die.wav")
-
-(make-sound "camp-selected" "elites/buildings/sfx_camp.select.wav")
-(make-sound "camp-dead" "elites/buildings/sfx_camp.die.wav")
-
+;; BUILDINGS
+(make-sound "pplnt-ready" "elites/computer_voice/power.plant.completed.wav")
 (make-sound "pplnt-selected" "elites/buildings/sfx_pplnt.select.wav")
 (make-sound "pplnt-dead" "elites/buildings/sfx_pplnt.die.wav")
 
-;;----------------------------------------------------------------------------
-;;	Define simple elites sounds.
-;;
+(make-sound "camp-ready" "elites/computer_voice/training.camp.completed.wav")
+(make-sound "camp-selected" "elites/buildings/sfx_camp.select.wav")
+(make-sound "camp-dead" "elites/buildings/sfx_camp.die.wav")
+
+(make-sound "fort-ready" "elites/computer_voice/elite.fort.completed.wav")
+(make-sound "fort-selected" "elites/buildings/sfx_fort.select.wav")
+(make-sound "fort-dead" "elites/buildings/sfx_fort.die.wav")
+
+(make-sound "rfac-ready" "elites/computer_voice/research.facility.completed.wav")
+(make-sound "rfac-selected" "elites/buildings/sfx_rfac.select.wav")
+(make-sound "rfac-dead" "elites/buildings/sfx_rfac.die.wav")
+
+
+;;	Simple elites sounds.
 (make-sound "basic elites voices ready" "elites/basic_voices/ready.wav")
 (make-sound "basic elites voices help 1" "elites/basic_voices/help/1.wav")
 (make-sound "basic elites voices help 2" "elites/basic_voices/help/2.wav")
 (make-sound "basic elites voices dead" "elites/basic_voices/dead.wav")
 
-;;----------------------------------------------------------------------------
-;;	Define simple elites building.
-;;
 
 ;;----------------------------------------------------------------------------
-;;	Define simple terras sounds.
+;;	TERRAS
 ;;
+
+;; UNITS
+
+;; BUILDINGS
+
+
+;;	Simple terras sounds.
 (make-sound "basic terras voices ready" "terras/basic_voices/ready.wav")
 (make-sound "basic terras voices help 1" "terras/basic_voices/help/1.wav")
 (make-sound "basic terras voices help 2" "terras/basic_voices/help/2.wav")
 (make-sound "basic terras voices dead" "terras/basic_voices/dead.wav")
 
-;;----------------------------------------------------------------------------
-;;	Define simple terras building.
-;;
 
 ;;----------------------------------------------------------------------------
 ;;	Define simple misc sounds.
@@ -120,32 +127,6 @@
 (make-sound "capture (terras)" "terras/capture.wav")
 (make-sound "rescue (elites)" "elites/rescue.wav")
 (make-sound "rescue (terras)" "terras/rescue.wav")
-
-    ;;------------------------------------------------------------------------
-    ;; selection sounds
-(make-sound "sheep selected" "neutral/units/sheep/selected/1.wav")
-(make-sound "seal selected" "neutral/units/seal/selected/1.wav")
-(make-sound "pig selected" "neutral/units/pig/selected/1.wav")
-(make-sound "warthog selected" "neutral/units/warthog/selected/1.wav")
-    ;; annoyed sounds
-(make-sound "sheep annoyed" "neutral/units/sheep/annoyed/1.wav")
-(make-sound "seal annoyed" "neutral/units/seal/annoyed/1.wav")
-(make-sound "pig annoyed" "neutral/units/pig/annoyed/1.wav")
-(make-sound "warthog annoyed" "neutral/units/warthog/annoyed/1.wav")
-
-    ;;------------------------------------------------------------------------
-    ;; attack sounds
-(make-sound "catapult-ballista attack" "missiles/catapult-ballista_attack.wav")
-(make-sound "punch" "missiles/punch.wav")
-(make-sound "fireball hit" "missiles/fireball_hit.wav")
-(make-sound "fireball throw" "missiles/fireball_throw.wav")
-(make-sound "bow throw" "missiles/bow_throw.wav")
-(make-sound "bow hit" "missiles/bow_hit.wav")
-(make-sound "axe throw" "missiles/axe_throw.wav")
-(make-sound "fist" "missiles/fist.wav")
-(make-sound "peasant attack" "elites/units/peasant/attack.wav")
-(make-sound "lightning" "spells/lightning.wav")
-(make-sound "touch of darkness" "spells/touch_of_darkness.wav")
 
 ;;----------------------------------------------------------------------------
 ;;	Define sound groups.
@@ -213,10 +194,8 @@
 	"misc/tree_chopping/3.wav"
 	"misc/tree_chopping/4.wav"))
 
-(map-sound "critter-help" "basic terras voices help 1")
-(map-sound "critter-dead" "explosion")
 
-
+;;----------------------------------------------------------------------------
 ;;	Define sounds used by game
 ;;
 (define-game-sounds

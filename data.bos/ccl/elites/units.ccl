@@ -33,6 +33,36 @@
 ;;
 ;;	NOTE: Save can generate this table.
 ;;
+(define-unit-type 'unit-plate1 'name "1x1 Ground Plate"
+  'files '(tileset-desert "elites/buildings/plate.png")
+  'size '(32 32)
+  'animations 'animations-plate 'icon 'icon-plate1
+  'costs '(time 10 titanium 25 crystal 0 gas 0)
+  'repair-hp 1
+  'repair-costs '(titanium 1)
+  'construction 'construction-plate
+  'speed 0
+  'hit-points 25
+  'draw-level 1
+  'tile-size '(1 1) 'box-size '(36 36)
+  'sight-range 0
+  'armor 10 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
+  'priority 20 'annoy-computer-factor 45
+  'points 15
+  'corpse '(build-dead-body7 0)
+  'type-land
+  'building 
+  'sounds '(
+    selected "gen-selected"
+;    acknowledge "pplnt-acknowledge"
+    ready "gen-ready"
+    help "gen-help"
+    dead "gen-dead"
+;    attack "pplnt-attack"
+  ))
+
+
+
 (define-unit-type 'unit-apcs 'name "APC Smolder"
   'files '(tileset-desert "elites/units/unit_apcs.png")
   'size '(96 96)
@@ -41,7 +71,7 @@
   'costs '(time 400 titanium 400 crystal 50 gas 50)
   'speed 15
   'hit-points 200
-  'draw-level 110
+  'draw-level 25
   'tile-size '(1 1) 'box-size '(96 96)
   'sight-range 5 'computer-reaction-range 5 'person-reaction-range 5
   'armor 6 'basic-damage 5 'piercing-damage 5 'missile 'missile-none
@@ -78,7 +108,7 @@
   'hit-points 100
   'max-mana 100
   'can-cast-spell '(spell-healing)
-  'draw-level 110
+  'draw-level 25
   'tile-size '(1 1) 'box-size '(17 28)
   'sight-range 3 'computer-reaction-range 6 'person-reaction-range 6
   'armor 1 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
@@ -108,7 +138,7 @@
   'costs '(time 400 titanium 250 crystal 150)
   'speed 8
   'hit-points 50
-  'draw-level 110
+  'draw-level 25
   'tile-size '(1 1) 'box-size '(17 28)
   'sight-range 7 'computer-reaction-range 6 'person-reaction-range 6
   'armor 2 'basic-damage 5 'piercing-damage 15 'missile 'missile-bazoo
@@ -141,7 +171,7 @@
   'costs '(time 100 titanium 200 crystal 50)
   'speed 10
   'hit-points 50
-  'draw-level 110
+  'draw-level 25
   'tile-size '(1 1) 'box-size '(17 28)
   'sight-range 6 'computer-reaction-range 6 'person-reaction-range 6
   'armor 3 'basic-damage 5 'piercing-damage 5 'missile 'missile-none
@@ -173,7 +203,7 @@
   'costs '(time 300 titanium 200 crystal 100)
   'speed 10
   'hit-points 50
-  'draw-level 110
+  'draw-level 25
   'tile-size '(1 1) 'box-size '(17 28)
   'sight-range 6 'computer-reaction-range 6 'person-reaction-range 6
   'armor 2 'basic-damage 15 'piercing-damage 15 'missile 'missile-grenadier
@@ -206,7 +236,7 @@
   'costs '(time 150 titanium 175 crystal 25)
   'speed 8
   'hit-points 30
-  'draw-level 110
+  'draw-level 25
   'tile-size '(1 1) 'box-size '(17 28)
   'sight-range 5 'computer-reaction-range 6 'person-reaction-range 4
   'armor 1 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
@@ -244,7 +274,7 @@
   'files '(tileset-desert "elites/units/unit_harv.png")
   'size '(96 96)
   'shadow '(file "elites/units/unit_harv_s.png" size (96 96))
-  'draw-level 110
+  'draw-level 25
   'animations 'animations-harvester 'icon 'icon-harvester
   'costs '(time 550 titanium 500 crystal 300 gas 100)
   'repair-hp 2
@@ -294,7 +324,7 @@
   'construction 'construction-msilo
   'speed 0
   'hit-points 450
-  'draw-level 110
+  'draw-level 25
   'tile-size '(4 4) 'box-size '(124 124)
   'sight-range 1
   'armor 10 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
@@ -327,7 +357,7 @@
   'construction 'construction-gen
   'speed 0
   'hit-points 250
-  'draw-level 110
+  'draw-level 25
   'tile-size '(2 2) 'box-size '(60 60)
   'sight-range 1
   'armor 10 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
@@ -337,6 +367,7 @@
   'explode-when-killed 'missile-160x128-explosion
   'corpse '(build-dead-body7 0)
   'type-land
+  'must-build-on-top 'unit-plate1
   'building 
   'sounds '(
     selected "gen-selected"
@@ -358,7 +389,7 @@
   'construction 'construction-camp
   'speed 0
   'hit-points 500
-  'draw-level 110
+  'draw-level 25
   'demand 125
   'tile-size '(5 4) 'box-size '(156 124)
   'sight-range 1
@@ -378,19 +409,18 @@
 ;    attack "camp-attack"
   ))
 
-(define-unit-type 'unit-yard 'name "Development Yard"
-  'files '(tileset-desert "elites/build/development_yard.png")
-  'size '(224 196)
-  'shadow '(file "elites/build/development_yard_s.png" size (224 196))
-  'animations 'animations-dev 'icon 'icon-dev
+(define-unit-type 'unit-vault 'name "Vault"
+  'files '(tileset-desert "elites/buildings/vault.png")
+  'size '(160 220)
+  'animations 'animations-vault 'icon 'icon-vault
   'costs '(time 1000 titanium 1000 crystal 1000 gas 0)
   'repair-hp 4
   'repair-costs '(titanium 4)
-  'construction 'construction-dev
+  'construction 'construction-vault
   'speed 0
   'hit-points 1800
-  'draw-level 120
-  'tile-size '(7 6) 'box-size '(220 192)
+  'draw-level 25
+  'tile-size '(5 4) 'box-size '(164 132)
   'sight-range 4
   'armor 30 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
   'priority 35 'annoy-computer-factor 45
@@ -421,7 +451,7 @@
   'construction 'construction-rfac
   'speed 0
   'hit-points 350
-  'draw-level 110
+  'draw-level 25
   'tile-size '(4 4) 'box-size '(124 124)
   'sight-range 1
   'armor 30 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
@@ -452,7 +482,7 @@
   'construction 'construction-hosp
   'speed 0
   'hit-points 350
-  'draw-level 110
+  'draw-level 25
   'tile-size '(4 3) 'box-size '(124 92)
   'sight-range 2
   'armor 30 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
@@ -483,7 +513,7 @@
   'construction 'construction-vfac
   'speed 0
   'hit-points 550
-  'draw-level 110
+  'draw-level 25
   'tile-size '(7 5) 'box-size '(220 156)
   'sight-range 2
   'armor 30 'basic-damage 0 'piercing-damage 0 'missile 'missile-none

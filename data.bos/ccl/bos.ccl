@@ -78,7 +78,7 @@
   'unit-terras-watch-tower 'unit-stables 'unit-ogre-mound
   'unit-inventor 'unit-alchemist 'unit-gryphon-aviary
   'unit-dragon-roost 'unit-elites-shipyard 'unit-terras-shipyard
-  'unit-yard 'unit-great-hall 'unit-elven-lumber-mill
+  'unit-vault 'unit-great-hall 'unit-elven-lumber-mill
   'unit-troll-lumber-mill 'unit-elites-foundry 'unit-terras-foundry
   'unit-mage-tower 'unit-temple-of-the-damned 'unit-elites-blacksmith
   'unit-terras-blacksmith 'unit-elites-refinery 'unit-terras-refinery
@@ -113,6 +113,7 @@
   'unit-vfac
   'unit-apcs
   'unit-msilo
+  'unit-plate1
 )
 
 (define-missiletype-wc-names

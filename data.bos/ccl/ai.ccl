@@ -54,18 +54,18 @@
     ;;	Unit can build which buildings.
     ;;
     (list 'build 'unit-engineer
-	'unit-gen 'unit-camp 'unit-yard 'unit-rfac 'unit-human-wall)
+	'unit-gen 'unit-camp 'unit-vault 'unit-rfac 'unit-human-wall)
     ;;
     ;;	Building can train which units.
     ;;
 ;    (list 'train 'unit-gen 'unit-critter)
-    (list 'train 'unit-yard 'unit-engineer 'unit-harvester)
+    (list 'train 'unit-vault 'unit-engineer 'unit-harvester)
     (list 'train 'unit-camp 'unit-assault)
     ;;
     ;;	Unit can repair which units.
     ;;
     (list 'repair 'unit-engineer
-	'unit-gen 'unit-camp 'unit-yard 'unit-rfac 'unit-harvester 'unit-human-wall)
+	'unit-gen 'unit-camp 'unit-vault 'unit-rfac 'unit-harvester 'unit-human-wall)
     ;;
     ;;	Reduce unit limits.
     ;;
@@ -211,7 +211,7 @@
 ;;
 (define (ai:city-center)
   (if (eq? (ai:get-race) race1)
-      'unit-yard 'unit-great-hall) )
+      'unit-vault 'unit-great-hall) )
 
 ;;
 ;;	Worker of the current race.
@@ -318,9 +318,9 @@
   '(
     ;;	Define the main AI script.
     (begin (ai:debug #f) (ai:sleep (ai:get-sleep-cycles)))
-    (ai:need (unit-type 'unit-yard))
+    (ai:need (unit-type 'unit-vault))
     (ai:set  'unit-engineer 1)
-    (ai:wait 'unit-yard)
+    (ai:wait 'unit-vault)
     (ai:wait 'unit-engineer)	;; start hangs if nothing available
 
     (ai:set  'unit-engineer 4)

@@ -70,6 +70,8 @@
   'size '(46 38) 'normal '(0 "elites/build/ico_fort.png"))
 (define-icon 'icon-rfac
   'size '(46 38) 'normal '(0 "elites/build/ico_rfac.png"))
+(define-icon 'icon-hosp
+  'size '(46 38) 'normal '(0 "elites/build/ico_hosp.png"))
 
 (define-icon 'icon-expl
   'size '(46 38) 'normal '(0 "elites/research/res_expl.png"))

@@ -135,6 +135,10 @@
 (make-sound "rfac-help" "elites/computer_voice/research.facility.underattack.wav")
 (make-sound "rfac-dead" "elites/buildings/sfx_rfac.die.wav")
 
+(make-sound "hosp-selected" "elites/buildings/sfx_hosp.select.wav")
+(make-sound "hosp-ready" "elites/computer_voice/hospital.completed.wav")
+(make-sound "hosp-help" "elites/computer_voice/hospital.underattack.wav")
+(make-sound "hosp-dead" "elites/buildings/sfx_hosp.die.wav")
 
 (make-sound "grenade-impact" "elites/units/grenadier_g_hit.wav")
 (make-sound "rocket-impact" "elites/units/booza_g_hit.wav")

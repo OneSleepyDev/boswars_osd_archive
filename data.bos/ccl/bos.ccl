@@ -109,6 +109,7 @@
   'unit-crystal-field13
   'unit-bazoo
   'unit-medic
+  'unit-hosp
 )
 
 (define-missiletype-wc-names

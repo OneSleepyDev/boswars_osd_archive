@@ -370,6 +370,36 @@
 ;    attack "town-hall-attack"
   ))
 
+(define-unit-type 'unit-hosp 'name "Hospital"
+  'files '(tileset-desert "elites/build/bld_hosp.png")
+  'size '(96 96)
+  'shadow '(file "elites/build/bld_hosp_s.png" size (96 96))
+  'animations 'animations-hosp 'icon 'icon-hosp
+  'costs '(time 500 titanium 800 crystal 300)
+  'repair-hp 2
+  'repair-costs '(titanium 2)
+  'construction 'construction-hosp
+  'speed 0
+  'hit-points 350
+  'draw-level 20
+  'tile-size '(3 3) 'box-size '(96 96)
+  'sight-range 2
+  'armor 30 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
+  'priority 35 'annoy-computer-factor 45
+  'demand 200
+  'points 200
+  'explode-when-killed 'missile-160x128-explosion
+  'type-land
+  'building 
+  'sounds '(
+    selected "hosp-selected"
+;    acknowledge "town-hall-acknowledge"
+    ready "hosp-ready"
+    help "hosp-help"
+    dead "hosp-dead"
+;    attack "town-hall-attack"
+  ))
+
 (define-unit-type 'unit-dead-body1 'name "Assaultunitbody"
   'files '(tileset-desert "elites/units/unit_assault_c.png")
   'size '(64 64)

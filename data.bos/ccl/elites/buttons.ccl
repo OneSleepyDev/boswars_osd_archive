@@ -121,6 +121,11 @@
   'key "r" 'hint "BUILD ~!RESEARCH FACILITY"
   'for-unit '(unit-engineer))
 
+(define-button 'pos 5 'level 1 'icon 'icon-hosp
+  'action 'build 'value 'unit-hosp
+  'key "h" 'hint "BUILD ~!HOSPITAL"
+  'for-unit '(unit-engineer))
+
 (define-button 'pos 9 'level 1 'icon 'icon-cancel
   'action 'button 'value 0
   'key "\033" 'hint "~<ESC~> CANCEL"
@@ -154,6 +159,11 @@
   'action 'train-unit 'value 'unit-bazoo
   'key "b" 'hint "TRAIN ~!BAZOO"
   'for-unit '(unit-camp))
+
+(define-button 'pos 1 'level 0 'icon 'icon-medic
+  'action 'train-unit 'value 'unit-medic
+  'key "m" 'hint "TRAIN ~!MEDIC"
+  'for-unit '(unit-hosp))
 
 ;; upgrades -------------------------------------------------------------------
 

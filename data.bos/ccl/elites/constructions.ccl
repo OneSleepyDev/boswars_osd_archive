@@ -100,3 +100,22 @@
       file main
       frame 9))
 )
+
+(define-construction 'construction-hosp
+  'constructions (list
+    '(percent 0
+      file main
+      frame 2)
+    '(percent 20
+      file main
+      frame 3)
+    '(percent 40
+      file main
+      frame 4)
+    '(percent 60
+      file main
+      frame 5)
+    '(percent 80
+      file main
+      frame 6))
+)

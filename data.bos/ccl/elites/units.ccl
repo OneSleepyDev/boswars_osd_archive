@@ -52,6 +52,7 @@
   'corpse '(build-dead-body7 0)
   'type-land
   'building 
+  'builder-outside
   'sounds '(
     selected "gen-selected"
 ;    acknowledge "pplnt-acknowledge"
@@ -369,6 +370,7 @@
   'type-land
   'must-build-on-top 'unit-plate1
   'building 
+'builder-outside
   'sounds '(
     selected "gen-selected"
 ;    acknowledge "pplnt-acknowledge"

@@ -57,7 +57,7 @@
 ;;	Enter your default title screen.
 (set-title-screens!
   '("video/int_logo_stratagus.avi" "video/int_logo_stratagus.ogg")
-  '("video/int_logo_bos.avi"))
+  '("video/int_logo_bos.avi" "video/int_logo_bos.ogg"))
 
 ;;	Enter your title music.
 ;(set-title-music! "music/title.ogg")

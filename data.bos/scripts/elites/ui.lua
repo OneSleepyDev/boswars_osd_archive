@@ -86,7 +86,7 @@ function DefineElitePanels(info_panel_x, info_panel_y)
 		More = {"LifeBar", {Variable = "HitPoints", Height = 7, Width = 45}}
 	},
 	{ Pos = {38, 57}, Condition = {ShowOpponent = false, HideNeutral = true},
-		More = {"FormatedText2", {
+		More = {"FormattedText2", {
 			Font = "small", Variable = "HitPoints", Format = "%d/%d",
 			Component1 = "Value", Component2 = "Max", Centered = true}}
 	},
@@ -95,7 +95,7 @@ function DefineElitePanels(info_panel_x, info_panel_y)
 		Condition = {Slot = "only"} }, -- DEBUG ONLY.
 -- Ressource Left
 	{ Pos = {88, 86}, Condition = {ShowOpponent = false, GiveResource = "only"},
-		More = {"FormatedText2", {Format = "%s Left:%d", Variable = "GiveResource",
+		More = {"FormattedText2", {Format = "%s Left:%d", Variable = "GiveResource",
 					Component1 = "Name", Component2 = "Value", Centered = true}}
 	}
 
@@ -113,7 +113,7 @@ function DefineElitePanels(info_panel_x, info_panel_y)
 					Component = "Max"}} },
 	{ Pos = {16, 102}, More = {"Text", {Text = "Demand : ", Variable = "Demand",
 					Component = "Max"}} },
-	{ Pos = {16, 102}, More = {"FormatedText", {Format = "Demand : ~<%d~>",
+	{ Pos = {16, 102}, More = {"FormattedText", {Format = "Demand : ~<%d~>",
 					Variable = "Demand", Component = "Max"}}
 -- FIXME COLOR when Demand >= Supply
     }
@@ -127,11 +127,11 @@ function DefineElitePanels(info_panel_x, info_panel_y)
   Condition = {ShowOpponent = false, HideNeutral = true, Build = "false"},
   Contents = {
 	{ Pos = {16, 97}, Condition = {Damage = "only"},
-		More = {"FormatedText2", {Format = "Damage: %d-%d", Variable = "Damage",
+		More = {"FormattedText2", {Format = "Damage: %d-%d", Variable = "Damage",
 			Component1 = "Value", Component2 = "Max"}}
 	},
 	{ Pos = {109, 97}, Condition = {Damage = "only"},-- FIXME When PiercingDamage.Diff != 0.
-		More = {"FormatedText2", {Format = "~<%+d+%d~>", Variable1 = "ExtraDamage",
+		More = {"FormattedText2", {Format = "~<%+d+%d~>", Variable1 = "ExtraDamage",
 			Variable2 = "PiercingDamage", Component2 = "Diff"}}
 
 	},
@@ -169,7 +169,7 @@ function DefineElitePanels(info_panel_x, info_panel_y)
 	{ Pos = {86, 141}, More = {"Text", {Variable = "Mana"}}, Condition = {Mana = "only"} },
 -- Ressource Carry
 	{ Pos = {16, 97}, Condition = {CarryResource = "only"},
-		More = {"FormatedText2", {Format = "Carry: %d %s", Variable = "CarryResource",
+		More = {"FormattedText2", {Format = "Carry: %d %s", Variable = "CarryResource",
 				Component1 = "Value", Component2 = "Name"}}
 	}
 
@@ -183,10 +183,10 @@ function DefineElitePanels(info_panel_x, info_panel_y)
   Contents = {
 -- Unit caracteristics
 	{ Pos = {114, 37}, Condition = {Level = "only"},
-		More = {"FormatedText", {Variable = "Level", Format = "Level ~<%d~>"}}
+		More = {"FormattedText", {Variable = "Level", Format = "Level ~<%d~>"}}
 	},
 	{ Pos = {114, 52}, Condition = {Level = "only"},
-		More = {"FormatedText2", {Centered = true,
+		More = {"FormattedText2", {Centered = true,
 			Variable1 = "Xp", Variable2 = "Kill", Format = "XP:~<%d~> Kills:~<%d~>"}}
 	},
 	{ Pos = {16, 84}, Condition = {Armor = "only"},

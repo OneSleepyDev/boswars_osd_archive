@@ -3,6 +3,13 @@ compose     : Bash script to compose the many output images into two
               images. It needs 'convert', contained in the
               imagemagic tools, and 'mmv', a small script to rename
               multiple files.
+              In order to use this you have to save the images which
+              should go into the shadow file as 'shadow????.png' where
+              ???? are the numbers of the images and the images that
+              should go into the unit file as 'normal????.png'.
+              The model is ready for the shadow images. To obtain the
+              unit images, remove the plain on which the model is sitting
+              and change the output filename to 'normal' before rendering.
 
 The model and the script are distributed unter the GPL (look below).
 

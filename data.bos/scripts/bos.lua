@@ -109,12 +109,6 @@ DefineUnitTypeWcNames(
 	"unit-cam",
 	"unit-plate1")
 
-DefineMissileTypeWcNames(
-	"missile-nuke", "missile-grenadier", "missile-bazoo", "missile-dorcoz",
-	"missile-heal", "missile-64x64-explosion", "missile-160x128-explosion",
-	"missile-288x288-explosion", "missile-small-fire", "missile-big-fire",
-	"missile-explosion", "missile-green-cross", "missile-none", "missile-hit")
-
 DefineIconWcNames(
 	"icon-assault", "icon-apcs", "icon-grenadier", "icon-bazoo",
 	"icon-medic", "icon-engineer", "icon-harvester", "icon-gen",

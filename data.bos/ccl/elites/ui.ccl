@@ -236,8 +236,8 @@
       panel4 "graphics/ui/elites/panel_4.png"
       panel5 "graphics/ui/elites/panel_5.png")
 
-    'victory-background "graphics/ui/elites/victory.png"
-    'defeat-background "graphics/ui/elites/defeat.png") )
+    'victory-background "graphics/screens/general.png"
+    'defeat-background "graphics/screens/general.png") )
 
 (elites_screen 640 480)
 (elites_screen 800 600)

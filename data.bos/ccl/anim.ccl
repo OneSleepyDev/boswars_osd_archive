@@ -145,7 +145,7 @@
 
 (define-animations 'animations-elitecorpse1
   'die '(	; #201
-     #( 0 0 400   20) #(0 0 200  0) #( 0 0 200  5) #( 0 0 200  10) #( 0 0 200  15) #( 3 0 1  15)))
+     #( 0 0 800   20) #(0 0 200  0) #( 0 0 200  5) #( 0 0 200  10) #( 0 0 200  15) #( 3 0 1  15)))
 
 (define-animations 'animations-crystal-field1
   'still '(	; #5

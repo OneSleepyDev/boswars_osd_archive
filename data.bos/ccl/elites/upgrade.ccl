@@ -31,6 +31,7 @@
 ;;	NOTE: Save can generate this table.
 
 (define-allow 'unit-lancer			"AAAAAAAAAAAAAAAA")
+(define-allow 'unit-grenadier			"AAAAAAAAAAAAAAAA")
 (define-allow 'unit-engineer			"AAAAAAAAAAAAAAAA")
 (define-allow 'unit-harvester			"AAAAAAAAAAAAAAAA")
 (define-allow 'unit-pplnt			"AAAAAAAAAAAAAAAA")

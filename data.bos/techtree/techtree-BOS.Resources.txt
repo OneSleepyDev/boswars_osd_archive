@@ -1,0 +1,83 @@
+BOS.Resources 
+	Titanium - Metal/Mine
+	Crystals - Power/Fields
+		!Crystal Field TAG CRYS1
+			Stats: Resource; Hitpoints 50;
+			GFX: Icon nature\res\ico_crys.png; Unit nature\res\res_crys.png;
+			Anim: Stand 6; Die 6;
+			Other: Resource/Crystal (a150)
+
+		!Crystal Field TAG CRYS2
+			Stats: Resource; Hitpoints 50;
+			GFX: Icon nature\res\ico_crys.png; Unit nature\res\res_crys.png;
+			Anim: Stand 10; Die 10;
+			Other: Resource/Crystal (a150)
+
+		!Crystal Field TAG CRYS3
+			Stats: Resource; Hitpoints 100;
+			GFX: Icon nature\res\ico_crys.png; Unit nature\res\res_crys.png;
+			Anim: Stand 12; Die 12;
+			Other: Resource/Crystal (a300)
+
+		!Crystal Field TAG CRYS4
+			Stats: Resource; Hitpoints 100;
+			GFX: Icon nature\res\ico_crys.png; Unit nature\res\res_crys.png;
+			Anim: Stand 4; Die 4;
+			Other: Resource/Crystal (a300)
+
+		!Crystal Field TAG CRYS5
+			Stats: Resource; Hitpoints 150;
+			GFX: Icon nature\res\ico_crys.png; Unit nature\res\res_crys.png;
+			Anim: Stand 0; Die 0;
+			Other: Resource/Crystal (a450)
+
+		!Crystal Field TAG CRYS6
+			Stats: Resource; Hitpoints 150;
+			GFX: Icon nature\res\ico_crys.png; Unit nature\res\res_crys.png;
+			Anim: Stand 1; Die 1;
+			Other: Resource/Crystal (a450)
+
+		!Crystal Field TAG CRYS7
+			Stats: Resource; Hitpoints 300;
+			GFX: Icon nature\res\ico_crys.png; Unit nature\res\res_crys.png;
+			Anim: Stand 5; Die 5;
+			Other: Resource/Crystal (a600)
+
+		!Crystal Field TAG CRYS8
+			Stats: Resource; Hitpoints 300;
+			GFX: Icon nature\res\ico_crys.png; Unit nature\res\res_crys.png;
+			Anim: Stand 7; Die 7;
+			Other: Resource/Crystal (a600)
+
+		!Crystal Field TAG CRYS9
+			Stats: Resource; Hitpoints 400;
+			GFX: Icon nature\res\ico_crys.png; Unit nature\res\res_crys.png;
+			Anim: Stand 2; Die 2;
+			Other: Resource/Crystal (a750)
+
+		!Crystal Field TAG CRYS10
+			Stats: Resource; Hitpoints 400;
+			GFX: Icon nature\res\ico_crys.png; Unit nature\res\res_crys.png;
+			Anim: Stand 3; Die 3;
+			Other: Resource/Crystal (a750)
+
+		!Crystal Field TAG CRYS11
+			Stats: Resource; Hitpoints 600;
+			GFX: Icon nature\res\ico_crys.png; Unit nature\res\res_crys.png;
+			Anim: Stand 11; Die 11;
+			Other: Resource/Crystal (a900)
+
+		!Crystal Field TAG CRYS12
+			Stats: Resource; Hitpoints 500;
+			GFX: Icon nature\res\ico_crys.png; Unit nature\res\res_crys.png;
+			Anim: Stand 8; Die 8;
+			Other: Resource/Crystal (a900)
+
+		!Crystal Field TAG CRYS13
+			Stats: Resource; Hitpoints 600;
+			GFX: Icon nature\res\ico_crys.png; Unit nature\res\res_crys.png;
+			Anim: Stand 9; Die 9;
+			Other: Resource/Crystal (a1050)
+
+	Power - Vec/Build
+	Gas - Fuel/Fields

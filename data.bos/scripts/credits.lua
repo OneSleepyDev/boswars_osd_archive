@@ -29,7 +29,7 @@
 --	$Id$
 
 Credits(
-	"background", "graphics/screens/general.png",
+	"background", "screens/general.png",
 	"title", "BATTLE OF SURVIVAL",
 	"title", "(c) skyline software",
 	"name", " ",

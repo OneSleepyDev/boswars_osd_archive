@@ -76,7 +76,7 @@ ShowManaDot()
 ShowNoFull()
 
 --	Define shadow-sprite.
-ShadowSprite("graphics/missiles/unit_shadow.png",3, 42, 32, 32)
+--ShadowSprite("graphics/missiles/unit_shadow.png",3, 42, 32, 32)
 SpellSprite("graphics/general/spells1.png", 1, 1, 16, 16)
 
 --	Enable fancy building (random mirroring buildings)
@@ -190,7 +190,7 @@ end
 --	Tables-Part
 -------------------------------------------------------------------------------
 
-DefineTileset("tileset-desert", "class", "desert", "name", "Desert", "file", "scripts/tile_desert.lua")
+DefineTileset("tileset-desert", "class", "desert", "name", "Desert", "file", "scripts/tilesets/desert.lua")
 DefineTileset("tileset-winter", "class", "winter", "name", "Winter", "file", "scripts/tile_winter.lua")
 
 --; Uses Stratagus Library path!
@@ -208,7 +208,7 @@ Load("scripts/fonts.lua")
 Load("scripts/buttons.lua")
 Load("scripts/ui.lua")
 --FIXME: no AI for now.
---Load("scripts/ai.lua")
+Load("scripts/ai.lua")
 Load("scripts/credits.lua")
 Load("scripts/tips.lua")
 Load("scripts/ranks.lua")

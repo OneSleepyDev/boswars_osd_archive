@@ -55,7 +55,7 @@ DefineUnitType("unit-plate1", {
 DefineUnitType("unit-apcs", {
 	Name = "APC Smolder",
 	Files = {"tileset-desert", "elites/units/unit_apcs.png"}, Size = {96, 96},
-	Shadow = {"file", "elites/units/unit_apcs_s.png", Size, {96, 96}},
+	Shadow = {"file", "elites/units/unit_apcs_s.png", "size", {96, 96}},
 	Animations = "animations-apcs", Icon = "icon-apcs",
 	Costs = {"time", 400, "titanium", 400, "crystal", 50, "gas", 50},
 	Speed = 15, HitPoints = 200, DrawLevel = 25, TileSize = {1, 1},
@@ -338,7 +338,7 @@ DefineUnitType("unit-rfac", {
 DefineUnitType("unit-hosp", {
 	Name = "Hospital",
 	Files = {"tileset-desert", "elites/build/hospital.png"}, Size = {128, 96},
-	Shadow = {"file", "elites/build/hospital_s.png", Size = {128, 96}},
+	Shadow = {"file", "elites/build/hospital_s.png", "size", {128, 96}},
 	Animations = "animations-hosp", Icon = "icon-hosp",
 	Costs = {"time", 500, "titanium", 800, "crystal", 300},
 	RepairHp = 2, RepairCosts = {"titanium", 2}, Construction = "construction-hosp",

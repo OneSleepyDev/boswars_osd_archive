@@ -60,7 +60,7 @@
     ;;
 ;    (list 'train 'unit-pplnt 'unit-critter)
     (list 'train 'unit-fort 'unit-engineer 'unit-harvester)
-    (list 'train 'unit-camp 'unit-lancer)
+    (list 'train 'unit-camp 'unit-assault)
     ;;
     ;;	Unit can repair which units.
     ;;
@@ -123,7 +123,7 @@
 ;;		Waits until the *first* request of this unit-type is completed.
 ;;
 ;;	(ai:force force unit-type1 count1 ... unit-typeN countN)
-;;	(ai:force 0 'unit-lancer 4 'unit-archer 4)
+;;	(ai:force 0 'unit-assault 4 'unit-archer 4)
 ;;
 ;;		Defines a force for the AI. Ten forces are supported.
 ;;		Fterrase 0 defaults currently to the home defence and send
@@ -232,7 +232,7 @@
 ;;
 (define (ai:soldier)
   (if (eq? (ai:get-race) race1)
-      'unit-lancer 'unit-grunt) )
+      'unit-assault 'unit-grunt) )
 
 ;;=============================================================================
 ;;
@@ -325,8 +325,8 @@
 
     (ai:set  'unit-engineer 4)
     (ai:need 'unit-camp)
-    (ai:force 0  'unit-lancer 2)
-    (ai:force 1  'unit-lancer 1)
+    (ai:force 0  'unit-assault 2)
+    (ai:force 1  'unit-assault 1)
     (ai:wait-force 1)		;; wait until attack party is completed
 
     (ai:sleep 500)

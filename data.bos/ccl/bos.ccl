@@ -57,7 +57,7 @@
   'construction-land2)
 
 (define-unittype-wc-names
-  'unit-lancer 'unit-grunt 'unit-engineer 'unit-peon 'unit-ballista
+  'unit-assault 'unit-grunt 'unit-engineer 'unit-peon 'unit-ballista
   'unit-catapult 'unit-knight 'unit-ogre 'unit-archer 'unit-axethrower
   'unit-mage 'unit-death-knight 'unit-paladin 'unit-ogre-mage
   'unit-dwarves 'unit-goblin-sappers 'unit-engineer
@@ -124,7 +124,7 @@
   'missile-death-coil 'missile-none)
 
 (define-icon-wc-names
-  'icon-peasant 'icon-peon 'icon-lancer 'icon-grunt 'icon-archer
+  'icon-peasant 'icon-peon 'icon-assault 'icon-grunt 'icon-archer
   'icon-axethrower 'icon-ranger 'icon-berserker 'icon-knight 'icon-ogre
   'icon-paladin 'icon-ogre-mage 'icon-dwarves 'icon-goblin-sappers 'icon-mage
   'icon-death-knight 'icon-ballista 'icon-catapult 'icon-elites-oil-tanker

@@ -29,7 +29,7 @@
 ;;	$Id$
 
 
-(define-allow 'unit-lancer			"AAAAAAAAAAAAAAAA")
+(define-allow 'unit-assault			"AAAAAAAAAAAAAAAA")
 (define-allow 'unit-grenadier			"AAAAAAAAAAAAAAAA")
 (define-allow 'unit-engineer			"AAAAAAAAAAAAAAAA")
 (define-allow 'unit-harvester			"AAAAAAAAAAAAAAAA")

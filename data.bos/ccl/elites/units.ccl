@@ -34,11 +34,11 @@
 ;;	NOTE: Save can generate this table.
 ;;
 
-(define-unit-type 'unit-lancer 'name "Assault Unit"
-  'files '(tileset-desert "elites/units/unit_lancer.png")
+(define-unit-type 'unit-assault 'name "Assault Unit"
+  'files '(tileset-desert "elites/units/unit_assault.png")
   'size '(64 64)
-  'shadow '(file "elites/units/unit_lancer_s.png" size (64 64))
-  'animations 'animations-lancer 'icon 'icon-lancer
+  'shadow '(file "elites/units/unit_assault_s.png" size (64 64))
+  'animations 'animations-assault 'icon 'icon-assault
   'costs '(time 60 titanium 300)
   'speed 10
   'hit-points 60
@@ -58,12 +58,12 @@
   'organic
   'selectable-by-rectangle
   'sounds '(
-    selected "lancer-selected"
-    acknowledge "lancer-acknowledge"
-    ready "lancer-ready"
-    help "lancer-help"
-    dead "lancer-die"
-    attack "lancer-attack"))
+    selected "assault-selected"
+    acknowledge "assault-acknowledge"
+    ready "assault-ready"
+    help "assault-help"
+    dead "assault-die"
+    attack "assault-attack"))
 
 (define-unit-type 'unit-grenadier 'name "Grenadier"
   'files '(tileset-desert "elites/units/unit_grenadier.png")

@@ -66,12 +66,12 @@
 ;;
 
 ;; UNITS
-(make-sound "lancer-selected" "elites/units/lancer_select.wav")
-(make-sound "lancer-acknowledge" "elites/units/lancer_action.wav")
-(make-sound "lancer-ready" "elites/computer_voice/assault.unit.ready.wav")
-(make-sound "lancer-help" "elites/computer_voice/assault.unit.underattack.wav")
-(make-sound "lancer-die" "elites/units/lancer_die.wav")
-(make-sound "lancer-attack" "elites/units/lancer_attack.wav")
+(make-sound "assault-selected" "elites/units/assault_select.wav")
+(make-sound "assault-acknowledge" "elites/units/assault_action.wav")
+(make-sound "assault-ready" "elites/computer_voice/assault.unit.ready.wav")
+(make-sound "assault-help" "elites/computer_voice/assault.unit.underattack.wav")
+(make-sound "assault-die" "elites/units/assault_die.wav")
+(make-sound "assault-attack" "elites/units/assault_attack.wav")
 
 (make-sound "grenadier-selected" "elites/units/grenadier_select.wav")
 (make-sound "grenadier-acknowledge" "elites/units/grenadier_action.wav")

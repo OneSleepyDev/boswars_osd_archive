@@ -48,7 +48,7 @@ DefineSpell("spell-minefield",
 )
 
 DefineButton({
-        Pos = 1, Level = 2, Icon = "icon-camp_b", Action = "cast-spell",
+        Pos = 1, Level = 3, Icon = "icon-camp_b", Action = "cast-spell",
         Value = "spell-minefield",  Allowed = "check-true", Key = "f", Hint = "BUILD MINEFIELD",
         ForUnit = {"unit-engineer"}})
 

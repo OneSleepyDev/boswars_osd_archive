@@ -118,32 +118,32 @@ DefineButton({
 	ForUnit = {"unit-engineer"}})
 
 DefineButton({
-	Pos = 3, Level = 1, Icon = "icon-camp_b", Action = "build",
+	Pos = 1, Level = 2, Icon = "icon-camp_b", Action = "build",
 	Value = "unit-camp", Key = "c", Hint = "BUILD TRAINING ~!CAMP",
 	ForUnit = {"unit-engineer"}})
 
 DefineButton({
-	Pos = 4, Level = 1, Icon = "icon-dev_b", Action = "build",
+	Pos = 7, Level = 2, Icon = "icon-dev_b", Action = "build",
 	Value = "unit-dev-yard", Key = "d", Hint = "BUILD ~!DEVELOPMENT YARD",
 	ForUnit = {"unit-engineer"}})
 
 DefineButton({
-	Pos = 5, Level = 1, Icon = "icon-rfac_b", Action = "build",
+	Pos = 6, Level = 1, Icon = "icon-rfac_b", Action = "build",
 	Value = "unit-rfac", Key = "r", Hint = "BUILD ~!RESEARCH FACILITY",
 	ForUnit = {"unit-engineer"}})
 
 DefineButton({
-	Pos = 6, Level = 1, Icon = "icon-hosp_b", Action = "build",
+	Pos = 2, Level = 2, Icon = "icon-hosp_b", Action = "build",
 	Value = "unit-hosp", Key = "h", Hint = "BUILD ~!HOSPITAL",
 	ForUnit = {"unit-engineer"}})
 
 DefineButton({
-	Pos = 7, Level = 1, Icon = "icon-vfac_b", Action = "build",
+	Pos = 3, Level = 2, Icon = "icon-vfac_b", Action = "build",
 	Value = "unit-vfac", Key = "v", Hint = "BUILD ~!VEHICLE FACTORY",
 	ForUnit = {"unit-engineer"}})
 
 DefineButton({
-	Pos = 8, Level = 1, Icon = "icon-msilo_b", Action = "build",
+	Pos = 4, Level = 3, Icon = "icon-msilo_b", Action = "build",
 	Value = "unit-msilo", Key = "m", Hint = "BUILD ~!MISSILE SILO",
 	ForUnit = {"unit-engineer"}})
 

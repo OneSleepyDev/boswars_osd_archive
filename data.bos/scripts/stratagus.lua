@@ -44,7 +44,6 @@ SetTitleScreens(
 
 --	Enter your default menu background w and w/o title
 SetMenuBackground("graphics/screens/menu.png")
-SetMenuBackgroundWithTitle("graphics/screens/menu.png")
 
 --	Enter your menu music.
 SetMenuMusic("music/title.ogg")

@@ -154,10 +154,8 @@
 ;;	  )
 
 ;;              file                             hotx hoty width height
-;(mana-sprite	"graphics/ui/mana.png"		 -7   -7    7    7)
-(mana-sprite	"graphics/ui/mana2.png"		  0   -1   31    4)
-;(health-sprite	"graphics/ui/health.png"	  1   -7    7    7)
-(health-sprite	"graphics/ui/health2.png"	  0   -4   31    4)
+(mana-sprite	"graphics/general/mana2.png"		  0   -1   31    4)
+(health-sprite	"graphics/general/health2.png"	  0   -4   31    4)
 
 ;(show-health-bar)
 ;(show-health-vertical)
@@ -185,7 +183,7 @@
 ;;	(shadow-sprite file hotx hoty width height)
 ;;
 ;(shadow-sprite "graphics/missiles/unit_shadow.png"	3 42	32 32)
-(spell-sprite "graphics/ui/bloodlust,haste,slow,invisible,shield.png"
+(spell-sprite "graphics/general/spells1.png"
   1 1	16 16)
 
 ;;	Edit this to enable/disable the original game resource line.

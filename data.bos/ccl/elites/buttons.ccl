@@ -96,7 +96,15 @@
 
 (define-button 'pos 7 'level 0 'icon 'icon-build-lvl1
   'action 'button 'value 1
-  'key "b" 'hint "~!BUILDINGS LVL 1 SCHEMATICS"
+  'key "q" 'hint "BUILDINGS LVL 1 SCHEMATICS"
+  'for-unit '(unit-engineer))
+(define-button 'pos 8 'level 0 'icon 'icon-build-lvl2
+  'action 'button 'value 2
+  'key "w" 'hint "BUILDINGS LVL 2 SCHEMATICS"
+  'for-unit '(unit-engineer))
+(define-button 'pos 9 'level 0 'icon 'icon-build-lvl3
+  'action 'button 'value 3
+  'key "e" 'hint "BUILDINGS LVL 3 SCHEMATICS"
   'for-unit '(unit-engineer))
 
 ;; simple buildings elites -----------------------------------------------------
@@ -121,17 +129,25 @@
   'key "r" 'hint "BUILD ~!RESEARCH FACILITY"
   'for-unit '(unit-engineer))
 
-(define-button 'pos 5 'level 1 'icon 'icon-hosp_b
+(define-button 'pos 1 'level 2 'icon 'icon-hosp_b
   'action 'build 'value 'unit-hosp
   'key "h" 'hint "BUILD ~!HOSPITAL"
   'for-unit '(unit-engineer))
 
-(define-button 'pos 6 'level 1 'icon 'icon-vfac_b
+(define-button 'pos 5 'level 2 'icon 'icon-vfac_b
   'action 'build 'value 'unit-vfac
   'key "v" 'hint "BUILD ~!VEHICLE FACTORY"
   'for-unit '(unit-engineer))
 
 (define-button 'pos 9 'level 1 'icon 'icon-cancel
+  'action 'button 'value 0
+  'key "\033" 'hint "~<ESC~> CANCEL"
+  'for-unit '(unit-engineer))
+(define-button 'pos 9 'level 2 'icon 'icon-cancel
+  'action 'button 'value 0
+  'key "\033" 'hint "~<ESC~> CANCEL"
+  'for-unit '(unit-engineer))
+(define-button 'pos 9 'level 3 'icon 'icon-cancel
   'action 'button 'value 0
   'key "\033" 'hint "~<ESC~> CANCEL"
   'for-unit '(unit-engineer))

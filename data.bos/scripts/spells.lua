@@ -40,7 +40,7 @@ DefineSpell("spell-healing",
 				{"adjust-vitals", "hit-points", 1}},
 	"condition", {
 		"organic", "only",
-		"building", "false",
+		"Building", "false",
 		"self", "false",
 		"max-hp-percent", 100},
 	"sound-when-cast", "medic-attack",

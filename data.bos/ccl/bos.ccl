@@ -111,6 +111,7 @@
   'unit-medic
   'unit-hosp
   'unit-vfac
+  'unit-apcs
 )
 
 (define-missiletype-wc-names

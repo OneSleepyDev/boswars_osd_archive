@@ -47,18 +47,18 @@
   'action 'move
   'key "m" 'hint "~!MOVE"
   'for-unit '(unit-engineer unit-harvester unit-assault unit-grenadier unit-bazoo unit-medic
-    elites-group))
+    unit-apcs elites-group))
 
 (define-button 'pos 2 'level 0 'icon 'icon-stop
   'action 'stop
   'key "s" 'hint "~!STOP"
   'for-unit '(unit-engineer unit-harvester unit-assault unit-grenadier unit-bazoo unit-medic
-    elites-group))
+    unit-apcs elites-group))
 
 (define-button 'pos 3 'level 0 'icon 'icon-attack
   'action 'attack
   'key "a" 'hint "~!ATTACK"
-  'for-unit '(unit-assault unit-grenadier unit-bazoo elites-group))
+  'for-unit '(unit-assault unit-grenadier unit-bazoo unit-apcs elites-group))
 
 (define-button 'pos 4 'level 0 'icon 'icon-patrol
   'action 'patrol
@@ -68,7 +68,7 @@
 (define-button 'pos 5 'level 0 'icon 'icon-stand-ground
   'action 'stand-ground
   'key "t" 'hint "S~!TAND GROUND"
-  'for-unit '(unit-assault unit-grenadier unit-bazoo  unit-medic elites-group))
+  'for-unit '(unit-assault unit-grenadier unit-bazoo  unit-apcs unit-medic elites-group))
 
 ;; peasant specific actions ---------------------------------------------------
 
@@ -169,6 +169,11 @@
   'action 'train-unit 'value 'unit-medic
   'key "m" 'hint "TRAIN ~!MEDIC"
   'for-unit '(unit-hosp))
+
+(define-button 'pos 1 'level 0 'icon 'icon-apcs
+  'action 'train-unit 'value 'unit-apcs
+  'key "a" 'hint "BUILD ~!APC SMOLDER"
+  'for-unit '(unit-vfac))
 
 ;; upgrades -------------------------------------------------------------------
 

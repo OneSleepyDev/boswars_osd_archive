@@ -41,6 +41,7 @@
 (define-allow 'unit-rfac			"AAAAAAAAAAAAAAAA")
 (define-allow 'unit-hosp			"AAAAAAAAAAAAAAAA")
 (define-allow 'unit-vfac			"AAAAAAAAAAAAAAAA")
+(define-allow 'unit-apcs			"AAAAAAAAAAAAAAAA")
 (define-allow 'unit-human-wall			"AAAAAAAAAAAAAAAA")
 
 

@@ -52,6 +52,8 @@
 
 (define-icon 'icon-assault
   'size '(46 38) 'normal '(0 "elites/units/ico_assault.png"))
+(define-icon 'icon-apcs
+  'size '(46 38) 'normal '(0 "elites/units/ico_apcs.png"))
 (define-icon 'icon-grenadier
   'size '(46 38) 'normal '(0 "elites/units/ico_grenadier.png"))
 (define-icon 'icon-bazoo

@@ -33,6 +33,41 @@
 ;;
 ;;	NOTE: Save can generate this table.
 ;;
+(define-unit-type 'unit-apcs 'name "APC Smolder"
+  'files '(tileset-desert "elites/units/unit_apcs.png")
+  'size '(96 96)
+  'shadow '(file "elites/units/unit_apcs_s.png" size (96 96))
+  'animations 'animations-apcs 'icon 'icon-apcs
+  'costs '(time 400 titanium 400 crystal 50 gas 50)
+  'speed 15
+  'hit-points 200
+  'draw-level 40
+  'tile-size '(1 1) 'box-size '(96 96)
+  'sight-range 5 'computer-reaction-range 5 'person-reaction-range 5
+  'armor 6 'basic-damage 5 'piercing-damage 5 'missile 'missile-none
+  'max-attack-range 4
+  'priority 60
+  'points 50
+  'transporter
+  'max-on-board 4
+  'type-land
+  'repair-hp 2
+  'repair-costs '(titanium 2)
+  'explode-when-killed 'missile-160x128-explosion
+  'demand 0
+  'right-attack
+  'can-attack
+  'can-target-land
+  'land-unit
+  'selectable-by-rectangle
+  'sounds '(
+    selected "apcs-selected"
+    acknowledge "apcs-acknowledge"
+    ready "apcs-ready"
+    help "apcs-help"
+    dead "apcs-die"
+    attack "apcs-attack"))
+
 (define-unit-type 'unit-medic 'name "Medic"
   'files '(tileset-desert "elites/units/unit_medic.png")
   'size '(64 64)
@@ -214,6 +249,7 @@
   'costs '(time 550 titanium 500 crystal 300 gas 100)
   'repair-hp 2
   'repair-costs '(titanium 2)
+  'explode-when-killed 'missile-160x128-explosion
   'speed 5
   'hit-points 800
   'draw-level 40
@@ -223,7 +259,6 @@
   'max-attack-range 0
   'priority 50
   'points 30
-  'explode-when-killed 'missile-160x128-explosion
   'type-land
   'demand 50
   'right-harvest

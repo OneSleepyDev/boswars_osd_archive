@@ -5,13 +5,13 @@
 --     /_______  /|__|  |__|  (____  /__| (____  /\___  /|____//____  >
 --             \/                  \/          \//_____/            \/ 
 --  ______________________                           ______________________
---			  T H E   W A R   B E G I N S
---	   Stratagus - A free fantasy real time strategy game engine
+--                        T H E   W A R   B E G I N S
+--         Stratagus - A free fantasy real time strategy game engine
 --
---	ui.ccl		-	Define the elites user interface
+--      ui.lua - Define the elites user interface
 --
---	(c) Copyright 2001-2004 by Lutz Sammer, Jimmy Salmon, Crestez Leonard and
---					François Beerten.
+--      (c) Copyright 2001-2004 by Lutz Sammer, Jimmy Salmon, Crestez Leonard,
+--                                 and François Beerten.
 --
 --      This program is free software; you can redistribute it and/or modify
 --      it under the terms of the GNU General Public License as published by
@@ -27,7 +27,7 @@
 --      along with this program; if not, write to the Free Software
 --      Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 --
---	$Id$
+--      $Id$
 
 DefineCursor({
 	Name = "cursor-point",
@@ -64,7 +64,6 @@ DefineCursor({
 function DefineEliteScreen(screen_width, screen_height)
 	info_panel_x = screen_width - 200
 	info_panel_y = 160
-	icon_size = {46, 38}
 
 	DefineUI("elites", screen_width, screen_height,
 		"normal-font-color", "light-green",
@@ -97,19 +96,19 @@ function DefineEliteScreen(screen_width, screen_height)
 				"size", {200, 176}},
 			"selected", {
 				"single", {
-                                     "icon", {
-                                         "pos", {screen_width - 187, 176}, "size", icon_size, "style", "icon"}
+					"icon", {
+						"pos", {screen_width - 187, 176}, "style", "icon"}
 				},
 				"multiple", {
 					"icons", {
-						{"pos", {screen_width - 187, 176}, "size", icon_size, "style", "icon"},
-						{"pos", {screen_width - 172, 176}, "size", icon_size, "style", "icon"},
-						{"pos", {screen_width - 157, 176}, "size", icon_size, "style", "icon"},
-						{"pos", {screen_width - 142, 176}, "size", icon_size, "style", "icon"},
-						{"pos", {screen_width - 112, 176}, "size", icon_size, "style", "icon"},
-						{"pos", {screen_width -  97, 176}, "size", icon_size, "style", "icon"},
-						{"pos", {screen_width -  82, 176}, "size", icon_size, "style", "icon"},
-						{"pos", {screen_width -  67, 176}, "size", icon_size, "style", "icon"}},
+						{"pos", {screen_width - 187, 176}, "style", "icon"},
+						{"pos", {screen_width - 172, 176}, "style", "icon"},
+						{"pos", {screen_width - 157, 176}, "style", "icon"},
+						{"pos", {screen_width - 142, 176}, "style", "icon"},
+						{"pos", {screen_width - 112, 176}, "style", "icon"},
+						{"pos", {screen_width -  97, 176}, "style", "icon"},
+						{"pos", {screen_width -  82, 176}, "style", "icon"},
+						{"pos", {screen_width -  67, 176}, "style", "icon"}},
 					"max-text", {
 						"font", "game",
 						"pos", {info_panel_x + 10, info_panel_y + 10}}}},
@@ -119,31 +118,31 @@ function DefineEliteScreen(screen_width, screen_height)
 					"icon", {"pos", {screen_width - 187, 243}, "style", "icon"}},
 				"multiple", {
 					"icons", {
-						{"pos", {screen_width - 187, 243}, "size", icon_size, "style", "icon"},
-						{"pos", {screen_width - 172, 243}, "size", icon_size, "style", "icon"},
-						{"pos", {screen_width - 157, 243}, "size", icon_size, "style", "icon"},
-						{"pos", {screen_width - 142, 243}, "size", icon_size, "style", "icon"},
-						{"pos", {screen_width - 127, 243}, "size", icon_size, "style", "icon"},
-						{"pos", {screen_width - 112, 243}, "size", icon_size, "style", "icon"}}}},
+						{"pos", {screen_width - 187, 243}, "style", "icon"},
+						{"pos", {screen_width - 172, 243}, "style", "icon"},
+						{"pos", {screen_width - 157, 243}, "style", "icon"},
+						{"pos", {screen_width - 142, 243}, "style", "icon"},
+						{"pos", {screen_width - 127, 243}, "style", "icon"},
+						{"pos", {screen_width - 112, 243}, "style", "icon"}}}},
 			"upgrading", {
 				"text", {
 					"text", "",
 					"font", "game",
 					"pos", {info_panel_x + 29, info_panel_y + 8 + 78}},
-				"icon", {"pos", {screen_width - 187, 243}, "size", icon_size, "style", "icon"}},
+				"icon", {"pos", {screen_width - 187, 243}, "style", "icon"}},
 			"researching", {
 				"text", {
 					"text", "",
 					"font", "game",
 					"pos", {info_panel_x + 16, info_panel_y + 8 + 78}},
-				"icon", {"pos", {screen_width - 187, 243}, "size", icon_size, "style", "icon"}},
+				"icon", {"pos", {screen_width - 187, 243}, "style", "icon"}},
 			"transporting", {"icons", {
-					{"pos", {screen_width - 187, 243}, "size", icon_size, "style", "icon"},
-					{"pos", {screen_width - 172, 243}, "size", icon_size, "style", "icon"},
-					{"pos", {screen_width - 157, 243}, "size", icon_size, "style", "icon"},
-					{"pos", {screen_width - 142, 243}, "size", icon_size, "style", "icon"},
-					{"pos", {screen_width - 127, 243}, "size", icon_size, "style", "icon"},
-					{"pos", {screen_width - 112, 243}, "size", icon_size, "style", "icon"}}},
+					{"pos", {screen_width - 187, 243}, "style", "icon"},
+					{"pos", {screen_width - 172, 243}, "style", "icon"},
+					{"pos", {screen_width - 157, 243}, "style", "icon"},
+					{"pos", {screen_width - 142, 243}, "style", "icon"},
+					{"pos", {screen_width - 127, 243}, "style", "icon"},
+					{"pos", {screen_width - 112, 243}, "style", "icon"}}},
 			"completed-bar", {
 				"color", {50, 50, 80},
 				"pos", {screen_width - 187, 299},
@@ -153,15 +152,15 @@ function DefineEliteScreen(screen_width, screen_height)
 				"file", "graphics/elites/ui/ui_" .. screen_width .. "_bpanel.png",
 				"pos", {screen_width - 200, 336}},
 			"icons", {
-				{"pos", {screen_width - 177+4, 340+4}, "size", {46, 38}, "style", "icon"},
-				{"pos", {screen_width - 122+4, 340+4}, "size", {46, 38}, "style", "icon"},
-				{"pos", {screen_width - 67+4, 340+4}, "size", {46, 38}, "style", "icon"},
-				{"pos", {screen_width - 177+4, 385+4}, "size", {46, 38}, "style", "icon"},
-				{"pos", {screen_width - 122+4, 385+4}, "size", {46, 38}, "style", "icon"},
-				{"pos", {screen_width - 67+4, 385+4}, "size", {46, 38}, "style", "icon"},
-				{"pos", {screen_width - 177+4, 430+4}, "size", {46, 38}, "style", "icon"},
-				{"pos", {screen_width - 122+4, 430+4}, "size", {46, 38}, "style", "icon"},
-				{"pos", {screen_width - 67+4, 430+4}, "size", {46,38}, "style", "icon"}},
+				{"pos", {screen_width - 177+4, 340+4}, "style", "icon"},
+				{"pos", {screen_width - 122+4, 340+4}, "style", "icon"},
+				{"pos", {screen_width - 67+4, 340+4},  "style", "icon"},
+				{"pos", {screen_width - 177+4, 385+4}, "style", "icon"},
+				{"pos", {screen_width - 122+4, 385+4}, "style", "icon"},
+				{"pos", {screen_width - 67+4, 385+4},  "style", "icon"},
+				{"pos", {screen_width - 177+4, 430+4}, "style", "icon"},
+				{"pos", {screen_width - 122+4, 430+4}, "style", "icon"},
+				{"pos", {screen_width - 67+4, 430+4},  "style", "icon"}},
 		        "auto-cast-border-color", {0, 0, 252}},
 		"piemenu", {
 			"radius", 70,

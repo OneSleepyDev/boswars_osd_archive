@@ -171,6 +171,9 @@
 (define-animations 'animations-msilo
   'still '(	; #32
     #( 3 0   1   0)))
+  'attack '(	; #9
+    #( 0 0   1  1) #(12 0   1  2) #( 0 0   1   3) #( 0 0   1   4)
+    #( 0 0   25  5) #(12 0   25  6) #( 3 0   1   6))
 
 (define-animations 'animations-gen
   'still '(	; #32

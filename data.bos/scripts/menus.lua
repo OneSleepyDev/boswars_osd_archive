@@ -338,7 +338,7 @@ DefineMenuItem("pos", { 16, 65},
     "text", "640 x 480",
     "state", "unchecked",
     "func", "global-options-resolution-checkbox",
-    "style", "checkbox-round"},
+    "style", "round"},
   "menu", "menu-global-options")
 
 DefineMenuItem("pos", { 16, 91},
@@ -346,7 +346,7 @@ DefineMenuItem("pos", { 16, 91},
     "text", "800 x 600",
     "state", "unchecked",
     "func", "global-options-resolution-checkbox",
-    "style", "checkbox-round"},
+    "style", "round"},
   "menu", "menu-global-options")
 
 DefineMenuItem("pos", { 16, 117},
@@ -354,7 +354,7 @@ DefineMenuItem("pos", { 16, 117},
     "text", "1024 x 768",
     "state", "unchecked",
     "func", "global-options-resolution-checkbox",
-    "style", "checkbox-round"},
+    "style", "round"},
   "menu", "menu-global-options")
 
 DefineMenuItem("pos", { 16, 143},
@@ -362,7 +362,7 @@ DefineMenuItem("pos", { 16, 143},
     "text", "1280 x 960",
     "state", "unchecked",
     "func", "global-options-resolution-checkbox",
-    "style", "checkbox-round"},
+    "style", "round"},
   "menu", "menu-global-options")
 
 DefineMenuItem("pos", { 16, 169},
@@ -370,7 +370,7 @@ DefineMenuItem("pos", { 16, 169},
     "text", "1600 x 1200",
     "state", "unchecked",
     "func", "global-options-resolution-checkbox",
-    "style", "checkbox-round"},
+    "style", "round"},
   "menu", "menu-global-options")
 
 DefineMenuItem("pos", { 17, 195},
@@ -378,7 +378,7 @@ DefineMenuItem("pos", { 17, 195},
     "text", "Fullscreen",
     "state", "unchecked",
     "func", "global-options-fullscreen-checkbox",
-    "style", "checkbox-square"},
+    "style", "square"},
   "menu", "menu-global-options")
 
 DefineMenuItem("pos", { 192, 44}, "font", "game",
@@ -390,7 +390,7 @@ DefineMenuItem("pos", { 192, 65},
     "text", "Original",
     "state", "unchecked",
     "func", "global-options-fog-original-checkbox",
-    "style", "checkbox-round"},
+    "style", "round"},
   "menu", "menu-global-options")
 
 DefineMenuItem("pos", { 192, 91},
@@ -398,7 +398,7 @@ DefineMenuItem("pos", { 192, 91},
     "text", "Alpha",
     "state", "unchecked",
     "func", "global-options-fog-alpha-checkbox",
-    "style", "checkbox-round"},
+    "style", "round"},
   "menu", "menu-global-options")
 
 DefineMenuItem("pos", { 123, 309}, "font", "large",
@@ -834,169 +834,169 @@ DefineMenuItem("pos", { 10, 32 + (22 * 1)}, "font", "large",
   "checkbox", {
     "state", "passive",
     "func", nil,
-    "style", "checkbox-square"},
+    "style", "square"},
   "menu", "menu-multi-setup")
 DefineMenuItem("pos", { 10, 32 + (22 * 2)}, "font", "large",
   "checkbox", {
     "state", "passive",
     "func", nil,
-    "style", "checkbox-square"},
+    "style", "square"},
   "menu", "menu-multi-setup")
 DefineMenuItem("pos", { 10, 32 + (22 * 3)}, "font", "large",
   "checkbox", {
     "state", "passive",
     "func", nil,
-    "style", "checkbox-square"},
+    "style", "square"},
   "menu", "menu-multi-setup")
 DefineMenuItem("pos", { 10, 32 + (22 * 4)}, "font", "large",
   "checkbox", {
     "state", "passive",
     "func", nil,
-    "style", "checkbox-square"},
+    "style", "square"},
   "menu", "menu-multi-setup")
 DefineMenuItem("pos", { 10, 32 + (22 * 5)}, "font", "large",
   "checkbox", {
     "state", "passive",
     "func", nil,
-    "style", "checkbox-square"},
+    "style", "square"},
   "menu", "menu-multi-setup")
 DefineMenuItem("pos", { 10, 32 + (22 * 6)}, "font", "large",
   "checkbox", {
     "state", "passive",
     "func", nil,
-    "style", "checkbox-square"},
+    "style", "square"},
   "menu", "menu-multi-setup")
 DefineMenuItem("pos", { 10, 32 + (22 * 7)}, "font", "large",
   "checkbox", {
     "state", "passive",
     "func", nil,
-    "style", "checkbox-square"},
+    "style", "square"},
   "menu", "menu-multi-setup")
 DefineMenuItem("pos", { 330, 32 + (22 * 0)}, "font", "large",
   "checkbox", {
     "state", "passive",
     "func", nil,
-    "style", "checkbox-square"},
+    "style", "square"},
   "menu", "menu-multi-setup")
 DefineMenuItem("pos", { 330, 32 + (22 * 1)}, "font", "large",
   "checkbox", {
     "state", "passive",
     "func", nil,
-    "style", "checkbox-square"},
+    "style", "square"},
   "menu", "menu-multi-setup")
 DefineMenuItem("pos", { 330, 32 + (22 * 2)}, "font", "large",
   "checkbox", {
     "state", "passive",
     "func", nil,
-    "style", "checkbox-square"},
+    "style", "square"},
   "menu", "menu-multi-setup")
 DefineMenuItem("pos", { 330, 32 + (22 * 3)}, "font", "large",
   "checkbox", {
     "state", "passive",
     "func", nil,
-    "style", "checkbox-square"},
+    "style", "square"},
   "menu", "menu-multi-setup")
 DefineMenuItem("pos", { 330, 32 + (22 * 4)}, "font", "large",
   "checkbox", {
     "state", "passive",
     "func", nil,
-    "style", "checkbox-square"},
+    "style", "square"},
   "menu", "menu-multi-setup")
 DefineMenuItem("pos", { 330, 32 + (22 * 5)}, "font", "large",
   "checkbox", {
     "state", "passive",
     "func", nil,
-    "style", "checkbox-square"},
+    "style", "square"},
   "menu", "menu-multi-setup")
 DefineMenuItem("pos", { 330, 32 + (22 * 6)}, "font", "large",
   "checkbox", {
     "state", "passive",
     "func", nil,
-    "style", "checkbox-square"},
+    "style", "square"},
   "menu", "menu-multi-setup")
 DefineMenuItem("pos", { 218, 32 + (22 * 1)}, "font", "large",
   "checkbox", {
     "state", "passive",
     "func", nil,
-    "style", "checkbox-round"},
+    "style", "round"},
   "menu", "menu-multi-setup")
 DefineMenuItem("pos", { 218, 32 + (22 * 2)}, "font", "large",
   "checkbox", {
     "state", "passive",
     "func", nil,
-    "style", "checkbox-round"},
+    "style", "round"},
   "menu", "menu-multi-setup")
 DefineMenuItem("pos", { 218, 32 + (22 * 3)}, "font", "large",
   "checkbox", {
     "state", "passive",
     "func", nil,
-    "style", "checkbox-round"},
+    "style", "round"},
   "menu", "menu-multi-setup")
 DefineMenuItem("pos", { 218, 32 + (22 * 4)}, "font", "large",
   "checkbox", {
     "state", "passive",
     "func", nil,
-    "style", "checkbox-round"},
+    "style", "round"},
   "menu", "menu-multi-setup")
 DefineMenuItem("pos", { 218, 32 + (22 * 5)}, "font", "large",
   "checkbox", {
     "state", "passive",
     "func", nil,
-    "style", "checkbox-round"},
+    "style", "round"},
   "menu", "menu-multi-setup")
 DefineMenuItem("pos", { 218, 32 + (22 * 6)}, "font", "large",
   "checkbox", {
     "state", "passive",
     "func", nil,
-    "style", "checkbox-round"},
+    "style", "round"},
   "menu", "menu-multi-setup")
 DefineMenuItem("pos", { 218, 32 + (22 * 7)}, "font", "large",
   "checkbox", {
     "state", "passive",
     "func", nil,
-    "style", "checkbox-round"},
+    "style", "round"},
   "menu", "menu-multi-setup")
 DefineMenuItem("pos", { 538, 32 + (22 * 0)}, "font", "large",
   "checkbox", {
     "state", "passive",
     "func", nil,
-    "style", "checkbox-round"},
+    "style", "round"},
   "menu", "menu-multi-setup")
 DefineMenuItem("pos", { 538, 32 + (22 * 1)}, "font", "large",
   "checkbox", {
     "state", "passive",
     "func", nil,
-    "style", "checkbox-round"},
+    "style", "round"},
   "menu", "menu-multi-setup")
 DefineMenuItem("pos", { 538, 32 + (22 * 2)}, "font", "large",
   "checkbox", {
     "state", "passive",
     "func", nil,
-    "style", "checkbox-round"},
+    "style", "round"},
   "menu", "menu-multi-setup")
 DefineMenuItem("pos", { 538, 32 + (22 * 3)}, "font", "large",
   "checkbox", {
     "state", "passive",
     "func", nil,
-    "style", "checkbox-round"},
+    "style", "round"},
   "menu", "menu-multi-setup")
 DefineMenuItem("pos", { 538, 32 + (22 * 4)}, "font", "large",
   "checkbox", {
     "state", "passive",
     "func", nil,
-    "style", "checkbox-round"},
+    "style", "round"},
   "menu", "menu-multi-setup")
 DefineMenuItem("pos", { 538, 32 + (22 * 5)}, "font", "large",
   "checkbox", {
     "state", "passive",
     "func", nil,
-    "style", "checkbox-round"},
+    "style", "round"},
   "menu", "menu-multi-setup")
 DefineMenuItem("pos", { 538, 32 + (22 * 6)}, "font", "large",
   "checkbox", {
     "state", "passive",
     "func", nil,
-    "style", "checkbox-round"},
+    "style", "round"},
   "menu", "menu-multi-setup")
 
 --
@@ -1249,85 +1249,85 @@ DefineMenuItem("pos", { 10, 32 + (22 * 1)}, "font", "large",
   "checkbox", {
     "state", "unchecked",
     "func", "multi-client-checkbox-action",
-    "style", "checkbox-square"},
+    "style", "square"},
   "menu", "menu-net-multi-client")
 DefineMenuItem("pos", { 10, 32 + (22 * 2)}, "font", "large",
   "checkbox", {
     "state", "unchecked",
     "func", "multi-client-checkbox-action",
-    "style", "checkbox-square"},
+    "style", "square"},
   "menu", "menu-net-multi-client")
 DefineMenuItem("pos", { 10, 32 + (22 * 3)}, "font", "large",
   "checkbox", {
     "state", "unchecked",
     "func", "multi-client-checkbox-action",
-    "style", "checkbox-square"},
+    "style", "square"},
   "menu", "menu-net-multi-client")
 DefineMenuItem("pos", { 10, 32 + (22 * 4)}, "font", "large",
   "checkbox", {
     "state", "unchecked",
     "func", "multi-client-checkbox-action",
-    "style", "checkbox-square"},
+    "style", "square"},
   "menu", "menu-net-multi-client")
 DefineMenuItem("pos", { 10, 32 + (22 * 5)}, "font", "large",
   "checkbox", {
     "state", "unchecked",
     "func", "multi-client-checkbox-action",
-    "style", "checkbox-square"},
+    "style", "square"},
   "menu", "menu-net-multi-client")
 DefineMenuItem("pos", { 10, 32 + (22 * 6)}, "font", "large",
   "checkbox", {
     "state", "unchecked",
     "func", "multi-client-checkbox-action",
-    "style", "checkbox-square"},
+    "style", "square"},
   "menu", "menu-net-multi-client")
 DefineMenuItem("pos", { 10, 32 + (22 * 7)}, "font", "large",
   "checkbox", {
     "state", "unchecked",
     "func", "multi-client-checkbox-action",
-    "style", "checkbox-square"},
+    "style", "square"},
   "menu", "menu-net-multi-client")
 DefineMenuItem("pos", { 330, 32 + (22 * 0)}, "font", "large",
   "checkbox", {
     "state", "unchecked",
     "func", "multi-client-checkbox-action",
-    "style", "checkbox-square"},
+    "style", "square"},
   "menu", "menu-net-multi-client")
 DefineMenuItem("pos", { 330, 32 + (22 * 1)}, "font", "large",
   "checkbox", {
     "state", "unchecked",
     "func", "multi-client-checkbox-action",
-    "style", "checkbox-square"},
+    "style", "square"},
   "menu", "menu-net-multi-client")
 DefineMenuItem("pos", { 330, 32 + (22 * 2)}, "font", "large",
   "checkbox", {
     "state", "unchecked",
     "func", "multi-client-checkbox-action",
-    "style", "checkbox-square"},
+    "style", "square"},
   "menu", "menu-net-multi-client")
 DefineMenuItem("pos", { 330, 32 + (22 * 3)}, "font", "large",
   "checkbox", {
     "state", "unchecked",
     "func", "multi-client-checkbox-action",
-    "style", "checkbox-square"},
+    "style", "square"},
   "menu", "menu-net-multi-client")
 DefineMenuItem("pos", { 330, 32 + (22 * 4)}, "font", "large",
   "checkbox", {
     "state", "unchecked",
     "func", "multi-client-checkbox-action",
-    "style", "checkbox-square"},
+    "style", "square"},
   "menu", "menu-net-multi-client")
 DefineMenuItem("pos", { 330, 32 + (22 * 5)}, "font", "large",
   "checkbox", {
     "state", "unchecked",
     "func", "multi-client-checkbox-action",
-    "style", "checkbox-square"},
+    "style", "square"},
   "menu", "menu-net-multi-client")
 DefineMenuItem("pos", { 330, 32 + (22 * 6)}, "font", "large",
   "checkbox", {
     "state", "unchecked",
     "func", "multi-client-checkbox-action",
-    "style", "checkbox-square"},
+    "style", "square"},
   "menu", "menu-net-multi-client")
 
 
@@ -1533,7 +1533,7 @@ DefineMenuItem("pos", { 240, 36 * 1.5}, "font", "large",
     "text", "Enabled",
     "state", "unchecked",
     "func", "set-master-power",
-    "style", "checkbox-square"},
+    "style", "square"},
   "menu", "menu-sound-options")
 DefineMenuItem("pos", { 16, 36 * 3}, "font", "game",
   "text", {"caption", "Music Volume", "align", "left"},
@@ -1554,7 +1554,7 @@ DefineMenuItem("pos", { 240, 36 * 3.5}, "font", "large",
     "text", "Enabled",
     "state", "unchecked",
     "func", "set-music-power",
-    "style", "checkbox-square"},
+    "style", "square"},
   "menu", "menu-sound-options")
 DefineMenuItem("pos", { 16, 36 * 5}, "font", "game",
   "text", {"caption", "CD Volume", "align", "left"},
@@ -1575,21 +1575,21 @@ DefineMenuItem("pos", { 240, 36 * 5.5}, "font", "large",
     "text", "Enabled",
     "state", "unchecked",
     "func", "set-cd-power",
-    "style", "checkbox-square"},
+    "style", "square"},
   "menu", "menu-sound-options")
 DefineMenuItem("pos", { 32, 36 * 6.5}, "font", "large",
   "checkbox", {
     "text", "Defined Tracks",
     "state", "unchecked",
     "func", "set-cd-mode-defined",
-    "style", "checkbox-round"},
+    "style", "round"},
   "menu", "menu-sound-options")
 DefineMenuItem("pos", { 170, 36 * 6.5}, "font", "large",
   "checkbox", {
     "text", "Random Tracks",
     "state", "unchecked",
     "func", "set-cd-mode-random",
-    "style", "checkbox-round"},
+    "style", "round"},
   "menu", "menu-sound-options")
 DefineMenuItem("pos", { 176 - (106 / 2), 352 - 11 - 27}, "font", "large",
   "button", {
@@ -1613,14 +1613,14 @@ DefineMenuItem("pos", { 16, 36 * 1}, "font", "large",
     "text", "Fog of War Enabled",
     "state", "unchecked",
     "func", "set-fog-of-war",
-    "style", "checkbox-square"},
+    "style", "square"},
   "menu", "menu-preferences")
 DefineMenuItem("pos", { 16, 36 * 2}, "font", "large",
   "checkbox", {
     "text", "Show command key",
     "state", "unchecked",
     "func", "set-command-key",
-    "style", "checkbox-square"},
+    "style", "square"},
   "menu", "menu-preferences")
 DefineMenuItem("pos", { 128 - (106 / 2), 245}, "font", "large",
   "button", {
@@ -1656,19 +1656,19 @@ DefineMenuItem("pos", { 126, (18 * 1) + 23}, "font", "large",
   "checkbox", {
     "state", "unchecked",
     "func", "diplomacy-wait",
-    "style", "checkbox-round"},
+    "style", "round"},
   "menu", "menu-diplomacy")
 DefineMenuItem("pos", { 186, (18 * 1) + 23}, "font", "large",
   "checkbox", {
     "state", "unchecked",
     "func", "diplomacy-wait",
-    "style", "checkbox-round"},
+    "style", "round"},
   "menu", "menu-diplomacy")
 DefineMenuItem("pos", { 276, (18 * 1) + 23}, "font", "large",
   "checkbox", {
     "state", "unchecked",
     "func", "diplomacy-wait",
-    "style", "checkbox-square"},
+    "style", "square"},
   "menu", "menu-diplomacy")
 DefineMenuItem("pos", { 16, (18 * 2) + 26}, "font", "game",
   "text", {"caption", "Player 3", "align", "left"},
@@ -1677,19 +1677,19 @@ DefineMenuItem("pos", { 126, (18 * 2) + 23}, "font", "large",
   "checkbox", {
     "state", "unchecked",
     "func", "diplomacy-wait",
-    "style", "checkbox-round"},
+    "style", "round"},
   "menu", "menu-diplomacy")
 DefineMenuItem("pos", { 186, (18 * 2) + 23}, "font", "large",
   "checkbox", {
     "state", "unchecked",
     "func", "diplomacy-wait",
-    "style", "checkbox-round"},
+    "style", "round"},
   "menu", "menu-diplomacy")
 DefineMenuItem("pos", { 276, (18 * 2) + 23}, "font", "large",
   "checkbox", {
     "state", "unchecked",
     "func", "diplomacy-wait",
-    "style", "checkbox-square"},
+    "style", "square"},
   "menu", "menu-diplomacy")
 
 DefineMenuItem("pos", { 16, (18 * 3) + 26}, "font", "game",
@@ -1699,19 +1699,19 @@ DefineMenuItem("pos", { 126, (18 * 3) + 23}, "font", "large",
   "checkbox", {
     "state", "unchecked",
     "func", "diplomacy-wait",
-    "style", "checkbox-round"},
+    "style", "round"},
   "menu", "menu-diplomacy")
 DefineMenuItem("pos", { 186, (18 * 3) + 23}, "font", "large",
   "checkbox", {
     "state", "unchecked",
     "func", "diplomacy-wait",
-    "style", "checkbox-round"},
+    "style", "round"},
   "menu", "menu-diplomacy")
 DefineMenuItem("pos", { 276, (18 * 3) + 23}, "font", "large",
   "checkbox", {
     "state", "unchecked",
     "func", "diplomacy-wait",
-    "style", "checkbox-square"},
+    "style", "square"},
   "menu", "menu-diplomacy")
 
 DefineMenuItem("pos", { 16, (18 * 4) + 26}, "font", "game",
@@ -1721,19 +1721,19 @@ DefineMenuItem("pos", { 126, (18 * 4) + 23}, "font", "large",
   "checkbox", {
     "state", "unchecked",
     "func", "diplomacy-wait",
-    "style", "checkbox-round"},
+    "style", "round"},
   "menu", "menu-diplomacy")
 DefineMenuItem("pos", { 186, (18 * 4) + 23}, "font", "large",
   "checkbox", {
     "state", "unchecked",
     "func", "diplomacy-wait",
-    "style", "checkbox-round"},
+    "style", "round"},
   "menu", "menu-diplomacy")
 DefineMenuItem("pos", { 276, (18 * 4) + 23}, "font", "large",
   "checkbox", {
     "state", "unchecked",
     "func", "diplomacy-wait",
-    "style", "checkbox-square"},
+    "style", "square"},
   "menu", "menu-diplomacy")
 
 DefineMenuItem("pos", { 16, (18 * 5) + 26}, "font", "game",
@@ -1743,19 +1743,19 @@ DefineMenuItem("pos", { 126, (18 * 5) + 23}, "font", "large",
   "checkbox", {
     "state", "unchecked",
     "func", "diplomacy-wait",
-    "style", "checkbox-round"},
+    "style", "round"},
   "menu", "menu-diplomacy")
 DefineMenuItem("pos", { 186, (18 * 5) + 23}, "font", "large",
   "checkbox", {
     "state", "unchecked",
     "func", "diplomacy-wait",
-    "style", "checkbox-round"},
+    "style", "round"},
   "menu", "menu-diplomacy")
 DefineMenuItem("pos", { 276, (18 * 5) + 23}, "font", "large",
   "checkbox", {
     "state", "unchecked",
     "func", "diplomacy-wait",
-    "style", "checkbox-square"},
+    "style", "square"},
   "menu", "menu-diplomacy")
 
 DefineMenuItem("pos", { 16, (18 * 6) + 26}, "font", "game",
@@ -1765,19 +1765,19 @@ DefineMenuItem("pos", { 126, (18 * 6) + 23}, "font", "large",
   "checkbox", {
     "state", "unchecked",
     "func", "diplomacy-wait",
-    "style", "checkbox-round"},
+    "style", "round"},
   "menu", "menu-diplomacy")
 DefineMenuItem("pos", { 186, (18 * 6) + 23}, "font", "large",
   "checkbox", {
     "state", "unchecked",
     "func", "diplomacy-wait",
-    "style", "checkbox-round"},
+    "style", "round"},
   "menu", "menu-diplomacy")
 DefineMenuItem("pos", { 276, (18 * 6) + 23}, "font", "large",
   "checkbox", {
     "state", "unchecked",
     "func", "diplomacy-wait",
-    "style", "checkbox-square"},
+    "style", "square"},
   "menu", "menu-diplomacy")
 
 DefineMenuItem("pos", { 16, (18 * 7) + 26}, "font", "game",
@@ -1787,19 +1787,19 @@ DefineMenuItem("pos", { 126, (18 * 7) + 23}, "font", "large",
   "checkbox", {
     "state", "unchecked",
     "func", "diplomacy-wait",
-    "style", "checkbox-round"},
+    "style", "round"},
   "menu", "menu-diplomacy")
 DefineMenuItem("pos", { 186, (18 * 7) + 23}, "font", "large",
   "checkbox", {
     "state", "unchecked",
     "func", "diplomacy-wait",
-    "style", "checkbox-round"},
+    "style", "round"},
   "menu", "menu-diplomacy")
 DefineMenuItem("pos", { 276, (18 * 7) + 23}, "font", "large",
   "checkbox", {
     "state", "unchecked",
     "func", "diplomacy-wait",
-    "style", "checkbox-square"},
+    "style", "square"},
   "menu", "menu-diplomacy")
 
 DefineMenuItem("pos", { 16, (18 * 8) + 26}, "font", "game",
@@ -1809,19 +1809,19 @@ DefineMenuItem("pos", { 126, (18 * 8) + 23}, "font", "large",
   "checkbox", {
     "state", "unchecked",
     "func", "diplomacy-wait",
-    "style", "checkbox-round"},
+    "style", "round"},
   "menu", "menu-diplomacy")
 DefineMenuItem("pos", { 186, (18 * 8) + 23}, "font", "large",
   "checkbox", {
     "state", "unchecked",
     "func", "diplomacy-wait",
-    "style", "checkbox-round"},
+    "style", "round"},
   "menu", "menu-diplomacy")
 DefineMenuItem("pos", { 276, (18 * 8) + 23}, "font", "large",
   "checkbox", {
     "state", "unchecked",
     "func", "diplomacy-wait",
-    "style", "checkbox-square"},
+    "style", "square"},
   "menu", "menu-diplomacy")
 
 DefineMenuItem("pos", { 16, (18 * 9) + 26}, "font", "game",
@@ -1831,19 +1831,19 @@ DefineMenuItem("pos", { 126, (18 * 9) + 23}, "font", "large",
   "checkbox", {
     "state", "unchecked",
     "func", "diplomacy-wait",
-    "style", "checkbox-round"},
+    "style", "round"},
   "menu", "menu-diplomacy")
 DefineMenuItem("pos", { 186, (18 * 9) + 23}, "font", "large",
   "checkbox", {
     "state", "unchecked",
     "func", "diplomacy-wait",
-    "style", "checkbox-round"},
+    "style", "round"},
   "menu", "menu-diplomacy")
 DefineMenuItem("pos", { 276, (18 * 9) + 23}, "font", "large",
   "checkbox", {
     "state", "unchecked",
     "func", "diplomacy-wait",
-    "style", "checkbox-square"},
+    "style", "square"},
   "menu", "menu-diplomacy")
 
 DefineMenuItem("pos", { 16, (18 * 10) + 26}, "font", "game",
@@ -1853,19 +1853,19 @@ DefineMenuItem("pos", { 126, (18 * 10) + 23}, "font", "large",
   "checkbox", {
     "state", "unchecked",
     "func", "diplomacy-wait",
-    "style", "checkbox-round"},
+    "style", "round"},
   "menu", "menu-diplomacy")
 DefineMenuItem("pos", { 186, (18 * 10) + 23}, "font", "large",
   "checkbox", {
     "state", "unchecked",
     "func", "diplomacy-wait",
-    "style", "checkbox-round"},
+    "style", "round"},
   "menu", "menu-diplomacy")
 DefineMenuItem("pos", { 276, (18 * 10) + 23}, "font", "large",
   "checkbox", {
     "state", "unchecked",
     "func", "diplomacy-wait",
-    "style", "checkbox-square"},
+    "style", "square"},
   "menu", "menu-diplomacy")
 
 DefineMenuItem("pos", { 16, (18 * 11) + 26}, "font", "game",
@@ -1875,19 +1875,19 @@ DefineMenuItem("pos", { 126, (18 * 11) + 23}, "font", "large",
   "checkbox", {
     "state", "unchecked",
     "func", "diplomacy-wait",
-    "style", "checkbox-round"},
+    "style", "round"},
   "menu", "menu-diplomacy")
 DefineMenuItem("pos", { 186, (18 * 11) + 23}, "font", "large",
   "checkbox", {
     "state", "unchecked",
     "func", "diplomacy-wait",
-    "style", "checkbox-round"},
+    "style", "round"},
   "menu", "menu-diplomacy")
 DefineMenuItem("pos", { 276, (18 * 11) + 23}, "font", "large",
   "checkbox", {
     "state", "unchecked",
     "func", "diplomacy-wait",
-    "style", "checkbox-square"},
+    "style", "square"},
   "menu", "menu-diplomacy")
 
 DefineMenuItem("pos", { 16, (18 * 12) + 26}, "font", "game",
@@ -1897,19 +1897,19 @@ DefineMenuItem("pos", { 126, (18 * 12) + 23}, "font", "large",
   "checkbox", {
     "state", "unchecked",
     "func", "diplomacy-wait",
-    "style", "checkbox-round"},
+    "style", "round"},
   "menu", "menu-diplomacy")
 DefineMenuItem("pos", { 186, (18 * 12) + 23}, "font", "large",
   "checkbox", {
     "state", "unchecked",
     "func", "diplomacy-wait",
-    "style", "checkbox-round"},
+    "style", "round"},
   "menu", "menu-diplomacy")
 DefineMenuItem("pos", { 276, (18 * 12) + 23}, "font", "large",
   "checkbox", {
     "state", "unchecked",
     "func", "diplomacy-wait",
-    "style", "checkbox-square"},
+    "style", "square"},
   "menu", "menu-diplomacy")
 
 DefineMenuItem("pos", { 16, (18 * 13) + 26}, "font", "game",
@@ -1919,19 +1919,19 @@ DefineMenuItem("pos", { 126, (18 * 13) + 23}, "font", "large",
   "checkbox", {
     "state", "unchecked",
     "func", "diplomacy-wait",
-    "style", "checkbox-round"},
+    "style", "round"},
   "menu", "menu-diplomacy")
 DefineMenuItem("pos", { 186, (18 * 13) + 23}, "font", "large",
   "checkbox", {
     "state", "unchecked",
     "func", "diplomacy-wait",
-    "style", "checkbox-round"},
+    "style", "round"},
   "menu", "menu-diplomacy")
 DefineMenuItem("pos", { 276, (18 * 13) + 23}, "font", "large",
   "checkbox", {
     "state", "unchecked",
     "func", "diplomacy-wait",
-    "style", "checkbox-square"},
+    "style", "square"},
   "menu", "menu-diplomacy")
 
 DefineMenuItem("pos", { 16, (18 * 14) + 26}, "font", "game",
@@ -1941,19 +1941,19 @@ DefineMenuItem("pos", { 126, (18 * 14) + 23}, "font", "large",
   "checkbox", {
     "state", "unchecked",
     "func", "diplomacy-wait",
-    "style", "checkbox-round"},
+    "style", "round"},
   "menu", "menu-diplomacy")
 DefineMenuItem("pos", { 186, (18 * 14) + 23}, "font", "large",
   "checkbox", {
     "state", "unchecked",
     "func", "diplomacy-wait",
-    "style", "checkbox-round"},
+    "style", "round"},
   "menu", "menu-diplomacy")
 DefineMenuItem("pos", { 276, (18 * 14) + 23}, "font", "large",
   "checkbox", {
     "state", "unchecked",
     "func", "diplomacy-wait",
-    "style", "checkbox-square"},
+    "style", "square"},
   "menu", "menu-diplomacy")
 
 DefineMenuItem("pos", { 75, 352 - 40}, "font", "large",
@@ -2109,7 +2109,7 @@ DefineMenuItem("pos", { 14, 256 - 75}, "font", "game",
     "text", "Show tips at startup",
     "state", "checked",
     "func", "tips-show-tips-checkbox",
-    "style", "checkbox-square"},
+    "style", "square"},
   "menu", "menu-tips")
 DefineMenuItem("pos", { 14, 256 - 40}, "font", "large",
   "button", {
@@ -3367,7 +3367,7 @@ DefineMenuItem("pos", { 14, (256 - 75)}, "font", "game",
   "checkbox", {
     "state", "checked",
     "func", nil, --set-editor-tips
-    "style", "checkbox-square"},
+    "style", "square"},
   "menu", "menu-editor-tips")
 DefineMenuItem("pos", { 14 + 22, (256 - 75) + 4}, "font", "game",
   "text", {"caption", "Show tips at startup", "align", "left"},
@@ -3473,7 +3473,7 @@ DefineMenuItem("pos", { 100, 34},
   "checkbox", {
     "state", "unchecked",
     "func", "editor-edit-ai-properties-checkbox",
-    "style", "checkbox-round"},
+    "style", "round"},
   "menu", "menu-editor-edit-ai-properties")
 DefineMenuItem("pos", { 124, 38}, "font", "game",
   "text", {"caption", "Active", "align", "left"},
@@ -3482,7 +3482,7 @@ DefineMenuItem("pos", { 100, 56},
   "checkbox", {
     "state", "unchecked",
     "func", "editor-edit-ai-properties-checkbox",
-    "style", "checkbox-round"},
+    "style", "round"},
   "menu", "menu-editor-edit-ai-properties")
 DefineMenuItem("pos", { 124, 60}, "font", "game",
   "text", {"caption", "Passive", "align", "left"},
@@ -3629,7 +3629,7 @@ DefineMenuItem("pos", { 23, 264},
     "text", "Reveal Map",
     "state", "unchecked",
     "func", "replay-game-disable-fog",
-    "style", "checkbox-square"},
+    "style", "square"},
   "menu", "menu-replay-game")
 
 
@@ -3804,7 +3804,7 @@ DefineMenuItem("pos", { 5, 32 + (22 * 1)},
   "checkbox", {
     "state", "unchecked",
     "func", "select-game-server",
-    "style", "checkbox-square"},
+    "style", "square"},
   "menu", "metaserver-list")
 
 --------------------------------------------------- nickname
@@ -3832,7 +3832,7 @@ DefineMenuItem("pos", { 5, 32 + (22 * 2)},
   "checkbox", {
     "state", "unchecked",
     "func", "select-game-server",
-    "style", "checkbox-square"},
+    "style", "square"},
   "menu", "metaserver-list")
 --------------------------------------------------- nickname
 DefineMenuItem("pos", { 30, 32 + (22 * 3)}, "font", "game",
@@ -3859,7 +3859,7 @@ DefineMenuItem("pos", { 5, 32 + (22 * 3)},
   "checkbox", {
     "state", "unchecked",
     "func", "select-game-server",
-    "style", "checkbox-square"},
+    "style", "square"},
   "menu", "metaserver-list")
 --------------------------------------------------- nickname
 DefineMenuItem("pos", { 30, 32 + (22 * 4)}, "font", "game",
@@ -3886,6 +3886,6 @@ DefineMenuItem("pos", { 5, 32 + (22 * 4)},
   "checkbox", {
     "state", "unchecked",
     "func", "select-game-server",
-    "style", "checkbox-square"},
+    "style", "square"},
   "menu", "metaserver-list")
 

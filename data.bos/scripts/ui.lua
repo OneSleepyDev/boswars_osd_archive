@@ -33,24 +33,23 @@ DefineButtonStyle("main", {
   Font = "game",
   TextNormalColor = "yellow",
   TextReverseColor = "white",
+  TextAlign = "Center",
+  TextPos = {64, 4},
   Default = {
     File = "general/ui_buttons.png", Size = {300, 144}, Frame = 4,
-    TextOffset = {30, 2}
   },
   Hover = {
     TextNormalColor = "white",
-    TextOffset = {30, 2}
   },
   Selected = {
     Border = {
       Color = {252, 252, 0}, Size = 1,
     },
-    TextOffset = {30, 2}
   },
   Clicked = {
     File = "general/ui_buttons.png", Size = {300, 144}, Frame = 5,
     TextNormalColor = "white",
-    TextOffset = {30, 2},
+    TextPos = {66, 6},
   },
   Disabled = {
     File = "general/ui_buttons.png", Size = {300, 144}, Frame = 3,
@@ -64,6 +63,8 @@ DefineButtonStyle("network", {
   Font = "game",
   TextNormalColor = "yellow",
   TextReverseColor = "white",
+  TextAlign = "Center",
+  TextPos = {40, 4},
   Default = {
     File = "general/ui_buttons.png", Size = {300, 144}, Frame = 7,
   },
@@ -78,7 +79,7 @@ DefineButtonStyle("network", {
   Clicked = {
     File = "general/ui_buttons.png", Size = {300, 144}, Frame = 8,
     TextNormalColor = "white",
-    TextOffset = {2, 2},
+    TextPos = {42, 6},
   },
   Disabled = {
     File = "general/ui_buttons.png", Size = {300, 144}, Frame = 6,
@@ -92,6 +93,8 @@ DefineButtonStyle("gm-half", {
   Font = "large",
   TextNormalColor = "yellow",
   TextReverseColor = "white",
+  TextAlign = "Center",
+  TextPos = {53, 7},
   Default = {
     File = "general/ui_buttons.png", Size = {300, 144}, Frame = 10,
   },
@@ -106,7 +109,7 @@ DefineButtonStyle("gm-half", {
   Clicked = {
     File = "general/ui_buttons.png", Size = {300, 144}, Frame = 11,
     TextNormalColor = "white",
-    TextOffset = {2, 2},
+    TextPos = {55, 9},
   },
   Disabled = {
     File = "general/ui_buttons.png", Size = {300, 144}, Frame = 9,
@@ -120,6 +123,8 @@ DefineButtonStyle("gm-full", {
   Font = "large",
   TextNormalColor = "yellow",
   TextReverseColor = "white",
+  TextAlign = "Center",
+  TextPos = {112, 7},
   Default = {
     File = "general/ui_buttons.png", Size = {300, 144}, Frame = 16,
   },
@@ -134,7 +139,7 @@ DefineButtonStyle("gm-full", {
   Clicked = {
     File = "general/ui_buttons.png", Size = {300, 144}, Frame = 17,
     TextNormalColor = "white",
-    TextOffset = {2, 2},
+    TextPos = {114, 9},
   },
   Disabled = {
     File = "general/ui_buttons.png", Size = {300, 144}, Frame = 15,
@@ -148,6 +153,8 @@ DefineButtonStyle("folder", {
   Font = "large",
   TextNormalColor = "yellow",
   TextReverseColor = "white",
+  TextAlign = "Left",
+  TextPos = {44, 6},
   Default = {
     File = "general/ui_buttons.png", Size = {300, 144}, Frame = 51,
   },
@@ -162,7 +169,7 @@ DefineButtonStyle("folder", {
   Clicked = {
     File = "general/ui_buttons.png", Size = {300, 144}, Frame = 52,
     TextNormalColor = "white",
-    TextOffset = {2, 2},
+    TextPos = {2, 2},
   },
   Disabled = {
     File = "general/ui_buttons.png", Size = {300, 144}, Frame = 50,

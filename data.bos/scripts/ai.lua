@@ -59,69 +59,73 @@ DefineAiHelper(
   --
   {"unit-limit", "unit-gen", "food"})
 
+local player
 
-Load("scripts/helpers.lua")
+function AiLoop(loop_funcs, loop_pos)
+    local ret
 
-function Loop()
-  while true do
-     print("Looping !");  
-     AiForce(1, {"unit-assault", 20}) 
-     AiForce(2, {"unit-grenadier", 8}) 
-     AiForce(3, {"unit-bazoo", 8}) 
-     AiWaitForce(2)
-     AiWaitForce(3)  -- wait until attack party is completed
-     AiSleep(200)
-     AiAttackWithForce(1)
-     AiAttackWithForce(2)
-     AiAttackWithForce(3)
-  end
-end
-
-
-function AiRun(player)
-  AiDebug(false)
-  AiSleep(AiGetSleepCycles())
-  AiNeed("unit-vault") 
-  AiSet("unit-engineer", 10)
-  AiWait("unit-vault")
-  AiNeed("unit-camp")
-  AiWait("unit-camp")
-  AddMessage("You're gonna die")
-  AiForce(0, {"unit-assault", 10})
-  AiWaitForce(0) 
-  AiNeed("unit-camp")
-  AiSleep(500)
-  AiNeed("unit-camp")
-  
-  AiForce(1, {"unit-assault", 10}) 
-  AiWaitForce(1) 
-  AiSleep(200) 
-  AiAttackWithForce(1) 
-
-  AiForce(0, {"unit-assault", 20}) 
-  AiNeed("unit-rfac") 
-  AiResearch("upgrade-expl") 
-  AiForce(1, {"unit-assault", 20, "unit-grenadier", 8})
-  AiWaitForce(1)  
-  AiAttackWithForce(1)
-
-  AiResearch("upgrade-expl2")
-  Loop()
-end
-
-co = {}
-for i = 1, 16 do
-    co[i]=coroutine.create(AiRun)
-end
-
-function AiLoop()
     player = AiPlayer() + 1
-    coroutine.resume(co[player], player)
+    while (true) do
+    	ret = loop_funcs[loop_pos[player]]()
+	if (ret) then
+	    break
+	end
+	loop_pos[player] = loop_pos[player] + 1
+    end
     return true
 end
 
+ai_pos = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1}
+ai_loop_pos = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1}
+
+local ai_loop_funcs = {
+  function() print("Looping !"); return false end,
+  function() return AiForce(1, {"unit-assault", 20}) end,
+  function() return AiForce(2, {"unit-grenadier", 8}) end,
+  function() return AiForce(3, {"unit-bazoo", 8}) end,
+  function() return AiWaitForce(2) end,
+  function() return AiWaitForce(3) end,  -- wait until attack party is completed
+  function() return AiSleep(200) end,
+  function() return AiAttackWithForce(1) end,
+  function() return AiAttackWithForce(2) end,
+  function() return AiAttackWithForce(3) end,
+  function() ai_loop_pos[player] = 0; return false end,
+}
+
+local ai_funcs = {
+  function() AiDebug(false) return false end,
+  function() return AiSleep(AiGetSleepCycles()) end,
+  function() return AiNeed("unit-vault") end,
+  function() return AiSet("unit-engineer", 10) end,
+  function() return AiWait("unit-vault") end,
+
+  function() return AiNeed("unit-camp") end,
+  function() return AiWait("unit-camp") end,
+  function() return AiForce(0, {"unit-assault", 10}) end,
+  function() return AiWaitForce(0) end, 
+  function() return AiNeed("unit-camp") end,
+  function() return AiSleep(500) end,
+  function() return AiNeed("unit-camp") end,
+  
+  function() return AiForce(1, {"unit-assault", 10}) end,
+  function() return AiWaitForce(1) end,
+  function() return AiSleep(200) end, 
+  function() return AiAttackWithForce(1) end,
+
+  function() return AiForce(0, {"unit-assault", 20}) end,
+  function() return AiNeed("unit-rfac") end,
+  function() return AiResearch("upgrade-expl") end,
+  function() return AiForce(1, {"unit-assault", 20, "unit-grenadier", 8}) end,
+  function() return AiWaitForce(1) end, 
+  function() return AiAttackWithForce(1) end,
+
+  function() return AiResearch("upgrade-expl2") end,
+  function() return AiLoop(ai_loop_funcs, ai_loop_pos) end,
+}
+
 function AiRush()
-    return AiLoop()
+--    print(AiPlayer() .. " position ".. ai_pos[AiPlayer() + 1]);
+    return AiLoop(ai_funcs, ai_pos)
 end
 
 DefineAi("ai-rush", "*", "ai-rush", AiRush)

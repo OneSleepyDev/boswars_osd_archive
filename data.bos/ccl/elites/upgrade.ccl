@@ -28,7 +28,6 @@
 ;;
 ;;	$Id$
 
-;;	NOTE: Save can generate this table.
 
 (define-allow 'unit-lancer			"AAAAAAAAAAAAAAAA")
 (define-allow 'unit-grenadier			"AAAAAAAAAAAAAAAA")
@@ -40,20 +39,27 @@
 (define-allow 'unit-rfac			"AAAAAAAAAAAAAAAA")
 (define-allow 'unit-human-wall			"AAAAAAAAAAAAAAAA")
 
+
 ;;	- upgrades
 
 (define-upgrade 'upgrade-expl 'icon 'icon-expl
   'costs #(  1000   500   200     0     0     0     0))
+(define-upgrade 'upgrade-expl2 'icon 'icon-expl2
+  'costs #(   800   700   500     0     0     0     0))
+
+
+(define-modifier 'upgrade-expl2
+  '(piercing-damage 5)
+  '(apply-to unit-grenadier))
+
 
 (define-allow 'upgrade-expl			"AAAAAAAAAAAAAAAA")
+(define-allow 'upgrade-expl2			"AAAAAAAAAAAAAAAA")
 
-;;	NOTE: Save can generate this table.
-
-;;	- elites land forces
 
 (define-dependency 'unit-grenadier
   '(upgrade-expl))
 
-;;	- elites upgrades/research
+(define-dependency 'upgrade-expl2
+  '(upgrade-expl))
 
-;;	- elites spells

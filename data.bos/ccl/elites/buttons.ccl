@@ -147,6 +147,12 @@
   'key "e" 'hint "RESEARCH ~!EXPLOSIVES"
   'for-unit '(unit-rfac))
 
+(define-button 'pos 1 'level 0 'icon 'icon-expl2
+  'action 'research 'value 'upgrade-expl2
+  'allowed 'check-single-research
+  'key "e" 'hint "RESEARCH ~!EXPLOSIVES2"
+  'for-unit '(unit-rfac))
+
 ;; town hall upgrades ---------------------------------------------------------
 
 (if extensions (begin

@@ -44,6 +44,11 @@
   'draw-level 50 'class 'missile-class-parabolic 'sleep 1 'speed 16 'range 2
   'impact-missile 'missile-64x64-explosion)
 
+(define-missile-type 'missile-bazoo
+  'file "elites/missile/rocket.png" 'size '(32 32) 'frames 5 'num-directions 5
+  'impact-sound "rocket-impact"
+  'draw-level 50 'class 'missile-class-point-to-point 'sleep 1 'speed 16 'range 2
+  'impact-missile 'missile-64x64-explosion)
 
 (define-missile-type 'missile-dorcoz
   'file "terras/missile/mis_plasma_sml.png" 'size '(32 32) 'frames 5 'num-directions 5

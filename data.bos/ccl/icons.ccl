@@ -54,6 +54,8 @@
   'size '(46 38) 'normal '(0 "elites/units/ico_assault.png"))
 (define-icon 'icon-grenadier
   'size '(46 38) 'normal '(0 "elites/units/ico_grenadier.png"))
+(define-icon 'icon-bazoo
+  'size '(46 38) 'normal '(0 "elites/units/ico_bazoo.png"))
 (define-icon 'icon-engineer
   'size '(46 38) 'normal '(0 "elites/units/ico_engineer.png"))
 (define-icon 'icon-harvester

@@ -34,48 +34,49 @@
 ;;	NOTE: Save can generate this table.
 ;;
 (define-unit-type 'unit-bazoo 'name "Bazoo"
-  'files '(tileset-desert "elites/units/unit_assault.png")
+  'files '(tileset-desert "elites/units/unit_bazoo.png")
   'size '(64 64)
-  'shadow '(file "elites/units/unit_assault_s.png" size (64 64))
-  'animations 'animations-bazoo 'icon 'icon-assault
-  'costs '(time 60 titanium 300)
-  'speed 10
-  'hit-points 60
+  'shadow '(file "elites/units/unit_bazoo_s.png" size (64 64))
+  'animations 'animations-bazoo 'icon 'icon-bazoo
+  'costs '(time 400 titanium 250 crystal 150)
+  'speed 8
+  'hit-points 50
   'draw-level 40
   'tile-size '(1 1) 'box-size '(17 28)
-  'sight-range 6 'computer-reaction-range 6 'person-reaction-range 6
-  'armor 2 'basic-damage 6 'piercing-damage 3 'missile 'missile-none
-  'max-attack-range 5
+  'sight-range 7 'computer-reaction-range 6 'person-reaction-range 6
+  'armor 2 'basic-damage 5 'piercing-damage 15 'missile 'missile-bazoo
+  'max-attack-range 6
   'priority 60
   'points 50
-  'corpse '(unit-dead-body1 0)
+  'corpse '(unit-dead-body4 0)
   'type-land
   'right-attack
   'can-attack 'repair-range 1
   'can-target-land
+  'can-target-air
   'land-unit
   'organic
   'selectable-by-rectangle
   'sounds '(
-    selected "assault-selected"
-    acknowledge "assault-acknowledge"
-    ready "assault-ready"
-    help "assault-help"
-    dead "assault-die"
-    attack "assault-attack"))
+    selected "bazoo-selected"
+    acknowledge "bazoo-acknowledge"
+    ready "bazoo-ready"
+    help "bazoo-help"
+    dead "bazoo-die"
+    attack "bazoo-attack"))
 
 (define-unit-type 'unit-assault 'name "Assault Unit"
   'files '(tileset-desert "elites/units/unit_assault.png")
   'size '(64 64)
   'shadow '(file "elites/units/unit_assault_s.png" size (64 64))
   'animations 'animations-assault 'icon 'icon-assault
-  'costs '(time 60 titanium 300)
+  'costs '(time 100 titanium 200 crystal 50)
   'speed 10
-  'hit-points 60
+  'hit-points 50
   'draw-level 40
   'tile-size '(1 1) 'box-size '(17 28)
   'sight-range 6 'computer-reaction-range 6 'person-reaction-range 6
-  'armor 2 'basic-damage 6 'piercing-damage 3 'missile 'missile-none
+  'armor 3 'basic-damage 5 'piercing-damage 5 'missile 'missile-none
   'max-attack-range 5
   'priority 60
   'points 50
@@ -100,14 +101,14 @@
   'size '(64 64)
   'shadow '(file "elites/units/unit_grenadier_s.png" size (64 64))
   'animations 'animations-grenadier 'icon 'icon-grenadier
-  'costs '(time 350 titanium 450 crystal 150)
+  'costs '(time 300 titanium 200 crystal 100)
   'speed 10
-  'hit-points 100
+  'hit-points 50
   'draw-level 40
   'tile-size '(1 1) 'box-size '(17 28)
   'sight-range 6 'computer-reaction-range 6 'person-reaction-range 6
-  'armor 1 'basic-damage 5 'piercing-damage 30 'missile 'missile-grenadier
-  'max-attack-range 6
+  'armor 2 'basic-damage 15 'piercing-damage 15 'missile 'missile-grenadier
+  'max-attack-range 5
   'priority 60
   'points 50
   'corpse '(unit-dead-body3 0)
@@ -132,13 +133,13 @@
   'shadow '(file "elites/units/unit_engineer_s.png" size (64 64))
   'draw-level 19
   'animations 'animations-engineer 'icon 'icon-engineer
-  'costs '(time 200 titanium 300 crystal 50)
-  'speed 10
-  'hit-points 100
+  'costs '(time 150 titanium 175 crystal 25)
+  'speed 8
+  'hit-points 30
   'draw-level 40
   'tile-size '(1 1) 'box-size '(17 28)
   'sight-range 5 'computer-reaction-range 6 'person-reaction-range 4
-  'armor 0 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
+  'armor 1 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
   'max-attack-range 1
   'priority 50
   'points 30
@@ -152,9 +153,9 @@
   'can-gather-resource '(
     file-when-loaded "elites/units/unit_engineer.png"  
     resource-id titanium
-    resource-capacity 100
+    resource-capacity 50
     wait-at-resource 7
-    wait-at-depot 5
+    wait-at-depot 1
     resource-step 1
     harvest-from-outside)
   'organic
@@ -173,15 +174,15 @@
   'shadow '(file "elites/units/unit_harv_s.png" size (96 96))
   'draw-level 19
   'animations 'animations-harvester 'icon 'icon-harvester
-  'costs '(time 1200 titanium 900 gas 50)
-  'repair-hp 1
-  'repair-costs '(titanium 1)
-  'speed 10
-  'hit-points 400
+  'costs '(time 550 titanium 500 crystal 300 gas 100)
+  'repair-hp 2
+  'repair-costs '(titanium 2)
+  'speed 5
+  'hit-points 800
   'draw-level 40
   'tile-size '(1 1) 'box-size '(63 63)
   'sight-range 5 'computer-reaction-range 6 'person-reaction-range 4
-  'armor 5 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
+  'armor 25 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
   'max-attack-range 0
   'priority 50
   'points 30
@@ -197,7 +198,7 @@
     resource-id crystal
     resource-capacity 150
     wait-at-resource 2
-    wait-at-depot 100
+    wait-at-depot 1
     resource-step 2
     harvest-from-outside)
   'selectable-by-rectangle
@@ -214,16 +215,16 @@
   'size '(96 96)
   'shadow '(file "elites/build/bld_pplnt_s.png" size (96 96))
   'animations 'animations-pplnt 'icon 'icon-pplnt
-  'costs '(time 300 titanium 600 crystal 100 gas 50)
-  'repair-hp 1
+  'costs '(time 250 titanium 300 crystal 30 gas 50)
+  'repair-hp 2
   'repair-costs '(titanium 2)
   'construction 'construction-pplnt
   'speed 0
-  'hit-points 500
+  'hit-points 250
   'draw-level 20
   'tile-size '(3 3) 'box-size '(95 95)
   'sight-range 1
-  'armor 15 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
+  'armor 10 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
   'priority 20 'annoy-computer-factor 45
   'points 100
   'supply 150
@@ -245,17 +246,17 @@
   'size '(160 128)
   'shadow '(file "elites/build/bld_camp_s.png" size (160 128))
   'animations 'animations-camp 'icon 'icon-camp
-  'costs '(time 400 titanium 800 crystal 150)
-  'repair-hp 1
+  'costs '(time 400 titanium 600 crystal 150)
+  'repair-hp 2
   'repair-costs '(titanium 2)
   'construction 'construction-camp
   'speed 0
-  'hit-points 800
+  'hit-points 500
   'draw-level 20
   'demand 125
   'tile-size '(5 4) 'box-size '(159 127)
   'sight-range 1
-  'armor 15 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
+  'armor 25 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
   'priority 30 'annoy-computer-factor 35
   'points 160
   'explode-when-killed 'missile-160x128-explosion
@@ -270,24 +271,24 @@
 ;    attack "camp-attack"
   ))
 
-(define-unit-type 'unit-fort 'name "Fort"
+(define-unit-type 'unit-fort 'name "Elite Fort"
   'files '(tileset-desert "elites/build/bld_fort.png")
   'size '(224 224)
   'shadow '(file "elites/build/bld_fort_s.png" size (224 224))
   'animations 'animations-fort 'icon 'icon-fort
-  'costs '(time 1200 titanium 1200 crystal 1000 gas 500)
-  'repair-hp 1
-  'repair-costs '(titanium 3)
+  'costs '(time 1000 titanium 1000 crystal 1000 gas 0)
+  'repair-hp 4
+  'repair-costs '(titanium 4)
   'construction 'construction-fort
   'speed 0
-  'hit-points 1500
+  'hit-points 1800
   'draw-level 20
   'tile-size '(7 7) 'box-size '(223 223)
-  'sight-range 3
-  'armor 25 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
+  'sight-range 4
+  'armor 30 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
   'priority 35 'annoy-computer-factor 45
   'points 200
-  'supply 300
+  'supply 200
   'explode-when-killed 'missile-288x288-explosion
   'type-land
   'building 
@@ -306,20 +307,19 @@
   'size '(128 128)
   'shadow '(file "elites/build/bld_rfac_s.png" size (128 128))
   'animations 'animations-rfac 'icon 'icon-rfac
-  'costs '(time 1200 titanium 800 crystal 500)
-  'repair-hp 1
-  'repair-costs '(titanium 3)
+  'costs '(time 500 titanium 500 crystal 300)
+  'repair-hp 2
+  'repair-costs '(titanium 2)
   'construction 'construction-rfac
   'speed 0
-  'hit-points 500
+  'hit-points 350
   'draw-level 20
   'tile-size '(4 4) 'box-size '(128 128)
   'sight-range 1
-  'armor 15 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
+  'armor 30 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
   'priority 35 'annoy-computer-factor 45
-  'demand 225
+  'demand 300
   'points 200
-  'supply 300
   'explode-when-killed 'missile-160x128-explosion
   'type-land
   'building 
@@ -364,6 +364,21 @@
 
 (define-unit-type 'unit-dead-body3 'name "Grenadierbody"
   'files '(tileset-desert "elites/units/unit_grenadier_c.png")
+  'size '(64 64)
+  'animations 'animations-elitecorpse1 'icon 'icon-cancel
+  'speed 0
+  'hit-points 999
+  'draw-level 30
+  'tile-size '(1 1) 'box-size '(31 31)
+  'sight-range 1
+  'basic-damage 0 'piercing-damage 0 'missile 'missile-none
+  'priority 0
+  'type-land
+  'vanishes
+  'sounds '())
+
+(define-unit-type 'unit-dead-body4 'name "Bazoobody"
+  'files '(tileset-desert "elites/units/unit_bazoo_c.png")
   'size '(64 64)
   'animations 'animations-elitecorpse1 'icon 'icon-cancel
   'speed 0

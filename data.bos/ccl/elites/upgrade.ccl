@@ -31,6 +31,7 @@
 
 (define-allow 'unit-assault			"AAAAAAAAAAAAAAAA")
 (define-allow 'unit-grenadier			"AAAAAAAAAAAAAAAA")
+(define-allow 'unit-bazoo			"AAAAAAAAAAAAAAAA")
 (define-allow 'unit-engineer			"AAAAAAAAAAAAAAAA")
 (define-allow 'unit-harvester			"AAAAAAAAAAAAAAAA")
 (define-allow 'unit-pplnt			"AAAAAAAAAAAAAAAA")

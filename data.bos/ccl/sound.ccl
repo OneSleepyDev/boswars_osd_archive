@@ -86,6 +86,13 @@
 (make-sound "grenadier-die" "elites/units/grenadier_die.wav")
 (make-sound "grenadier-attack" "elites/units/grenadier_attack.wav")
 
+(make-sound "bazoo-selected" "elites/units/booza_select.wav")
+(make-sound "bazoo-acknowledge" "elites/units/booza_action.wav")
+(make-sound "bazoo-ready" "elites/computer_voice/bazoo.ready.wav")
+(make-sound "bazoo-help" "elites/computer_voice/bazoo.underattack.wav")
+(make-sound "bazoo-die" "elites/units/booza_die.wav")
+(make-sound "bazoo-attack" "elites/units/booza_attack.wav")
+
 (make-sound "engineer-selected" "elites/units/engineer_select.wav")
 (make-sound "engineer-acknowledge" "elites/units/engineer_action.wav")
 (make-sound "engineer-ready" "elites/computer_voice/engineer.ready.wav")
@@ -123,6 +130,7 @@
 
 
 (make-sound "grenade-impact" "elites/units/grenadier_g_hit.wav")
+(make-sound "rocket-impact" "elites/units/booza_g_hit.wav")
 
 
 

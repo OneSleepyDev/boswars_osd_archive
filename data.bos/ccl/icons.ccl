@@ -253,7 +253,7 @@
 (define-icon 'icon-runestone
   'size '(46 38) 'normal '(82 "tilesets/desert/icons.png"))
 (define-icon 'icon-move-peasant
-  'size '(46 38) 'normal '(2 "buttons/commands.png"))
+  'size '(46 38) 'normal '(2 "general/commands.png"))
 (define-icon 'icon-move-peon
   'size '(46 38) 'normal '(84 "tilesets/desert/icons.png"))
 (define-icon 'icon-repair
@@ -269,7 +269,7 @@
 (define-icon 'icon-return-goods-peon
   'size '(46 38) 'normal '(90 "tilesets/desert/icons.png"))
 (define-icon 'icon-cancel
-  'size '(46 38) 'normal '(0 "buttons/commands.png"))
+  'size '(46 38) 'normal '(0 "general/commands.png"))
 (define-icon 'icon-elites-wall
   'size '(46 38) 'normal '(92 "tilesets/desert/icons.png"))
 (define-icon 'icon-terras-wall
@@ -399,9 +399,9 @@
 (define-icon 'icon-elites-ship-armor3
   'size '(46 38) 'normal '(155 "tilesets/desert/icons.png"))
 (define-icon 'icon-terras-ship-move
-  'size '(46 38) 'normal '(2 "buttons/commands.png"))
+  'size '(46 38) 'normal '(2 "general/commands.png"))
 (define-icon 'icon-elites-ship-move
-  'size '(46 38) 'normal '(2 "buttons/commands.png"))
+  'size '(46 38) 'normal '(2 "general/commands.png"))
 (define-icon 'icon-terras-ship-return-oil
   'size '(46 38) 'normal '(158 "tilesets/desert/icons.png"))
 (define-icon 'icon-elites-ship-return-oil
@@ -443,7 +443,7 @@
 (define-icon 'icon-177
   'size '(46 38) 'normal '(177 "tilesets/desert/icons.png"))
 (define-icon 'icon-elites-patrol-land
-  'size '(46 38) 'normal '(4 "buttons/commands.png"))
+  'size '(46 38) 'normal '(4 "general/commands.png"))
 (define-icon 'icon-terras-patrol-land
   'size '(46 38) 'normal '(179 "tilesets/desert/icons.png"))
 (define-icon 'icon-elites-stand-ground
@@ -451,11 +451,11 @@
 (define-icon 'icon-terras-stand-ground
   'size '(46 38) 'normal '(181 "tilesets/desert/icons.png"))
 (define-icon 'icon-elites-attack-ground
-  'size '(46 38) 'normal '(5 "buttons/commands.png"))
+  'size '(46 38) 'normal '(5 "general/commands.png"))
 (define-icon 'icon-terras-attack-ground
   'size '(46 38) 'normal '(183 "tilesets/desert/icons.png"))
 (define-icon 'icon-elites-patrol-naval
-  'size '(46 38) 'normal '(5 "buttons/commands.png"))
+  'size '(46 38) 'normal '(5 "general/commands.png"))
 (define-icon 'icon-terras-patrol-naval
   'size '(46 38) 'normal '(185 "tilesets/desert/icons.png"))
 (define-icon 'icon-quick-blade

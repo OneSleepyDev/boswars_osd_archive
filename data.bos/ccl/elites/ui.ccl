@@ -230,11 +230,11 @@
       arrow-se cursor-arrow-se)
 
     'menu-panels '(
-      panel1 "graphics/ui/elites/panel_1.png"
-      panel2 "graphics/ui/elites/panel_2.png"
-      panel3 "graphics/ui/elites/panel_3.png"
-      panel4 "graphics/ui/elites/panel_4.png"
-      panel5 "graphics/ui/elites/panel_5.png")
+      panel1 "graphics/general/panel_1.png"
+      panel2 "graphics/general/panel_2.png"
+      panel3 "graphics/general/panel_3.png"
+      panel4 "graphics/general/panel_4.png"
+      panel5 "graphics/general/panel_5.png")
 
     'victory-background "graphics/screens/general.png"
     'defeat-background "graphics/screens/general.png") )

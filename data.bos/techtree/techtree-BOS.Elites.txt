@@ -20,7 +20,8 @@ BOS.Elites
 			Stats: Unit; Armor 1; Hitpoints; 100; Sightrange 5; Speed 10; Dam 0; PDam 1; AttRange 1;
 			Tile: Size 64 64; Select Box 32 32;
 			GFX: Icon elites\units\ico_engineer.png; Unit elites\units\unit_engineer.png;
-			Anim: Stand 0; Walk 5, 10, 15, 20; Attack 25, 30; Die 35, 40, 45, 50, (Corpse);
+				Shadow elites\units\unit_engineer_s.png; Corpse elites\units\unit_engineer_c.png;
+			Anim: Stand 0; Walk 5, 10, 15, 20; Attack 25, 30, 35, 40, 35, 30; Die 45, 50, 55, 60, (Corpse);
 			Other: Harvest titanium (a100, t200); Repair buildings; Button_Menu bld_grp1, bld_grp2;
 			Trained At: FORT/pos0;
 
@@ -55,6 +56,7 @@ BOS.Elites
 			Stats: Unit; Armor 3; Hitpoints; 100; Sightrange 6; Speed 10; Dam 3; PDam 4; AttRange 5;
 			Tile: Size 64 64; Select Box 32 32;
 			GFX: Icon elites\units\ico_lancer.png; Unit elites\units\unit_lancer.png;
+				Shadow elites\units\unit_lancer_s.png; Corpse elites\units\unit_lancer_c.png;
 			Anim: Stand 0; Walk 5, 10, 15, 20; Attack 0, 25, 0, 25, 0, 25, slp_50 0; Die 30, 35, 40, 45,(Corpse);
 			Trained At: TRN_CAMP/pos0;			
 

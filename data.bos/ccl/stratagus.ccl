@@ -55,7 +55,9 @@
 ;(set-contrast! 110) (set-brightness! 15) (set-saturation! 100)
 
 ;;	Enter your default title screen.
-(set-title-screen! "video/int_logo_stratagus.avi" "video/int_logo_bos.avi")
+(set-title-screens!
+  '("video/int_logo_stratagus.avi" "video/int_logo_stratagus.ogg")
+  '("video/int_logo_bos.avi"))
 
 ;;	Enter your title music.
 ;(set-title-music! "music/title.ogg")

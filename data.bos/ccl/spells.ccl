@@ -53,7 +53,7 @@
         'manacost 300
         'range 128
         'target 'position
-        'action '((adjust-vitals hit-points -500))
+        'action '((demolish damage 500 range 10))
         'sound-when-cast "bazoo-attack"
         'missile-when-cast "missile-nuke"
         'autocast '(range 128)

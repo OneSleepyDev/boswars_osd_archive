@@ -2,6 +2,7 @@ Change log for Invasion - Battle of Survival
 --------------------------------------------
 
 CVS version:
+- Added camera unit. (Frank Loeffler)
 - Make ingame text fit nicely in panels. (François Beerten)
 - Updated scripts to use DefineButtonStyle as required by newer 
    Stratagus engine. (Jimmy Salmon, François Beerten)

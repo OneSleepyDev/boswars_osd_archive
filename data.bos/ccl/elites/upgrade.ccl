@@ -45,16 +45,17 @@
 ;;	- upgrades
 
 (define-upgrade 'upgrade-expl 'icon 'icon-expl
-  'costs #(  1000   500   200     0     0     0     0))
+  'costs #(  700   400   200     0     0     0     0))
 (define-upgrade 'upgrade-expl2 'icon 'icon-expl2
-  'costs #(   800   700   500     0     0     0     0))
-
+  'costs #(  700   450   300     0     0     0     0))
 (define-upgrade 'upgrade-tdril 'icon 'icon-tdril
-  'costs #(   500   200   200     0     0     0     0))
+  'costs #(  400   200   200     0     0     0     0))
 (define-upgrade 'upgrade-ddril 'icon 'icon-ddril
-  'costs #(   600   300   300     0     0     0     0))
+  'costs #(  400   300   250     0     0     0     0))
 (define-upgrade 'upgrade-pdril 'icon 'icon-pdril
-  'costs #(   700   400   400     0     0     0     0))
+  'costs #(  400   400   300     0     0     0     0))
+(define-upgrade 'upgrade-void 'icon 'icon-void
+  'costs #(  2000   0   0     0     0     0     0))
 
 
 (define-modifier 'upgrade-expl2
@@ -79,7 +80,14 @@
 (define-allow 'upgrade-tdril			"AAAAAAAAAAAAAAAA")
 (define-allow 'upgrade-ddril			"AAAAAAAAAAAAAAAA")
 (define-allow 'upgrade-pdril			"AAAAAAAAAAAAAAAA")
+(define-allow 'upgrade-void			"AAAAAAAAAAAAAAAA")
 
+
+(define-dependency 'upgrade-void
+  '(upgrade-expl2 upgrade-pdril))
+
+(define-dependency 'unit-bazoo
+  '(upgrade-expl2))
 
 (define-dependency 'unit-grenadier
   '(upgrade-expl))
@@ -89,5 +97,15 @@
 
 (define-dependency 'upgrade-ddril
   '(upgrade-tdril))
+
 (define-dependency 'upgrade-pdril
   '(upgrade-ddril))
+
+(define-dependency 'unit-camp
+  '(unit-fort))
+
+(define-dependency 'unit-rfac
+  '(unit-fort))
+
+(define-dependency 'unit-pplnt
+  '(unit-fort))

@@ -182,6 +182,12 @@
   'key "d" 'hint "RESEARCH POWER ~!DRILL"
   'for-unit '(unit-rfac))
 
+(define-button 'pos 9 'level 0 'icon 'icon-void
+  'action 'research 'value 'upgrade-void
+  'allowed 'check-single-research
+  'key "v" 'hint "RESEARCH ALIEN ~!VOID"
+  'for-unit '(unit-rfac))
+
 ;; town hall upgrades ---------------------------------------------------------
 
 (if extensions (begin

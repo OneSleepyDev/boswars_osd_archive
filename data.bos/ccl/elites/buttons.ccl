@@ -263,3 +263,9 @@
         'allowed 'check-true
 	'key "b" 'hint "~!BANDAGE"
 	'for-unit '(unit-medic))
+
+(define-button 'pos 3 'level 0 'icon 'icon-expl2
+  'action 'cast-spell 'value 'spell-nuke
+  'allowed 'check-true
+  'key "n" 'hint "~!NUKE EM"
+  'for-unit '(unit-msilo))

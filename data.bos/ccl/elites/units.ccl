@@ -303,6 +303,8 @@
   'explode-when-killed 'missile-160x128-explosion
   'corpse '(build-dead-body2 0)
   'type-land
+  'max-mana 1000
+  'can-cast-spell '(spell-nuke)
   'demand 400
   'building 
   'sounds '(

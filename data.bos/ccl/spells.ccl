@@ -47,3 +47,14 @@
         'autocast '(range 6 condition (alliance only max-hp-percent 90 )
         )
 )
+
+(define-spell "spell-nuke"
+        'showname "Nuclear Attack"
+        'manacost 300
+        'range 128
+        'target 'position
+        'action '((spawn-missile damage 450))
+        'sound-when-cast "bazoo-attack"
+        'missile-when-cast "missile-nuke"
+        'autocast '(range 128)
+)

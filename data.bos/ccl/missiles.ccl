@@ -38,6 +38,12 @@
 ;;		'sleep sleep 'speed speed 'impact-missile missile)
 ;;
 
+(define-missile-type 'missile-nuke
+  'file "elites/missile/nuke.png" 'size '(128 128) 'frames 5 'num-directions 5
+  'impact-sound "dev-dead"
+  'draw-level 300 'class 'missile-class-parabolic 'sleep 1 'speed 16 'range 15
+  'impact-missile 'missile-288x288-explosion)
+
 (define-missile-type 'missile-grenadier
   'file "elites/missile/grenade.png" 'size '(32 32) 'frames 5 'num-directions 5
   'impact-sound "grenade-impact"
@@ -69,7 +75,7 @@
 
 (define-missile-type 'missile-288x288-explosion
   'file "nature/effects/expl_288x288x1.png" 'size '(288 288) 'frames 20 'num-directions 1
-  'draw-level 50 'class 'missile-class-stay 'sleep 1 'speed 16 'range 1)
+  'draw-level 300 'class 'missile-class-stay 'sleep 1 'speed 16 'range 15)
 
 
 

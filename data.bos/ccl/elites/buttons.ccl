@@ -74,24 +74,29 @@
 
 (define-button 'pos 4 'level 0 'icon 'icon-repair
   'action 'repair
-  'key "r" 'hint "~!REPAIR"
+  'key "r" 'hint "~!REPAIR BUILDINGS/VEHICLES"
   'for-unit '(unit-engineer))
 
 (define-button 'pos 5 'level 0 'icon 'icon-harvest
   'action 'harvest
-  'key "h" 'hint "~!HARVEST"
-  'for-unit '(unit-engineer unit-harvester))
+  'key "h" 'hint "~!MINE TITANIUM"
+  'for-unit '(unit-engineer))
+
+(define-button 'pos 5 'level 0 'icon 'icon-harvest
+  'action 'harvest
+  'key "h" 'hint "~!HARVEST CRYSTALS"
+  'for-unit '(unit-harvester))
 
 (define-button 'pos 6 'level 0 'icon 'icon-return-goods-peasant
   'action 'return-goods
-  'key "g" 'hint "RETURN WITH ~!GOODS"
+  'key "g" 'hint "RETURN WITH ~!RESOURCES"
   'for-unit '(unit-engineer unit-harvester))
 
 ;; build basic/advanced structs -----------------------------------------------
 
 (define-button 'pos 7 'level 0 'icon 'icon-build-basic
   'action 'button 'value 1
-  'key "b" 'hint "~!BUILD BASIC STRUCTURE"
+  'key "b" 'hint "~!BUILDINGS LVL 1 SCHEMATICS"
   'for-unit '(unit-engineer))
 
 ;; simple buildings elites -----------------------------------------------------
@@ -132,7 +137,7 @@
 (define-button 'pos 2 'level 0 'icon 'icon-harvester
   'action 'train-unit 'value 'unit-harvester
   'allowed 'check-no-research
-  'key "h" 'hint "TRAIN MINERAL ~!HARVESTER"
+  'key "h" 'hint "BUILD MINERAL ~!HARVESTER"
   'for-unit '(unit-fort))
 
 (define-button 'pos 1 'level 0 'icon 'icon-assault
@@ -161,7 +166,7 @@
 (define-button 'pos 1 'level 0 'icon 'icon-expl2
   'action 'research 'value 'upgrade-expl2
   'allowed 'check-single-research
-  'key "e" 'hint "RESEARCH ~!EXPLOSIVES2"
+  'key "e" 'hint "RESEARCH ~!EXPLOSIVES LVL 2"
   'for-unit '(unit-rfac))
 
 (define-button 'pos 2 'level 0 'icon 'icon-tdril
@@ -193,22 +198,22 @@
 (if extensions (begin
 (define-button 'pos 5 'level 0 'icon 'icon-harvest
   'action 'harvest
-  'key "h" 'hint "SET ~!HARVEST LUMBER/MINE GOLD"
+  'key "h" 'hint "SET ~!HARVEST/MINE"
   'for-unit '(unit-fort))
 
 (define-button 'pos 7 'level 0 'icon 'icon-move
   'action 'move
-  'key "m" 'hint "SET ~!MOVE"
+  'key "n" 'hint "SET ~!NEW UNITS TARGET"
   'for-unit '(unit-fort unit-camp))
 
 (define-button 'pos 8 'level 0 'icon 'icon-stop
   'action 'stop
-  'key "z" 'hint "SET ~!ZTOP"
+  'key "c" 'hint "SET ~!CANCEL UNIT TARGET"
   'for-unit '(unit-fort unit-camp))
 
 (define-button 'pos 9 'level 0 'icon 'icon-attack
   'action 'attack
-  'key "e" 'hint "S~!ET ATTACK"
+  'key "i" 'hint "UN~!IT ATTACK"
   'for-unit '(unit-fort unit-camp)) ))
 
 ; spells --------------------------------

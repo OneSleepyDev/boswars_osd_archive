@@ -107,15 +107,11 @@
   'size '(46 38) 'normal '(4 "general/commands.png"))
 (define-icon 'icon-attack-ground
   'size '(46 38) 'normal '(5 "general/commands.png"))
-(define-icon 'icon-patrol
-  'size '(46 38) 'normal '(5 "general/commands.png"))
 
-(define-icon 'icon-stand-ground
-  'size '(46 38) 'normal '(180 "tilesets/desert/icons.png"))
+
 
 
 ; OLD, REMOVE
-
 
 (define-icon 'icon-repair
   'size '(46 38) 'normal '(85 "tilesets/desert/icons.png"))
@@ -129,4 +125,5 @@
   'size '(46 38) 'normal '(89 "tilesets/desert/icons.png"))
 (define-icon 'icon-return-goods-peon
   'size '(46 38) 'normal '(90 "tilesets/desert/icons.png"))
-
+(define-icon 'icon-stand-ground
+  'size '(46 38) 'normal '(180 "tilesets/desert/icons.png"))

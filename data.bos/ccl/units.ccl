@@ -52,7 +52,32 @@
   'building
   'gives-resource 'crystal 'can-harvest)
 
-
+(define-unit-type 'unit-gold-mine 'name "Titanium Spike"
+  'files '(tileset-desert "nature/res/spike_1.png")
+  'size '(128 128)
+  'shadow '(file "nature/res/spike_1_s.png" size (128 128) offset (0 0))
+  'animations 'animations-building 'icon 'icon-tita
+  'costs '(time 150)
+  'construction 'construction-land2
+  'speed 0
+  'hit-points 25500
+  'draw-level 40
+  'tile-size '(4 4) 'box-size '(127 127)
+  'sight-range 1
+  'armor 20 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
+  'priority 0
+  'corpse '(unit-destroyed-3x3-place 0)
+  'explode-when-killed 'missile-explosion
+  'type-land
+  'building
+  'gives-resource 'titanium 'can-harvest
+  'sounds '(
+    selected "gold-mine-selected"
+    acknowledge "gold-mine-acknowledge"
+    ready "gold-mine-ready"
+    help "gold-mine-help"
+    dead "building destroyed"
+    attack "gold-mine-attack"))
 
 
 
@@ -150,32 +175,7 @@
   'type-land
   'sounds '())
 
-(define-unit-type 'unit-gold-mine 'name "Gold Mine"
-  'files '(tileset-desert "tilesets/desert/neutral/buildings/gold_mine.png"
-    tileset-winter "tilesets/winter/neutral/buildings/gold_mine.png")
-  'size '(96 96)
-  'animations 'animations-building 'icon 'icon-gold-mine
-  'costs '(time 150)
-  'construction 'construction-land2
-  'speed 0
-  'hit-points 25500
-  'draw-level 40
-  'tile-size '(3 3) 'box-size '(95 95)
-  'sight-range 1
-  'armor 20 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
-  'priority 0
-  'corpse '(unit-destroyed-3x3-place 0)
-  'explode-when-killed 'missile-explosion
-  'type-land
-  'building
-  'gives-resource 'titanium 'can-harvest
-  'sounds '(
-    selected "gold-mine-selected"
-    acknowledge "gold-mine-acknowledge"
-    ready "gold-mine-ready"
-    help "gold-mine-help"
-    dead "building destroyed"
-    attack "gold-mine-attack"))
+
 
 (define-unit-type 'unit-dead-body 'name "Dead Body"
   'files '(tileset-desert "neutral/units/corpses.png")

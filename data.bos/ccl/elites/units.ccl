@@ -43,7 +43,7 @@
   'speed 10
   'hit-points 60
   'draw-level 40
-  'tile-size '(1 1) 'box-size '(18 18)
+  'tile-size '(1 1) 'box-size '(18 24)
   'sight-range 6 'computer-reaction-range 6 'person-reaction-range 6
   'armor 2 'basic-damage 6 'piercing-damage 3 'missile 'missile-none
   'max-attack-range 5
@@ -75,7 +75,7 @@
   'speed 10
   'hit-points 100
   'draw-level 40
-  'tile-size '(1 1) 'box-size '(18 18)
+  'tile-size '(1 1) 'box-size '(18 24)
   'sight-range 5 'computer-reaction-range 6 'person-reaction-range 4
   'armor 0 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
   'max-attack-range 1
@@ -84,7 +84,7 @@
   'corpse '(unit-dead-body 6)
   'type-land
   'right-harvest
-  'repair-range 1
+  'repair-range 0
   'can-target-land
   'land-unit
   'coward
@@ -92,9 +92,10 @@
     file-when-loaded "elites/units/unit_engineer.png"  
     resource-id titanium
     resource-capacity 100
-    wait-at-resource 10
+    wait-at-resource 7
     wait-at-depot 5
-    resource-step 1)
+    resource-step 1
+    harvest-from-outside)
   'organic
   'selectable-by-rectangle
   'sounds '(

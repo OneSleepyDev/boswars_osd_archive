@@ -78,8 +78,7 @@
 
 ; TERRAS
 
-(define-icon 'icon-dorcoz
-  'size '(46 38) 'normal '(0 "terras/units/ico_dorcoz.png"))
+
 
 
 ; NEUTRAL

@@ -56,6 +56,13 @@
   'construction-elites-foundry 'construction-terras-foundry 'construction-wall
   'construction-land2)
 
+; hardcoded Positions in wc-name (must be present)
+; WC_UnitPeasant		0x02	/// (02) human peasant
+; WC_UnitPeon			0x03	/// (03) orc peon
+; WC_UnitGoldMine		0x5C	/// (92) goldmine
+; WC_UnitOilPatch		0x5D	/// (93) oilpatch
+; WC_StartLocationHuman		0x5E	/// (94) start location human
+; WC_StartLocationOrc		0x5F	/// (95) start location orc
 (define-unittype-wc-names
 'unit-grunt 'unit-engineer 'unit-peon 'unit-ballista
   'unit-catapult 'unit-knight 'unit-ogre 'unit-archer 'unit-axethrower
@@ -85,12 +92,10 @@
   'unit-elites-oil-platform 'unit-terras-oil-platform 'unit-keep
   'unit-stronghold 'unit-castle 'unit-fortress 'unit-gold-mine
   'unit-oil-patch 'unit-elites-start-location 'unit-terras-start-location
-  'unit-elites-guard-tower 'unit-terras-guard-tower 'unit-elites-cannon-tower
-  'unit-terras-cannon-tower 'unit-circle-of-power 'unit-dark-portal
-  'unit-runestone 'unit-elites-wall 'unit-terras-wall 'unit-dead-body
+  'unit-dead-body
   'unit-destroyed-1x1-place 'unit-destroyed-2x2-place
   'unit-destroyed-3x3-place 'unit-destroyed-4x4-place
-  'unit-engineer 'unit-peon 'unit-engineer 'unit-peon 'unit-elites-oil-tanker 'unit-terras-oil-tanker
+  'unit-engineer 'unit-peon 'unit-elites-oil-tanker 'unit-terras-oil-tanker
   'unit-miner
 )
 

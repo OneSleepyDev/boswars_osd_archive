@@ -33,81 +33,71 @@
 (define-button 'pos 1 'level 0 'icon 'icon-move
   'action 'move
   'key "m" 'hint "~!MOVE"
-  'for-unit '(unit-grunt unit-peon terras-group))
+  'for-unit '(  terras-group))
 
 (define-button 'pos 2 'level 0 'icon 'icon-stop
   'action 'stop
   'key "s" 'hint "~!STOP"
-  'for-unit '(unit-grunt unit-peon terras-group))
+  'for-unit '(  terras-group))
 
 (define-button 'pos 3 'level 0 'icon 'icon-attack
   'action 'attack
   'key "a" 'hint "~!ATTACK"
-  'for-unit '(unit-grunt unit-peon terras-group))
+  'for-unit '(  terras-group))
 
 (define-button 'pos 4 'level 0 'icon 'icon-patrol
   'action 'patrol
   'key "p" 'hint "~!PATROL"
-  'for-unit '(unit-grunt terras-group))
+  'for-unit '( terras-group))
 
 (define-button 'pos 5 'level 0 'icon 'icon-stand-ground
   'action 'stand-ground
   'key "t" 'hint "S~!TAND GROUND"
-  'for-unit '(unit-grunt terras-group))
+  'for-unit '( terras-group))
 
 ;; peon specific actions ------------------------------------------------------
 
 (define-button 'pos 4 'level 0 'icon 'icon-repair
   'action 'repair
   'key "r" 'hint "~!REPAIR"
-  'for-unit '(unit-peon))
+  'for-unit '())
 
 (define-button 'pos 5 'level 0 'icon 'icon-harvest
   'action 'harvest
   'key "h" 'hint "~!HARVEST LUMBER/MINE GOLD"
-  'for-unit '(unit-peon))
+  'for-unit '())
 
 (define-button 'pos 6 'level 0 'icon 'icon-return-goods-peon
   'action 'return-goods
   'key "g" 'hint "RETURN WITH ~!GOODS"
-  'for-unit '(unit-peon))
+  'for-unit '())
 
 ;; build basic/advanced structs -----------------------------------------------
 
 (define-button 'pos 7 'level 0 'icon 'icon-build-basic
   'action 'button 'value 1
   'key "b" 'hint "~!BUILD BASIC STRUCTURE"
-  'for-unit '(unit-peon))
+  'for-unit '())
 
 ;; simple buildings terras ----------------------------------------------------
-
-(define-button 'pos 1 'level 1 'icon 'icon-cancel
-  'action 'build 'value 'unit-pig-farm
-  'key "f" 'hint "BUILD PIG ~!FARM"
-  'for-unit '(unit-peon))
 
 (define-button 'pos 2 'level 1 'icon 'icon-cancel
   'action 'build 'value 'unit-terras-barracks
   'key "b" 'hint "BUILD ~!BARRACKS"
-  'for-unit '(unit-peon))
-
-(define-button 'pos 3 'level 1 'icon 'icon-cancel
-  'action 'build 'value 'unit-great-hall
-  'key "h" 'hint "BUILD GREAT ~!HALL"
-  'for-unit '(unit-peon))
+  'for-unit '())
 
 (define-button 'pos 9 'level 1 'icon 'icon-cancel
   'action 'button 'value 0
   'key "\033" 'hint "~<ESC~> CANCEL"
-  'for-unit '(unit-peon))
+  'for-unit '())
 
 ;; buildings commands ---------------------------------------------------------
 
-(define-button 'pos 1 'level 0 'icon 'icon-cancel
-  'action 'train-unit 'value 'unit-peon
-  'allowed 'check-no-research
-  'key "p" 'hint "TRAIN ~!PEON"
-  'for-unit '(unit-great-hall))
+;(define-button 'pos 1 'level 0 'icon 'icon-cancel
+;  'action 'train-unit 'value '???
+;  'allowed 'check-no-research
+;  'key "p" 'hint "TRAIN ~!PEON"
+;  'for-unit '())
 
 ;; great hall upgrades --------------------------------------------------------
 
@@ -115,25 +105,20 @@
 (define-button 'pos 5 'level 0 'icon 'icon-harvest
   'action 'harvest
   'key "h" 'hint "SET ~!HARVEST LUMBER/MINE GOLD"
-  'for-unit '(unit-great-hall))
+  'for-unit '())
 
 (define-button 'pos 7 'level 0 'icon 'icon-move
   'action 'move
   'key "m" 'hint "SET ~!MOVE"
-  'for-unit '(unit-great-hall unit-terras-barracks))
+  'for-unit '( unit-terras-barracks))
 
 (define-button 'pos 8 'level 0 'icon 'icon-stop
   'action 'stop
   'key "z" 'hint "SET ~!ZTOP"
-  'for-unit '(unit-great-hall unit-terras-barracks))
+  'for-unit '( unit-terras-barracks))
 
 (define-button 'pos 9 'level 0 'icon 'icon-attack
   'action 'attack
   'key "e" 'hint "S~!ET ATTACK"
-  'for-unit '(unit-great-hall unit-terras-barracks unit-alchemist)) ))
-
-(define-button 'pos 1 'level 0 'icon 'icon-dorcoz
-  'action 'train-unit 'value 'unit-grunt
-  'key "g" 'hint "TRAIN ~!GRUNT"
-  'for-unit '(unit-terras-barracks))
+  'for-unit '( unit-terras-barracks unit-alchemist)) ))
 

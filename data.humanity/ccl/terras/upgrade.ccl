@@ -30,11 +30,7 @@
 
 ;;	NOTE: Save can generate this table.
 
-(define-allow 'unit-grunt			"AAAAAAAAAAAAAAAA")
-(define-allow 'unit-peon			"AAAAAAAAAAAAAAAA")
-(define-allow 'unit-pig-farm			"AAAAAAAAAAAAAAAA")
 (define-allow 'unit-terras-barracks		"AAAAAAAAAAAAAAAA")
-(define-allow 'unit-great-hall			"AAAAAAAAAAAAAAAA")
 (define-allow 'unit-orc-wall			"AAAAAAAAAAAAAAAA")
 
 ;;	- upgrades

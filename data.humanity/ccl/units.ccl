@@ -38,8 +38,6 @@
 ;;
 ;;=========
 
-
-
 (define-unit-type 'unit-gold-mine 'name "Titanium Spike"
   'files '(tileset-desert "nature/res/spike_1.png")
   'size '(128 128)
@@ -66,102 +64,6 @@
     help "gold-mine-help"
     dead "building destroyed"
     attack "gold-mine-attack"))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-(define-unit-type 'unit-nothing-22 'name "Nothing 22"
-  'files '()
-  'size '(0 0)
-  'animations 'animations-building 'icon 'icon-cancel
-  'speed 99
-  'hit-points 10
-  'draw-level 0
-  'tile-size '(0 0) 'box-size '(0 0)
-  'sight-range 0
-  'basic-damage 0 'piercing-damage 0 'missile 'missile-none
-  'priority 0
-  'type-land
-  'sounds '())
-
-(define-unit-type 'unit-nothing-24 'name "Nothing 24"
-  'files '()
-  'size '(32 32)
-  'animations 'animations-building 'icon 'icon-cancel
-  'costs '(time 60 titanium 400)
-  'speed 99
-  'hit-points 60
-  'draw-level 10
-  'tile-size '(1 1) 'box-size '(63 63)
-  'sight-range 4 'computer-reaction-range 20 'person-reaction-range 10
-  'armor 2 'basic-damage 9 'piercing-damage 1 'missile 'missile-none
-  'max-attack-range 1
-  'priority 40
-  'type-naval
-  'sea-unit
-  'selectable-by-rectangle
-  'sounds '())
-
-(define-unit-type 'unit-nothing-25 'name "Nothing 25"
-  'files '()
-  'size '(32 32)
-  'animations 'animations-building 'icon 'icon-cancel
-  'costs '(time 60 titanium 400)
-  'speed 99
-  'hit-points 60
-  'draw-level 10
-  'tile-size '(1 1) 'box-size '(63 63)
-  'sight-range 4 'computer-reaction-range 20 'person-reaction-range 10
-  'armor 2 'basic-damage 9 'piercing-damage 1 'missile 'missile-none
-  'max-attack-range 1
-  'priority 40
-  'type-naval
-  'sea-unit
-  'selectable-by-rectangle
-  'sounds '())
-
-(define-unit-type 'unit-nothing-30 'name "Nothing 30"
-  'files '()
-  'size '(0 0)
-  'animations 'animations-building 'icon 'icon-cancel
-  'speed 99
-  'hit-points 0
-  'draw-level 10
-  'tile-size '(0 0) 'box-size '(0 0)
-  'sight-range 0
-  'basic-damage 0 'piercing-damage 0 'missile 'missile-none
-  'priority 0
-  'type-land
-  'sounds '())
-
-(define-unit-type 'unit-nothing-36 'name "Nothing 36"
-  'files '()
-  'size '(0 0)
-  'animations 'animations-building 'icon 'icon-cancel
-  'speed 99
-  'hit-points 0
-  'draw-level 10
-  'tile-size '(0 0) 'box-size '(0 0)
-  'sight-range 0
-  'basic-damage 0 'piercing-damage 0 'missile 'missile-none
-  'priority 0
-  'type-land
-  'sounds '())
-
-
 
 (define-unit-type 'unit-dead-body 'name "Dead Body"
   'files '(tileset-desert "neutral/units/corpses.png")

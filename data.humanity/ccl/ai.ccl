@@ -78,23 +78,30 @@
     ;;
     ;;	Unit can build which buildings.
     ;;
-    (list 'build 'unit-peon
-	'unit-pig-farm 'unit-terras-barracks 'unit-great-hall 'unit-orc-wall)
+
+    ; FIXME:
+    ;(list 'build 'unit-peon
+    ;	'unit-pig-farm 'unit-terras-barracks 'unit-great-hall 'unit-orc-wall)
+
     ;;
     ;;	Building can train which units.
     ;;
-;    (list 'train 'unit-pig-farm 'unit-critter)
-    (list 'train 'unit-great-hall 'unit-peon)
-    (list 'train 'unit-terras-barracks 'unit-grunt)
+    ; FIXME:
+    ;(list 'train 'unit-pig-farm 'unit-critter)
+    ;(list 'train 'unit-great-hall 'unit-peon)
+    ;(list 'train 'unit-terras-barracks 'unit-grunt)
     ;;
     ;;	Unit can repair which units.
     ;;
-    (list 'repair 'unit-peon
-	'unit-pig-farm 'unit-terras-barracks 'unit-great-hall 'unit-orc-wall)
+    ; FIXME:
+    ;(list 'repair 'unit-peon
+    ;	'unit-pig-farm 'unit-terras-barracks 'unit-great-hall 'unit-orc-wall)
     ;;
     ;;	Reduce unit limits.
     ;;
-    (list 'unit-limit 'unit-pig-farm 'food) )
+    ; FIXME:
+    ;(list 'unit-limit 'unit-pig-farm 'food) 
+    )
 
 ;;=============================================================================
 ;;

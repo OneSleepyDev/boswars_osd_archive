@@ -31,114 +31,11 @@
 ;;=============================================================================
 ;;	Define unit-types.
 ;;
-(define-unit-type 'unit-grunt 'name "Dorcoz"
-  'files '(tileset-desert "terras/units/unit_dorcoz.png")
-  'size '(64 64)
-  'animations 'animations-dorcoz 'icon 'icon-dorcoz
-  'costs '(time 60 titanium 600)
-  'speed 10
-  'hit-points 100
-  'draw-level 40
-  'tile-size '(1 1) 'box-size '(31 31)
-  'sight-range 7 'computer-reaction-range 7 'person-reaction-range 7
-  'armor 2 'basic-damage 6 'piercing-damage 3 'missile 'missile-dorcoz
-  'max-attack-range 7
-  'priority 60
-  'points 50
-  'demand 1
-  'corpse '(unit-dead-body 0)
-  'type-land
-  'right-attack
-  'can-attack
-  'can-target-land
-  'land-unit
-  'organic
-  'selectable-by-rectangle
-  'sounds '(
-    selected "grunt-selected"
-    acknowledge "grunt-acknowledge"
-    ready "grunt-ready"
-    help "basic terras voices help 1"
-    dead "basic terras voices dead"
-    attack "grunt-attack"))
 
-(define-unit-type 'unit-peon 'name "Faun"
-  'files '(tileset-desert "terras/units/faun.png")
-  'size '(72 72)
-  'animations 'animations-peasant 'icon 'icon-cancel
-  'costs '(time 45 titanium 400)
-  'speed 10
-  'hit-points 30
-  'draw-level 40
-  'tile-size '(1 1) 'box-size '(31 31)
-  'sight-range 4 'computer-reaction-range 6 'person-reaction-range 4
-  'basic-damage 3 'piercing-damage 2 'missile 'missile-none
-  'max-attack-range 1
-  'priority 50
-  'points 30
-  'demand 1
-  'corpse '(unit-dead-body 0)
-  'type-land
-  'right-harvest
-  'can-attack 'repair-range 1
-  'can-target-land
-  'land-unit
-  'coward
-  'can-gather-resource '(
-    file-when-loaded "terras/units/faun_with_gold.png"
-    resource-id titanium
-    resource-capacity 100
-    wait-at-resource 150
-    wait-at-depot 150)
-  'can-gather-resource '(
-    file-when-loaded "terras/units/faun_with_wood.png"
-    resource-id crystal
-    resource-capacity 100
-    resource-step 2
-    wait-at-resource 24
-    wait-at-depot 150
-    lose-resources
-    terrain-harvester)
-  'organic
-  'selectable-by-rectangle
-  'sounds '(
-    selected "peon-selected"
-    acknowledge "peon-acknowledge"
-    ready "peon-ready"
-    harvest crystal "peon-attack"
-    help "basic terras voices help 1"
-    dead "basic terras voices dead"
-    attack "peon-attack"))
 
-(define-unit-type 'unit-pig-farm 'name "Pig Farm"
-  'files '(tileset-desert "tilesets/desert/terras/buildings/farm.png"
-    tileset-winter "tilesets/winter/terras/buildings/farm.png")
-  'size '(64 64)
-  'animations 'animations-building 'icon 'icon-cancel
-  'costs '(time 100 titanium 500 crystal 250)
-  'repair-hp 4
-  'repair-costs '(titanium 1 crystal 1)
-  'construction 'construction-land
-  'speed 0
-  'hit-points 400
-  'draw-level 20
-  'tile-size '(2 2) 'box-size '(63 63)
-  'sight-range 2
-  'armor 20 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
-  'priority 20 'annoy-computer-factor 45
-  'points 100
-  'supply 4
-  'corpse '(unit-destroyed-2x2-place 0)
-  'explode-when-killed 'missile-explosion
-  'type-land
-  'building 
-  'sounds '(
-    selected "pig-farm-selected"
-    acknowledge "pig-farm-acknowledge"
-    ready "pig-farm-ready"
-    help "basic terras voices help 2"
-    dead "building destroyed"
-    attack "pig-farm-attack"))
+
+
+
 
 (define-unit-type 'unit-terras-barracks 'name "Barracks"
   'files '(tileset-desert "tilesets/desert/terras/buildings/barracks.png"
@@ -169,36 +66,7 @@
     dead "building destroyed"
     attack "terras-barracks-attack"))
 
-(define-unit-type 'unit-great-hall 'name "Great Hall"
-  'files '(tileset-desert "tilesets/desert/terras/buildings/great_hall.png"
-    tileset-winter "tilesets/winter/terras/buildings/great_hall.png")
-  'size '(128 128)
-  'animations 'animations-building 'icon 'icon-cancel
-  'costs '(time 255 titanium 1200 crystal 800)
-  'repair-hp 4
-  'repair-costs '(titanium 1 crystal 1)
-  'construction 'construction-land
-  'speed 0
-  'hit-points 1200
-  'draw-level 20
-  'tile-size '(4 4) 'box-size '(127 127)
-  'sight-range 1
-  'armor 20 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
-  'priority 35 'annoy-computer-factor 45
-  'points 200
-  'supply 1
-  'corpse '(unit-destroyed-4x4-place 0)
-  'explode-when-killed 'missile-explosion
-  'type-land
-  'building 
-  'can-store '(titanium crystal)
-  'sounds '(
-    selected "great-hall-selected"
-    acknowledge "great-hall-acknowledge"
-    ready "great-hall-ready"
-    help "basic terras voices help 2"
-    dead "building destroyed"
-    attack "great-hall-attack"))
+
 
 (define-unit-type 'unit-terras-start-location 'name "Start Location"
   'files '(tileset-desert "terras/o_startpoint.png")

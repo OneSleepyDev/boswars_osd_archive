@@ -2,6 +2,8 @@ Change log for Invasion - Battle of Survival
 --------------------------------------------
 
 CVS version:
+- Updated scripts to use DefineButtonStyle as required by newer 
+   Stratagus engine. (Jimmy Salmon, François Beerten)
 - Fixed maximum width for chat on the status line. (François Beerten)
 - Made the sound of the attacking assault unit weaker. 
   The sound is bearable now. (François Beerten)

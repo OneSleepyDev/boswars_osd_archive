@@ -94,7 +94,7 @@
 
 ;; build basic/advanced structs -----------------------------------------------
 
-(define-button 'pos 7 'level 0 'icon 'icon-build-basic
+(define-button 'pos 7 'level 0 'icon 'icon-build-lvl1
   'action 'button 'value 1
   'key "b" 'hint "~!BUILDINGS LVL 1 SCHEMATICS"
   'for-unit '(unit-engineer))
@@ -106,7 +106,7 @@
   'key "y" 'hint "BUILD DEVELOPEMENT ~!YARD"
   'for-unit '(unit-engineer))
 
-(define-button 'pos 2 'level 1 'icon 'icon-camp
+(define-button 'pos 2 'level 1 'icon 'icon-camp_b
   'action 'build 'value 'unit-camp
   'key "c" 'hint "BUILD TRAINING ~!CAMP"
   'for-unit '(unit-engineer))

@@ -317,9 +317,9 @@
   ))
 
 (define-unit-type 'unit-camp 'name "Training Camp"
-  'files '(tileset-desert "elites/build/bld_camp.png")
+  'files '(tileset-desert "elites/build/training_camp.png")
   'size '(160 128)
-  'shadow '(file "elites/build/bld_camp_s.png" size (160 128))
+  'shadow '(file "elites/build/training_camp_s.png" size (160 128))
   'animations 'animations-camp 'icon 'icon-camp
   'costs '(time 400 titanium 600 crystal 150)
   'repair-hp 2
@@ -329,12 +329,13 @@
   'hit-points 500
   'draw-level 110
   'demand 125
-  'tile-size '(5 4) 'box-size '(159 127)
+  'tile-size '(5 4) 'box-size '(156 124)
   'sight-range 1
   'armor 25 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
   'priority 30 'annoy-computer-factor 35
   'points 160
   'explode-when-killed 'missile-160x128-explosion
+  'corpse '(build-dead-body3 0)
   'type-land
   'building 
   'sounds '(
@@ -567,6 +568,22 @@
   'hit-points 999
   'draw-level 30
   'tile-size '(2 2) 'box-size '(60 60)
+  'sight-range 1
+  'basic-damage 0 'piercing-damage 0 'missile 'missile-none
+  'priority 0
+  'type-land
+  'building
+  'vanishes
+  'sounds '())
+
+(define-unit-type 'build-dead-body3 'name "CampCrater"
+  'files '(tileset-desert "elites/build/training_camp.png")
+  'size '(160 128)
+  'animations 'animations-elitebuild3 'icon 'icon-cancel
+  'speed 0
+  'hit-points 999
+  'draw-level 30
+  'tile-size '(5 4) 'box-size '(156 124)
   'sight-range 1
   'basic-damage 0 'piercing-damage 0 'missile 'missile-none
   'priority 0

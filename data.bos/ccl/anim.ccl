@@ -188,8 +188,7 @@
 
 (define-animations 'animations-camp
   'still '(	; #15
-    #( 0 0   3   0) #( 0 0   3   1) #( 0 0   3   2) #( 0 0   3   3)
-    #( 3 0   3   4))) 
+    #( 3 0   3   0))) 
 
 (define-animations 'animations-hosp
   'still '(	; #15
@@ -217,6 +216,11 @@
   'die '(	; #2801
     #( 0 0 2000 19) #( 0 0 200   19) #( 0 0 200   19) #( 0 0 200  20)
     #( 0 0 200  20) #( 3 0   1  20)))
+
+(define-animations 'animations-elitebuild3
+  'die '(	; #2801
+    #( 0 0 2000 20) #( 0 0 200   20) #( 0 0 200   20) #( 0 0 200  21)
+    #( 0 0 200  21) #( 3 0   1  21)))
 
 
 

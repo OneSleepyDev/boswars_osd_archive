@@ -39,6 +39,7 @@ DefineSpell("spell-healing",
 	"condition", {
 		"organic", "only",
 		"building", "false",
+		"self", "false",
 		"max-hp-percent", 100},
 	"sound-when-cast", "medic-attack",
 	"missile-when-cast", "missile-heal",

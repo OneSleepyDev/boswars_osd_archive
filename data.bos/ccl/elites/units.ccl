@@ -41,7 +41,7 @@
   'costs '(time 400 titanium 400 crystal 50 gas 50)
   'speed 15
   'hit-points 200
-  'draw-level 40
+  'draw-level 110
   'tile-size '(1 1) 'box-size '(96 96)
   'sight-range 5 'computer-reaction-range 5 'person-reaction-range 5
   'armor 6 'basic-damage 5 'piercing-damage 5 'missile 'missile-none
@@ -78,7 +78,7 @@
   'hit-points 100
   'max-mana 100
   'can-cast-spell '(spell-healing)
-  'draw-level 40
+  'draw-level 110
   'tile-size '(1 1) 'box-size '(17 28)
   'sight-range 3 'computer-reaction-range 6 'person-reaction-range 6
   'armor 1 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
@@ -109,7 +109,7 @@
   'costs '(time 400 titanium 250 crystal 150)
   'speed 8
   'hit-points 50
-  'draw-level 40
+  'draw-level 110
   'tile-size '(1 1) 'box-size '(17 28)
   'sight-range 7 'computer-reaction-range 6 'person-reaction-range 6
   'armor 2 'basic-damage 5 'piercing-damage 15 'missile 'missile-bazoo
@@ -142,7 +142,7 @@
   'costs '(time 100 titanium 200 crystal 50)
   'speed 10
   'hit-points 50
-  'draw-level 40
+  'draw-level 110
   'tile-size '(1 1) 'box-size '(17 28)
   'sight-range 6 'computer-reaction-range 6 'person-reaction-range 6
   'armor 3 'basic-damage 5 'piercing-damage 5 'missile 'missile-none
@@ -174,7 +174,7 @@
   'costs '(time 300 titanium 200 crystal 100)
   'speed 10
   'hit-points 50
-  'draw-level 40
+  'draw-level 110
   'tile-size '(1 1) 'box-size '(17 28)
   'sight-range 6 'computer-reaction-range 6 'person-reaction-range 6
   'armor 2 'basic-damage 15 'piercing-damage 15 'missile 'missile-grenadier
@@ -207,7 +207,7 @@
   'costs '(time 150 titanium 175 crystal 25)
   'speed 8
   'hit-points 30
-  'draw-level 40
+  'draw-level 110
   'tile-size '(1 1) 'box-size '(17 28)
   'sight-range 5 'computer-reaction-range 6 'person-reaction-range 4
   'armor 1 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
@@ -244,7 +244,7 @@
   'files '(tileset-desert "elites/units/unit_harv.png")
   'size '(96 96)
   'shadow '(file "elites/units/unit_harv_s.png" size (96 96))
-  'draw-level 19
+  'draw-level 110
   'animations 'animations-harvester 'icon 'icon-harvester
   'costs '(time 550 titanium 500 crystal 300 gas 100)
   'repair-hp 2
@@ -294,7 +294,7 @@
   'construction 'construction-pplnt
   'speed 0
   'hit-points 250
-  'draw-level 20
+  'draw-level 110
   'tile-size '(3 3) 'box-size '(95 95)
   'sight-range 1
   'armor 10 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
@@ -325,7 +325,7 @@
   'construction 'construction-camp
   'speed 0
   'hit-points 500
-  'draw-level 20
+  'draw-level 110
   'demand 125
   'tile-size '(5 4) 'box-size '(159 127)
   'sight-range 1
@@ -346,8 +346,8 @@
 
 (define-unit-type 'unit-fort 'name "Elite Fort"
   'files '(tileset-desert "elites/build/bld_fort.png")
-  'size '(224 224)
-  'shadow '(file "elites/build/bld_fort_s.png" size (224 224))
+  'size '(224 300)
+  'shadow '(file "elites/build/bld_fort_s.png" size (224 300))
   'animations 'animations-fort 'icon 'icon-fort
   'costs '(time 1000 titanium 1000 crystal 1000 gas 0)
   'repair-hp 4
@@ -355,8 +355,8 @@
   'construction 'construction-fort
   'speed 0
   'hit-points 1800
-  'draw-level 20
-  'tile-size '(7 7) 'box-size '(223 223)
+  'draw-level 110
+  'tile-size '(7 4) 'box-size '(223 128)
   'sight-range 4
   'armor 30 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
   'priority 35 'annoy-computer-factor 45
@@ -386,7 +386,7 @@
   'construction 'construction-rfac
   'speed 0
   'hit-points 350
-  'draw-level 20
+  'draw-level 110
   'tile-size '(4 4) 'box-size '(128 128)
   'sight-range 1
   'armor 30 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
@@ -416,7 +416,7 @@
   'construction 'construction-hosp
   'speed 0
   'hit-points 350
-  'draw-level 20
+  'draw-level 110
   'tile-size '(3 3) 'box-size '(96 96)
   'sight-range 2
   'armor 30 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
@@ -446,7 +446,7 @@
   'construction 'construction-vfac
   'speed 0
   'hit-points 550
-  'draw-level 20
+  'draw-level 110
   'tile-size '(5 5) 'box-size '(160 160)
   'sight-range 2
   'armor 30 'basic-damage 0 'piercing-damage 0 'missile 'missile-none

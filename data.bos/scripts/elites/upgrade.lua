@@ -46,7 +46,6 @@ DefineAllow("unit-human-wall", "AAAAAAAAAAAAAAAA")
 DefineAllow("unit-msilo", "AAAAAAAAAAAAAAAA")
 DefineAllow("unit-plate1", "AAAAAAAAAAAAAAAA")
 
-
 --	- upgrades
 
 DefineUpgrade("upgrade-expl", "icon", "icon-expl",

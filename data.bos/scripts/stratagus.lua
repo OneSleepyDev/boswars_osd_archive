@@ -208,7 +208,8 @@ Load("scripts/upgrade.lua")
 Load("scripts/fonts.lua")
 Load("scripts/buttons.lua")
 Load("scripts/ui.lua")
---FIXME: no AI for now.
+--Load("scripts/unit-drone.lua")
+
 Load("scripts/ai.lua")
 Load("scripts/credits.lua")
 Load("scripts/tips.lua")

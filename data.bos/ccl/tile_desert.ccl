@@ -33,8 +33,7 @@
 ;;
 ;;	(define-tileset ident class name image palette slots animations)
 ;;
-(define-tileset 'tileset-desert	'class "desert"
-  'name "Desert"
+(define-tileset 'tileset-desert 'class "desert" 'name "Desert"
   'image "tiles/desert.png"
   'palette "tiles/desert.rgb"
   ;; Slots descriptions

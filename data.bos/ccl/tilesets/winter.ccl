@@ -33,8 +33,7 @@
 ;;
 ;;	(define-tileset ident class name image palette slots animations)
 ;;
-(define-tileset 'tileset-winter 'class "winter"
-  'name "original wc2 winter tileset"
+(define-tileset 'tileset-winter 'class "winter" 'name "Winter"
   'image "tilesets/winter/terrain/winter.png"
   'palette "tilesets/winter/winter.rgb"
   ;; Slots descriptions

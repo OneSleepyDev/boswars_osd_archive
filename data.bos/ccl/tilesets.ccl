@@ -33,7 +33,7 @@
 ;;
 ;;	FIXME: need a way to automatic load all available tileset definitions
 
-(define-tileset 'tileset-desert 'class "desert"
+(define-tileset 'tileset-desert 'class "desert" 'name "Desert"
   'file "ccl/tile_desert.ccl")
-(define-tileset 'tileset-winter 'class "winter"
+(define-tileset 'tileset-winter 'class "winter" 'name "Winter"
   'file "ccl/tilesets/winter.ccl")

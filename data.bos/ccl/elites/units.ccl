@@ -33,6 +33,36 @@
 ;;
 ;;	NOTE: Save can generate this table.
 ;;
+(define-unit-type 'unit-bazoo 'name "Bazoo"
+  'files '(tileset-desert "elites/units/unit_assault.png")
+  'size '(64 64)
+  'shadow '(file "elites/units/unit_assault_s.png" size (64 64))
+  'animations 'animations-bazoo 'icon 'icon-assault
+  'costs '(time 60 titanium 300)
+  'speed 10
+  'hit-points 60
+  'draw-level 40
+  'tile-size '(1 1) 'box-size '(17 28)
+  'sight-range 6 'computer-reaction-range 6 'person-reaction-range 6
+  'armor 2 'basic-damage 6 'piercing-damage 3 'missile 'missile-none
+  'max-attack-range 5
+  'priority 60
+  'points 50
+  'corpse '(unit-dead-body1 0)
+  'type-land
+  'right-attack
+  'can-attack 'repair-range 1
+  'can-target-land
+  'land-unit
+  'organic
+  'selectable-by-rectangle
+  'sounds '(
+    selected "assault-selected"
+    acknowledge "assault-acknowledge"
+    ready "assault-ready"
+    help "assault-help"
+    dead "assault-die"
+    attack "assault-attack"))
 
 (define-unit-type 'unit-assault 'name "Assault Unit"
   'files '(tileset-desert "elites/units/unit_assault.png")

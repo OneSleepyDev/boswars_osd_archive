@@ -107,6 +107,7 @@
   'unit-crystal-field11
   'unit-crystal-field12
   'unit-crystal-field13
+  'unit-bazoo
 )
 
 (define-missiletype-wc-names

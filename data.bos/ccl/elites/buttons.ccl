@@ -139,6 +139,11 @@
   'key "g" 'hint "TRAIN ~!GRENADIER"
   'for-unit '(unit-camp))
 
+(define-button 'pos 3 'level 0 'icon 'icon-grenadier
+  'action 'train-unit 'value 'unit-bazoo
+  'key "g" 'hint "TRAIN ~!BAZOO"
+  'for-unit '(unit-camp))
+
 ;; upgrades -------------------------------------------------------------------
 
 (define-button 'pos 1 'level 0 'icon 'icon-expl

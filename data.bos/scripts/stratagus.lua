@@ -60,6 +60,7 @@ SetDefaultMap="puds/default.pud"
 -------------------------------------------------------------------------------
 --	Music play list -	Insert your titles here
 -------------------------------------------------------------------------------
+playlist={"music/title.ogg"}
 
 SetSelectionStyle("corners")
 SetShowSightRange(false)

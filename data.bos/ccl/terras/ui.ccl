@@ -29,16 +29,16 @@
 ;;	$Id$
 
 (define-cursor	'cursor-point		'terras
-    'image "ui/terras/cursors/terras_claw.png"
+    'image "terras/ui/terras_claw.png"
     'hot-spot '( 3  2) 'size '(26 32) )
 (define-cursor	'cursor-green-hair	'terras
-    'image "ui/terras/cursors/green_crosshairs.png"
+    'image "terras/ui/green_crosshairs.png"
     'hot-spot '(15 15) 'size '(32 32) )
 (define-cursor	'cursor-yellow-hair	'terras
-    'image "ui/terras/cursors/yellow_crosshairs.png"
+    'image "terras/ui/yellow_crosshairs.png"
     'hot-spot '(15 15) 'size '(32 32) )
 (define-cursor	'cursor-red-hair	'terras
-    'image "ui/terras/cursors/red_crosshairs.png"
+    'image "terras/ui/red_crosshairs.png"
     'hot-spot '(15 15) 'size '(32 32) )
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

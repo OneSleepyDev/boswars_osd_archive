@@ -10,7 +10,7 @@ BOS.Elites
 				Shadow elites\build\bld_fort_s.png; Explode nature\effects\expl_288x288x1.png;
 			SFX: Die elites\buildings\sfx_fort.die.wav; Select elites\buildings\sfx_fort.select.wav;
 			Anim: Loop 0, 1, 2, 3; Build 4, 5, 6, 7, 8; Die 8, 9, 10, 11, 12, 13, 14, 15, 16, 17;
-			Trained At: UNIT_ENG/bld_grp1/pos0;
+			Trained At: UNIT_ENG/bld_grp1/pos1;
 			
 
 		!Engineer TAG. UNIT_ENG
@@ -23,7 +23,7 @@ BOS.Elites
 				Shadow elites\units\unit_engineer_s.png; Corpse elites\units\unit_engineer_c.png;
 			Anim: Stand 0; Walk 5, 10, 15, 20; Attack 25, 30, 35, 40, 35, 30; Die 45, 50, 55, 60, (Corpse);
 			Other: Harvest titanium (a100, t200); Repair buildings; Button_Menu bld_grp1, bld_grp2;
-			Trained At: FORT/pos0;
+			Trained At: FORT/pos1;
 
 		!Training Camp TAG. TRN_CAMP
 			Reqs: Time 400; Titanium 800; Crystals 150; Gas 0; Power 125;
@@ -35,7 +35,7 @@ BOS.Elites
 				Shadow elites\build\bld_camp_s.png; Explode nature\effects\expl_160x128x1.png;
 			SFX: Die elites\buildings\sfx_camp.die.wav; Select elites\buildings\sfx_camp.select.wav;
 			Anim: Loop slp_3 0, slp_3 1, slp_3 2, slp_3 3, slp_3 4; Build 5, 6, 7;
-			Trained At: UNIT_ENG/bld_grp1/pos1;
+			Trained At: UNIT_ENG/bld_grp1/pos2;
 
 		!Power Plant TAG. P_PLANT
 			Reqs: Time 300; Titanium 600; Crystals 100; Gas 50; Power 0;
@@ -47,7 +47,7 @@ BOS.Elites
 				Shadow elites\build\bld_pplnt_s.png; Explode nature\effects\expl_160x128x1.png;
 			SFX: Die elites\buildings\sfx_pplnt.die.wav; Select elites\buildings\sfx_pplnt.select.wav;
 			Anim: Loop 0, 1, 2, 3, 4, 3, 2, 1; Build 5, 6, 7, 8;
-			Trained At: UNIT_ENG/bld_grp1/pos2;
+			Trained At: UNIT_ENG/bld_grp1/pos3;
 
 		!Assault Unit TAG ASS_UNIT
 			Reqs: Time 200; Titanium 450; Crystals 100; Gas 0; Power 0;
@@ -58,7 +58,7 @@ BOS.Elites
 			GFX: Icon elites\units\ico_lancer.png; Unit elites\units\unit_lancer.png;
 				Shadow elites\units\unit_lancer_s.png; Corpse elites\units\unit_lancer_c.png;
 			Anim: Stand 0; Walk 5, 10, 15, 20; Attack 0, 25, 0, 25, 0, 25, slp_50 0; Die 30, 35, 40, 45,(Corpse);
-			Trained At: TRN_CAMP/pos0;			
+			Trained At: TRN_CAMP/pos1;			
 
 		!Mineral Harvester TAG MIN_HARV
 			Reqs: Time 2000; Titanium 900; Crystals 200; Gas 50; Power 25;
@@ -69,7 +69,7 @@ BOS.Elites
 			GFX: Icon elites\units\ico_harv.png; Unit elites\units\unit_harv.png;
 			Anim: Stand 0; Walk 0; Attack slp_5 1, slp_5 2, slp_5 3, slp_5 2; Die 0, (Explosion);
 			Other: Harvest Crystals (a150, t400)/(t100);
-			Trained At: FORT/pos1;
+			Trained At: FORT/pos2;
 
 		!Research Facility TAG. R_FAC
 			Reqs: Time 1200; Titanium 800; Crystals 500; Gas 0; Power 225;
@@ -81,4 +81,4 @@ BOS.Elites
 				Shadow elites\build\bld_rfac_s.png; Explode nature\effects\expl_160x128x1.png;
 			SFX: Die elites\buildings\sfx_pplnt.die.wav; Select elites\buildings\sfx_pplnt.select.wav;
 			Anim: Loop 0, 1, 2, 3, 4, 3, 2, 1; Build 5, 6, 7, 8, 9;
-			Trained At: UNIT_ENG/bld_grp1/pos3;		
+			Trained At: UNIT_ENG/bld_grp1/pos4;		

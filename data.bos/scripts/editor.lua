@@ -42,6 +42,20 @@ DefineEditorUnitTypes(
    "unit-vault",
    "unit-plate1",
 
+   "unit-apcs",
+   "unit-medic",
+   "unit-bazoo",
+   "unit-assault",
+   "unit-grenadier",
+   "unit-engineer",
+   "unit-harvester",
+   "unit-msilo",
+   "unit-gen",
+   "unit-camp",
+   "unit-rfac",
+   "unit-hosp",
+   "unit-vfac",
+
    "unit-crystal-field1",
    "unit-crystal-field2",
    "unit-crystal-field3",
@@ -55,12 +69,8 @@ DefineEditorUnitTypes(
    "unit-crystal-field11",   
    "unit-crystal-field12",
    "unit-crystal-field13",
-   "unit-gold-mine"
+   "unit-gold-mine",
 
--- Placing this unit-types on map is not (yet?) supported.
---   "unit-dead-body",
---   "unit-destroyed-1x1-place",
---   "unit-destroyed-2x2-place",
---   "unit-destroyed-3x3-place",
---   "unit-destroyed-4x4-place",
-  )
+   "unit-elites-start-location",
+   "unit-terras-start-location"
+)

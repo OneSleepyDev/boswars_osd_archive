@@ -29,7 +29,7 @@
 --	$Id$
 
 DefineTileset("tileset-desert",	"class", "desert", "name", "Desert",
-  "image", "tiles/desert.png",-- "palette", "tile/desert.rgb",
+  "image", "tiles/desert.png",
   -- Slots descriptions
   "slots", { "special", {		-- Can't be in pud
     "top-one-tree", 121, "mid-one-tree", 122, "bot-one-tree", 123,

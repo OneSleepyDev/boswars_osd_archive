@@ -42,7 +42,6 @@ DefineUnitType("unit-plate1", {
 	Construction = "construction-plate",
 	Speed = 0, HitPoints = 100, DrawLevel = 1, TileSize = {1, 1}, BoxSize = {36, 36},
 	SightRange = 0, Armor = 20, BasicDamage = 0, PiercingDamage = 0, Missile = "missile-none",
-	Transporter = true, AttackFromTransporter = true, MaxOnBoard = 2,
 	Priority = 20, AnnoyComputerFactor = 45, VisibleUnderFog = true,
 	Points = 15, Type = "land", Building = true, BuilderOutside = true,
 	Sounds = {
@@ -63,7 +62,7 @@ DefineUnitType("unit-apcs", {
 	ComputerReactionRange = 5, PersonReactionRange = 5,
 	Armor = 10, BasicDamage = 5, PiercingDamage = 5, Missile = "missile-none",
 	MaxAttackRange = 4, Priority = 60, Points = 50,
-	Transporter = true, AttackFromTransporter = true, MaxOnBoard = 6,
+	CanTransport = {"organic", "only"}, AttackFromTransporter = true, MaxOnBoard = 6,
 	Type = "land", RepairHp = 2, RepairCosts = {titanium, 2},
 	RightMouseAction = "attack",
 	ExplodeWhenKilled = "missile-160x128-explosion",

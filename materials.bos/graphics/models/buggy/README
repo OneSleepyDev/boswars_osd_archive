@@ -8,7 +8,7 @@ compose     : Bash script to compose the many output images into two
               ???? are the numbers of the images and the images that
               should go into the unit file as 'normal????.png'.
               The model is ready for the shadow images. To obtain the
-              unit images, remove the plain on which the model is sitting
+              unit images, remove the plane on which the model is sitting
               and change the output filename to 'normal' before rendering.
 
 The model and the script are distributed unter the GPL (look below).

@@ -10,7 +10,8 @@
 --
 --	ui.ccl		-	Define the elites user interface
 --
---	(c) Copyright 2001-2004 by Lutz Sammer, Jimmy Salmon and Crestez Leonard.
+--	(c) Copyright 2001-2004 by Lutz Sammer, Jimmy Salmon, Crestez Leonard and
+--					François Beerten.
 --
 --      This program is free software; you can redistribute it and/or modify
 --      it under the terms of the GNU General Public License as published by
@@ -168,7 +169,7 @@ function DefineEliteScreen(screen_width, screen_height)
 		"map-area", {
 			"pos", {24, 16},
 			"size", {
-				screen_width - 216,
+				screen_width - 200 - 24,
 				screen_height - 32}},
 		"menu-panel", {
 			"menu-button", {

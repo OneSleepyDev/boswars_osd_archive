@@ -57,7 +57,14 @@ SetDefaultMap="puds/default.pud"
 -------------------------------------------------------------------------------
 --	Music play list -	Insert your titles here
 -------------------------------------------------------------------------------
-playlist={"music/title.ogg"}
+playlist = {}
+musiclist = ListDirectory("music/")
+for i,f in musiclist do
+  if(string.find(f, ".ogg$") or string.find(f, ".wav$") or string.find(f, ".mp3$")) then 
+    print("Added music file:" .. f) 
+    playlist[i] = f
+  end
+end
 
 SetSelectionStyle("corners")
 SetShowSightRange(false)

@@ -101,12 +101,12 @@
   'organic
   'selectable-by-rectangle
   'sounds '(
-    selected "peasant-selected"
-    acknowledge "peasant-acknowledge"
-    ready "peasant-ready"
+    selected "engineer-selected"
+    acknowledge "engineer-acknowledge"
+    ready "engineer-ready"
     help "basic elites voices help 1"
     dead "basic elites voices dead"
-    attack "peasant-attack"))
+    attack "engineer-attack"))
 
 (define-unit-type 'unit-harvester 'name "Mineral Harvester"
   'files '(tileset-desert "elites/units/unit_harv.png")
@@ -144,12 +144,12 @@
     harvest-from-outside)
   'selectable-by-rectangle
   'sounds '(
-    selected "peasant-selected"
-    acknowledge "peasant-acknowledge"
-    ready "peasant-ready"
+    selected "harvester-selected"
+    acknowledge "harvester-acknowledge"
+    ready "harvester-ready"
     help "basic elites voices help 1"
     dead "basic elites voices dead"
-    attack "peasant-attack"))
+    attack "harvester-attack"))
 
 (define-unit-type 'unit-pplnt 'name "Power Plant"
   'files '(tileset-desert "elites/build/bld_pplnt.png")
@@ -174,11 +174,12 @@
   'building 
   'sounds '(
     selected "pplnt-selected"
-    acknowledge "pplnt-acknowledge"
+;    acknowledge "pplnt-acknowledge"
     ready "pplnt-ready"
     help "basic elites voices help 2"
     dead "pplnt-dead"
-    attack "pplnt-attack"))
+;    attack "pplnt-attack"
+  ))
 
 (define-unit-type 'unit-camp 'name "Training Camp"
   'files '(tileset-desert "elites/build/bld_camp.png")
@@ -192,7 +193,7 @@
   'speed 0
   'hit-points 800
   'draw-level 20
-  'demand 125
+;  'demand 125
   'tile-size '(5 4) 'box-size '(159 127)
   'sight-range 1
   'armor 15 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
@@ -257,7 +258,7 @@
   'sight-range 1
   'armor 15 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
   'priority 35 'annoy-computer-factor 45
-  'demand 225
+;  'demand 225
   'points 200
   'supply 300
   'explode-when-killed 'missile-160x128-explosion

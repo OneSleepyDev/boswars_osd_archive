@@ -191,7 +191,8 @@ end
 -------------------------------------------------------------------------------
 
 DefineTileset("tileset-desert", "class", "desert", "name", "Desert", "file", "scripts/tilesets/desert.lua")
-DefineTileset("tileset-winter", "class", "winter", "name", "Winter", "file", "scripts/tile_winter.lua")
+-- FIXME: todo winter
+DefineTileset("tileset-winter", "class", "winter", "name", "Winter (incomplete)", "file", "scripts/tilesets/winter.lua")
 
 Load("preferences1.lua")
 

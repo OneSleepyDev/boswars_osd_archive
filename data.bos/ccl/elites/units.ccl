@@ -84,7 +84,7 @@
   'corpse '(unit-dead-body 6)
   'type-land
   'right-harvest
-  'repair-range 0
+  'repair-range 1
   'can-target-land
   'land-unit
   'coward
@@ -168,6 +168,7 @@
   'supply 150
   'explode-when-killed 'missile-160x128-explosion
   'type-land
+  !demand 25
   'building 
   'sounds '(
     selected "pplnt-selected"
@@ -190,7 +191,7 @@
   'speed 0
   'hit-points 800
   'draw-level 20
-;  'demand 125
+  'demand 125
   'tile-size '(5 4) 'box-size '(159 127)
   'sight-range 1
   'armor 15 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
@@ -255,7 +256,7 @@
   'sight-range 1
   'armor 15 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
   'priority 35 'annoy-computer-factor 45
-;  'demand 225
+  'demand 225
   'points 200
   'supply 300
   'explode-when-killed 'missile-160x128-explosion

@@ -1,0 +1,245 @@
+;;       _________ __                 __                               
+;;      /   _____//  |_____________ _/  |______     ____  __ __  ______
+;;      \_____  \\   __\_  __ \__  \\   __\__  \   / ___\|  |  \/  ___/
+;;      /        \|  |  |  | \// __ \|  |  / __ \_/ /_/  >  |  /\___ \ 
+;;     /_______  /|__|  |__|  (____  /__| (____  /\___  /|____//____  >
+;;             \/                  \/          \//_____/            \/ 
+;;  ______________________                           ______________________
+;;			  T H E   W A R   B E G I N S
+;;	   Stratagus - A free fantasy real time strategy game engine
+;;
+;;	sound.ccl	-	Define the used sounds.
+;;
+;;	(c) Copyright 1999-2003 by Fabrice Rossi and Lutz Sammer
+;;
+;;      This program is free software; you can redistribute it and/or modify
+;;      it under the terms of the GNU General Public License as published by
+;;      the Free Software Foundation; either version 2 of the License, or
+;;      (at your option) any later version.
+;;  
+;;      This program is distributed in the hope that it will be useful,
+;;      but WITHOUT ANY WARRANTY; without even the implied warranty of
+;;      MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;;      GNU General Public License for more details.
+;;  
+;;      You should have received a copy of the GNU General Public License
+;;      along with this program; if not, write to the Free Software
+;;      Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+;;
+;;	$Id$
+
+;;	Uncomment this to enable threaded sound
+;(sound-thread)
+
+;;----------------------------------------------------------------------------
+;;	Music part
+
+;;----------------------------------------------------------------------------
+;;	(music-stopped) is called if the current music is finished.
+;;
+;;		This is a random music player demo
+;;
+(define (music-stopped)
+  (if (not (= (length play-list) 0)) 
+    (play-music (nth (rand (length play-list)) play-list))))
+
+;;----------------------------------------------------------------------------
+;;	(set-cd-mode!) set how your CD is played.
+;;		all	plays all tracks
+;;		random	plays random tracks
+;;		defined	play according to playlist below
+;;		off	turns cd player off
+(set-cd-mode! 'all)
+;(set-cd-mode! 'random) 
+;(set-cd-mode! 'defined)
+;(set-cd-mode! 'off)
+
+;;----------------------------------------------------------------------------
+;;	Define sounds later used
+;;
+(define sound-click (make-sound "click" "ui/click.wav"))
+
+;;----------------------------------------------------------------------------
+;;	Define simple sounds. (FIXME: somebody must clean the order.)
+;;
+
+
+;; ELITES
+;; UNITS
+;; LANCER
+(make-sound "lancer-die" "elites/unit_lancer_die.wav")
+(make-sound "lancer-acknowledge" "elites/unit_lancer_yes.wav")
+(make-sound "lancer-help" "elites/unit_lancer_help.wav")
+(make-sound "lancer-selected" "elites/unit_lancer_selected.wav")
+(make-sound "lancer-ready" "elites/unit_lancer_ready.wav")
+(make-sound "lancer-attack" "elites/unit_lancer_fire.wav")
+
+(make-sound "fort-selected" "elites/buildings/sfx_fort.select.wav")
+(make-sound "fort-dead" "elites/buildings/sfx_fort.die.wav")
+
+(make-sound "camp-selected" "elites/buildings/sfx_camp.select.wav")
+(make-sound "camp-dead" "elites/buildings/sfx_camp.die.wav")
+
+(make-sound "pplnt-selected" "elites/buildings/sfx_pplnt.select.wav")
+(make-sound "pplnt-dead" "elites/buildings/sfx_pplnt.die.wav")
+
+;;----------------------------------------------------------------------------
+;;	Define simple elites sounds.
+;;
+(make-sound "basic elites voices ready" "elites/basic_voices/ready.wav")
+(make-sound "basic elites voices help 1" "elites/basic_voices/help/1.wav")
+(make-sound "basic elites voices help 2" "elites/basic_voices/help/2.wav")
+(make-sound "basic elites voices dead" "elites/basic_voices/dead.wav")
+
+;;----------------------------------------------------------------------------
+;;	Define simple elites building.
+;;
+
+;;----------------------------------------------------------------------------
+;;	Define simple terras sounds.
+;;
+(make-sound "basic terras voices ready" "terras/basic_voices/ready.wav")
+(make-sound "basic terras voices help 1" "terras/basic_voices/help/1.wav")
+(make-sound "basic terras voices help 2" "terras/basic_voices/help/2.wav")
+(make-sound "basic terras voices dead" "terras/basic_voices/dead.wav")
+
+;;----------------------------------------------------------------------------
+;;	Define simple terras building.
+;;
+
+;;----------------------------------------------------------------------------
+;;	Define simple misc sounds.
+;;
+(make-sound "building construction" "misc/building_construction.wav")
+(make-sound "ship sinking" "ships/sinking.wav")
+(make-sound "catapult-ballista movement"
+	"units/catapult-ballista/acknowledgement/1.wav")
+
+    ;; building selection sounds
+(make-sound "capture (elites)" "elites/capture.wav")
+(make-sound "capture (terras)" "terras/capture.wav")
+(make-sound "rescue (elites)" "elites/rescue.wav")
+(make-sound "rescue (terras)" "terras/rescue.wav")
+
+    ;;------------------------------------------------------------------------
+    ;; selection sounds
+(make-sound "sheep selected" "neutral/units/sheep/selected/1.wav")
+(make-sound "seal selected" "neutral/units/seal/selected/1.wav")
+(make-sound "pig selected" "neutral/units/pig/selected/1.wav")
+(make-sound "warthog selected" "neutral/units/warthog/selected/1.wav")
+    ;; annoyed sounds
+(make-sound "sheep annoyed" "neutral/units/sheep/annoyed/1.wav")
+(make-sound "seal annoyed" "neutral/units/seal/annoyed/1.wav")
+(make-sound "pig annoyed" "neutral/units/pig/annoyed/1.wav")
+(make-sound "warthog annoyed" "neutral/units/warthog/annoyed/1.wav")
+
+    ;;------------------------------------------------------------------------
+    ;; attack sounds
+(make-sound "catapult-ballista attack" "missiles/catapult-ballista_attack.wav")
+(make-sound "punch" "missiles/punch.wav")
+(make-sound "fireball hit" "missiles/fireball_hit.wav")
+(make-sound "fireball throw" "missiles/fireball_throw.wav")
+(make-sound "bow throw" "missiles/bow_throw.wav")
+(make-sound "bow hit" "missiles/bow_hit.wav")
+(make-sound "axe throw" "missiles/axe_throw.wav")
+(make-sound "fist" "missiles/fist.wav")
+(make-sound "peasant attack" "elites/units/peasant/attack.wav")
+(make-sound "lightning" "spells/lightning.wav")
+(make-sound "touch of darkness" "spells/touch_of_darkness.wav")
+
+;;----------------------------------------------------------------------------
+;;	Define sound groups.
+    ;;
+    ;;	Acknowledgment sounds -------------------------------------------------
+    ;;
+(make-sound "basic elites voices acknowledge"
+	(list "elites/basic_voices/acknowledgement/1.wav"
+	"elites/basic_voices/acknowledgement/2.wav"
+	"elites/basic_voices/acknowledgement/3.wav"
+	"elites/basic_voices/acknowledgement/4.wav"))
+(make-sound "basic terras voices acknowledge"
+	(list "terras/basic_voices/acknowledgement/1.wav"
+	"terras/basic_voices/acknowledgement/2.wav"
+	"terras/basic_voices/acknowledgement/3.wav"
+	"terras/basic_voices/acknowledgement/4.wav"))
+    ;;
+    ;;	Selection sounds -----------------------------------------------------
+    ;;
+
+(make-sound "basic elites voices selected"
+	(list "elites/basic_voices/selected/1.wav"
+	"elites/basic_voices/selected/2.wav"
+	"elites/basic_voices/selected/3.wav"
+	"elites/basic_voices/selected/4.wav"
+	"elites/basic_voices/selected/5.wav"
+	"elites/basic_voices/selected/6.wav"))
+(make-sound "basic terras voices selected"
+	(list "terras/basic_voices/selected/1.wav"
+	"terras/basic_voices/selected/2.wav"
+	"terras/basic_voices/selected/3.wav"
+	"terras/basic_voices/selected/4.wav"
+	"terras/basic_voices/selected/5.wav"
+	"terras/basic_voices/selected/6.wav"))
+    ;;
+    ;;	Annoyed sounds --------------------------------------------------------
+    ;;
+(make-sound "basic elites voices annoyed"
+	(list "elites/basic_voices/annoyed/1.wav"
+	"elites/basic_voices/annoyed/2.wav"
+	"elites/basic_voices/annoyed/3.wav"
+	"elites/basic_voices/annoyed/4.wav"
+	"elites/basic_voices/annoyed/5.wav"
+	"elites/basic_voices/annoyed/6.wav"
+	"elites/basic_voices/annoyed/7.wav"))
+(make-sound "basic terras voices annoyed"
+	(list "terras/basic_voices/annoyed/1.wav"
+	"terras/basic_voices/annoyed/2.wav"
+	"terras/basic_voices/annoyed/3.wav"
+	"terras/basic_voices/annoyed/4.wav"
+	"terras/basic_voices/annoyed/5.wav"
+	"terras/basic_voices/annoyed/6.wav"
+	"terras/basic_voices/annoyed/7.wav"))
+    ;;
+    ;;	Other sounds ---------------------------------------------------------
+    ;;
+(make-sound "explosion" "misc/explosion.wav")
+(make-sound "building destroyed"
+	(list "misc/building_explosion/1.wav"
+	"misc/building_explosion/2.wav"
+	"misc/building_explosion/3.wav"))
+(make-sound "tree chopping"
+	(list "misc/tree_chopping/1.wav"
+	"misc/tree_chopping/2.wav"
+	"misc/tree_chopping/3.wav"
+	"misc/tree_chopping/4.wav"))
+
+(map-sound "critter-help" "basic terras voices help 1")
+(map-sound "critter-dead" "explosion")
+
+
+;;	Define sounds used by game
+;;
+(define-game-sounds
+
+  'placement-error (make-sound "placement error" "ui/placement_error.wav")
+  'placement-success (make-sound "placement success" "ui/placement_success.wav")
+  'click sound-click
+
+; FIXME: Not ready
+;  'tree-chopping (make-sound "tree chopping" "tree_chopping.wav")
+;  'transport-docking
+;  'building-construction
+
+  'work-complete (list 'elites (make-sound "basic elites voices work complete" "elites/basic_voices/work_complete.wav"))
+  'work-complete (list 'terras (make-sound "basic terras voices work complete" "terras/basic_voices/work_complete.wav"))
+
+  ;; Repair sound is disabled as default
+  ;;'repair #t
+  ;;'repair (sound-for-name "peasant attack")
+  ;;'repair (make-sound "peasant attack" "elites/units/peasant/attack.wav")
+
+  'rescue (list 'elites (make-sound "elites rescue" "elites/rescue.wav"))
+  'rescue (list 'terras (make-sound "terras rescue" "terras/rescue.wav")) )
+
+(define sound-click (make-sound "highclick" "ui/highclick.wav"))
+(define sound-click (make-sound "statsthump" "ui/statsthump.wav"))

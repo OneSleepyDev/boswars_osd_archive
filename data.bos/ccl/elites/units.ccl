@@ -1,0 +1,321 @@
+;;       _________ __                 __
+;;      /   _____//  |_____________ _/  |______     ____  __ __  ______
+;;      \_____  \\   __\_  __ \__  \\   __\__  \   / ___\|  |  \/  ___/
+;;      /        \|  |  |  | \// __ \|  |  / __ \_/ /_/  >  |  /\___ \ 
+;;     /_______  /|__|  |__|  (____  /__| (____  /\___  /|____//____  >
+;;             \/                  \/          \//_____/            \/ 
+;;  ______________________                           ______________________
+;;			  T H E   W A R   B E G I N S
+;;	   Stratagus - A free fantasy real time strategy game engine
+;;
+;;	units.ccl	-	Define the used elites unit-types.
+;;
+;;	(c) Copyright 2001,2002 by Lutz Sammer
+;;
+;;      This program is free software; you can redistribute it and/or modify
+;;      it under the terms of the GNU General Public License as published by
+;;      the Free Software Foundation; either version 2 of the License, or
+;;      (at your option) any later version.
+;;  
+;;      This program is distributed in the hope that it will be useful,
+;;      but WITHOUT ANY WARRANTY; without even the implied warranty of
+;;      MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;;      GNU General Public License for more details.
+;;  
+;;      You should have received a copy of the GNU General Public License
+;;      along with this program; if not, write to the Free Software
+;;      Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+;;
+;;	$Id$
+
+;;=============================================================================
+;;	Define unit-types.
+;;
+;;	NOTE: Save can generate this table.
+;;
+
+(define-unit-type 'unit-lancer 'name "Lancer Assault"
+  'files '(tileset-desert "elites/units/unit_lancer.png")
+  'size '(64 64)
+  'shadow '(file "elites/units/unit_lancer_s.png" size (64 64))
+  'animations 'animations-lancer 'icon 'icon-lancer
+  'costs '(time 60 titanium 300)
+  'speed 10
+  'hit-points 60
+  'draw-level 40
+  'tile-size '(1 1) 'box-size '(31 31)
+  'sight-range 6 'computer-reaction-range 6 'person-reaction-range 6
+  'armor 2 'basic-damage 6 'piercing-damage 3 'missile 'missile-none
+  'max-attack-range 6
+  'priority 60
+  'points 50
+  'demand 1
+  'corpse '(unit-dead-body 6)
+  'type-land
+  'right-attack
+  'can-attack 'repair-range 1
+  'can-target-land
+  'land-unit
+  'organic
+  'selectable-by-rectangle
+  'sounds '(
+    selected "lancer-selected"
+    acknowledge "lancer-acknowledge"
+    ready "lancer-ready"
+    help "lancer-help"
+    dead "lancer-die"
+    attack "lancer-attack"))
+
+(define-unit-type 'unit-engineer 'name "Engineer"
+  'files '(tileset-desert "elites/units/unit_engineer.png")
+  'size '(64 64)
+  'shadow '(file "elites/units/unit_engineer_s.png" size (64 64))
+  'draw-level 19
+  'animations 'animations-engineer 'icon 'icon-engineer
+  'costs '(time 200 titanium 300 crystal 50)
+  'speed 10
+  'hit-points 100
+  'draw-level 40
+  'tile-size '(1 1) 'box-size '(31 31)
+  'sight-range 5 'computer-reaction-range 6 'person-reaction-range 4
+  'armor 1 'basic-damage 0 'piercing-damage 1 'missile 'missile-none
+  'max-attack-range 1
+  'priority 50
+  'points 30
+  'demand 1
+  'corpse '(unit-dead-body 6)
+  'type-land
+  'right-harvest
+  'can-attack 'repair-range 1
+  'can-target-land
+  'land-unit
+  'coward
+  'can-gather-resource '(
+    file-when-loaded "elites/units/unit_engineer.png"  
+    resource-id titanium
+    resource-capacity 100
+    wait-at-resource 200
+    wait-at-depot 200
+    resource-step 1
+    harvest-from-outside)
+  'organic
+  'selectable-by-rectangle
+  'sounds '(
+    selected "peasant-selected"
+    acknowledge "peasant-acknowledge"
+    ready "peasant-ready"
+    help "basic elites voices help 1"
+    dead "basic elites voices dead"
+    attack "peasant-attack"))
+
+(define-unit-type 'unit-harvester 'name "Mineral Harvester"
+  'files '(tileset-desert "elites/units/unit_harv.png")
+  'size '(96 96)
+  'shadow '(file "elites/units/unit_harv_s.png" size (96 96))
+  'draw-level 19
+  'animations 'animations-harvester 'icon 'icon-harvester
+  'costs '(time 2000 titanium 900 crystal 200 gas 50)
+  'repair-hp 1
+  'repair-costs '(titanium 1)
+  'speed 10
+  'hit-points 400
+  'draw-level 40
+  'tile-size '(1 1) 'box-size '(63 63)
+  'sight-range 5 'computer-reaction-range 6 'person-reaction-range 4
+  'armor 5 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
+  'max-attack-range 0
+  'priority 50
+  'points 30
+  'demand 2
+  'corpse '(unit-dead-body 6)
+  'type-land
+  'right-harvest
+  'can-attack 'repair-range 1
+  'can-target-land
+  'land-unit
+  'coward
+  'can-gather-resource '(
+    file-when-loaded "elites/units/unit_harv.png"  
+    resource-id crystal
+    resource-capacity 150
+    wait-at-resource 2
+    wait-at-depot 100
+    resource-step 2
+    harvest-from-outside)
+  'selectable-by-rectangle
+  'sounds '(
+    selected "peasant-selected"
+    acknowledge "peasant-acknowledge"
+    ready "peasant-ready"
+    help "basic elites voices help 1"
+    dead "basic elites voices dead"
+    attack "peasant-attack"))
+
+(define-unit-type 'unit-pplnt 'name "Power Plant"
+  'files '(tileset-desert "elites/build/bld_pplnt.png")
+  'size '(96 96)
+  'shadow '(file "elites/build/bld_pplnt_s.png" size (96 96))
+  'animations 'animations-pplnt 'icon 'icon-pplnt
+  'costs '(time 300 titanium 600 crystal 100 gas 50)
+  'repair-hp 1
+  'repair-costs '(titanium 2)
+  'construction 'construction-pplnt
+  'speed 0
+  'hit-points 500
+  'draw-level 20
+  'tile-size '(3 3) 'box-size '(95 95)
+  'sight-range 1
+  'armor 15 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
+  'priority 20 'annoy-computer-factor 45
+  'points 100
+  'supply 150
+  'explode-when-killed 'missile-160x128-explosion
+  'type-land
+  'building 
+  'sounds '(
+    selected "pplnt-selected"
+    acknowledge "pplnt-acknowledge"
+    ready "pplnt-ready"
+    help "basic elites voices help 2"
+    dead "pplnt-dead"
+    attack "pplnt-attack"))
+
+(define-unit-type 'unit-camp 'name "Training Camp"
+  'files '(tileset-desert "elites/build/bld_camp.png")
+  'size '(160 128)
+  'shadow '(file "elites/build/bld_camp_s.png" size (160 128))
+  'animations 'animations-camp 'icon 'icon-camp
+  'costs '(time 400 titanium 800 crystal 150)
+  'repair-hp 1
+  'repair-costs '(titanium 2)
+  'construction 'construction-camp
+  'speed 0
+  'hit-points 800
+  'draw-level 20
+  'demand 125
+  'tile-size '(5 4) 'box-size '(159 127)
+  'sight-range 1
+  'armor 15 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
+  'priority 30 'annoy-computer-factor 35
+  'points 160
+  'explode-when-killed 'missile-160x128-explosion
+  'type-land
+  'building 
+  'sounds '(
+    selected "camp-selected"
+    acknowledge "camp-acknowledge"
+    ready "camp-ready"
+    help "basic elites voices help 2"
+    dead "camp-dead"
+    attack "camp-attack"))
+
+(define-unit-type 'unit-fort 'name "Fort"
+  'files '(tileset-desert "elites/build/bld_fort.png")
+  'size '(224 224)
+  'shadow '(file "elites/build/bld_fort_s.png" size (224 224))
+  'animations 'animations-fort 'icon 'icon-fort
+  'costs '(time 1200 titanium 1200 crystal 1000 gas 500)
+  'repair-hp 1
+  'repair-costs '(titanium 3)
+  'construction 'construction-fort
+  'speed 0
+  'hit-points 1500
+  'draw-level 20
+  'tile-size '(7 7) 'box-size '(223 223)
+  'sight-range 3
+  'armor 25 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
+  'priority 35 'annoy-computer-factor 45
+  'points 200
+  'supply 300
+  'explode-when-killed 'missile-288x288-explosion
+  'type-land
+  'building 
+  'can-store '(crystal titanium gas)
+  'sounds '(
+    selected "fort-selected"
+    acknowledge "town-hall-acknowledge"
+    ready "town-hall-ready"
+    help "basic elites voices help 2"
+    dead "fort-dead"
+    attack "town-hall-attack"))
+
+(define-unit-type 'unit-rfac 'name "Research Facility"
+  'files '(tileset-desert "elites/build/bld_rfac.png")
+  'size '(128 128)
+  'shadow '(file "elites/build/bld_rfac_s.png" size (128 128))
+  'animations 'animations-rfac 'icon 'icon-rfac
+  'costs '(time 1200 titanium 800 crystal 500)
+  'repair-hp 1
+  'repair-costs '(titanium 3)
+  'construction 'construction-rfac
+  'speed 0
+  'hit-points 500
+  'draw-level 20
+  'tile-size '(4 4) 'box-size '(128 128)
+  'sight-range 1
+  'armor 15 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
+  'priority 35 'annoy-computer-factor 45
+  'demand 225
+  'points 200
+  'supply 300
+  'explode-when-killed 'missile-160x128-explosion
+  'type-land
+  'building 
+  'sounds '(
+    selected "fort-selected"
+    acknowledge "town-hall-acknowledge"
+    ready "town-hall-ready"
+    help "basic elites voices help 2"
+    dead "fort-dead"
+    attack "town-hall-attack"))
+
+
+(define-unit-type 'unit-elites-start-location 'name "Start Location"
+  'files '(tileset-desert "elites/x_startpoint.png")
+  'size '(32 32)
+  'animations 'animations-building 'icon 'icon-cancel
+  'speed 0
+  'hit-points 0
+  'draw-level 0
+  'tile-size '(1 1) 'box-size '(31 31)
+  'sight-range 0
+  'basic-damage 0 'piercing-damage 0 'missile 'missile-none
+  'priority 0
+  'demand 0
+  'type-land
+  'sounds '(
+    selected "elites-start-location-selected"
+    acknowledge "elites-start-location-acknowledge"
+    ready "elites-start-location-ready"
+    help "basic elites voices help 2"
+    dead "building destroyed"
+    attack "elites-start-location-attack"))
+
+(define-unit-type 'unit-human-wall 'name "Wall"
+  'files '(tileset-desert "tilesets/desert/neutral/buildings/wall.png"
+    tileset-winter "tilesets/winter/neutral/buildings/wall.png")
+  'size '(32 32)
+  'animations 'animations-building 'icon 'icon-elites-wall
+  'costs '(time 30 titanium 20 crystal 10)
+  'construction 'construction-wall
+  'speed 0
+  'hit-points 40
+  'draw-level 39
+  'tile-size '(1 1) 'box-size '(31 31)
+  'sight-range 1
+  'armor 20 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
+  'priority 0 'annoy-computer-factor 45
+  'points 1
+  'corpse '(unit-destroyed-1x1-place 0)
+  'explode-when-killed 'missile-explosion
+  'type-land
+  'building 
+  'sounds '(
+    selected "elites-wall-selected"
+    acknowledge "elites-wall-acknowledge"
+    ready "elites-wall-ready"
+    help "basic elites voices help 2"
+    dead "building destroyed"
+    attack "elites-wall-attack"))
+
+

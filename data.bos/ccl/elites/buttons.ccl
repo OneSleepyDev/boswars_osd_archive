@@ -1,0 +1,161 @@
+;;       _________ __                 __                               
+;;      /   _____//  |_____________ _/  |______     ____  __ __  ______
+;;      \_____  \\   __\_  __ \__  \\   __\__  \   / ___\|  |  \/  ___/
+;;      /        \|  |  |  | \// __ \|  |  / __ \_/ /_/  >  |  /\___ \ 
+;;     /_______  /|__|  |__|  (____  /__| (____  /\___  /|____//____  >
+;;             \/                  \/          \//_____/            \/ 
+;;  ______________________                           ______________________
+;;			  T H E   W A R   B E G I N S
+;;	   Stratagus - A free fantasy real time strategy game engine
+;;
+;;	buttons.ccl	-	Define the unit-buttons of the elites race.
+;;
+;;	(c) Copyright 2001-2003 by Vladi Belperchinov-Shabanski and Lutz Sammer
+;;
+;;      This program is free software; you can redistribute it and/or modify
+;;      it under the terms of the GNU General Public License as published by
+;;      the Free Software Foundation; either version 2 of the License, or
+;;      (at your option) any later version.
+;;  
+;;      This program is distributed in the hope that it will be useful,
+;;      but WITHOUT ANY WARRANTY; without even the implied warranty of
+;;      MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;;      GNU General Public License for more details.
+;;  
+;;      You should have received a copy of the GNU General Public License
+;;      along with this program; if not, write to the Free Software
+;;      Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+;;
+;;	$Id$
+
+;;----------------------------------------------------------------------------
+;;	Define unit-button.
+;;
+;;	(define-button 'pos n 'level n 'icon ident 'action name ['value value]
+;;		['allowed check ['values]] 'key key 'hint hint 'for-unit units)
+;;
+
+;; general commands -- almost all units have it -------------------------------
+
+(define-button 'pos 1 'level 0 'icon 'icon-move-peasant
+  'action 'move
+  'key "m" 'hint "~!MOVE"
+  'for-unit '(unit-engineer unit-harvester unit-lancer
+    unit-critter elites-group))
+
+(define-button 'pos 2 'level 0 'icon 'icon-elites-shield1
+  'action 'stop
+  'key "s" 'hint "~!STOP"
+  'for-unit '(unit-engineer unit-harvester unit-lancer
+    unit-critter elites-group))
+
+(define-button 'pos 3 'level 0 'icon 'icon-sword1
+  'action 'attack
+  'key "a" 'hint "~!ATTACK"
+  'for-unit '(unit-engineer unit-lancer
+    elites-group))
+
+(define-button 'pos 4 'level 0 'icon 'icon-elites-patrol-land
+  'action 'patrol
+  'key "p" 'hint "~!PATROL"
+  'for-unit '(unit-lancer elites-group))
+
+(define-button 'pos 5 'level 0 'icon 'icon-elites-stand-ground
+  'action 'stand-ground
+  'key "t" 'hint "S~!TAND GROUND"
+  'for-unit '(unit-lancer elites-group))
+
+;; peasant specific actions ---------------------------------------------------
+
+(define-button 'pos 4 'level 0 'icon 'icon-repair
+  'action 'repair
+  'key "r" 'hint "~!REPAIR"
+  'for-unit '(unit-engineer))
+
+(define-button 'pos 5 'level 0 'icon 'icon-harvest
+  'action 'harvest
+  'key "h" 'hint "~!HARVEST"
+  'for-unit '(unit-engineer unit-harvester))
+
+(define-button 'pos 6 'level 0 'icon 'icon-return-goods-peasant
+  'action 'return-goods
+  'key "g" 'hint "RETURN WITH ~!GOODS"
+  'for-unit '(unit-engineer unit-harvester))
+
+;; build basic/advanced structs -----------------------------------------------
+
+(define-button 'pos 7 'level 0 'icon 'icon-build-basic
+  'action 'button 'value 1
+  'key "b" 'hint "~!BUILD BASIC STRUCTURE"
+  'for-unit '(unit-engineer))
+
+;; simple buildings elites -----------------------------------------------------
+
+(define-button 'pos 1 'level 1 'icon 'icon-pplnt
+  'action 'build 'value 'unit-pplnt
+  'key "p" 'hint "BUILD POWER ~!PLANT"
+  'for-unit '(unit-engineer))
+
+(define-button 'pos 2 'level 1 'icon 'icon-camp
+  'action 'build 'value 'unit-camp
+  'key "c" 'hint "BUILD TRAINING ~!CAMP"
+  'for-unit '(unit-engineer))
+
+(define-button 'pos 3 'level 1 'icon 'icon-fort
+  'action 'build 'value 'unit-fort
+  'key "f" 'hint "BUILD ~!ELITE FORT"
+  'for-unit '(unit-engineer))
+
+(define-button 'pos 4 'level 1 'icon 'icon-rfac
+  'action 'build 'value 'unit-rfac
+  'key "f" 'hint "BUILD ~!RESEARCH FACILITY"
+  'for-unit '(unit-engineer))
+
+
+(define-button 'pos 8 'level 1 'icon 'icon-elites-wall
+  'action 'build 'value 'unit-human-wall
+  'allowed 'check-network
+  'key "w" 'hint "BUILD ~!WALL"
+  'for-unit '(unit-engineer))
+
+(define-button 'pos 9 'level 1 'icon 'icon-cancel
+  'action 'button 'value 0
+  'key "\033" 'hint "~<ESC~> CANCEL"
+  'for-unit '(unit-engineer))
+
+;; buildings commands ---------------------------------------------------------
+
+(define-button 'pos 1 'level 0 'icon 'icon-engineer
+  'action 'train-unit 'value 'unit-engineer
+  'allowed 'check-no-research
+  'key "p" 'hint "TRAIN ~!PEASANT"
+  'for-unit '(unit-fort))
+
+;; town hall upgrades ---------------------------------------------------------
+
+(if extensions (begin
+(define-button 'pos 5 'level 0 'icon 'icon-harvest
+  'action 'harvest
+  'key "h" 'hint "SET ~!HARVEST LUMBER/MINE GOLD"
+  'for-unit '(unit-fort))
+
+(define-button 'pos 7 'level 0 'icon 'icon-move-peasant
+  'action 'move
+  'key "m" 'hint "SET ~!MOVE"
+  'for-unit '(unit-fort unit-camp))
+
+(define-button 'pos 8 'level 0 'icon 'icon-elites-shield1
+  'action 'stop
+  'key "z" 'hint "SET ~!ZTOP"
+  'for-unit '(unit-fort unit-camp))
+
+(define-button 'pos 9 'level 0 'icon 'icon-sword1
+  'action 'attack
+  'key "e" 'hint "S~!ET ATTACK"
+  'for-unit '(unit-fort unit-camp)) ))
+
+(define-button 'pos 1 'level 0 'icon 'icon-lancer
+  'action 'train-unit 'value 'unit-lancer
+  'key "l" 'hint "TRAIN ~!LANCER ASSAULT"
+  'for-unit '(unit-camp))
+

@@ -1,0 +1,366 @@
+;;       _________ __                 __                               
+;;      /   _____//  |_____________ _/  |______     ____  __ __  ______
+;;      \_____  \\   __\_  __ \__  \\   __\__  \   / ___\|  |  \/  ___/
+;;      /        \|  |  |  | \// __ \|  |  / __ \_/ /_/  >  |  /\___ \ 
+;;     /_______  /|__|  |__|  (____  /__| (____  /\___  /|____//____  >
+;;             \/                  \/          \//_____/            \/ 
+;;  ______________________                           ______________________
+;;			  T H E   W A R   B E G I N S
+;;	   Stratagus - A free fantasy real time strategy game engine
+;;
+;;	ai.ccl		-	Define the AI.
+;;
+;;	(c) Copyright 2000-2002 by Lutz Sammer
+;;
+;;      This program is free software; you can redistribute it and/or modify
+;;      it under the terms of the GNU General Public License as published by
+;;      the Free Software Foundation; either version 2 of the License, or
+;;      (at your option) any later version.
+;;  
+;;      This program is distributed in the hope that it will be useful,
+;;      but WITHOUT ANY WARRANTY; without even the implied warranty of
+;;      MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;;      GNU General Public License for more details.
+;;  
+;;      You should have received a copy of the GNU General Public License
+;;      along with this program; if not, write to the Free Software
+;;      Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+;;
+;;	$Id$
+
+;(define (ai:sleep) () #t)
+
+(define race1 'elites)
+(define race2 'terras)
+
+;;=============================================================================
+;;
+;;	AI helper table, the AI must know where to build units,
+;;	where to research spells, where to upgrade units.
+;;	If this is allowed and which dependencies exists, isn't
+;;	handled	here. (see upgrade.ccl)
+;;
+;;	NOTE: perhaps this could later be used to build the buttons?
+;;
+;;	(define-ai-helper (list))
+;;
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;	* Race elites.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(define-ai-helper
+    ;;
+    ;;	Unit can build which buildings.
+    ;;
+    (list 'build 'unit-engineer
+	'unit-pplnt 'unit-camp 'unit-fort 'unit-rfac 'unit-human-wall)
+    ;;
+    ;;	Building can train which units.
+    ;;
+    (list 'train 'unit-pplnt 'unit-critter)
+    (list 'train 'unit-fort 'unit-engineer 'unit-harvester)
+    (list 'train 'unit-camp 'unit-lancer)
+    ;;
+    ;;	Unit can repair which units.
+    ;;
+    (list 'repair 'unit-engineer
+	'unit-pplnt 'unit-camp 'unit-fort 'unit-rfac 'unit-harvester 'unit-human-wall)
+    ;;
+    ;;	Reduce unit limits.
+    ;;
+    (list 'unit-limit 'unit-pplnt 'food) )
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;	* Race terras.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(define-ai-helper
+    ;;
+    ;;	Unit can build which buildings.
+    ;;
+    (list 'build 'unit-peon
+	'unit-pig-farm 'unit-terras-barracks 'unit-great-hall 'unit-orc-wall)
+    ;;
+    ;;	Building can train which units.
+    ;;
+    (list 'train 'unit-pig-farm 'unit-critter)
+    (list 'train 'unit-great-hall 'unit-peon)
+    (list 'train 'unit-terras-barracks 'unit-grunt)
+    ;;
+    ;;	Unit can repair which units.
+    ;;
+    (list 'repair 'unit-peon
+	'unit-pig-farm 'unit-terras-barracks 'unit-great-hall 'unit-orc-wall)
+    ;;
+    ;;	Reduce unit limits.
+    ;;
+    (list 'unit-limit 'unit-pig-farm 'food) )
+
+;;=============================================================================
+;;
+;;	AI Script commands
+;;
+;;	(ai:debug flag) (ai:debug #f)
+;;
+;;		Enables printing of the AI commands.
+;;
+;;	(ai:need unit-type) (ai:need 'unit-pplnt)
+;;
+;;		Tells the ai that it should have this type of unit.
+;;		They are build in the ordered of the commands.
+;;		If lost automatic rebuild.
+;;
+;;	(ai:set unit-type count) (ai:set 'unit-pplnt 4)
+;;
+;;		Tells the ai that it should have count units of this type.
+;;		If there is already a request of this unit-type it number is
+;;		changed. They are build in the ordered of the commands.
+;;		If lost automatic rebuild.
+;;
+;;	(ai:wait unit-type) (ai:wait 'unit-engineer)
+;;
+;;		Waits until the *first* request of this unit-type is completed.
+;;
+;;	(ai:force force unit-type1 count1 ... unit-typeN countN)
+;;	(ai:force 0 'unit-lancer 4 'unit-archer 4)
+;;
+;;		Defines a force for the AI. Ten forces are supported.
+;;		Fterrase 0 defaults currently to the home defence and send
+;;		if a building is attacked.
+;;
+;;	(ai:wait-force force) (ai:wait-force 1)
+;;
+;;		Wait until a force is complete, the forces are build in
+;;		force number order. First 0, than 1, last 9.
+;;
+;;	(ai:attack-with-force force) (ai-attack-with-force 1)
+;;
+;;		Attack the opponent with a force.
+;;
+;;	(ai:sleep frames) (ai:sleep 1000)
+;;
+;;		Wait some frames, to let the opponent recover.
+;;
+;;	(ai:research upgrade) (ai:research 'upgrade-shield1)
+;;
+;;		Let the AI research an upgrade, upgrades are reseached in
+;;		command order. And automatic researched if lost.
+;;		Building orders have a higher priority.
+;;
+;;	(ai:upgrade-to unit-type) (ai:upgrade-to 'unit-keep)
+;;
+;;		Upgrade units to an improved type. You must give for each
+;;		unit you want to upgrade an upgrade command. The computer
+;;		automatic searches which unit it upgrades.
+;;
+;;	(ai:script list) (ai:script '(...))
+;;
+;;		Execute a new script, can be used for loops, subroutines.
+;;
+;;	(ai:restart) (ai:restart)
+;;
+;;		Restart with the main AI script.
+;;
+;; ----------------------------------------------------------------------------
+;;	Planned, not ready.
+;;
+;;	Enable or disable the AI cheating on unexplored area.
+;;	    (set-cheat-unexplored! #t)
+;;		The AI sees all area explored.
+;;	    (set-cheat-unexplored! #f)
+;;		The AI sees unexplored area as it is.
+;;
+;;	(set-cheat-unexplored! #t)
+;;
+;;	Enable or disable the AI cheating on visible area.
+;;	    (set-cheat-visible! #t)
+;;		The AI sees all area visible.
+;;	    (set-cheat-visible! #f)
+;;		The AI sees visible area as it is.
+;;
+;;	(set-cheat-visible! #t)
+;;
+
+
+;;=============================================================================
+;;
+;;	Define an AI engine.
+;;
+;;	(define-ai name race class script)
+;;
+;;	name	name of the AI for selection.
+;;	class	class of the AI for map editor.
+;;	script	Main AI script.
+;;
+(define-ai "wc2-passive" "*" "passive"
+  '(
+    ;;	Define the main AI script.
+    (ai:sleep	10000)
+    (ai:restart)
+    ))
+
+;;=============================================================================
+
+;;=============================================================================
+;;	Air Attack AI, this is an example for a multi race AI.
+;;=============================================================================
+
+;;
+;;	City-center of the current race.
+;;
+(define (ai:city-center)
+  (if (eq? (ai:get-race) race1)
+      'unit-fort 'unit-great-hall) )
+
+;;
+;;	Worker of the current race.
+;;
+(define (ai:worker)
+  (if (eq? (ai:get-race) race1)
+      'unit-engineer 'unit-peon) )
+
+;;
+;;	Barracks of the current race.
+;;
+(define (ai:barracks)
+  (if (eq? (ai:get-race) race1)
+      'unit-camp 'unit-terras-barracks) )
+
+;;
+;;	Soldier of the current race.
+;;
+(define (ai:soldier)
+  (if (eq? (ai:get-race) race1)
+      'unit-lancer 'unit-grunt) )
+
+;;=============================================================================
+;;
+;;	Define an AI engine.
+;;
+;;	(define-ai name race class script)
+;;
+;;	name	name of the AI for selection.
+;;	class	class of the AI for map editor.
+;;	script	Main AI script.
+;;
+(define ai:air-attack-endloop
+  '((writes nil "Looping !\n")
+    (ai:sleep 500)
+    (ai:script ai:air-attack-endloop) ))
+
+(define-ai "wc2-air-attack" "*" "air-attack"
+  '(
+    ;;	Define the main AI script.
+    (begin (ai:debug #f) (ai:sleep (ai:get-sleep-cycles)))
+    (ai:set-reserve! #( 0  0 0 0  0 0 0))
+    (ai:need (ai:city-center))
+    (ai:set  (ai:worker) 1)
+    (ai:wait (ai:city-center))
+    (ai:wait (ai:worker))	;; start hangs if nothing is available
+
+    (ai:set  (ai:worker) 9)
+    (ai:need (ai:barracks))
+    (ai:force 0 (ai:soldier) 2)
+    (ai:wait-force 0)		;; wait until defence is ready
+
+    (ai:sleep 500)
+    (ai:script ai:air-attack-endloop) ))
+
+;;=============================================================================
+;;
+;;	Define an AI engine.
+;;
+;;	(define-ai name race class script)
+;;
+;;	name	name of the AI for selection.
+;;	class	class of the AI for map editor.
+;;	script	Main AI script.
+;;
+(define ai:sea-attack-endloop
+  '((writes nil "Looping !\n")
+    (ai:sleep 500)
+    (ai:script ai:sea-attack-endloop) ))
+
+(define-ai "wc2-sea-attack" "*" "sea-attack"
+  '(
+    ;;	Define the main AI script.
+    (begin (ai:debug #f) (ai:sleep (ai:get-sleep-cycles)))
+    (ai:need (ai:city-center))
+    (ai:set  (ai:worker) 1)
+    (ai:wait (ai:city-center))
+    (ai:wait (ai:worker))	;; start hangs if nothing is available
+
+    (ai:set  (ai:worker) 9)
+    (ai:need (ai:barracks))
+    (ai:force 0 (ai:soldier) 3)
+    (ai:wait-force 0)		;; wait until defence is ready
+
+    (ai:sleep 500)
+    (ai:script ai:sea-attack-endloop) ))
+
+;;=============================================================================
+;;
+;;	Define an AI engine.
+;;
+;;	(define-ai name race class script)
+;;
+;;	name	name of the AI for selection.
+;;	class	class of the AI for map editor.
+;;	script	Main AI script.
+;;
+(define ai:elites-land-attack-endloop
+  '((writes nil "Looping !\n")
+    (ai:sleep 500)
+    (ai:script ai:elites-land-attack-endloop) ) )
+
+(define-ai 'my-ai1 race1 "land-attack"
+  '(
+    ;;	Define the main AI script.
+    (begin (ai:debug #f) (ai:sleep (ai:get-sleep-cycles)))
+    (ai:need (unit-type 'unit-fort))
+    (ai:set  'unit-engineer 1)
+    (ai:wait 'unit-fort)
+    (ai:wait 'unit-engineer)	;; start hangs if nothing available
+
+    (ai:set  'unit-engineer 4)
+    (ai:need 'unit-camp)
+    (ai:force 0  'unit-lancer 2)
+    (ai:force 1  'unit-lancer 1)
+    (ai:wait-force 1)		;; wait until attack party is completed
+
+    (ai:sleep 500)
+    (ai:script ai:elites-land-attack-endloop) ))
+
+;;=============================================================================
+;;
+;;	Define an AI engine.
+;;
+;;	(define-ai name race class script)
+;;
+;;	name	name of the AI for selection.
+;;	class	class of the AI for map editor.
+;;	script	Main AI script.
+;;
+(define ai:terras-land-attack-endloop
+  '((writes nil "Looping !\n")
+    (ai:sleep 500)
+    (ai:script ai:terras-land-attack-endloop) ) )
+
+(define-ai 'my-ai2 race2 "land-attack"
+  '(
+    ;;	Define the main AI script.
+    (begin (ai:debug #f) (ai:sleep (ai:get-sleep-cycles)))
+    (ai:need (unit-type 'unit-great-hall))
+    (ai:set  'unit-peon 1)
+    (ai:wait 'unit-great-hall)
+    (ai:wait 'unit-peon)	;; start hangs if nothing available
+
+    (ai:set  'unit-peon 4)
+    (ai:need 'unit-terras-barracks)
+    (ai:force 0 'unit-grunt 2)
+    (ai:force 1 'unit-grunt 1)
+    (ai:wait-force 1)		;; wait until attack party is completed
+
+    (ai:sleep 500)
+    (ai:script ai:terras-land-attack-endloop) ))

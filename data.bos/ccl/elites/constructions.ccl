@@ -1,0 +1,102 @@
+;;       _________ __                 __                               
+;;      /   _____//  |_____________ _/  |______     ____  __ __  ______
+;;      \_____  \\   __\_  __ \__  \\   __\__  \   / ___\|  |  \/  ___/
+;;      /        \|  |  |  | \// __ \|  |  / __ \_/ /_/  >  |  /\___ \ 
+;;     /_______  /|__|  |__|  (____  /__| (____  /\___  /|____//____  >
+;;             \/                  \/          \//_____/            \/ 
+;;  ______________________                           ______________________
+;;			  T H E   W A R   B E G I N S
+;;	   Stratagus - A free fantasy real time strategy game engine
+;;
+;;	constructions.ccl	-	Define the elites constructions.
+;;
+;;	(c) Copyright 2001,2003 by Lutz Sammer and Jimmy Salmon
+;;
+;;      This program is free software; you can redistribute it and/or modify
+;;      it under the terms of the GNU General Public License as published by
+;;      the Free Software Foundation; either version 2 of the License, or
+;;      (at your option) any later version.
+;;  
+;;      This program is distributed in the hope that it will be useful,
+;;      but WITHOUT ANY WARRANTY; without even the implied warranty of
+;;      MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;;      GNU General Public License for more details.
+;;  
+;;      You should have received a copy of the GNU General Public License
+;;      along with this program; if not, write to the Free Software
+;;      Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+;;
+;;	$Id$
+
+;;=============================================================================
+;;	Define a construction.
+;;
+;;	(define-construction ident 'files '(tileset-name filename ..)
+;;	    'size '(x y))
+
+(define-construction 'construction-pplnt
+  'constructions (list
+    '(percent 0
+      file main
+      frame 5)
+    '(percent 25
+      file main
+      frame 6)
+    '(percent 50
+      file main
+      frame 7)
+    '(percent 75
+      file main
+      frame 8))
+)
+
+(define-construction 'construction-fort
+  'constructions (list
+    '(percent 0
+      file main
+      frame 4)
+    '(percent 20
+      file main
+      frame 5)
+    '(percent 40
+      file main
+      frame 6)
+    '(percent 60
+      file main
+      frame 7)
+    '(percent 80
+      file main
+      frame 8))
+)
+
+(define-construction 'construction-camp
+  'constructions (list
+    '(percent 0
+      file main
+      frame 5)
+    '(percent 33
+      file main
+      frame 6)
+    '(percent 67
+      file main
+      frame 7))
+)
+
+(define-construction 'construction-rfac
+  'constructions (list
+    '(percent 0
+      file main
+      frame 5)
+    '(percent 20
+      file main
+      frame 6)
+    '(percent 40
+      file main
+      frame 7)
+    '(percent 60
+      file main
+      frame 8)
+    '(percent 80
+      file main
+      frame 9))
+)

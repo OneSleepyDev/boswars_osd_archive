@@ -1,0 +1,875 @@
+;;       _________ __                 __                               
+;;      /   _____//  |_____________ _/  |______     ____  __ __  ______
+;;      \_____  \\   __\_  __ \__  \\   __\__  \   / ___\|  |  \/  ___/
+;;      /        \|  |  |  | \// __ \|  |  / __ \_/ /_/  >  |  /\___ \ 
+;;     /_______  /|__|  |__|  (____  /__| (____  /\___  /|____//____  >
+;;             \/                  \/          \//_____/            \/ 
+;;  ______________________                           ______________________
+;;			  T H E   W A R   B E G I N S
+;;	   Stratagus - A free fantasy real time strategy game engine
+;;
+;;	icons.ccl	-	Define the icons.
+;;
+;;	(c) Copyright 2001 by Lutz Sammer
+;;
+;;      This program is free software; you can redistribute it and/or modify
+;;      it under the terms of the GNU General Public License as published by
+;;      the Free Software Foundation; either version 2 of the License, or
+;;      (at your option) any later version.
+;;  
+;;      This program is distributed in the hope that it will be useful,
+;;      but WITHOUT ANY WARRANTY; without even the implied warranty of
+;;      MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;;      GNU General Public License for more details.
+;;  
+;;      You should have received a copy of the GNU General Public License
+;;      along with this program; if not, write to the Free Software
+;;      Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+;;
+;;	$Id$
+
+;;	NOTE:
+;;		Splitting this file into races is a problem, because all
+;;		icons are in a single file.
+
+
+;;	FIXME: can be removed: Set the icon size (width height)
+(set-icon-size! 46 38)
+
+;;	FIXME: can be removed: Set the number of icons per row
+(set-icons-per-row! 5)
+
+;;=============================================================================
+;;	Define an icon.
+;;
+;;	(define-icon ident 'tileset tileset 'size (x y) type (index file))
+;;
+;;	ident	is the name of the icon
+;;	tileset is the name of the tileset
+;;	type	is the 'normal
+;;	index	is the index into the graphic file
+;;	file	is the filename of the graphic file containing the graphics
+;;
+
+;;=============================================================================
+;;	Desert Tileset
+;;=============================================================================
+
+;;=======
+
+(define-icon 'icon-lancer 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(0 "elites/units/ico_lancer.png"))
+
+(define-icon 'icon-fort 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(0 "elites/build/ico_fort.png"))
+
+(define-icon 'icon-camp 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(0 "elites/build/ico_camp.png"))
+
+(define-icon 'icon-pplnt 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(0 "elites/build/ico_pplnt.png"))
+
+(define-icon 'icon-engineer 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(0 "elites/units/ico_engineer.png"))
+
+(define-icon 'icon-harvester 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(0 "elites/units/ico_harv.png"))
+
+(define-icon 'icon-dorcoz 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(0 "terras/units/ico_dorcoz.png"))
+
+(define-icon 'icon-crystal-field1 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(0 "nature/res/ico_crys.png"))
+
+(define-icon 'icon-rfac 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(0 "elites/build/ico_rfac.png"))
+
+
+
+
+(define-icon 'icon-peasant 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(0 "tilesets/desert/icons.png"))
+(define-icon 'icon-peon 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(1 "tilesets/desert/icons.png"))
+(define-icon 'icon-footman 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(2 "tilesets/desert/icons.png"))
+(define-icon 'icon-grunt 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(3 "tilesets/desert/icons.png"))
+(define-icon 'icon-archer 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(4 "tilesets/desert/icons.png"))
+(define-icon 'icon-axethrower 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(5 "tilesets/desert/icons.png"))
+(define-icon 'icon-ranger 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(6 "tilesets/desert/icons.png"))
+(define-icon 'icon-berserker 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(7 "tilesets/desert/icons.png"))
+(define-icon 'icon-knight 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(8 "tilesets/desert/icons.png"))
+(define-icon 'icon-ogre 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(9 "tilesets/desert/icons.png"))
+(define-icon 'icon-paladin 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(10 "tilesets/desert/icons.png"))
+(define-icon 'icon-ogre-mage 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(11 "tilesets/desert/icons.png"))
+(define-icon 'icon-dwarves 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(12 "tilesets/desert/icons.png"))
+(define-icon 'icon-goblin-sappers 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(13 "tilesets/desert/icons.png"))
+(define-icon 'icon-mage 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(14 "tilesets/desert/icons.png"))
+(define-icon 'icon-death-knight 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(15 "tilesets/desert/icons.png"))
+(define-icon 'icon-ballista 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(16 "tilesets/desert/icons.png"))
+(define-icon 'icon-catapult 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(17 "tilesets/desert/icons.png"))
+(define-icon 'icon-elites-oil-tanker 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(18 "tilesets/desert/icons.png"))
+(define-icon 'icon-terras-oil-tanker 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(19 "tilesets/desert/icons.png"))
+(define-icon 'icon-elites-transport 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(20 "tilesets/desert/icons.png"))
+(define-icon 'icon-terras-transport 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(21 "tilesets/desert/icons.png"))
+(define-icon 'icon-elites-destroyer 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(22 "tilesets/desert/icons.png"))
+(define-icon 'icon-terras-destroyer 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(23 "tilesets/desert/icons.png"))
+(define-icon 'icon-battleship 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(24 "tilesets/desert/icons.png"))
+(define-icon 'icon-ogre-juggernaught 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(25 "tilesets/desert/icons.png"))
+(define-icon 'icon-elites-submarine 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(26 "tilesets/desert/icons.png"))
+(define-icon 'icon-terras-submarine 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(27 "tilesets/desert/icons.png"))
+(define-icon 'icon-balloon 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(28 "tilesets/desert/icons.png"))
+(define-icon 'icon-zeppelin 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(29 "tilesets/desert/icons.png"))
+(define-icon 'icon-gryphon-rider 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(30 "tilesets/desert/icons.png"))
+(define-icon 'icon-dragon 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(31 "tilesets/desert/icons.png"))
+(define-icon 'icon-wise-man 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(32 "tilesets/desert/icons.png"))
+(define-icon 'icon-ice-bringer 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(33 "tilesets/desert/icons.png"))
+(define-icon 'icon-man-of-light 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(34 "tilesets/desert/icons.png"))
+(define-icon 'icon-sharp-axe 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(35 "tilesets/desert/icons.png"))
+(define-icon 'icon-double-head 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(36 "tilesets/desert/icons.png"))
+(define-icon 'icon-daemon 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(37 "tilesets/desert/icons.png"))
+(define-icon 'icon-farm 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(0 "elites/build/ico_pplnt.png"))
+(define-icon 'icon-pig-farm 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(39 "tilesets/desert/icons.png"))
+(define-icon 'icon-town-hall 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(40 "tilesets/desert/icons.png"))
+(define-icon 'icon-great-hall 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(41 "tilesets/desert/icons.png"))
+(define-icon 'icon-terras-barracks 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(43 "tilesets/desert/icons.png"))
+(define-icon 'icon-elven-lumber-mill 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(44 "tilesets/desert/icons.png"))
+(define-icon 'icon-troll-lumber-mill 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(45 "tilesets/desert/icons.png"))
+(define-icon 'icon-elites-blacksmith 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(46 "tilesets/desert/icons.png"))
+(define-icon 'icon-terras-blacksmith 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(47 "tilesets/desert/icons.png"))
+(define-icon 'icon-elites-shipyard 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(48 "tilesets/desert/icons.png"))
+(define-icon 'icon-terras-shipyard 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(49 "tilesets/desert/icons.png"))
+(define-icon 'icon-elites-refinery 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(50 "tilesets/desert/icons.png"))
+(define-icon 'icon-terras-refinery 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(51 "tilesets/desert/icons.png"))
+(define-icon 'icon-elites-foundry 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(52 "tilesets/desert/icons.png"))
+(define-icon 'icon-terras-foundry 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(53 "tilesets/desert/icons.png"))
+(define-icon 'icon-elites-oil-platform 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(54 "tilesets/desert/icons.png"))
+(define-icon 'icon-terras-oil-platform 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(55 "tilesets/desert/icons.png"))
+(define-icon 'icon-stables 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(56 "tilesets/desert/icons.png"))
+(define-icon 'icon-ogre-mound 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(57 "tilesets/desert/icons.png"))
+(define-icon 'icon-inventor 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(58 "tilesets/desert/icons.png"))
+(define-icon 'icon-alchemist 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(59 "tilesets/desert/icons.png"))
+(define-icon 'icon-elites-watch-tower 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(60 "tilesets/desert/icons.png"))
+(define-icon 'icon-terras-watch-tower 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(61 "tilesets/desert/icons.png"))
+(define-icon 'icon-church 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(62 "tilesets/desert/icons.png"))
+(define-icon 'icon-altar-of-storms 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(63 "tilesets/desert/icons.png"))
+(define-icon 'icon-mage-tower 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(64 "tilesets/desert/icons.png"))
+(define-icon 'icon-temple-of-the-damned 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(65 "tilesets/desert/icons.png"))
+(define-icon 'icon-keep 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(66 "tilesets/desert/icons.png"))
+(define-icon 'icon-stronghold 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(67 "tilesets/desert/icons.png"))
+(define-icon 'icon-castle-upgrade 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(68 "tilesets/desert/icons.png"))
+(define-icon 'icon-fortress-upgrade 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(69 "tilesets/desert/icons.png"))
+(define-icon 'icon-castle 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(70 "tilesets/desert/icons.png"))
+(define-icon 'icon-fortress 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(71 "tilesets/desert/icons.png"))
+(define-icon 'icon-gryphon-aviary 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(72 "tilesets/desert/icons.png"))
+(define-icon 'icon-dragon-roost 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(73 "tilesets/desert/icons.png"))
+(define-icon 'icon-gold-mine 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(74 "tilesets/desert/icons.png"))
+(define-icon 'icon-elites-guard-tower 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(75 "tilesets/desert/icons.png"))
+(define-icon 'icon-elites-cannon-tower 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(76 "tilesets/desert/icons.png"))
+(define-icon 'icon-terras-guard-tower 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(77 "tilesets/desert/icons.png"))
+(define-icon 'icon-terras-cannon-tower 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(78 "tilesets/desert/icons.png"))
+(define-icon 'icon-oil-patch 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(79 "tilesets/desert/icons.png"))
+(define-icon 'icon-dark-portal 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(80 "tilesets/desert/icons.png"))
+(define-icon 'icon-circle-of-power 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(81 "tilesets/desert/icons.png"))
+(define-icon 'icon-runestone 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(82 "tilesets/desert/icons.png"))
+(define-icon 'icon-move-peasant 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(2 "buttons/commands.png"))
+(define-icon 'icon-move-peon 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(84 "tilesets/desert/icons.png"))
+(define-icon 'icon-repair 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(85 "tilesets/desert/icons.png"))
+(define-icon 'icon-harvest 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(86 "tilesets/desert/icons.png"))
+(define-icon 'icon-build-basic 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(87 "tilesets/desert/icons.png"))
+(define-icon 'icon-build-advanced 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(88 "tilesets/desert/icons.png"))
+(define-icon 'icon-return-goods-peasant 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(89 "tilesets/desert/icons.png"))
+(define-icon 'icon-return-goods-peon 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(90 "tilesets/desert/icons.png"))
+(define-icon 'icon-cancel 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(0 "buttons/commands.png"))
+(define-icon 'icon-elites-wall 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(92 "tilesets/desert/icons.png"))
+(define-icon 'icon-terras-wall 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(93 "tilesets/desert/icons.png"))
+(define-icon 'icon-slow 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(94 "tilesets/desert/icons.png"))
+(define-icon 'icon-invisibility 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(95 "tilesets/desert/icons.png"))
+(define-icon 'icon-haste 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(96 "tilesets/desert/icons.png"))
+(define-icon 'icon-runes 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(97 "tilesets/desert/icons.png"))
+(define-icon 'icon-unholy-armor 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(98 "tilesets/desert/icons.png"))
+(define-icon 'icon-lightning 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(99 "tilesets/desert/icons.png"))
+(define-icon 'icon-flame-shield 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(100 "tilesets/desert/icons.png"))
+(define-icon 'icon-fireball 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(101 "tilesets/desert/icons.png"))
+(define-icon 'icon-touch-of-darkness 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(102 "tilesets/desert/icons.png"))
+(define-icon 'icon-death-coil 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(103 "tilesets/desert/icons.png"))
+(define-icon 'icon-whirlwind 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(104 "tilesets/desert/icons.png"))
+(define-icon 'icon-blizzard 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(105 "tilesets/desert/icons.png"))
+(define-icon 'icon-holy-vision 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(106 "tilesets/desert/icons.png"))
+(define-icon 'icon-heal 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(107 "tilesets/desert/icons.png"))
+(define-icon 'icon-death-and-decay 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(108 "tilesets/desert/icons.png"))
+(define-icon 'icon-109 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(109 "tilesets/desert/icons.png"))
+(define-icon 'icon-exorcism 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(110 "tilesets/desert/icons.png"))
+(define-icon 'icon-eye-of-kilrogg 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(111 "tilesets/desert/icons.png"))
+(define-icon 'icon-bloodlust 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(112 "tilesets/desert/icons.png"))
+(define-icon 'icon-unknown113 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(113 "tilesets/desert/icons.png"))
+(define-icon 'icon-skeleton 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(114 "tilesets/desert/icons.png"))
+(define-icon 'icon-critter 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(115 "tilesets/desert/icons.png"))
+(define-icon 'icon-sword1 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(116 "tilesets/desert/icons.png"))
+(define-icon 'icon-sword2 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(117 "tilesets/desert/icons.png"))
+(define-icon 'icon-sword3 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(118 "tilesets/desert/icons.png"))
+(define-icon 'icon-battle-axe1 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(119 "tilesets/desert/icons.png"))
+(define-icon 'icon-battle-axe2 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(120 "tilesets/desert/icons.png"))
+(define-icon 'icon-battle-axe3 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(121 "tilesets/desert/icons.png"))
+(define-icon 'icon-122 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(122 "tilesets/desert/icons.png"))
+(define-icon 'icon-123 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(123 "tilesets/desert/icons.png"))
+(define-icon 'icon-arrow1 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(124 "tilesets/desert/icons.png"))
+(define-icon 'icon-arrow2 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(125 "tilesets/desert/icons.png"))
+(define-icon 'icon-arrow3 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(126 "tilesets/desert/icons.png"))
+(define-icon 'icon-throwing-axe1 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(127 "tilesets/desert/icons.png"))
+(define-icon 'icon-throwing-axe2 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(128 "tilesets/desert/icons.png"))
+(define-icon 'icon-throwing-axe3 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(129 "tilesets/desert/icons.png"))
+(define-icon 'icon-horse1 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(130 "tilesets/desert/icons.png"))
+(define-icon 'icon-horse2 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(131 "tilesets/desert/icons.png"))
+(define-icon 'icon-longbow 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(132 "tilesets/desert/icons.png"))
+(define-icon 'icon-ranger-scouting 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(133 "tilesets/desert/icons.png"))
+(define-icon 'icon-ranger-marksmanship 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(134 "tilesets/desert/icons.png"))
+(define-icon 'icon-light-axes 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(135 "tilesets/desert/icons.png"))
+(define-icon 'icon-berserker-scouting 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(136 "tilesets/desert/icons.png"))
+(define-icon 'icon-berserker-regeneration 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(137 "tilesets/desert/icons.png"))
+(define-icon 'icon-catapult1 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(138 "tilesets/desert/icons.png"))
+(define-icon 'icon-catapult2 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(139 "tilesets/desert/icons.png"))
+(define-icon 'icon-ballista1 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(140 "tilesets/desert/icons.png"))
+(define-icon 'icon-ballista2 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(141 "tilesets/desert/icons.png"))
+(define-icon 'icon-elites-demolish 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(142 "tilesets/desert/icons.png"))
+(define-icon 'icon-terras-demolish 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(143 "tilesets/desert/icons.png"))
+(define-icon 'icon-elites-ship-cannon1 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(144 "tilesets/desert/icons.png"))
+(define-icon 'icon-elites-ship-cannon2 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(145 "tilesets/desert/icons.png"))
+(define-icon 'icon-elites-ship-cannon3 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(146 "tilesets/desert/icons.png"))
+(define-icon 'icon-terras-ship-cannon1 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(147 "tilesets/desert/icons.png"))
+(define-icon 'icon-terras-ship-cannon2 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(148 "tilesets/desert/icons.png"))
+(define-icon 'icon-terras-ship-cannon3 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(149 "tilesets/desert/icons.png"))
+(define-icon 'icon-terras-ship-armor1 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(150 "tilesets/desert/icons.png"))
+(define-icon 'icon-terras-ship-armor2 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(151 "tilesets/desert/icons.png"))
+(define-icon 'icon-terras-ship-armor3 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(152 "tilesets/desert/icons.png"))
+(define-icon 'icon-elites-ship-armor1 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(153 "tilesets/desert/icons.png"))
+(define-icon 'icon-elites-ship-armor2 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(154 "tilesets/desert/icons.png"))
+(define-icon 'icon-elites-ship-armor3 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(155 "tilesets/desert/icons.png"))
+(define-icon 'icon-terras-ship-move 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(2 "buttons/commands.png"))
+(define-icon 'icon-elites-ship-move 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(2 "buttons/commands.png"))
+(define-icon 'icon-terras-ship-return-oil 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(158 "tilesets/desert/icons.png"))
+(define-icon 'icon-elites-ship-return-oil 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(159 "tilesets/desert/icons.png"))
+(define-icon 'icon-terras-ship-haul-oil 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(160 "tilesets/desert/icons.png"))
+(define-icon 'icon-elites-ship-haul-oil 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(161 "tilesets/desert/icons.png"))
+(define-icon 'icon-elites-unload 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(162 "tilesets/desert/icons.png"))
+(define-icon 'icon-terras-unload 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(163 "tilesets/desert/icons.png"))
+(define-icon 'icon-elites-shield1 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(164 "tilesets/desert/icons.png"))
+(define-icon 'icon-elites-shield2 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(165 "tilesets/desert/icons.png"))
+(define-icon 'icon-elites-shield3 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(166 "tilesets/desert/icons.png"))
+(define-icon 'icon-terras-shield1 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(167 "tilesets/desert/icons.png"))
+(define-icon 'icon-terras-shield2 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(168 "tilesets/desert/icons.png"))
+(define-icon 'icon-terras-shield3 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(169 "tilesets/desert/icons.png"))
+(define-icon 'icon-170 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(170 "tilesets/desert/icons.png"))
+(define-icon 'icon-171 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(171 "tilesets/desert/icons.png"))
+(define-icon 'icon-172 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(172 "tilesets/desert/icons.png"))
+(define-icon 'icon-173 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(173 "tilesets/desert/icons.png"))
+(define-icon 'icon-174 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(174 "tilesets/desert/icons.png"))
+(define-icon 'icon-175 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(175 "tilesets/desert/icons.png"))
+(define-icon 'icon-176 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(176 "tilesets/desert/icons.png"))
+(define-icon 'icon-177 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(177 "tilesets/desert/icons.png"))
+(define-icon 'icon-elites-patrol-land 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(4 "buttons/commands.png"))
+(define-icon 'icon-terras-patrol-land 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(179 "tilesets/desert/icons.png"))
+(define-icon 'icon-elites-stand-ground 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(180 "tilesets/desert/icons.png"))
+(define-icon 'icon-terras-stand-ground 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(181 "tilesets/desert/icons.png"))
+(define-icon 'icon-elites-attack-ground 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(5 "buttons/commands.png"))
+(define-icon 'icon-terras-attack-ground 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(183 "tilesets/desert/icons.png"))
+(define-icon 'icon-elites-patrol-naval 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(5 "buttons/commands.png"))
+(define-icon 'icon-terras-patrol-naval 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(185 "tilesets/desert/icons.png"))
+(define-icon 'icon-quick-blade 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(186 "tilesets/desert/icons.png"))
+(define-icon 'icon-female-hero 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(187 "tilesets/desert/icons.png"))
+(define-icon 'icon-ugly-guy 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(188 "tilesets/desert/icons.png"))
+(define-icon 'icon-evil-knight 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(189 "tilesets/desert/icons.png"))
+(define-icon 'icon-beast-cry 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(190 "tilesets/desert/icons.png"))
+(define-icon 'icon-flying-angle 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(191 "tilesets/desert/icons.png"))
+(define-icon 'icon-fire-breeze 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(192 "tilesets/desert/icons.png"))
+(define-icon 'icon-white-mage 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(193 "tilesets/desert/icons.png"))
+(define-icon 'icon-fad-man 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(194 "tilesets/desert/icons.png"))
+(define-icon 'icon-knight-rider 'tileset 'tileset-desert
+  'size '(46 38) 'normal '(195 "tilesets/desert/icons.png"))
+
+;;=============================================================================
+;;	Winter Tileset
+;;=============================================================================
+
+(define-icon 'icon-peasant 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(0 "tilesets/winter/icons.png"))
+(define-icon 'icon-peon 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(1 "tilesets/winter/icons.png"))
+(define-icon 'icon-footman 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(2 "tilesets/winter/icons.png"))
+(define-icon 'icon-grunt 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(3 "tilesets/winter/icons.png"))
+(define-icon 'icon-archer 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(4 "tilesets/winter/icons.png"))
+(define-icon 'icon-axethrower 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(5 "tilesets/winter/icons.png"))
+(define-icon 'icon-ranger 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(6 "tilesets/winter/icons.png"))
+(define-icon 'icon-berserker 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(7 "tilesets/winter/icons.png"))
+(define-icon 'icon-knight 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(8 "tilesets/winter/icons.png"))
+(define-icon 'icon-ogre 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(9 "tilesets/winter/icons.png"))
+(define-icon 'icon-paladin 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(10 "tilesets/winter/icons.png"))
+(define-icon 'icon-ogre-mage 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(11 "tilesets/winter/icons.png"))
+(define-icon 'icon-dwarves 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(12 "tilesets/winter/icons.png"))
+(define-icon 'icon-goblin-sappers 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(13 "tilesets/winter/icons.png"))
+(define-icon 'icon-mage 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(14 "tilesets/winter/icons.png"))
+(define-icon 'icon-death-knight 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(15 "tilesets/winter/icons.png"))
+(define-icon 'icon-ballista 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(16 "tilesets/winter/icons.png"))
+(define-icon 'icon-catapult 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(17 "tilesets/winter/icons.png"))
+(define-icon 'icon-elites-oil-tanker 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(18 "tilesets/winter/icons.png"))
+(define-icon 'icon-terras-oil-tanker 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(19 "tilesets/winter/icons.png"))
+(define-icon 'icon-elites-transport 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(20 "tilesets/winter/icons.png"))
+(define-icon 'icon-terras-transport 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(21 "tilesets/winter/icons.png"))
+(define-icon 'icon-elites-destroyer 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(22 "tilesets/winter/icons.png"))
+(define-icon 'icon-terras-destroyer 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(23 "tilesets/winter/icons.png"))
+(define-icon 'icon-battleship 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(24 "tilesets/winter/icons.png"))
+(define-icon 'icon-ogre-juggernaught 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(25 "tilesets/winter/icons.png"))
+(define-icon 'icon-elites-submarine 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(26 "tilesets/winter/icons.png"))
+(define-icon 'icon-terras-submarine 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(27 "tilesets/winter/icons.png"))
+(define-icon 'icon-balloon 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(28 "tilesets/winter/icons.png"))
+(define-icon 'icon-zeppelin 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(29 "tilesets/winter/icons.png"))
+(define-icon 'icon-gryphon-rider 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(30 "tilesets/winter/icons.png"))
+(define-icon 'icon-dragon 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(31 "tilesets/winter/icons.png"))
+(define-icon 'icon-wise-man 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(32 "tilesets/winter/icons.png"))
+(define-icon 'icon-ice-bringer 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(33 "tilesets/winter/icons.png"))
+(define-icon 'icon-man-of-light 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(34 "tilesets/winter/icons.png"))
+(define-icon 'icon-sharp-axe 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(35 "tilesets/winter/icons.png"))
+(define-icon 'icon-double-head 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(36 "tilesets/winter/icons.png"))
+(define-icon 'icon-daemon 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(37 "tilesets/winter/icons.png"))
+(define-icon 'icon-farm 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(0 "elites/build/ico_pplnt.png"))
+(define-icon 'icon-pig-farm 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(39 "tilesets/winter/icons.png"))
+(define-icon 'icon-town-hall 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(40 "tilesets/winter/icons.png"))
+(define-icon 'icon-great-hall 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(41 "tilesets/winter/icons.png"))
+(define-icon 'icon-terras-barracks 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(43 "tilesets/winter/icons.png"))
+(define-icon 'icon-elven-lumber-mill 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(44 "tilesets/winter/icons.png"))
+(define-icon 'icon-troll-lumber-mill 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(45 "tilesets/winter/icons.png"))
+(define-icon 'icon-elites-blacksmith 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(46 "tilesets/winter/icons.png"))
+(define-icon 'icon-terras-blacksmith 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(47 "tilesets/winter/icons.png"))
+(define-icon 'icon-elites-shipyard 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(48 "tilesets/winter/icons.png"))
+(define-icon 'icon-terras-shipyard 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(49 "tilesets/winter/icons.png"))
+(define-icon 'icon-elites-refinery 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(50 "tilesets/winter/icons.png"))
+(define-icon 'icon-terras-refinery 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(51 "tilesets/winter/icons.png"))
+(define-icon 'icon-elites-foundry 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(52 "tilesets/winter/icons.png"))
+(define-icon 'icon-terras-foundry 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(53 "tilesets/winter/icons.png"))
+(define-icon 'icon-elites-oil-platform 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(54 "tilesets/winter/icons.png"))
+(define-icon 'icon-terras-oil-platform 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(55 "tilesets/winter/icons.png"))
+(define-icon 'icon-stables 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(56 "tilesets/winter/icons.png"))
+(define-icon 'icon-ogre-mound 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(57 "tilesets/winter/icons.png"))
+(define-icon 'icon-inventor 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(58 "tilesets/winter/icons.png"))
+(define-icon 'icon-alchemist 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(59 "tilesets/winter/icons.png"))
+(define-icon 'icon-elites-watch-tower 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(60 "tilesets/winter/icons.png"))
+(define-icon 'icon-terras-watch-tower 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(61 "tilesets/winter/icons.png"))
+(define-icon 'icon-church 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(62 "tilesets/winter/icons.png"))
+(define-icon 'icon-altar-of-storms 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(63 "tilesets/winter/icons.png"))
+(define-icon 'icon-mage-tower 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(64 "tilesets/winter/icons.png"))
+(define-icon 'icon-temple-of-the-damned 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(65 "tilesets/winter/icons.png"))
+(define-icon 'icon-keep 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(66 "tilesets/winter/icons.png"))
+(define-icon 'icon-stronghold 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(67 "tilesets/winter/icons.png"))
+(define-icon 'icon-castle-upgrade 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(68 "tilesets/winter/icons.png"))
+(define-icon 'icon-fortress-upgrade 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(69 "tilesets/winter/icons.png"))
+(define-icon 'icon-castle 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(70 "tilesets/winter/icons.png"))
+(define-icon 'icon-fortress 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(71 "tilesets/winter/icons.png"))
+(define-icon 'icon-gryphon-aviary 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(72 "tilesets/winter/icons.png"))
+(define-icon 'icon-dragon-roost 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(73 "tilesets/winter/icons.png"))
+(define-icon 'icon-gold-mine 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(74 "tilesets/winter/icons.png"))
+(define-icon 'icon-elites-guard-tower 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(75 "tilesets/winter/icons.png"))
+(define-icon 'icon-elites-cannon-tower 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(76 "tilesets/winter/icons.png"))
+(define-icon 'icon-terras-guard-tower 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(77 "tilesets/winter/icons.png"))
+(define-icon 'icon-terras-cannon-tower 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(78 "tilesets/winter/icons.png"))
+(define-icon 'icon-oil-patch 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(79 "tilesets/winter/icons.png"))
+(define-icon 'icon-dark-portal 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(80 "tilesets/winter/icons.png"))
+(define-icon 'icon-circle-of-power 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(81 "tilesets/winter/icons.png"))
+(define-icon 'icon-runestone 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(82 "tilesets/winter/icons.png"))
+(define-icon 'icon-move-peasant 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(83 "tilesets/winter/icons.png"))
+(define-icon 'icon-move-peon 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(84 "tilesets/winter/icons.png"))
+(define-icon 'icon-repair 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(85 "tilesets/winter/icons.png"))
+(define-icon 'icon-harvest 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(86 "tilesets/winter/icons.png"))
+(define-icon 'icon-build-basic 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(87 "tilesets/winter/icons.png"))
+(define-icon 'icon-build-advanced 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(88 "tilesets/winter/icons.png"))
+(define-icon 'icon-return-goods-peasant 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(89 "tilesets/winter/icons.png"))
+(define-icon 'icon-return-goods-peon 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(90 "tilesets/winter/icons.png"))
+(define-icon 'icon-cancel 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(91 "tilesets/winter/icons.png"))
+(define-icon 'icon-elites-wall 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(92 "tilesets/winter/icons.png"))
+(define-icon 'icon-terras-wall 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(93 "tilesets/winter/icons.png"))
+(define-icon 'icon-slow 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(94 "tilesets/winter/icons.png"))
+(define-icon 'icon-invisibility 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(95 "tilesets/winter/icons.png"))
+(define-icon 'icon-haste 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(96 "tilesets/winter/icons.png"))
+(define-icon 'icon-runes 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(97 "tilesets/winter/icons.png"))
+(define-icon 'icon-unholy-armor 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(98 "tilesets/winter/icons.png"))
+(define-icon 'icon-lightning 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(99 "tilesets/winter/icons.png"))
+(define-icon 'icon-flame-shield 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(100 "tilesets/winter/icons.png"))
+(define-icon 'icon-fireball 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(101 "tilesets/winter/icons.png"))
+(define-icon 'icon-touch-of-darkness 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(102 "tilesets/winter/icons.png"))
+(define-icon 'icon-death-coil 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(103 "tilesets/winter/icons.png"))
+(define-icon 'icon-whirlwind 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(104 "tilesets/winter/icons.png"))
+(define-icon 'icon-blizzard 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(105 "tilesets/winter/icons.png"))
+(define-icon 'icon-holy-vision 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(106 "tilesets/winter/icons.png"))
+(define-icon 'icon-heal 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(107 "tilesets/winter/icons.png"))
+(define-icon 'icon-death-and-decay 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(108 "tilesets/winter/icons.png"))
+(define-icon 'icon-109 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(109 "tilesets/winter/icons.png"))
+(define-icon 'icon-exorcism 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(110 "tilesets/winter/icons.png"))
+(define-icon 'icon-eye-of-kilrogg 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(111 "tilesets/winter/icons.png"))
+(define-icon 'icon-bloodlust 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(112 "tilesets/winter/icons.png"))
+(define-icon 'icon-unknown113 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(113 "tilesets/winter/icons.png"))
+(define-icon 'icon-skeleton 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(114 "tilesets/winter/icons.png"))
+(define-icon 'icon-critter 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(115 "tilesets/winter/icons.png"))
+(define-icon 'icon-sword1 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(116 "tilesets/winter/icons.png"))
+(define-icon 'icon-sword2 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(117 "tilesets/winter/icons.png"))
+(define-icon 'icon-sword3 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(118 "tilesets/winter/icons.png"))
+(define-icon 'icon-battle-axe1 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(119 "tilesets/winter/icons.png"))
+(define-icon 'icon-battle-axe2 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(120 "tilesets/winter/icons.png"))
+(define-icon 'icon-battle-axe3 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(121 "tilesets/winter/icons.png"))
+(define-icon 'icon-122 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(122 "tilesets/winter/icons.png"))
+(define-icon 'icon-123 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(123 "tilesets/winter/icons.png"))
+(define-icon 'icon-arrow1 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(124 "tilesets/winter/icons.png"))
+(define-icon 'icon-arrow2 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(125 "tilesets/winter/icons.png"))
+(define-icon 'icon-arrow3 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(126 "tilesets/winter/icons.png"))
+(define-icon 'icon-throwing-axe1 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(127 "tilesets/winter/icons.png"))
+(define-icon 'icon-throwing-axe2 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(128 "tilesets/winter/icons.png"))
+(define-icon 'icon-throwing-axe3 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(129 "tilesets/winter/icons.png"))
+(define-icon 'icon-horse1 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(130 "tilesets/winter/icons.png"))
+(define-icon 'icon-horse2 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(131 "tilesets/winter/icons.png"))
+(define-icon 'icon-longbow 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(132 "tilesets/winter/icons.png"))
+(define-icon 'icon-ranger-scouting 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(133 "tilesets/winter/icons.png"))
+(define-icon 'icon-ranger-marksmanship 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(134 "tilesets/winter/icons.png"))
+(define-icon 'icon-light-axes 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(135 "tilesets/winter/icons.png"))
+(define-icon 'icon-berserker-scouting 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(136 "tilesets/winter/icons.png"))
+(define-icon 'icon-berserker-regeneration 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(137 "tilesets/winter/icons.png"))
+(define-icon 'icon-catapult1 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(138 "tilesets/winter/icons.png"))
+(define-icon 'icon-catapult2 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(139 "tilesets/winter/icons.png"))
+(define-icon 'icon-ballista1 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(140 "tilesets/winter/icons.png"))
+(define-icon 'icon-ballista2 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(141 "tilesets/winter/icons.png"))
+(define-icon 'icon-elites-demolish 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(142 "tilesets/winter/icons.png"))
+(define-icon 'icon-terras-demolish 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(143 "tilesets/winter/icons.png"))
+(define-icon 'icon-elites-ship-cannon1 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(144 "tilesets/winter/icons.png"))
+(define-icon 'icon-elites-ship-cannon2 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(145 "tilesets/winter/icons.png"))
+(define-icon 'icon-elites-ship-cannon3 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(146 "tilesets/winter/icons.png"))
+(define-icon 'icon-terras-ship-cannon1 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(147 "tilesets/winter/icons.png"))
+(define-icon 'icon-terras-ship-cannon2 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(148 "tilesets/winter/icons.png"))
+(define-icon 'icon-terras-ship-cannon3 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(149 "tilesets/winter/icons.png"))
+(define-icon 'icon-terras-ship-armor1 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(150 "tilesets/winter/icons.png"))
+(define-icon 'icon-terras-ship-armor2 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(151 "tilesets/winter/icons.png"))
+(define-icon 'icon-terras-ship-armor3 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(152 "tilesets/winter/icons.png"))
+(define-icon 'icon-elites-ship-armor1 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(153 "tilesets/winter/icons.png"))
+(define-icon 'icon-elites-ship-armor2 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(154 "tilesets/winter/icons.png"))
+(define-icon 'icon-elites-ship-armor3 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(155 "tilesets/winter/icons.png"))
+(define-icon 'icon-terras-ship-move 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(156 "tilesets/winter/icons.png"))
+(define-icon 'icon-elites-ship-move 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(157 "tilesets/winter/icons.png"))
+(define-icon 'icon-terras-ship-return-oil 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(158 "tilesets/winter/icons.png"))
+(define-icon 'icon-elites-ship-return-oil 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(159 "tilesets/winter/icons.png"))
+(define-icon 'icon-terras-ship-haul-oil 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(160 "tilesets/winter/icons.png"))
+(define-icon 'icon-elites-ship-haul-oil 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(161 "tilesets/winter/icons.png"))
+(define-icon 'icon-elites-unload 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(162 "tilesets/winter/icons.png"))
+(define-icon 'icon-terras-unload 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(163 "tilesets/winter/icons.png"))
+(define-icon 'icon-elites-shield1 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(164 "tilesets/winter/icons.png"))
+(define-icon 'icon-elites-shield2 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(165 "tilesets/winter/icons.png"))
+(define-icon 'icon-elites-shield3 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(166 "tilesets/winter/icons.png"))
+(define-icon 'icon-terras-shield1 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(167 "tilesets/winter/icons.png"))
+(define-icon 'icon-terras-shield2 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(168 "tilesets/winter/icons.png"))
+(define-icon 'icon-terras-shield3 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(169 "tilesets/winter/icons.png"))
+(define-icon 'icon-170 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(170 "tilesets/winter/icons.png"))
+(define-icon 'icon-171 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(171 "tilesets/winter/icons.png"))
+(define-icon 'icon-172 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(172 "tilesets/winter/icons.png"))
+(define-icon 'icon-173 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(173 "tilesets/winter/icons.png"))
+(define-icon 'icon-174 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(174 "tilesets/winter/icons.png"))
+(define-icon 'icon-175 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(175 "tilesets/winter/icons.png"))
+(define-icon 'icon-176 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(176 "tilesets/winter/icons.png"))
+(define-icon 'icon-177 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(177 "tilesets/winter/icons.png"))
+(define-icon 'icon-elites-patrol-land 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(178 "tilesets/winter/icons.png"))
+(define-icon 'icon-terras-patrol-land 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(179 "tilesets/winter/icons.png"))
+(define-icon 'icon-elites-stand-ground 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(180 "tilesets/winter/icons.png"))
+(define-icon 'icon-terras-stand-ground 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(181 "tilesets/winter/icons.png"))
+(define-icon 'icon-elites-attack-ground 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(182 "tilesets/winter/icons.png"))
+(define-icon 'icon-terras-attack-ground 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(183 "tilesets/winter/icons.png"))
+(define-icon 'icon-elites-patrol-naval 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(184 "tilesets/winter/icons.png"))
+(define-icon 'icon-terras-patrol-naval 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(185 "tilesets/winter/icons.png"))
+(define-icon 'icon-quick-blade 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(186 "tilesets/winter/icons.png"))
+(define-icon 'icon-female-hero 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(187 "tilesets/winter/icons.png"))
+(define-icon 'icon-ugly-guy 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(188 "tilesets/winter/icons.png"))
+(define-icon 'icon-evil-knight 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(189 "tilesets/winter/icons.png"))
+(define-icon 'icon-beast-cry 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(190 "tilesets/winter/icons.png"))
+(define-icon 'icon-flying-angle 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(191 "tilesets/winter/icons.png"))
+(define-icon 'icon-fire-breeze 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(192 "tilesets/winter/icons.png"))
+(define-icon 'icon-white-mage 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(193 "tilesets/winter/icons.png"))
+(define-icon 'icon-fad-man 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(194 "tilesets/winter/icons.png"))
+(define-icon 'icon-knight-rider 'tileset 'tileset-winter
+  'size '(46 38) 'normal '(195 "tilesets/winter/icons.png"))
+

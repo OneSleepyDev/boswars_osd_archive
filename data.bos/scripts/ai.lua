@@ -79,13 +79,14 @@ end
 
 
 function AiRun(player)
-  AiDebug(true)
+  AiDebug(false)
   AiSleep(AiGetSleepCycles())
   AiNeed("unit-vault") 
   AiSet("unit-engineer", 10)
   AiWait("unit-vault")
   AiNeed("unit-camp")
   AiWait("unit-camp")
+  AddMessage("You're gonna die")
   AiForce(0, {"unit-assault", 10})
   AiWaitForce(0) 
   AiNeed("unit-camp")

@@ -70,7 +70,7 @@
 (define-icon 'icon-camp_b
   'size '(46 38) 'normal '(2 "elites/units/engineer_icons.png"))
 (define-icon 'icon-dev
-  'size '(46 38) 'normal '(0 "elites/build/developement_yard_i.png"))
+  'size '(46 38) 'normal '(0 "elites/build/development_yard_i.png"))
 (define-icon 'icon-dev_b
   'size '(46 38) 'normal '(0 "elites/units/engineer_icons.png"))
 (define-icon 'icon-rfac

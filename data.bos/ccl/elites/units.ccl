@@ -347,10 +347,10 @@
 ;    attack "camp-attack"
   ))
 
-(define-unit-type 'unit-yard 'name "Developement Yard"
-  'files '(tileset-desert "elites/build/developement_yard.png")
+(define-unit-type 'unit-yard 'name "Development Yard"
+  'files '(tileset-desert "elites/build/development_yard.png")
   'size '(224 196)
-  'shadow '(file "elites/build/developement_yard_s.png" size (224 196))
+  'shadow '(file "elites/build/development_yard_s.png" size (224 196))
   'animations 'animations-dev 'icon 'icon-dev
   'costs '(time 1000 titanium 1000 crystal 1000 gas 0)
   'repair-hp 4
@@ -546,7 +546,7 @@
   'sounds '())
 
 (define-unit-type 'build-dead-body1 'name "DevelopmentyardCrater"
-  'files '(tileset-desert "elites/build/developement_yard.png")
+  'files '(tileset-desert "elites/build/development_yard.png")
   'size '(224 196)
   'animations 'animations-elitebuild1 'icon 'icon-cancel
   'speed 0

@@ -333,11 +333,10 @@
   'armor 10 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
   'priority 20 'annoy-computer-factor 45
   'points 100
-  'supply 150
+  'supply 125
   'explode-when-killed 'missile-160x128-explosion
   'corpse '(build-dead-body7 0)
   'type-land
-  'demand 25
   'building 
   'sounds '(
     selected "gen-selected"

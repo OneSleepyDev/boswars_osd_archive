@@ -386,8 +386,8 @@
 ;;	Maximum number of selectable units
 (set-max-selectable! 24)
 
-;;	All player food unit limit
-(set-all-players-food-unit-limit! 50000)
+;;	All player unit limit
+(set-all-players-unit-limit! 200)
 ;;	All player building limit
 (set-all-players-building-limit! 200)
 ;;	All player total unit limit

@@ -65,6 +65,7 @@ DefineConstruction("construction-cam", {
 DefineUnitType("unit-cam", {
         Name = "Camera",
         Files = {"tileset-desert", "elites/build/camera.png"}, Size = {32, 64},
+        Offset = {0, -16},
         Shadow = {"file", "elites/build/camera_s.png", "size", {64, 64}, "offset", {16,0}},
         Animations = "animations-cam", Icon = "icon-cam",
         Costs = {"time", 20, "titanium", 7, "crystal", 35},

@@ -29,7 +29,6 @@
 --	$Id$
 
 Load("scripts/elites/ui.lua")
-Load("scripts/terras/ui.lua")
 
 DefineCursor({
 	Name = "cursor-glass",

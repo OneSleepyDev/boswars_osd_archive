@@ -54,7 +54,7 @@ DefineMissileType("missile-bazoo", {
 	ImpactMissile = "missile-64x64-explosion"})
 
 DefineMissileType("missile-dorcoz", {
-	File = "terras/missile/mis_plasma_sml.png",
+	File = "elites/missile/mis_plasma_sml.png",
 	Size = {32, 32}, Frames = 5, NumDirections = 5,
 	ImpactSound = "fireball hit", DrawLevel = 50,
 	Class = "missile-class-point-to-point", Sleep = 1, Speed = 32, Range = 1})

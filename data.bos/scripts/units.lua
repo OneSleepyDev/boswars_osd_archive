@@ -169,5 +169,4 @@ DefineUnitType("unit-orc-wall", {
 
 -- Load the different races
 Load("scripts/elites/units.lua")
-Load("scripts/terras/units.lua")
 

@@ -49,23 +49,3 @@ DefineRanks("elites", {
 	255000, "Rank17",
 	280000, "Rank18"})
 
-DefineRanks("terras", {
-	0, "Rank0",
-	2000, "Rank1",
-	5000, "Rank2",
-	8000, "Rank3",
-	18000, "Rank4",
-	28000, "Rank5",
-	40000, "Rank6",
-	55000, "Rank7",
-	70000, "Rank8",
-	85000, "Rank9",
-	105000, "Rank10",
-	125000, "Rank11",
-	145000, "Rank12",
-	165000, "Rank13",
-	185000, "Rank14",
-	205000, "Rank15",
-	230000, "Rank16",
-	255000, "Rank17",
-	280000, "Rank18"})

@@ -232,7 +232,7 @@ DefineIcon({
 	Name = "icon-dorcoz",
 	Size = {46, 38},
 	Index = 0,
-	File = "terras/units/ico_dorcoz.png"})
+	File = "elites/units/ico_dorcoz.png"})
 
 --
 -- NEUTRAL

@@ -164,10 +164,4 @@ DefineGameSounds(
   "placement-success", sound_click,
   "click", sound_click)
 
---  'work-complete (list 'elites (make-sound "basic elites voices work complete" "elites/basic_voices/work_complete.wav"))
---  'work-complete (list 'terras (make-sound "basic terras voices work complete" "terras/basic_voices/work_complete.wav"))
-
---  'rescue (list 'elites (make-sound "elites rescue" "elites/rescue.wav"))
---  'rescue (list 'terras (make-sound "terras rescue" "terras/rescue.wav"))
-
 sound_click = MakeSound("statsthump", "ui/click.wav")

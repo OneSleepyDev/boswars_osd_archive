@@ -29,7 +29,6 @@
 --	$Id$
 
 Load("scripts/elites/constructions.lua")
---Load("scripts/terras/constructions.lua") -- Not yet
 
 DefineConstruction("construction-none", {
 	Files = {{

@@ -32,7 +32,6 @@
 -- Load the buttons of all races
 
 Load("scripts/elites/buttons.lua")
-Load("scripts/terras/buttons.lua")
 
 -- general cancel button ------------------------------------------------------
 

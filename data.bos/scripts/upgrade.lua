@@ -30,13 +30,6 @@
 
 --   Stuff for the different races
 Load("scripts/elites/upgrade.lua")
-Load("scripts/terras/upgrade.lua")
-
---[[DefineAllow("unit-nothing-22", "AAAAAAAAAAAAAAAA")
-DefineAllow("unit-nothing-24", "AAAAAAAAAAAAAAAA")
-DefineAllow("unit-nothing-25", "AAAAAAAAAAAAAAAA")
-DefineAllow("unit-nothing-30", "AAAAAAAAAAAAAAAA")
-DefineAllow("unit-nothing-36", "AAAAAAAAAAAAAAAA")]]--
 
 DefineAllow("unit-gold-mine", "AAAAAAAAAAAAAAAA")
 

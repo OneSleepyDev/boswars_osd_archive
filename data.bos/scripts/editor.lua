@@ -71,6 +71,5 @@ DefineEditorUnitTypes(
    "unit-crystal-field13",
    "unit-gold-mine",
 
-   "unit-elites-start-location",
-   "unit-terras-start-location"
+   "unit-elites-start-location"
 )

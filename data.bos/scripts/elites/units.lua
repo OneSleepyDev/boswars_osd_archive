@@ -94,6 +94,7 @@ DefineUnitType("unit-medic", {
 	LandUnit = true, Demand = 0, organic = true,
 	SelectableByRectangle = true,
 	CanCastSpell = {"spell-healing"},
+	AutoCastActive = {"spell-healing"},
 	Sounds = {
 		"selected", "medic-selected",
 		"acknowledge", "medic-acknowledge",

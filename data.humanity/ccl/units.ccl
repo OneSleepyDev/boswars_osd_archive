@@ -40,15 +40,15 @@
 
 (define-unit-type 'unit-gold-mine 'name "Gold Field"
   'files '(tileset-desert "ub/r_gold.png")
-  'size '(80 80)
-  'shadow '(file "ub/r_gold.png" size (80 80) offset (-1 -4))
+  'size '(42 42)
+  'shadow '(file "ub/r_gold.png" size (42 42) offset (2 -4))
   'animations 'animations-resource 'icon 'icon-gold
   'costs '(time 150)
   'construction 'construction-land2
   'speed 0
   'hit-points 999999
   'draw-level 1
-  'tile-size '(2 2) 'box-size '(60 60)
+  'tile-size '(1 1) 'box-size '(32 32)
   'sight-range 1
   'armor 20 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
   'priority 0
@@ -66,15 +66,15 @@
     attack "gold-mine-attack"))
 (define-unit-type 'unit-gold-mine2 'name "Gold Field"
   'files '(tileset-desert "ub/r_gold2.png")
-  'size '(80 80)
-  'shadow '(file "ub/r_gold2.png" size (80 80) offset (-1 -4))
+  'size '(42 42)
+  'shadow '(file "ub/r_gold2.png" size (42 42) offset (2 -4))
   'animations 'animations-resource 'icon 'icon-gold
   'costs '(time 150)
   'construction 'construction-land2
   'speed 0
   'hit-points 999999
   'draw-level 1
-  'tile-size '(2 2) 'box-size '(60 60)
+  'tile-size '(1 1) 'box-size '(32 32)
   'sight-range 1
   'armor 20 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
   'priority 0
@@ -92,15 +92,15 @@
     attack "gold-mine-attack"))
 (define-unit-type 'unit-gold-mine3 'name "Gold Field"
   'files '(tileset-desert "ub/r_gold3.png")
-  'size '(80 80)
-  'shadow '(file "ub/r_gold3.png" size (80 80) offset (-1 -4))
+  'size '(42 42)
+  'shadow '(file "ub/r_gold3.png" size (42 42) offset (2 -4))
   'animations 'animations-resource 'icon 'icon-gold
   'costs '(time 150)
   'construction 'construction-land2
   'speed 0
   'hit-points 999999
   'draw-level 1
-  'tile-size '(2 2) 'box-size '(60 60)
+  'tile-size '(1 1) 'box-size '(32 32)
   'sight-range 1
   'armor 20 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
   'priority 0
@@ -118,15 +118,15 @@
     attack "gold-mine-attack"))
 (define-unit-type 'unit-gold-mine4 'name "Gold Field"
   'files '(tileset-desert "ub/r_gold4.png")
-  'size '(80 80)
-  'shadow '(file "ub/r_gold4.png" size (80 80) offset (-1 -4))
+  'size '(42 42)
+  'shadow '(file "ub/r_gold4.png" size (42 42) offset (2 -4))
   'animations 'animations-resource 'icon 'icon-gold
   'costs '(time 150)
   'construction 'construction-land2
   'speed 0
   'hit-points 999999
   'draw-level 1
-  'tile-size '(2 2) 'box-size '(60 60)
+  'tile-size '(1 1) 'box-size '(32 32)
   'sight-range 1
   'armor 20 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
   'priority 0

@@ -106,8 +106,8 @@
   'can-gather-resource '(
     file-when-loaded "ub/u_miner_w_gold.png"  
     resource-id titanium
-    resource-capacity 50
-    wait-at-resource 7
+    resource-capacity 1
+    wait-at-resource 250
     wait-at-depot 1
     resource-step 1
     harvest-from-outside)

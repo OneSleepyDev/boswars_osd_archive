@@ -43,13 +43,13 @@ DefineTileset("tileset-desert",	"class", "desert", "name", "Desert",
     { 328, 329, 329, 330}},						-- 010
   "solid", { "dark-water", "water",
     { 331, 332, 332, 333}},						-- 020
-  "solid", { "light-coast", "land", "no-building",
-    { 334, 335, 336,   0, 337, 338, 339, 340, 341, 342, 343, 344}},	-- 030
-  "solid", { "dark-coast", "land", "no-building",
-    { 345, 346, 347,   0, 348, 349, 350, 351, 352, 353, 354, 355}},	-- 040
   "solid", { "light-grass", "land",
-    { 356, 357, 356,   0, 358, 359, 360, 361, 362, 363, 358, 359, 358, 359, 358, 359}},	-- 050
+    { 334, 335, 336,   0, 337, 338, 339, 340, 341, 342, 343, 344}},	-- 030
   "solid", { "dark-grass", "land",
+    { 345, 346, 347,   0, 348, 349, 350, 351, 352, 353, 354, 355}},	-- 040
+  "solid", { "light-desert", "land",
+    { 356, 357, 356,   0, 358, 359, 360, 361, 362, 363, 358, 359, 358, 359, 358, 359}},	-- 050
+  "solid", { "dark_desert", "land",
     { 364, 365, 364,   0, 366, 367, 368, 369, 370, 371, 366, 367, 366, 367, 366, 367}},	-- 060
   "solid", { "forest", "land", "forest", "unpassable",
     { 125, 127, 128}},							-- 070
@@ -86,7 +86,7 @@ DefineTileset("tileset-desert",	"class", "desert", "name", "Desert",
     { 327, 327},							-- 1D0
     {},									-- 1E0
     {}},								-- 1F0
-  "mixed", { "light-water", "light-coast", "coast",
+  "mixed", { "light-water", "light-grass", "coast",
     { 206, 207},							-- 200
     { 208, 209},							-- 210
     { 210, 211, 212},							-- 220
@@ -103,7 +103,7 @@ DefineTileset("tileset-desert",	"class", "desert", "name", "Desert",
     { 234, 235},							-- 2D0
     {},									-- 2E0
     {}},								-- 2F0
-  "mixed", { "dark-coast", "light-coast", "land", "no-building",
+  "mixed", { "dark-grass", "light-grass", "land",
     { 180, 180},							-- 300
     { 181, 182},							-- 310
     { 183, 184, 185},							-- 320
@@ -120,7 +120,7 @@ DefineTileset("tileset-desert",	"class", "desert", "name", "Desert",
     { 205, 205},							-- 3D0
     {},									-- 3E0
     {}},								-- 3F0
-  "mixed", { "rocks", "light-coast", "land", "rock", "unpassable",
+  "mixed", { "rocks", "light-grass", "land", "rock", "unpassable",
     { 150, 173},							-- 400
     { 142, 167},							-- 410
     { 164, 176},							-- 420
@@ -137,7 +137,7 @@ DefineTileset("tileset-desert",	"class", "desert", "name", "Desert",
     { 145},								-- 4D0
     {},									-- 4E0
     {}},								-- 4F0
-  "mixed", { "light-coast", "light-grass", "land", "no-building",
+  "mixed", { "light-grass", "light-desert", "land",
     { 270, 271},							-- 500
     { 272, 273},							-- 510
     { 274, 275, 276},							-- 520
@@ -154,7 +154,7 @@ DefineTileset("tileset-desert",	"class", "desert", "name", "Desert",
     { 298, 299},							-- 5D0
     {},									-- 5E0
     {}},								-- 5F0
-  "mixed", { "dark-grass", "light-grass", "land",
+  "mixed", { "dark_desert", "light-desert", "land",
     { 238, 239},							-- 600
     { 240, 241},							-- 610
     { 242, 243, 244},							-- 620
@@ -171,7 +171,7 @@ DefineTileset("tileset-desert",	"class", "desert", "name", "Desert",
     { 268, 269},							-- 6D0
     {},									-- 6E0
     {}},								-- 6F0
-  "mixed", { "forest", "light-grass", "land", "forest", "unpassable",
+  "mixed", { "forest", "light-desert", "land", "forest", "unpassable",
     { 129, 110},							-- 700
     { 102, 130},							-- 710
     { 124, 131},							-- 720
@@ -188,7 +188,7 @@ DefineTileset("tileset-desert",	"class", "desert", "name", "Desert",
     { 105, 105},							-- 7D0
     {},									-- 7E0
     {}},								-- 7F0
-  "mixed", { "human-wall", "dark-grass", "land", "human", "wall", "unpassable",
+  "mixed", { "human-wall", "dark_desert", "land", "human", "wall", "unpassable",
     {  17,   0,  53,   0,  89},						-- 800
     {  18,   0,  54,   0,  90},						-- 810
     {  19,   0,  55,   0,  91},						-- 820
@@ -205,7 +205,7 @@ DefineTileset("tileset-desert",	"class", "desert", "name", "Desert",
     {  32,   0,  68,   0,  99},						-- 8D0
     {},									-- 8E0
     {}},								-- 8F0
-  "mixed", { "orc-wall", "dark-grass", "land", "wall", "unpassable",
+  "mixed", { "orc-wall", "dark_desert", "land", "wall", "unpassable",
     {  35,   0,  71,   0,  89},						-- 900
     {  36,   0,  72,   0,  90},						-- 910
     {  37,   0,  73,   0,  91},						-- 920

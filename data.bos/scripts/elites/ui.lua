@@ -153,13 +153,13 @@ function DefineEliteScreen(screen_width, screen_height)
 			"icons", {
 				{"pos", {screen_width - 177, 340}, "size", {46, 38}},
 				{"pos", {screen_width - 122, 340}, "size", {46, 38}},
-				{"pos", {screen_width - 168, 340}, "size", {46, 38}},
+				{"pos", {screen_width - 67, 340}, "size", {46, 38}},
 				{"pos", {screen_width - 177, 385}, "size", {46, 38}},
 				{"pos", {screen_width - 122, 385}, "size", {46, 38}},
-				{"pos", {screen_width - 168, 385}, "size", {46, 38}},
+				{"pos", {screen_width - 67, 385}, "size", {46, 38}},
 				{"pos", {screen_width - 177, 430}, "size", {46, 38}},
 				{"pos", {screen_width - 122, 430}, "size", {46, 38}},
-				{"pos", {screen_width - 168, 430}, "size", {46, 38}}}},
+				{"pos", {screen_width - 67, 430}, "size", {46, 38}}}},
 		"map-area", {
 			"pos", {24, 16},
 			"size", {

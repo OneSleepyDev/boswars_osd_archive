@@ -37,10 +37,10 @@
 
 ;; general commands -- almost all units have it -------------------------------
 
-(define-button 'pos 6 'level 0 'icon 'icon-attack-ground
-  'action 'attack-ground
-  'key "g" 'hint "ATTACK ~!GROUND"
-  'for-unit '(unit-grenadier unit-bazoo)
+(define-button 'pos 4 'level 0 'icon 'icon-attack-ground
+  'action 'unload
+  'key "u" 'hint "~!UNLOAD"
+  'for-unit '(unit-apcs)
   'allowed 'check-true)
 
 (define-button 'pos 1 'level 0 'icon 'icon-move

@@ -137,13 +137,13 @@
           'size icon_size)
       )
       'transporting (list
-        'icons (list
-          (list 'pos '(  6 220) 'size icon_size)
-          (list 'pos '( 62 220) 'size icon_size)
-          (list 'pos '(118 220) 'size icon_size)
-          (list 'pos '(  6 274) 'size icon_size)
-          (list 'pos '( 62 274) 'size icon_size)
-          (list 'pos '(118 274) 'size icon_size))
+          'icons (list
+            (list 'pos (list (- screen_width 187) 243) 'size icon_size)
+            (list 'pos (list (- screen_width 172) 243) 'size icon_size)
+            (list 'pos (list (- screen_width 157) 243) 'size icon_size)
+            (list 'pos (list (- screen_width 142) 243) 'size icon_size)
+            (list 'pos (list (- screen_width 127) 243) 'size icon_size)
+            (list 'pos (list (- screen_width 112) 243) 'size icon_size))
       )
       'completed-bar (list
         'color '(50 50 80)

@@ -72,27 +72,6 @@
 ;;
 
 ;; UNITS
-(make-sound "assault-selected" "elites/units/assault_select.wav")
-(make-sound "assault-acknowledge" "elites/units/assault_action.wav")
-(make-sound "assault-ready" "elites/computer_voice/assault.unit.ready.wav")
-(make-sound "assault-help" "elites/computer_voice/assault.unit.underattack.wav")
-(make-sound "assault-die" "elites/units/assault_die.wav")
-(make-sound "assault-attack" "elites/units/assault_attack.wav")
-
-(make-sound "grenadier-selected" "elites/units/grenadier_select.wav")
-(make-sound "grenadier-acknowledge" "elites/units/grenadier_action.wav")
-(make-sound "grenadier-ready" "elites/computer_voice/grenadier.ready.wav")
-(make-sound "grenadier-help" "elites/computer_voice/grenadier.underattack.wav")
-(make-sound "grenadier-die" "elites/units/grenadier_die.wav")
-(make-sound "grenadier-attack" "elites/units/grenadier_attack.wav")
-
-(make-sound "bazoo-selected" "elites/units/booza_select.wav")
-(make-sound "bazoo-acknowledge" "elites/units/booza_action.wav")
-(make-sound "bazoo-ready" "elites/computer_voice/bazoo.ready.wav")
-(make-sound "bazoo-help" "elites/computer_voice/bazoo.underattack.wav")
-(make-sound "bazoo-die" "elites/units/booza_die.wav")
-(make-sound "bazoo-attack" "elites/units/booza_attack.wav")
-
 (make-sound "engineer-selected" "elites/units/engineer_select.wav")
 (make-sound "engineer-acknowledge" "elites/units/engineer_action.wav")
 (make-sound "engineer-ready" "elites/computer_voice/engineer.ready.wav")
@@ -101,60 +80,11 @@
 (make-sound "engineer-repair" "elites/units/engineer_attack.wav")
 (make-sound "engineer-harvest" "elites/units/engineer_attack.wav")
 
-(make-sound "harvester-selected" "elites/units/harvester_select.wav")
-(make-sound "harvester-acknowledge" "elites/units/harvester_action.wav")
-(make-sound "harvester-ready" "elites/computer_voice/harvester.completed.wav")
-(make-sound "harvester-help" "elites/computer_voice/harvester.underattack.wav")
-(make-sound "harvester-die" "elites/units/harvester_die.wav")
-(make-sound "harvester-harvest" "elites/units/harvester_attack.wav")
-
-(make-sound "apcs-selected" "elites/units/smolder_select.wav")
-(make-sound "apcs-acknowledge" "elites/units/smolder_action.wav")
-(make-sound "apcs-ready" "elites/computer_voice/smolder.completed.wav")
-(make-sound "apcs-help" "elites/computer_voice/smolder.underattack.wav")
-(make-sound "apcs-die" "elites/units/smolder_die.wav")
-(make-sound "apcs-attack" "elites/units/smolder_attack.wav")
-
-(make-sound "medic-selected" "elites/units/medic_select.wav")
-(make-sound "medic-acknowledge" "elites/units/medic_action.wav")
-(make-sound "medic-ready" "elites/computer_voice/medic.ready.wav")
-(make-sound "medic-help" "elites/computer_voice/medic.underattack.wav")
-(make-sound "medic-die" "elites/units/medic_die.wav")
-(make-sound "medic-attack" "elites/units/medic_attack.wav")
-
-;; BUILDINGS
-(make-sound "gen-selected" "elites/buildings/sfx_pplnt.select.wav")
-(make-sound "gen-ready" "elites/computer_voice/power.plant.completed.wav")
-(make-sound "gen-help" "elites/computer_voice/power.plant.underattack.wav")
-(make-sound "gen-dead" "elites/buildings/sfx_pplnt.die.wav")
-
-(make-sound "camp-selected" "elites/buildings/sfx_camp.select.wav")
-(make-sound "camp-ready" "elites/computer_voice/training.camp.completed.wav")
-(make-sound "camp-help" "elites/computer_voice/training.camp.underattack.wav")
-(make-sound "camp-dead" "elites/buildings/sfx_camp.die.wav")
-
 (make-sound "dev-selected" "elites/buildings/sfx_fort.select.wav")
 (make-sound "dev-ready" "elites/computer_voice/elite.fort.completed.wav")
 (make-sound "dev-help" "elites/computer_voice/elite.fort.underattack.wav")
 (make-sound "dev-dead" "elites/buildings/sfx_fort.die.wav")
 
-(make-sound "rfac-selected" "elites/buildings/sfx_rfac.select.wav")
-(make-sound "rfac-ready" "elites/computer_voice/research.facility.completed.wav")
-(make-sound "rfac-help" "elites/computer_voice/research.facility.underattack.wav")
-(make-sound "rfac-dead" "elites/buildings/sfx_rfac.die.wav")
-
-(make-sound "hosp-selected" "elites/buildings/sfx_hosp.select.wav")
-(make-sound "hosp-ready" "elites/computer_voice/hospital.completed.wav")
-(make-sound "hosp-help" "elites/computer_voice/hospital.underattack.wav")
-(make-sound "hosp-dead" "elites/buildings/sfx_hosp.die.wav")
-
-(make-sound "vfac-selected" "elites/buildings/sfx_vfac.select.wav")
-(make-sound "vfac-ready" "elites/computer_voice/vehicle.factory.completed.wav")
-(make-sound "vfac-help" "elites/computer_voice/vehicle.factory.underattack.wav")
-(make-sound "vfac-dead" "elites/buildings/sfx_vfac.die.wav")
-
-(make-sound "grenade-impact" "elites/units/grenadier_g_hit.wav")
-(make-sound "rocket-impact" "elites/units/booza_g_hit.wav")
 
 
 

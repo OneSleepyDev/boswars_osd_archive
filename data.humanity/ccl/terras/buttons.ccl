@@ -1,0 +1,139 @@
+;;       _________ __                 __                               
+;;      /   _____//  |_____________ _/  |______     ____  __ __  ______
+;;      \_____  \\   __\_  __ \__  \\   __\__  \   / ___\|  |  \/  ___/
+;;      /        \|  |  |  | \// __ \|  |  / __ \_/ /_/  >  |  /\___ \ 
+;;     /_______  /|__|  |__|  (____  /__| (____  /\___  /|____//____  >
+;;             \/                  \/          \//_____/            \/ 
+;;  ______________________                           ______________________
+;;			  T H E   W A R   B E G I N S
+;;	   Stratagus - A free fantasy real time strategy game engine
+;;
+;;	buttons.ccl	-	Define the unit-buttons of the terras race.
+;;
+;;	(c) Copyright 2001-2003 by Vladi Belperchinov-Shabanski and Lutz Sammer
+;;
+;;      This program is free software; you can redistribute it and/or modify
+;;      it under the terms of the GNU General Public License as published by
+;;      the Free Software Foundation; either version 2 of the License, or
+;;      (at your option) any later version.
+;;  
+;;      This program is distributed in the hope that it will be useful,
+;;      but WITHOUT ANY WARRANTY; without even the implied warranty of
+;;      MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;;      GNU General Public License for more details.
+;;  
+;;      You should have received a copy of the GNU General Public License
+;;      along with this program; if not, write to the Free Software
+;;      Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+;;
+;;	$Id$
+
+;; general commands -- almost all units have it -------------------------------
+
+(define-button 'pos 1 'level 0 'icon 'icon-move
+  'action 'move
+  'key "m" 'hint "~!MOVE"
+  'for-unit '(unit-grunt unit-peon terras-group))
+
+(define-button 'pos 2 'level 0 'icon 'icon-stop
+  'action 'stop
+  'key "s" 'hint "~!STOP"
+  'for-unit '(unit-grunt unit-peon terras-group))
+
+(define-button 'pos 3 'level 0 'icon 'icon-attack
+  'action 'attack
+  'key "a" 'hint "~!ATTACK"
+  'for-unit '(unit-grunt unit-peon terras-group))
+
+(define-button 'pos 4 'level 0 'icon 'icon-patrol
+  'action 'patrol
+  'key "p" 'hint "~!PATROL"
+  'for-unit '(unit-grunt terras-group))
+
+(define-button 'pos 5 'level 0 'icon 'icon-stand-ground
+  'action 'stand-ground
+  'key "t" 'hint "S~!TAND GROUND"
+  'for-unit '(unit-grunt terras-group))
+
+;; peon specific actions ------------------------------------------------------
+
+(define-button 'pos 4 'level 0 'icon 'icon-repair
+  'action 'repair
+  'key "r" 'hint "~!REPAIR"
+  'for-unit '(unit-peon))
+
+(define-button 'pos 5 'level 0 'icon 'icon-harvest
+  'action 'harvest
+  'key "h" 'hint "~!HARVEST LUMBER/MINE GOLD"
+  'for-unit '(unit-peon))
+
+(define-button 'pos 6 'level 0 'icon 'icon-return-goods-peon
+  'action 'return-goods
+  'key "g" 'hint "RETURN WITH ~!GOODS"
+  'for-unit '(unit-peon))
+
+;; build basic/advanced structs -----------------------------------------------
+
+(define-button 'pos 7 'level 0 'icon 'icon-build-basic
+  'action 'button 'value 1
+  'key "b" 'hint "~!BUILD BASIC STRUCTURE"
+  'for-unit '(unit-peon))
+
+;; simple buildings terras ----------------------------------------------------
+
+(define-button 'pos 1 'level 1 'icon 'icon-cancel
+  'action 'build 'value 'unit-pig-farm
+  'key "f" 'hint "BUILD PIG ~!FARM"
+  'for-unit '(unit-peon))
+
+(define-button 'pos 2 'level 1 'icon 'icon-cancel
+  'action 'build 'value 'unit-terras-barracks
+  'key "b" 'hint "BUILD ~!BARRACKS"
+  'for-unit '(unit-peon))
+
+(define-button 'pos 3 'level 1 'icon 'icon-cancel
+  'action 'build 'value 'unit-great-hall
+  'key "h" 'hint "BUILD GREAT ~!HALL"
+  'for-unit '(unit-peon))
+
+(define-button 'pos 9 'level 1 'icon 'icon-cancel
+  'action 'button 'value 0
+  'key "\033" 'hint "~<ESC~> CANCEL"
+  'for-unit '(unit-peon))
+
+;; buildings commands ---------------------------------------------------------
+
+(define-button 'pos 1 'level 0 'icon 'icon-cancel
+  'action 'train-unit 'value 'unit-peon
+  'allowed 'check-no-research
+  'key "p" 'hint "TRAIN ~!PEON"
+  'for-unit '(unit-great-hall))
+
+;; great hall upgrades --------------------------------------------------------
+
+(if extensions (begin
+(define-button 'pos 5 'level 0 'icon 'icon-harvest
+  'action 'harvest
+  'key "h" 'hint "SET ~!HARVEST LUMBER/MINE GOLD"
+  'for-unit '(unit-great-hall))
+
+(define-button 'pos 7 'level 0 'icon 'icon-move
+  'action 'move
+  'key "m" 'hint "SET ~!MOVE"
+  'for-unit '(unit-great-hall unit-terras-barracks))
+
+(define-button 'pos 8 'level 0 'icon 'icon-stop
+  'action 'stop
+  'key "z" 'hint "SET ~!ZTOP"
+  'for-unit '(unit-great-hall unit-terras-barracks))
+
+(define-button 'pos 9 'level 0 'icon 'icon-attack
+  'action 'attack
+  'key "e" 'hint "S~!ET ATTACK"
+  'for-unit '(unit-great-hall unit-terras-barracks unit-alchemist)) ))
+
+(define-button 'pos 1 'level 0 'icon 'icon-dorcoz
+  'action 'train-unit 'value 'unit-grunt
+  'key "g" 'hint "TRAIN ~!GRUNT"
+  'for-unit '(unit-terras-barracks))
+

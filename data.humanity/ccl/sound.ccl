@@ -1,0 +1,194 @@
+;;       _________ __                 __                               
+;;      /   _____//  |_____________ _/  |______     ____  __ __  ______
+;;      \_____  \\   __\_  __ \__  \\   __\__  \   / ___\|  |  \/  ___/
+;;      /        \|  |  |  | \// __ \|  |  / __ \_/ /_/  >  |  /\___ \ 
+;;     /_______  /|__|  |__|  (____  /__| (____  /\___  /|____//____  >
+;;             \/                  \/          \//_____/            \/ 
+;;  ______________________                           ______________________
+;;			  T H E   W A R   B E G I N S
+;;	   Stratagus - A free fantasy real time strategy game engine
+;;
+;;	sound.ccl	-	Define the used sounds.
+;;
+;;	(c) Copyright 1999-2003 by Fabrice Rossi and Lutz Sammer
+;;
+;;      This program is free software; you can redistribute it and/or modify
+;;      it under the terms of the GNU General Public License as published by
+;;      the Free Software Foundation; either version 2 of the License, or
+;;      (at your option) any later version.
+;;  
+;;      This program is distributed in the hope that it will be useful,
+;;      but WITHOUT ANY WARRANTY; without even the implied warranty of
+;;      MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;;      GNU General Public License for more details.
+;;  
+;;      You should have received a copy of the GNU General Public License
+;;      along with this program; if not, write to the Free Software
+;;      Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+;;
+;;	$Id$
+
+;;	Uncomment this to enable threaded sound
+;(sound-thread)
+
+
+;;----------------------------------------------------------------------------
+;;	Music part
+
+;;----------------------------------------------------------------------------
+;;	(music-stopped) is called if the current music is finished.
+;;
+;;		This is a random music player demo
+;;
+
+(define (music-stopped)
+  (if (not (= (length play-list) 0)) 
+    (play-music (nth (rand (length play-list)) play-list))))
+
+
+;;----------------------------------------------------------------------------
+;;	(set-cd-mode!) set how your CD is played.
+;;		all	plays all tracks
+;;		random	plays random tracks
+;;		defined	play according to playlist below
+;;		off	turns cd player off
+
+(set-cd-mode! 'all)
+;(set-cd-mode! 'random) 
+;(set-cd-mode! 'defined)
+;(set-cd-mode! 'off)
+
+
+;;----------------------------------------------------------------------------
+;;	Define sounds later used
+;;
+
+(define sound-click (make-sound "click" "ui/click.wav"))
+
+
+
+;;----------------------------------------------------------------------------
+;;	ELITES
+;;
+
+;; UNITS
+(make-sound "assault-selected" "elites/units/assault_select.wav")
+(make-sound "assault-acknowledge" "elites/units/assault_action.wav")
+(make-sound "assault-ready" "elites/computer_voice/assault.unit.ready.wav")
+(make-sound "assault-help" "elites/computer_voice/assault.unit.underattack.wav")
+(make-sound "assault-die" "elites/units/assault_die.wav")
+(make-sound "assault-attack" "elites/units/assault_attack.wav")
+
+(make-sound "grenadier-selected" "elites/units/grenadier_select.wav")
+(make-sound "grenadier-acknowledge" "elites/units/grenadier_action.wav")
+(make-sound "grenadier-ready" "elites/computer_voice/grenadier.ready.wav")
+(make-sound "grenadier-help" "elites/computer_voice/grenadier.underattack.wav")
+(make-sound "grenadier-die" "elites/units/grenadier_die.wav")
+(make-sound "grenadier-attack" "elites/units/grenadier_attack.wav")
+
+(make-sound "bazoo-selected" "elites/units/booza_select.wav")
+(make-sound "bazoo-acknowledge" "elites/units/booza_action.wav")
+(make-sound "bazoo-ready" "elites/computer_voice/bazoo.ready.wav")
+(make-sound "bazoo-help" "elites/computer_voice/bazoo.underattack.wav")
+(make-sound "bazoo-die" "elites/units/booza_die.wav")
+(make-sound "bazoo-attack" "elites/units/booza_attack.wav")
+
+(make-sound "engineer-selected" "elites/units/engineer_select.wav")
+(make-sound "engineer-acknowledge" "elites/units/engineer_action.wav")
+(make-sound "engineer-ready" "elites/computer_voice/engineer.ready.wav")
+(make-sound "engineer-help" "elites/computer_voice/engineer.underattack.wav")
+(make-sound "engineer-die" "elites/units/engineer_die.wav")
+(make-sound "engineer-repair" "elites/units/engineer_attack.wav")
+(make-sound "engineer-harvest" "elites/units/engineer_attack.wav")
+
+(make-sound "harvester-selected" "elites/units/harvester_select.wav")
+(make-sound "harvester-acknowledge" "elites/units/harvester_action.wav")
+(make-sound "harvester-ready" "elites/computer_voice/harvester.completed.wav")
+(make-sound "harvester-help" "elites/computer_voice/harvester.underattack.wav")
+(make-sound "harvester-die" "elites/units/harvester_die.wav")
+(make-sound "harvester-harvest" "elites/units/harvester_attack.wav")
+
+(make-sound "apcs-selected" "elites/units/smolder_select.wav")
+(make-sound "apcs-acknowledge" "elites/units/smolder_action.wav")
+(make-sound "apcs-ready" "elites/computer_voice/smolder.completed.wav")
+(make-sound "apcs-help" "elites/computer_voice/smolder.underattack.wav")
+(make-sound "apcs-die" "elites/units/smolder_die.wav")
+(make-sound "apcs-attack" "elites/units/smolder_attack.wav")
+
+(make-sound "medic-selected" "elites/units/medic_select.wav")
+(make-sound "medic-acknowledge" "elites/units/medic_action.wav")
+(make-sound "medic-ready" "elites/computer_voice/medic.ready.wav")
+(make-sound "medic-help" "elites/computer_voice/medic.underattack.wav")
+(make-sound "medic-die" "elites/units/medic_die.wav")
+(make-sound "medic-attack" "elites/units/medic_attack.wav")
+
+;; BUILDINGS
+(make-sound "gen-selected" "elites/buildings/sfx_pplnt.select.wav")
+(make-sound "gen-ready" "elites/computer_voice/power.plant.completed.wav")
+(make-sound "gen-help" "elites/computer_voice/power.plant.underattack.wav")
+(make-sound "gen-dead" "elites/buildings/sfx_pplnt.die.wav")
+
+(make-sound "camp-selected" "elites/buildings/sfx_camp.select.wav")
+(make-sound "camp-ready" "elites/computer_voice/training.camp.completed.wav")
+(make-sound "camp-help" "elites/computer_voice/training.camp.underattack.wav")
+(make-sound "camp-dead" "elites/buildings/sfx_camp.die.wav")
+
+(make-sound "dev-selected" "elites/buildings/sfx_fort.select.wav")
+(make-sound "dev-ready" "elites/computer_voice/elite.fort.completed.wav")
+(make-sound "dev-help" "elites/computer_voice/elite.fort.underattack.wav")
+(make-sound "dev-dead" "elites/buildings/sfx_fort.die.wav")
+
+(make-sound "rfac-selected" "elites/buildings/sfx_rfac.select.wav")
+(make-sound "rfac-ready" "elites/computer_voice/research.facility.completed.wav")
+(make-sound "rfac-help" "elites/computer_voice/research.facility.underattack.wav")
+(make-sound "rfac-dead" "elites/buildings/sfx_rfac.die.wav")
+
+(make-sound "hosp-selected" "elites/buildings/sfx_hosp.select.wav")
+(make-sound "hosp-ready" "elites/computer_voice/hospital.completed.wav")
+(make-sound "hosp-help" "elites/computer_voice/hospital.underattack.wav")
+(make-sound "hosp-dead" "elites/buildings/sfx_hosp.die.wav")
+
+(make-sound "vfac-selected" "elites/buildings/sfx_vfac.select.wav")
+(make-sound "vfac-ready" "elites/computer_voice/vehicle.factory.completed.wav")
+(make-sound "vfac-help" "elites/computer_voice/vehicle.factory.underattack.wav")
+(make-sound "vfac-dead" "elites/buildings/sfx_vfac.die.wav")
+
+(make-sound "grenade-impact" "elites/units/grenadier_g_hit.wav")
+(make-sound "rocket-impact" "elites/units/booza_g_hit.wav")
+
+
+
+;;----------------------------------------------------------------------------
+;;	TERRAS
+;;
+
+;; UNITS
+
+;; BUILDINGS
+
+
+
+
+
+;;----------------------------------------------------------------------------
+;;	Define sounds used by game
+;;
+
+(define-game-sounds
+
+  'placement-error sound-click
+  'placement-success sound-click
+  'click sound-click
+
+; FIXME: Not ready
+;  'transport-docking
+;  'building-construction
+
+;  'work-complete (list 'elites (make-sound "basic elites voices work complete" "elites/basic_voices/work_complete.wav"))
+;  'work-complete (list 'terras (make-sound "basic terras voices work complete" "terras/basic_voices/work_complete.wav"))
+
+;  'rescue (list 'elites (make-sound "elites rescue" "elites/rescue.wav"))
+;  'rescue (list 'terras (make-sound "terras rescue" "terras/rescue.wav"))
+)
+
+(define sound-click (make-sound "statsthump" "ui/click.wav"))

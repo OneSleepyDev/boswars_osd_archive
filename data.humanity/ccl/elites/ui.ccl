@@ -1,0 +1,246 @@
+;;       _________ __                 __                               
+;;      /   _____//  |_____________ _/  |______     ____  __ __  ______
+;;      \_____  \\   __\_  __ \__  \\   __\__  \   / ___\|  |  \/  ___/
+;;      /        \|  |  |  | \// __ \|  |  / __ \_/ /_/  >  |  /\___ \ 
+;;     /_______  /|__|  |__|  (____  /__| (____  /\___  /|____//____  >
+;;             \/                  \/          \//_____/            \/ 
+;;  ______________________                           ______________________
+;;			  T H E   W A R   B E G I N S
+;;	   Stratagus - A free fantasy real time strategy game engine
+;;
+;;	ui.ccl		-	Define the elites user interface
+;;
+;;	(c) Copyright 2001-2003 by Lutz Sammer and Jimmy Salmon
+;;
+;;      This program is free software; you can redistribute it and/or modify
+;;      it under the terms of the GNU General Public License as published by
+;;      the Free Software Foundation; either version 2 of the License, or
+;;      (at your option) any later version.
+;;  
+;;      This program is distributed in the hope that it will be useful,
+;;      but WITHOUT ANY WARRANTY; without even the implied warranty of
+;;      MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;;      GNU General Public License for more details.
+;;  
+;;      You should have received a copy of the GNU General Public License
+;;      along with this program; if not, write to the Free Software
+;;      Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+;;
+;;	$Id$
+
+(define-cursor	'cursor-point		'elites
+    'image "elites/ui/elites_claw.png"
+    'hot-spot '( 1  1) 'size '(28 32) )
+(define-cursor	'cursor-green-hair	'elites
+    'image "general/green.png"
+    'hot-spot '(15 15) 'size '(32 32) )
+(define-cursor	'cursor-yellow-hair	'elites
+    'image "general/yellow.png"
+    'hot-spot '(15 15) 'size '(32 32) )
+(define-cursor	'cursor-red-hair	'elites
+    'image "general/red.png"
+    'hot-spot '(15 15) 'size '(32 32) )
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;	* Race elites.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(define (elites_screen screen_width screen_height)
+  (define info_panel_x (- screen_width 200))
+  (define info_panel_y 160)
+  (define icon_size '(23 38))
+
+  (define-ui 'elites screen_width screen_height
+    'normal-font-color 'light-green
+    'reverse-font-color 'yellow
+
+    'filler (list
+      'file (string-append "graphics/elites/ui/ui_"
+        (number->string screen_width)
+        "_filler.png")
+      'pos (list 0 0))
+
+    'resource-line (list
+      (string-append "graphics/elites/ui/ui_"
+        (number->string screen_width)
+        "_respanel.png")
+      0 0)
+
+    'resources (list
+      'titanium (list 'file "graphics/elites/ui/ui_res_icons.png" 'row 0
+        'pos (list (+ 67 0) 0) 'size '(14 14) 'text-pos (list (+ 67   0 18) 1))
+      'crystal (list 'file "graphics/elites/ui/ui_res_icons.png" 'row 1
+        'pos (list (+ 67 75) 0) 'size '(14 14) 'text-pos (list (+ 67  75 18) 1))
+      'gas (list 'file "graphics/elites/ui/ui_res_icons.png" 'row 2
+        'pos (list (+ 67 150) 0) 'size '(14 14) 'text-pos (list (+ 67 150 18) 1))
+      'food (list 'file "graphics/elites/ui/ui_res_icons.png" 'row 3
+        'pos (list (+ 67 225) 0) 'size '(14 14) 'text-pos (list (+ 67 225 18) 1))
+      'score (list 'file "graphics/elites/ui/ui_res_icons.png" 'row 4
+        'pos (list (+ 67 300) 0) 'size '(14 14) 'text-pos (list (+ 67 300 18) 1)))
+
+    'info-panel (list
+      'panel (list
+        'file "graphics/elites/ui/ui_info.png"
+        'pos (list info_panel_x info_panel_y)
+        'size '(200 176))
+      'selected (list
+        'single (list
+          'icon (list
+            'pos (list (- screen_width 187) 176) 'size icon_size))
+        'multiple (list
+          'icons (list
+            (list 'pos (list (- screen_width 187) 176) 'size icon_size)
+            (list 'pos (list (- screen_width 172) 176) 'size icon_size)
+            (list 'pos (list (- screen_width 157) 176) 'size icon_size)
+            (list 'pos (list (- screen_width 142) 176) 'size icon_size)
+            (list 'pos (list (- screen_width 127) 176) 'size icon_size)
+            (list 'pos (list (- screen_width 112) 176) 'size icon_size)
+            (list 'pos (list (- screen_width  97) 176) 'size icon_size)
+            (list 'pos (list (- screen_width  82) 176) 'size icon_size)
+            (list 'pos (list (- screen_width  67) 176) 'size icon_size)))
+      )
+      'training (list
+        'single (list
+          'text (list
+            'text ""
+            'font 'game
+            'pos (list (- screen_width 187) 204))
+          'icon (list
+            'pos (list (- screen_width 187) 243)
+            'size icon_size)
+        )
+        'multiple (list
+          'icons (list
+            (list 'pos (list (- screen_width 187) 243) 'size icon_size)
+            (list 'pos (list (- screen_width 172) 243) 'size icon_size)
+            (list 'pos (list (- screen_width 157) 243) 'size icon_size)
+            (list 'pos (list (- screen_width 142) 243) 'size icon_size)
+            (list 'pos (list (- screen_width 127) 243) 'size icon_size)
+            (list 'pos (list (- screen_width 112) 243) 'size icon_size)))
+      )
+      'upgrading (list
+        'text (list
+          'text ""
+          'font 'game
+          'pos (list (+ info_panel_x 29) (+ info_panel_y 8 78)))
+        'icon (list
+          'pos (list (- screen_width 187) 243)
+          'size icon_size)
+      )
+      'researching (list
+        'text (list
+          'text ""
+          'font 'game
+          'pos (list (+ info_panel_x 16) (+ info_panel_y 8 78)))
+        'icon (list
+          'pos (list (- screen_width 187) 243)
+          'size icon_size)
+      )
+      'transporting (list
+          'icons (list
+            (list 'pos (list (- screen_width 187) 243) 'size icon_size)
+            (list 'pos (list (- screen_width 172) 243) 'size icon_size)
+            (list 'pos (list (- screen_width 157) 243) 'size icon_size)
+            (list 'pos (list (- screen_width 142) 243) 'size icon_size)
+            (list 'pos (list (- screen_width 127) 243) 'size icon_size)
+            (list 'pos (list (- screen_width 112) 243) 'size icon_size))
+      )
+      'completed-bar (list
+        'color '(50 50 80)
+        'pos (list (- screen_width 187) 299)
+        'size '(140 15)
+      )
+    )
+
+    'button-panel (list
+      'panel (list
+        'file (string-append "graphics/elites/ui/ui_"
+          (number->string screen_width)
+          "_bpanel.png")
+        'pos (list (- screen_width 200) 336))
+      'icons (list
+        (list 'pos (list (- screen_width 177) 340) 'size '(46 38))
+        (list 'pos (list (- screen_width 122) 340) 'size '(46 38))
+        (list 'pos (list (- screen_width 68) 340) 'size '(46 38))
+        (list 'pos (list (- screen_width 177) 385) 'size '(46 38))
+        (list 'pos (list (- screen_width 122) 385) 'size '(46 38))
+        (list 'pos (list (- screen_width 68) 385) 'size '(46 38))
+        (list 'pos (list (- screen_width 177) 430) 'size '(46 38))
+        (list 'pos (list (- screen_width 122) 430) 'size '(46 38))
+        (list 'pos (list (- screen_width 68) 430) 'size '(46 38)))
+    )
+
+    'map-area (list
+      'pos '(24 16)
+      'size (list
+        (* 32 (trunc (/ (- screen_width 200 16) 32)))
+        (* 32 (trunc (/ (- screen_height 16 16) 32)))))
+
+    'menu-panel (list
+;      'panel (list
+;        'file "graphics/general/menubutton.png"
+;        'pos '(0 0))
+      'menu-button (list
+        'pos (list (- screen_width 200) 0)
+        'size '(200 20)
+        'caption "Menu (~<F10~>)"
+        'style 'main)
+      'network-menu-button '(
+        pos (6 2)
+        size (80 19)
+        caption "Menu"
+        style network)
+      'network-diplomacy-button (list
+        'pos (list (- screen_width 128) 2)
+        'size '(80 19)
+        'caption "Diplomacy"
+        'style 'network)
+    )
+
+
+    'minimap (list
+      'file "graphics/elites/ui/ui_minimap.png"
+      'panel-pos (list (- screen_width 200) 24)
+      'pos (list (+ (- screen_width 200) 46) (+ 24 17))
+      'size '(121 105))
+
+    'status-line (list
+      'file (string-append "graphics/elites/ui/ui_"
+        (number->string screen_width)
+        "_stat.png")
+      'pos (list 0 (- screen_height 16))
+      'text-pos (list (+ 2 36) (+ 2 (- screen_height 16)))
+      'font 'game)
+
+    'cursors '(
+      point cursor-point
+      glass cursor-glass
+      cross cursor-cross
+      yellow cursor-yellow-hair
+      green cursor-green-hair
+      red cursor-red-hair
+      scroll cursor-scroll
+      arrow-e cursor-arrow-e
+      arrow-ne cursor-arrow-ne
+      arrow-n cursor-arrow-n
+      arrow-nw cursor-arrow-nw
+      arrow-w cursor-arrow-w
+      arrow-sw cursor-arrow-sw
+      arrow-s cursor-arrow-s
+      arrow-se cursor-arrow-se)
+
+    'menu-panels '(
+      panel1 "graphics/general/panel_1.png"
+      panel2 "graphics/general/panel_2.png"
+      panel3 "graphics/general/panel_3.png"
+      panel4 "graphics/general/panel_4.png"
+      panel5 "graphics/general/panel_5.png")
+
+    'victory-background "graphics/screens/general.png"
+    'defeat-background "graphics/screens/general.png") )
+
+(elites_screen 640 480)
+(elites_screen 800 600)
+(elites_screen 1024 768)
+(elites_screen 1280 960)
+(elites_screen 1600 1200)

@@ -1,0 +1,239 @@
+;;       _________ __                 __                               
+;;      /   _____//  |_____________ _/  |______     ____  __ __  ______
+;;      \_____  \\   __\_  __ \__  \\   __\__  \   / ___\|  |  \/  ___/
+;;      /        \|  |  |  | \// __ \|  |  / __ \_/ /_/  >  |  /\___ \ 
+;;     /_______  /|__|  |__|  (____  /__| (____  /\___  /|____//____  >
+;;             \/                  \/          \//_____/            \/ 
+;;  ______________________                           ______________________
+;;			  T H E   W A R   B E G I N S
+;;	   Stratagus - A free fantasy real time strategy game engine
+;;
+;;	constructions.ccl	-	Define the elites constructions.
+;;
+;;	(c) Copyright 2001,2003 by Lutz Sammer and Jimmy Salmon
+;;
+;;      This program is free software; you can redistribute it and/or modify
+;;      it under the terms of the GNU General Public License as published by
+;;      the Free Software Foundation; either version 2 of the License, or
+;;      (at your option) any later version.
+;;  
+;;      This program is distributed in the hope that it will be useful,
+;;      but WITHOUT ANY WARRANTY; without even the implied warranty of
+;;      MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;;      GNU General Public License for more details.
+;;  
+;;      You should have received a copy of the GNU General Public License
+;;      along with this program; if not, write to the Free Software
+;;      Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+;;
+;;	$Id$
+
+;;=============================================================================
+;;	Define a construction.
+;;
+;;	(define-construction ident 'files '(tileset-name filename ..)
+;;	    'size '(x y))
+
+(define-construction 'construction-gen
+  'constructions (list
+    '(percent 0
+      file main
+      frame 9)
+    '(percent 10
+      file main
+      frame 10)
+    '(percent 20
+      file main
+      frame 11)
+    '(percent 30
+      file main
+      frame 12)
+    '(percent 40
+      file main
+      frame 13)
+    '(percent 50
+      file main
+      frame 14)
+    '(percent 60
+      file main
+      frame 15)
+    '(percent 70
+      file main
+      frame 16)
+    '(percent 80
+      file main
+      frame 17)
+    '(percent 90
+      file main
+      frame 0))
+)
+
+(define-construction 'construction-dev
+  'constructions (list
+    '(percent 0
+      file main
+      frame 7)
+    '(percent 10
+      file main
+      frame 8)
+    '(percent 20
+      file main
+      frame 9)
+    '(percent 30
+      file main
+      frame 10)
+    '(percent 40
+      file main
+      frame 11)
+    '(percent 50
+      file main
+      frame 12)
+    '(percent 60
+      file main
+      frame 13)
+    '(percent 70
+      file main
+      frame 14)
+    '(percent 80
+      file main
+      frame 15)
+    '(percent 90
+      file main
+      frame 1))
+)
+
+(define-construction 'construction-camp
+  'constructions (list
+    '(percent 0
+      file main
+      frame 5)
+    '(percent 10
+      file main
+      frame 6)
+    '(percent 20
+      file main
+      frame 7)
+    '(percent 30
+      file main
+      frame 8)
+    '(percent 40
+      file main
+      frame 9)
+    '(percent 50
+      file main
+      frame 10)
+    '(percent 60
+      file main
+      frame 11)
+    '(percent 70
+      file main
+      frame 12)
+    '(percent 80
+      file main
+      frame 13)
+    '(percent 90
+      file main
+      frame 14))
+)
+
+(define-construction 'construction-rfac
+  'constructions (list
+    '(percent 0
+      file main
+      frame 2)
+    '(percent 10
+      file main
+      frame 3)
+    '(percent 20
+      file main
+      frame 4)
+    '(percent 30
+      file main
+      frame 5)
+    '(percent 40
+      file main
+      frame 6)
+    '(percent 50
+      file main
+      frame 7)
+    '(percent 60
+      file main
+      frame 8)
+    '(percent 70
+      file main
+      frame 9)
+    '(percent 80
+      file main
+      frame 10)
+    '(percent 90
+      file main
+      frame 0))
+)
+
+(define-construction 'construction-hosp
+  'constructions (list
+    '(percent 0
+      file main
+      frame 4)
+    '(percent 10
+      file main
+      frame 5)
+    '(percent 20
+      file main
+      frame 6)
+    '(percent 30
+      file main
+      frame 7)
+    '(percent 40
+      file main
+      frame 8)
+    '(percent 50
+      file main
+      frame 9)
+    '(percent 60
+      file main
+      frame 10)
+    '(percent 70
+      file main
+      frame 11)
+    '(percent 80
+      file main
+      frame 12)
+    '(percent 90
+      file main
+      frame 0))
+)
+
+(define-construction 'construction-vfac
+  'constructions (list
+    '(percent 0
+      file main
+      frame 20)
+    '(percent 10
+      file main
+      frame 21)
+    '(percent 20
+      file main
+      frame 22)
+    '(percent 30
+      file main
+      frame 23)
+    '(percent 40
+      file main
+      frame 24)
+    '(percent 50
+      file main
+      frame 25)
+    '(percent 60
+      file main
+      frame 26)
+    '(percent 70
+      file main
+      frame 27)
+    '(percent 80
+      file main
+      frame 28)
+    '(percent 90
+      file main
+      frame 0))
+)

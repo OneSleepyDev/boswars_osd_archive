@@ -1,0 +1,120 @@
+;;       _________ __                 __                               
+;;      /   _____//  |_____________ _/  |______     ____  __ __  ______
+;;      \_____  \\   __\_  __ \__  \\   __\__  \   / ___\|  |  \/  ___/
+;;      /        \|  |  |  | \// __ \|  |  / __ \_/ /_/  >  |  /\___ \ 
+;;     /_______  /|__|  |__|  (____  /__| (____  /\___  /|____//____  >
+;;             \/                  \/          \//_____/            \/ 
+;;  ______________________                           ______________________
+;;			  T H E   W A R   B E G I N S
+;;	   Stratagus - A free fantasy real time strategy game engine
+;;
+;;	upgrade.ccl	-	Define the elites dependencies and upgrades.
+;;
+;;	(c) Copyright 2001-2003 by Lutz Sammer
+;;
+;;      This program is free software; you can redistribute it and/or modify
+;;      it under the terms of the GNU General Public License as published by
+;;      the Free Software Foundation; either version 2 of the License, or
+;;      (at your option) any later version.
+;;  
+;;      This program is distributed in the hope that it will be useful,
+;;      but WITHOUT ANY WARRANTY; without even the implied warranty of
+;;      MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;;      GNU General Public License for more details.
+;;  
+;;      You should have received a copy of the GNU General Public License
+;;      along with this program; if not, write to the Free Software
+;;      Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+;;
+;;	$Id$
+
+
+(define-allow 'unit-assault			"AAAAAAAAAAAAAAAA")
+(define-allow 'unit-grenadier			"AAAAAAAAAAAAAAAA")
+(define-allow 'unit-bazoo			"AAAAAAAAAAAAAAAA")
+(define-allow 'unit-engineer			"AAAAAAAAAAAAAAAA")
+(define-allow 'unit-medic			"AAAAAAAAAAAAAAAA")
+(define-allow 'unit-harvester			"AAAAAAAAAAAAAAAA")
+(define-allow 'unit-gen 			"AAAAAAAAAAAAAAAA")
+(define-allow 'unit-camp			"AAAAAAAAAAAAAAAA")
+(define-allow 'unit-yard			"AAAAAAAAAAAAAAAA")
+(define-allow 'unit-rfac			"AAAAAAAAAAAAAAAA")
+(define-allow 'unit-hosp			"AAAAAAAAAAAAAAAA")
+(define-allow 'unit-vfac			"AAAAAAAAAAAAAAAA")
+(define-allow 'unit-apcs			"AAAAAAAAAAAAAAAA")
+(define-allow 'unit-human-wall			"AAAAAAAAAAAAAAAA")
+
+
+;;	- upgrades
+
+(define-upgrade 'upgrade-expl 'icon 'icon-expl
+  'costs #(  700   400   200     0     0     0     0))
+(define-upgrade 'upgrade-expl2 'icon 'icon-expl2
+  'costs #(  700   450   300     0     0     0     0))
+(define-upgrade 'upgrade-tdril 'icon 'icon-tdril
+  'costs #(  400   200   200     0     0     0     0))
+(define-upgrade 'upgrade-ddril 'icon 'icon-ddril
+  'costs #(  400   300   250     0     0     0     0))
+(define-upgrade 'upgrade-pdril 'icon 'icon-pdril
+  'costs #(  400   400   300     0     0     0     0))
+(define-upgrade 'upgrade-void 'icon 'icon-void
+  'costs #(  2000   0   0     0     0     0     0))
+
+
+(define-modifier 'upgrade-expl2
+  '(piercing-damage 5)
+  '(apply-to unit-grenadier))
+
+(define-modifier 'upgrade-tdril
+;  '(harvesting 10)
+  '(apply-to unit-engineer) '(apply-to unit-harvester))
+
+(define-modifier 'upgrade-ddril
+;  '(harvesting 20)
+  '(apply-to unit-engineer) '(apply-to unit-harvester))
+
+(define-modifier 'upgrade-pdril
+;  '(harvesting 30)
+  '(apply-to unit-engineer) '(apply-to unit-harvester))
+
+
+(define-allow 'upgrade-expl			"AAAAAAAAAAAAAAAA")
+(define-allow 'upgrade-expl2			"AAAAAAAAAAAAAAAA")
+(define-allow 'upgrade-tdril			"AAAAAAAAAAAAAAAA")
+(define-allow 'upgrade-ddril			"AAAAAAAAAAAAAAAA")
+(define-allow 'upgrade-pdril			"AAAAAAAAAAAAAAAA")
+(define-allow 'upgrade-void			"AAAAAAAAAAAAAAAA")
+
+
+(define-dependency 'upgrade-void
+  '(upgrade-expl2 upgrade-pdril))
+
+(define-dependency 'unit-bazoo
+  '(upgrade-expl2))
+
+(define-dependency 'unit-grenadier
+  '(upgrade-expl))
+
+(define-dependency 'upgrade-expl2
+  '(upgrade-expl))
+
+(define-dependency 'upgrade-ddril
+  '(upgrade-tdril))
+
+(define-dependency 'upgrade-pdril
+  '(upgrade-ddril))
+
+(define-dependency 'unit-camp
+  '(unit-yard))
+
+(define-dependency 'unit-rfac
+  '(unit-yard))
+
+(define-dependency 'unit-gen
+  '(unit-yard))
+
+(define-dependency 'unit-hosp
+  '(unit-yard))
+
+(define-dependency 'unit-vfac
+  '(unit-yard upgrade-void))

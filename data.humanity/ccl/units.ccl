@@ -1,0 +1,501 @@
+;;       _________ __                 __                               
+;;      /   _____//  |_____________ _/  |______     ____  __ __  ______
+;;      \_____  \\   __\_  __ \__  \\   __\__  \   / ___\|  |  \/  ___/
+;;      /        \|  |  |  | \// __ \|  |  / __ \_/ /_/  >  |  /\___ \ 
+;;     /_______  /|__|  |__|  (____  /__| (____  /\___  /|____//____  >
+;;             \/                  \/          \//_____/            \/ 
+;;  ______________________                           ______________________
+;;			  T H E   W A R   B E G I N S
+;;	   Stratagus - A free fantasy real time strategy game engine
+;;
+;;	units.ccl	-	Define the used unit-types.
+;;
+;;	(c) Copyright 1998,2000-2002 by Lutz Sammer
+;;
+;;      This program is free software; you can redistribute it and/or modify
+;;      it under the terms of the GNU General Public License as published by
+;;      the Free Software Foundation; either version 2 of the License, or
+;;      (at your option) any later version.
+;;  
+;;      This program is distributed in the hope that it will be useful,
+;;      but WITHOUT ANY WARRANTY; without even the implied warranty of
+;;      MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;;      GNU General Public License for more details.
+;;  
+;;      You should have received a copy of the GNU General Public License
+;;      along with this program; if not, write to the Free Software
+;;      Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+;;
+;;	$Id$
+
+;; Load the animations for the units.
+(ccl:load "ccl/anim.ccl")
+
+;;=============================================================================
+;;	Define unit-types.
+;;
+;;	NOTE: Save can generate this table.
+;;
+;;=========
+
+(define-unit-type 'unit-crystal-field1 'name "Crystal Field"
+  'files '(default "nature/res/res_crys.png")
+  'size '(32 32)
+  'shadow '(file "nature/res/res_crys_s.png" size (32 32) offset (5 5))
+  'animations 'animations-crystal-field1 'icon 'icon-crystal-field
+  'hit-points 50
+  'tile-size '(1 1) 'box-size '(31 31)
+  'armor 999 'missile 'missile-none
+  'priority 0
+  'corpse '(unit-destroyed-1x1-place 0)
+  'type-land
+  'building
+  'gives-resource 'crystal 'can-harvest)
+
+(define-unit-type 'unit-crystal-field2 'name "Crystal Field"
+  'files '(default "nature/res/res_crys.png")
+  'size '(32 32)
+  'shadow '(file "nature/res/res_crys_s.png" size (32 32) offset (5 5))
+  'animations 'animations-crystal-field2 'icon 'icon-crystal-field
+  'hit-points 50
+  'tile-size '(1 1) 'box-size '(31 31)
+  'armor 999 'missile 'missile-none
+  'priority 0
+  'corpse '(unit-destroyed-1x1-place 0)
+  'type-land
+  'building
+  'gives-resource 'crystal 'can-harvest)
+
+(define-unit-type 'unit-crystal-field3 'name "Crystal Field"
+  'files '(default "nature/res/res_crys.png")
+  'size '(32 32)
+  'shadow '(file "nature/res/res_crys_s.png" size (32 32) offset (5 5))
+  'animations 'animations-crystal-field3 'icon 'icon-crystal-field
+  'hit-points 50
+  'tile-size '(1 1) 'box-size '(31 31)
+  'armor 999 'missile 'missile-none
+  'priority 0
+  'corpse '(unit-destroyed-1x1-place 0)
+  'type-land
+  'building
+  'gives-resource 'crystal 'can-harvest)
+
+(define-unit-type 'unit-crystal-field4 'name "Crystal Field"
+  'files '(default "nature/res/res_crys.png")
+  'size '(32 32)
+  'shadow '(file "nature/res/res_crys_s.png" size (32 32) offset (5 5))
+  'animations 'animations-crystal-field4 'icon 'icon-crystal-field
+  'hit-points 50
+  'tile-size '(1 1) 'box-size '(31 31)
+  'armor 999 'missile 'missile-none
+  'priority 0
+  'corpse '(unit-destroyed-1x1-place 0)
+  'type-land
+  'building
+  'gives-resource 'crystal 'can-harvest)
+
+(define-unit-type 'unit-crystal-field5 'name "Crystal Field"
+  'files '(default "nature/res/res_crys.png")
+  'size '(32 32)
+  'shadow '(file "nature/res/res_crys_s.png" size (32 32) offset (5 5))
+  'animations 'animations-crystal-field5 'icon 'icon-crystal-field
+  'hit-points 50
+  'tile-size '(1 1) 'box-size '(31 31)
+  'armor 999 'missile 'missile-none
+  'priority 0
+  'corpse '(unit-destroyed-1x1-place 0)
+  'type-land
+  'building
+  'gives-resource 'crystal 'can-harvest)
+
+(define-unit-type 'unit-crystal-field6 'name "Crystal Field"
+  'files '(default "nature/res/res_crys.png")
+  'size '(32 32)
+  'shadow '(file "nature/res/res_crys_s.png" size (32 32) offset (5 5))
+  'animations 'animations-crystal-field6 'icon 'icon-crystal-field
+  'hit-points 50
+  'tile-size '(1 1) 'box-size '(31 31)
+  'armor 999 'missile 'missile-none
+  'priority 0
+  'corpse '(unit-destroyed-1x1-place 0)
+  'type-land
+  'building
+  'gives-resource 'crystal 'can-harvest)
+
+(define-unit-type 'unit-crystal-field7 'name "Crystal Field"
+  'files '(default "nature/res/res_crys.png")
+  'size '(32 32)
+  'shadow '(file "nature/res/res_crys_s.png" size (32 32) offset (5 5))
+  'animations 'animations-crystal-field7 'icon 'icon-crystal-field
+  'hit-points 50
+  'tile-size '(1 1) 'box-size '(31 31)
+  'armor 999 'missile 'missile-none
+  'priority 0
+  'corpse '(unit-destroyed-1x1-place 0)
+  'type-land
+  'building
+  'gives-resource 'crystal 'can-harvest)
+
+(define-unit-type 'unit-crystal-field8 'name "Crystal Field"
+  'files '(default "nature/res/res_crys.png")
+  'size '(32 32)
+  'shadow '(file "nature/res/res_crys_s.png" size (32 32) offset (5 5))
+  'animations 'animations-crystal-field8 'icon 'icon-crystal-field
+  'hit-points 50
+  'tile-size '(1 1) 'box-size '(31 31)
+  'armor 999 'missile 'missile-none
+  'priority 0
+  'corpse '(unit-destroyed-1x1-place 0)
+  'type-land
+  'building
+  'gives-resource 'crystal 'can-harvest)
+
+(define-unit-type 'unit-crystal-field9 'name "Crystal Field"
+  'files '(default "nature/res/res_crys.png")
+  'size '(32 32)
+  'shadow '(file "nature/res/res_crys_s.png" size (32 32) offset (5 5))
+  'animations 'animations-crystal-field9 'icon 'icon-crystal-field
+  'hit-points 50
+  'tile-size '(1 1) 'box-size '(31 31)
+  'armor 999 'missile 'missile-none
+  'priority 0
+  'corpse '(unit-destroyed-1x1-place 0)
+  'type-land
+  'building
+  'gives-resource 'crystal 'can-harvest)
+
+(define-unit-type 'unit-crystal-field10 'name "Crystal Field"
+  'files '(default "nature/res/res_crys.png")
+  'size '(32 32)
+  'shadow '(file "nature/res/res_crys_s.png" size (32 32) offset (5 5))
+  'animations 'animations-crystal-field10 'icon 'icon-crystal-field
+  'hit-points 50
+  'tile-size '(1 1) 'box-size '(31 31)
+  'armor 999 'missile 'missile-none
+  'priority 0
+  'corpse '(unit-destroyed-1x1-place 0)
+  'type-land
+  'building
+  'gives-resource 'crystal 'can-harvest)
+
+(define-unit-type 'unit-crystal-field11 'name "Crystal Field"
+  'files '(default "nature/res/res_crys.png")
+  'size '(32 32)
+  'shadow '(file "nature/res/res_crys_s.png" size (32 32) offset (5 5))
+  'animations 'animations-crystal-field11 'icon 'icon-crystal-field
+  'hit-points 50
+  'tile-size '(1 1) 'box-size '(31 31)
+  'armor 999 'missile 'missile-none
+  'priority 0
+  'corpse '(unit-destroyed-1x1-place 0)
+  'type-land
+  'building
+  'gives-resource 'crystal 'can-harvest)
+
+(define-unit-type 'unit-crystal-field12 'name "Crystal Field"
+  'files '(default "nature/res/res_crys.png")
+  'size '(32 32)
+  'shadow '(file "nature/res/res_crys_s.png" size (32 32) offset (5 5))
+  'animations 'animations-crystal-field12 'icon 'icon-crystal-field
+  'hit-points 50
+  'tile-size '(1 1) 'box-size '(31 31)
+  'armor 999 'missile 'missile-none
+  'priority 0
+  'corpse '(unit-destroyed-1x1-place 0)
+  'type-land
+  'building
+  'gives-resource 'crystal 'can-harvest)
+
+(define-unit-type 'unit-crystal-field13 'name "Crystal Field"
+  'files '(default "nature/res/res_crys.png")
+  'size '(32 32)
+  'shadow '(file "nature/res/res_crys_s.png" size (32 32) offset (5 5))
+  'animations 'animations-crystal-field13 'icon 'icon-crystal-field
+  'hit-points 50
+  'tile-size '(1 1) 'box-size '(31 31)
+  'armor 999 'missile 'missile-none
+  'priority 0
+  'corpse '(unit-destroyed-1x1-place 0)
+  'type-land
+  'building
+  'gives-resource 'crystal 'can-harvest)
+
+(define-unit-type 'unit-gold-mine 'name "Titanium Spike"
+  'files '(tileset-desert "nature/res/spike_1.png")
+  'size '(128 128)
+  'shadow '(file "nature/res/spike_1_s.png" size (128 128) offset (0 0))
+  'animations 'animations-building 'icon 'icon-tita
+  'costs '(time 150)
+  'construction 'construction-land2
+  'speed 0
+  'hit-points 25500
+  'draw-level 40
+  'tile-size '(4 4) 'box-size '(127 127)
+  'sight-range 1
+  'armor 20 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
+  'priority 0
+  'corpse '(unit-destroyed-3x3-place 0)
+  'explode-when-killed 'missile-explosion
+  'type-land
+  'building
+  'gives-resource 'titanium 'can-harvest
+  'sounds '(
+    selected "gold-mine-selected"
+    acknowledge "gold-mine-acknowledge"
+    ready "gold-mine-ready"
+    help "gold-mine-help"
+    dead "building destroyed"
+    attack "gold-mine-attack"))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(define-unit-type 'unit-nothing-22 'name "Nothing 22"
+  'files '()
+  'size '(0 0)
+  'animations 'animations-building 'icon 'icon-cancel
+  'speed 99
+  'hit-points 10
+  'draw-level 0
+  'tile-size '(0 0) 'box-size '(0 0)
+  'sight-range 0
+  'basic-damage 0 'piercing-damage 0 'missile 'missile-none
+  'priority 0
+  'type-land
+  'sounds '())
+
+(define-unit-type 'unit-nothing-24 'name "Nothing 24"
+  'files '()
+  'size '(32 32)
+  'animations 'animations-building 'icon 'icon-cancel
+  'costs '(time 60 titanium 400)
+  'speed 99
+  'hit-points 60
+  'draw-level 10
+  'tile-size '(1 1) 'box-size '(63 63)
+  'sight-range 4 'computer-reaction-range 20 'person-reaction-range 10
+  'armor 2 'basic-damage 9 'piercing-damage 1 'missile 'missile-none
+  'max-attack-range 1
+  'priority 40
+  'type-naval
+  'sea-unit
+  'selectable-by-rectangle
+  'sounds '())
+
+(define-unit-type 'unit-nothing-25 'name "Nothing 25"
+  'files '()
+  'size '(32 32)
+  'animations 'animations-building 'icon 'icon-cancel
+  'costs '(time 60 titanium 400)
+  'speed 99
+  'hit-points 60
+  'draw-level 10
+  'tile-size '(1 1) 'box-size '(63 63)
+  'sight-range 4 'computer-reaction-range 20 'person-reaction-range 10
+  'armor 2 'basic-damage 9 'piercing-damage 1 'missile 'missile-none
+  'max-attack-range 1
+  'priority 40
+  'type-naval
+  'sea-unit
+  'selectable-by-rectangle
+  'sounds '())
+
+(define-unit-type 'unit-nothing-30 'name "Nothing 30"
+  'files '()
+  'size '(0 0)
+  'animations 'animations-building 'icon 'icon-cancel
+  'speed 99
+  'hit-points 0
+  'draw-level 10
+  'tile-size '(0 0) 'box-size '(0 0)
+  'sight-range 0
+  'basic-damage 0 'piercing-damage 0 'missile 'missile-none
+  'priority 0
+  'type-land
+  'sounds '())
+
+(define-unit-type 'unit-nothing-36 'name "Nothing 36"
+  'files '()
+  'size '(0 0)
+  'animations 'animations-building 'icon 'icon-cancel
+  'speed 99
+  'hit-points 0
+  'draw-level 10
+  'tile-size '(0 0) 'box-size '(0 0)
+  'sight-range 0
+  'basic-damage 0 'piercing-damage 0 'missile 'missile-none
+  'priority 0
+  'type-land
+  'sounds '())
+
+
+
+(define-unit-type 'unit-dead-body 'name "Dead Body"
+  'files '(tileset-desert "neutral/units/corpses.png")
+  'size '(72 72)
+  'animations 'animations-dead-body 'icon 'icon-cancel
+  'speed 0
+  'hit-points 255
+  'draw-level 30
+  'tile-size '(1 1) 'box-size '(31 31)
+  'sight-range 1
+  'basic-damage 0 'piercing-damage 0 'missile 'missile-none
+  'priority 0
+  'type-land
+  'vanishes
+  'sounds '())
+
+(define-unit-type 'unit-destroyed-1x1-place 'name "Destroyed 1x1 Place"
+  'files '(
+    tileset-desert "tilesets/desert/neutral/buildings/small_destroyed_site.png"
+    tileset-winter "tilesets/winter/neutral/buildings/small_destroyed_site.png")
+  'size '(32 32)
+  'animations 'animations-destroyed-place 'icon 'icon-cancel
+  'speed 0
+  'hit-points 255
+  'draw-level 10
+  'tile-size '(1 1) 'box-size '(31 31)
+  'sight-range 2
+  'basic-damage 0 'piercing-damage 0 'missile 'missile-none
+  'priority 0
+  'type-land
+  'building
+  'vanishes
+  'sounds '())
+
+(define-unit-type 'unit-destroyed-2x2-place 'name "Destroyed 2x2 Place"
+  'files '(tileset-desert "tilesets/desert/neutral/buildings/destroyed_site.png"
+    tileset-winter "tilesets/winter/neutral/buildings/destroyed_site.png")
+  'size '(64 64)
+  'animations 'animations-destroyed-place 'icon 'icon-cancel
+  'speed 0
+  'hit-points 255
+  'draw-level 10
+  'tile-size '(2 2) 'box-size '(63 63)
+  'sight-range 2
+  'basic-damage 0 'piercing-damage 0 'missile 'missile-none
+  'priority 0
+  'type-land
+  'building
+  'vanishes
+  'sounds '())
+
+(define-unit-type 'unit-destroyed-3x3-place 'name "Destroyed 3x3 Place"
+  'use 'unit-destroyed-2x2-place
+  'size '(96 96)
+  'animations 'animations-destroyed-place 'icon 'icon-cancel
+  'speed 0
+  'hit-points 255
+  'draw-level 10
+  'tile-size '(3 3) 'box-size '(95 95)
+  'sight-range 3
+  'basic-damage 0 'piercing-damage 0 'missile 'missile-none
+  'priority 0
+  'type-land
+  'building
+  'vanishes
+  'sounds '())
+
+(define-unit-type 'unit-destroyed-4x4-place 'name "Destroyed 4x4 Place"
+  'use 'unit-destroyed-2x2-place
+  'size '(128 128)
+  'animations 'animations-destroyed-place 'icon 'icon-cancel
+  'speed 0
+  'hit-points 255
+  'draw-level 10
+  'tile-size '(4 4) 'box-size '(127 127)
+  'sight-range 3
+  'basic-damage 0 'piercing-damage 0 'missile 'missile-none
+  'priority 0
+  'type-land
+  'building
+  'vanishes
+  'sounds '())
+
+(define-unit-type 'unit-revealer 'name "Dummy unit"
+  'size '(0 0)
+  'animations 'animations-building 'icon 'icon-cancel
+  'speed 0
+  'hit-points 0
+  'tile-size '(1 1) 'box-size '(1 1)
+  'sight-range 12
+  'basic-damage 0 'piercing-damage 0 'missile 'missile-none
+  'priority 0
+  'decay-rate 1
+  'type-land
+  'building
+  'revealer
+  'detect-cloak
+  'sounds '())
+
+(define-unit-type 'unit-reveal-attacker 'name "Dummy unit"
+  'size '(0 0)
+  'animations 'animations-building 'icon 'icon-cancel
+  'speed 0
+  'hit-points 0
+  'tile-size '(1 1) 'box-size '(1 1)
+  'sight-range 1
+  'basic-damage 0 'piercing-damage 0 'missile 'missile-none
+  'priority 0
+  'decay-rate 1
+  'type-land
+  'building
+  'sounds '())
+
+(define-unit-type 'unit-human-wall 'name "Wall"
+  'files '(tileset-desert "tilesets/desert/neutral/buildings/wall.png")
+  'size '(32 32)
+  'animations 'animations-building 'icon 'icon-cancel
+  'costs '(time 30)
+  'construction 'construction-wall
+  'speed 0
+  'hit-points 40
+  'draw-level 39
+  'tile-size '(1 1) 'box-size '(31 31)
+  'sight-range 1
+  'armor 20 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
+  'priority 0 'annoy-computer-factor 45
+  'points 1
+  'corpse '(unit-destroyed-1x1-place 0)
+  'explode-when-killed 'missile-explosion
+  'type-land
+  'building 
+  'sounds '())
+
+(define-unit-type 'unit-orc-wall 'name "Wall"
+  'use 'unit-human-wall
+  'size '(32 32)
+  'animations 'animations-building 'icon 'icon-cancel
+  'costs '(time 30)
+  'construction 'construction-wall
+  'speed 0
+  'hit-points 40
+  'draw-level 39
+  'tile-size '(1 1) 'box-size '(31 31)
+  'sight-range 1
+  'armor 20 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
+  'priority 0 'annoy-computer-factor 45
+  'points 1
+  'corpse '(unit-destroyed-1x1-place 0)
+  'explode-when-killed 'missile-explosion
+  'type-land
+  'building 
+  'sounds '())
+
+;; Load the different races
+(ccl:load "ccl/elites/units.ccl")
+(ccl:load "ccl/terras/units.ccl")
+

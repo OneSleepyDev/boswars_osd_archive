@@ -48,7 +48,7 @@
 ;;	o Frame is increment to the frame of the image
 ;;
 
-(define-animations 'animations-engineer
+(define-animations 'animations-units
   'still '(	; #1
     #( 2 0   5   5) #( 2 0   5   5) #( 2 0   5   5) #( 2 0   5   5) 
     #( 2 0   5   5) #( 2 0   5   5) #( 2 0   5   5) #( 2 0   5   5)
@@ -83,7 +83,7 @@
     #( 0 0   1  80) #( 0 0   1  85) #( 0 0   1  90) #( 0 0   1  95)
     #( 0 0   1 100) #( 0 0   1 105) #( 0 0   1 110) #( 0 0   1 115)
     #( 3 0   1 120)))
-(define-animations 'animations-engineer_x
+(define-animations 'animations-units_x
   'die '(	; #2801
     #( 0 0 2000 130) #( 0 0 25 135) #( 0 0 25 140) #( 0 0 25 145)
     #( 0 0 25  150) #( 0 0 25 155) #( 0 0 25 160) #( 3 0 1   160)))

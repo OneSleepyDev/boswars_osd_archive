@@ -46,6 +46,8 @@
 
 (define-icon 'icon-engineer
   'size '(23 38) 'normal '(0 "units/U_builder_i.png"))
+(define-icon 'icon-miner
+  'size '(23 38) 'normal '(0 "units/U_miner_i.png"))
 
 
 

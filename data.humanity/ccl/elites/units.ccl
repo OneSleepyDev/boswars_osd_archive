@@ -36,7 +36,7 @@
   'size '(64 64)
   'shadow '(file "units/u_builder_s.png" size (64 64))
   'draw-level 19
-  'animations 'animations-engineer 'icon 'icon-engineer
+  'animations 'animations-units 'icon 'icon-engineer
   'costs '(time 150 titanium 175 crystal 25)
   'speed 10
   'hit-points 30
@@ -47,7 +47,56 @@
   'max-attack-range 1
   'priority 50
   'points 30
-  'corpse '(unit-dead-body2 0)
+  'corpse '(unit-dead-body_1 0)
+  'type-land
+  'demand 0
+  'repair-range 1
+  'can-target-land
+  'land-unit
+  'coward
+  'organic
+  'selectable-by-rectangle
+  'sounds '(
+    selected "engineer-selected"
+    acknowledge "engineer-acknowledge"
+    ready "engineer-ready"
+    repair "engineer-repair"
+    harvest titanium "engineer-harvest"
+    help "engineer-help"
+    dead "engineer-die"))
+(define-unit-type 'unit-dead-body_1 'name "Builderbody"
+  'files '(tileset-desert "units/u_builder.png")
+  'size '(64 64)
+  'shadow '(file "units/u_builder_s.png" size (64 64))
+  'animations 'animations-units_x 'icon 'icon-cancel
+  'speed 0
+  'hit-points 999
+  'draw-level 30
+  'tile-size '(1 1) 'box-size '(31 31)
+  'sight-range 1
+  'basic-damage 0 'piercing-damage 0 'missile 'missile-none
+  'priority 0
+  'type-land
+  'vanishes
+  'sounds '())
+
+(define-unit-type 'unit-miner 'name "Miner"
+  'files '(tileset-desert "units/u_miner.png")
+  'size '(64 64)
+  'shadow '(file "units/u_miner_s.png" size (64 64))
+  'draw-level 19
+  'animations 'animations-units 'icon 'icon-miner
+  'costs '(time 150 titanium 175 crystal 25)
+  'speed 10
+  'hit-points 30
+  'draw-level 110
+  'tile-size '(1 1) 'box-size '(28 28)
+  'sight-range 5 'computer-reaction-range 6 'person-reaction-range 4
+  'armor 1 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
+  'max-attack-range 1
+  'priority 50
+  'points 30
+  'corpse '(unit-dead-body_2 0)
   'type-land
   'demand 0
   'right-harvest
@@ -56,7 +105,7 @@
   'land-unit
   'coward
   'can-gather-resource '(
-    file-when-loaded "units/u_builder.png"  
+    file-when-loaded "units/u_miner.png"  
     resource-id titanium
     resource-capacity 50
     wait-at-resource 7
@@ -73,8 +122,21 @@
     harvest titanium "engineer-harvest"
     help "engineer-help"
     dead "engineer-die"))
-
-
+(define-unit-type 'unit-dead-body_2 'name "Minerbody"
+  'files '(tileset-desert "units/u_miner.png")
+  'size '(64 64)
+  'shadow '(file "units/u_miner_s.png" size (64 64))
+  'animations 'animations-units_x 'icon 'icon-cancel
+  'speed 0
+  'hit-points 999
+  'draw-level 30
+  'tile-size '(1 1) 'box-size '(31 31)
+  'sight-range 1
+  'basic-damage 0 'piercing-damage 0 'missile 'missile-none
+  'priority 0
+  'type-land
+  'vanishes
+  'sounds '())
 
 
 
@@ -525,21 +587,6 @@
   'vanishes
   'sounds '())
 
-(define-unit-type 'unit-dead-body2 'name "Engineerbody"
-  'files '(tileset-desert "units/u_builder.png")
-  'size '(64 64)
-  'shadow '(file "units/u_builder_s.png" size (64 64))
-  'animations 'animations-engineer_x 'icon 'icon-cancel
-  'speed 0
-  'hit-points 999
-  'draw-level 30
-  'tile-size '(1 1) 'box-size '(31 31)
-  'sight-range 1
-  'basic-damage 0 'piercing-damage 0 'missile 'missile-none
-  'priority 0
-  'type-land
-  'vanishes
-  'sounds '())
 
 (define-unit-type 'unit-dead-body3 'name "Grenadierbody"
   'files '(tileset-desert "elites/units/unit_grenadier_c.png")

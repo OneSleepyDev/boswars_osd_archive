@@ -42,19 +42,10 @@
   'unit-elites-start-location
 
   'unit-engineer
-  'unit-harvester
-  'unit-assault
-  'unit-grenadier
-  'unit-bazoo
-  'unit-medic
-  'unit-apcs
+  'unit-miner
 
   'unit-yard
-  'unit-gen
-  'unit-camp
-  'unit-rfac
-  'unit-hosp
-  'unit-vfac
+
 
 ;- - - - - - - - - - - - - - - - - - -
 

@@ -46,13 +46,13 @@
 (define-button 'pos 1 'level 0 'icon 'icon-move
   'action 'move
   'key "m" 'hint "~!MOVE"
-  'for-unit '(unit-engineer unit-harvester unit-assault unit-grenadier unit-bazoo unit-medic
+  'for-unit '(unit-engineer unit-miner unit-harvester unit-assault unit-grenadier unit-bazoo unit-medic
     unit-apcs elites-group))
 
 (define-button 'pos 2 'level 0 'icon 'icon-stop
   'action 'stop
   'key "s" 'hint "~!STOP"
-  'for-unit '(unit-engineer unit-harvester unit-assault unit-grenadier unit-bazoo unit-medic
+  'for-unit '(unit-engineer unit-miner unit-harvester unit-assault unit-grenadier unit-bazoo unit-medic
     unit-apcs elites-group))
 
 (define-button 'pos 3 'level 0 'icon 'icon-attack
@@ -79,18 +79,13 @@
 
 (define-button 'pos 5 'level 0 'icon 'icon-harvest
   'action 'harvest
-  'key "h" 'hint "~!MINE TITANIUM"
-  'for-unit '(unit-engineer))
-
-(define-button 'pos 5 'level 0 'icon 'icon-harvest
-  'action 'harvest
-  'key "h" 'hint "~!HARVEST CRYSTALS"
-  'for-unit '(unit-harvester))
+  'key "h" 'hint "~!MINE"
+  'for-unit '(unit-miner))
 
 (define-button 'pos 6 'level 0 'icon 'icon-return-goods-peasant
   'action 'return-goods
   'key "g" 'hint "RETURN WITH ~!RESOURCES"
-  'for-unit '(unit-engineer unit-harvester))
+  'for-unit '(unit-miner))
 
 ;; build basic/advanced structs -----------------------------------------------
 

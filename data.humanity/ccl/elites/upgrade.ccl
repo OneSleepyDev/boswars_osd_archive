@@ -27,12 +27,13 @@
 ;;      Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 ;;
 ;;	$Id$
+(define-allow 'unit-engineer			"AAAAAAAAAAAAAAAA")
+(define-allow 'unit-miner			"AAAAAAAAAAAAAAAA")
 
 
 (define-allow 'unit-assault			"AAAAAAAAAAAAAAAA")
 (define-allow 'unit-grenadier			"AAAAAAAAAAAAAAAA")
 (define-allow 'unit-bazoo			"AAAAAAAAAAAAAAAA")
-(define-allow 'unit-engineer			"AAAAAAAAAAAAAAAA")
 (define-allow 'unit-medic			"AAAAAAAAAAAAAAAA")
 (define-allow 'unit-harvester			"AAAAAAAAAAAAAAAA")
 (define-allow 'unit-gen 			"AAAAAAAAAAAAAAAA")

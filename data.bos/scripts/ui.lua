@@ -35,19 +35,22 @@ DefineButtonStyle("main", {
   TextReverseColor = "white",
   Default = {
     File = "general/ui_buttons.png", Size = {300, 144}, Frame = 4,
+    TextOffset = {30, 2}
   },
   Hover = {
     TextNormalColor = "white",
+    TextOffset = {30, 2}
   },
   Selected = {
     Border = {
       Color = {252, 252, 0}, Size = 1,
     },
+    TextOffset = {30, 2}
   },
   Clicked = {
     File = "general/ui_buttons.png", Size = {300, 144}, Frame = 5,
     TextNormalColor = "white",
-    TextOffset = {2, 2},
+    TextOffset = {30, 2},
   },
   Disabled = {
     File = "general/ui_buttons.png", Size = {300, 144}, Frame = 3,
@@ -57,7 +60,7 @@ DefineButtonStyle("main", {
 })
 
 DefineButtonStyle("network", {
-  Size = {80, 20},
+  Size = {80, 19},
   Font = "game",
   TextNormalColor = "yellow",
   TextReverseColor = "white",

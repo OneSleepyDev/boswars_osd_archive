@@ -69,29 +69,35 @@
 (make-sound "lancer-selected" "elites/unit_lancer_selected.wav")
 (make-sound "lancer-acknowledge" "elites/unit_lancer_yes.wav")
 (make-sound "lancer-ready" "elites/computer_voice/assault.unit.ready.wav")
-(make-sound "lancer-help" "elites/unit_lancer_help.wav")
+(make-sound "lancer-help" "elites/computer_voice/assault.unit.underattack.wav")
 (make-sound "lancer-die" "elites/unit_lancer_die.wav")
 (make-sound "lancer-attack" "elites/unit_lancer_fire.wav")
 
 (make-sound "engineer-ready" "elites/computer_voice/engineer.ready.wav")
+(make-sound "engineer-help" "elites/computer_voice/engineer.underattack.wav")
 
 (make-sound "harvester-ready" "elites/computer_voice/harvester.completed.wav")
+(make-sound "harvester-help" "elites/computer_voice/harvester.underattack.wav")
 
 ;; BUILDINGS
 (make-sound "pplnt-selected" "elites/buildings/sfx_pplnt.select.wav")
 (make-sound "pplnt-ready" "elites/computer_voice/power.plant.completed.wav")
+(make-sound "pplnt-help" "elites/computer_voice/power.plant.underattack.wav")
 (make-sound "pplnt-dead" "elites/buildings/sfx_pplnt.die.wav")
 
 (make-sound "camp-selected" "elites/buildings/sfx_camp.select.wav")
 (make-sound "camp-ready" "elites/computer_voice/training.camp.completed.wav")
+(make-sound "camp-help" "elites/computer_voice/training.camp.underattack.wav")
 (make-sound "camp-dead" "elites/buildings/sfx_camp.die.wav")
 
 (make-sound "fort-selected" "elites/buildings/sfx_fort.select.wav")
 (make-sound "fort-ready" "elites/computer_voice/elite.fort.completed.wav")
+(make-sound "fort-help" "elites/computer_voice/elite.fort.underattack.wav")
 (make-sound "fort-dead" "elites/buildings/sfx_fort.die.wav")
 
 (make-sound "rfac-selected" "elites/buildings/sfx_rfac.select.wav")
 (make-sound "rfac-ready" "elites/computer_voice/research.facility.completed.wav")
+(make-sound "rfac-help" "elites/computer_voice/research.facility.underattack.wav")
 (make-sound "rfac-dead" "elites/buildings/sfx_rfac.die.wav")
 
 

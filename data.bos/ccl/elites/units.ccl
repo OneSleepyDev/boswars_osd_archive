@@ -104,7 +104,7 @@
     selected "engineer-selected"
     acknowledge "engineer-acknowledge"
     ready "engineer-ready"
-    help "basic elites voices help 1"
+    help "engineer-help"
     dead "basic elites voices dead"
     attack "engineer-attack"))
 
@@ -147,7 +147,7 @@
     selected "harvester-selected"
     acknowledge "harvester-acknowledge"
     ready "harvester-ready"
-    help "basic elites voices help 1"
+    help "harvester-help"
     dead "basic elites voices dead"
     attack "harvester-attack"))
 
@@ -176,7 +176,7 @@
     selected "pplnt-selected"
 ;    acknowledge "pplnt-acknowledge"
     ready "pplnt-ready"
-    help "basic elites voices help 2"
+    help "pplnt-help"
     dead "pplnt-dead"
 ;    attack "pplnt-attack"
   ))
@@ -206,7 +206,7 @@
     selected "camp-selected"
 ;    acknowledge "camp-acknowledge"
     ready "camp-ready"
-    help "basic elites voices help 2"
+    help "camp-help"
     dead "camp-dead"
 ;    attack "camp-attack"
   ))
@@ -237,7 +237,7 @@
     selected "fort-selected"
 ;    acknowledge "fort-acknowledge"
     ready "fort-ready"
-    help "basic elites voices help 2"
+    help "fort-help"
     dead "fort-dead"
 ;    attack "town-hall-attack"
   ))
@@ -268,7 +268,7 @@
     selected "rfac-selected"
 ;    acknowledge "town-hall-acknowledge"
     ready "rfac-ready"
-    help "basic elites voices help 2"
+    help "rfac-help"
     dead "rfac-dead"
 ;    attack "town-hall-attack"
   ))

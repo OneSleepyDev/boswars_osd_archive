@@ -36,6 +36,7 @@
 (define-allow 'unit-pplnt			"AAAAAAAAAAAAAAAA")
 (define-allow 'unit-camp			"AAAAAAAAAAAAAAAA")
 (define-allow 'unit-fort			"AAAAAAAAAAAAAAAA")
+(define-allow 'unit-rfac			"AAAAAAAAAAAAAAAA")
 (define-allow 'unit-human-wall			"AAAAAAAAAAAAAAAA")
 
 ;;	- upgrades

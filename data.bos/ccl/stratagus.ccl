@@ -383,7 +383,7 @@
 ;;-----------------------------------------------------------------------------
 
 ;;	All player food unit limit
-(set-all-players-food-unit-limit! 200)
+(set-all-players-food-unit-limit! 50000)
 ;;	All player building limit
 (set-all-players-building-limit! 200)
 ;;	All player total unit limit

@@ -164,7 +164,7 @@ function DefineEliteScreen(screen_width, screen_height)
 			"pos", {24, 16},
 			"size", {
 				math.floor((screen_width - 216) / 32) * 32,
-				math.floor((screen_width - 32) / 32) * 32}},
+				math.floor((screen_height - 32) / 32) * 32}},
 		"menu-panel", {
 			"menu-button", {
 				"pos", {screen_width - 200, 0}, "size", {200, 20},

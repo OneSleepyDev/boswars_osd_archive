@@ -178,7 +178,7 @@
 
     'menu-panel (list
 ;      'panel (list
-;        'file "graphics/ui/elites/menubutton.png"
+;        'file "graphics/general/menubutton.png"
 ;        'pos '(0 0))
       'menu-button (list
         'pos (list (- screen_width 200) 0)

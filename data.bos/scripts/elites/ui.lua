@@ -161,7 +161,7 @@ function DefineEliteScreen(screen_width, screen_height)
 				{"pos", {screen_width - 177, 430}, "size", {46, 38}},
 				{"pos", {screen_width - 122, 430}, "size", {46, 38}},
 				{"pos", {screen_width - 67, 430}, "size", {46,38}}},
-		        "command-key-font", "game"},
+		        "auto-cast-border-color", {0, 0, 252}},
 		"piemenu", {
 			"radius", 70,
 			"file", "graphics/ui/rosace1.png",

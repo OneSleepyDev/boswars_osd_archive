@@ -60,46 +60,65 @@ DefineCursor({
 ------------------------------------------------------------------------------;
 --	* Race elites.
 ------------------------------------------------------------------------------;
+function AppendElements(t, elements)
+	for k,v in pairs(elements) do
+		if(type(k)=="number") then 
+			table.insert(t, v)
+		else
+			table.insert(t, k, v)
+		end
+	end
+end
+
+function AddFiller(ui, graphic, position)
+        print("filler")
+	table.insert(ui, "filler")
+	table.insert(ui, {File = graphic, Pos = position})
+end
 
 function DefineEliteScreen(screen_width, screen_height)
 	info_panel_x = screen_width - 200
 	info_panel_y = 160
 
-	DefineUI("elites", screen_width, screen_height,
+	ui = {"elites", screen_width, screen_height,
 		"normal-font-color", "light-green",
-		"reverse-font-color", "yellow",
-		"filler", {
-			"file", "graphics/elites/ui/ui_" .. screen_width .. "_filler.png",
-			"pos", {0, 0}},
-		-- resource line
-		"filler", {
-			"file", "graphics/elites/ui/ui_" .. screen_width .. "_respanel.png", 
-			"pos", {0, 0}},
-		-- no menu panel ?
-		-- minimap
-		"filler", {
-			"file", "graphics/elites/ui/ui_minimap.png",
-			"pos", {screen_width - 200, 24}},
-		-- status line
-		"filler", {
-			"file", "graphics/elites/ui/ui_" .. screen_width .. "_stat.png",
-			"pos", {0, screen_height - 16}},
+		"reverse-font-color", "yellow"}
+	AddFiller(ui, "graphics/elites/ui/ui_" .. screen_width .. "_filler.png", {0, 0})
+	-- resource line
+	AddFiller(ui, "graphics/elites/ui/ui_" .. screen_width .. "_respanel.png", {0, 0})
+	-- no menu panel ?
+	-- minimap
+	AddFiller(ui, "graphics/elites/ui/ui_minimap.png", 
+			{screen_width - 200, 24})
+	-- status line
+	AddFiller(ui, "graphics/elites/ui/ui_" .. screen_width .. "_stat.png",
+			{0, screen_height - 16})
+
+	ui2 = {
 		"resources", {
 			"titanium", {
-				"file", "graphics/elites/ui/ui_res_icons.png", "frame", 0,
-				"pos", {67 +   0, 0}, "size", {14, 14}, "text-pos", {85 +   0, 1}},
+				File = "graphics/elites/ui/ui_res_icons.png", Frame = 0,
+				Pos = {67 +   0, 0}, 
+				Size = {14, 14}, 
+				TextPos = {85 +   0, 1}},
 			"crystal", {
-				"file", "graphics/elites/ui/ui_res_icons.png", "frame", 1,
-				"pos", {67 +  75, 0}, "size", {14, 14}, "text-pos", {85 +  75, 1}},
+				File = "graphics/elites/ui/ui_res_icons.png", Frame = 1,
+				Pos = {67 +  75, 0},
+				Size = {14, 14},
+				TextPos =  {85 +  75, 1}},
 --			"gas", {
---				"file", "graphics/elites/ui/ui_res_icons.png", "frame", 1,
---				"pos", {67 + 150, 0}, "size", {14, 14}, "text-pos", {85 + 150, 1}},
+--				File = "graphics/elites/ui/ui_res_icons.png", Frame = 1,
+--				Pos = {67 + 150, 0}, "size", {14, 14}, "text-pos", {85 + 150, 1}},
 			"food", {
-				"file", "graphics/elites/ui/ui_res_icons.png", "frame", 3,
-				"pos", {67 + 150, 0}, "size", {14, 14}, "text-pos", {85 + 150, 1}},
+				File = "graphics/elites/ui/ui_res_icons.png", Frame = 3,
+				Pos =  {67 + 150, 0}, 
+				Size = {14, 14}, 
+				TextPos = {85 + 150, 1}},
 			"score", {
-				"file", "graphics/elites/ui/ui_res_icons.png", "frame", 4,
-				"pos", {67 + 300, 0}, "size", {14, 14}, "text-pos", {85 + 300, 1}}},
+				File = "graphics/elites/ui/ui_res_icons.png", Frame = 4,
+				Pos = {67 + 300, 0}, 
+				Size = {14, 14}, 
+				TextPos = {85 + 300, 1}}},
 		"info-panel", {
 			"panel", {
 				"file", "graphics/elites/ui/ui_info.png",
@@ -178,43 +197,46 @@ function DefineEliteScreen(screen_width, screen_height)
 			"file", "graphics/ui/rosace1.png",
 			"mouse-button", "middle"},
 		"map-area", {
-			"pos", {24, 16},
-			"size", {
+			Pos = {24, 16},
+			Size = {
 				screen_width - 200 - 24,
 				screen_height - 32}},
 		"menu-panel", {
 			"menu-button", {
-				"pos", {screen_width - 200, 0},
-				"caption", "Menu (~<F10~>)", "style", "main"},
+				Pos = {screen_width - 200, 0},
+				Caption = "Menu (~<F10~>)",
+				Style = "main"},
 			"network-menu-button", {
-				"pos", {screen_width - 200, 2},
-				"caption", "Menu", "style", "network"},
+				Pos = {screen_width - 200, 2},
+				Caption = "Menu", 
+				Style = "network"},
 			"network-diplomacy-button", {
-				"pos", {screen_width - 100, 2},
-				"caption", "Diplomacy", "style", "network"}},
+				Pos = {screen_width - 100, 2},
+				Caption = "Diplomacy",
+				Style = "network"}},
 		"minimap", {
-			"pos", {screen_width - 200 + 46, 24 + 17},
-			"size", {121, 105}},
+			Pos = {screen_width - 200 + 46, 24 + 17},
+			Size = {121, 105}},
 		"status-line", {
-			"text-pos", {2 + 36, screen_height - 14},
-			"font", "game",
-			"width", screen_width - 200 - 100},
+			TextPos = {2 + 36, screen_height - 14},
+			Font = "game",
+			Width = screen_width - 200 - 100 },
 		"cursors", {
-			"point", "cursor-point",
-			"glass", "cursor-glass",
-			"cross", "cursor-cross",
-			"yellow", "cursor-yellow-hair",
-			"green", "cursor-green-hair",
-			"red", "cursor-red-hair",
-			"scroll", "cursor-scroll",
-			"arrow-e", "cursor-arrow-e",
-			"arrow-ne", "cursor-arrow-ne",
-			"arrow-n", "cursor-arrow-n",
-			"arrow-nw", "cursor-arrow-nw",
-			"arrow-w", "cursor-arrow-w",
-			"arrow-sw", "cursor-arrow-sw",
-			"arrow-s", "cursor-arrow-s",
-			"arrow-se", "cursor-arrow-se"},
+  			 Point = "cursor-point",
+     			 Glass = "cursor-glass",
+      			 Cross = "cursor-cross",
+		         Yellow = "cursor-yellow-hair",
+		         Green = "cursor-green-hair",
+     			 Red = "cursor-red-hair",
+		         Scroll = "cursor-scroll",
+		         ArrowE = "cursor-arrow-e",
+                         ArrowNE = "cursor-arrow-ne",
+                         ArrowN = "cursor-arrow-n",
+                         ArrowNW = "cursor-arrow-nw",
+                         ArrowW = "cursor-arrow-w",
+                         ArrowSW = "cursor-arrow-sw",
+                         ArrowS = "cursor-arrow-s",
+                         ArrowSE = "cursor-arrow-se"},
 		"menu-panels", {
 			"panel1", "graphics/general/panel_1.png",
 			"panel2", "graphics/general/panel_2.png",
@@ -223,7 +245,10 @@ function DefineEliteScreen(screen_width, screen_height)
 			"panel5", "graphics/general/panel_5.png"},
 		"victory-background", "graphics/screens/general.png",
 		"defeat-background", "graphics/screens/general.png"
-	)
+	}
+	AppendElements(ui,ui2)
+	print(unpack(ui))
+	DefineUI(unpack(ui))
 end
 
 DefineEliteScreen(640, 480)

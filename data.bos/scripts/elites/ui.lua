@@ -75,10 +75,137 @@ function AddFiller(ui, graphic, position)
 	table.insert(ui, {File = graphic, Pos = position})
 end
 
+function DefineElitePanels(info_panel_x, info_panel_y) 
+	DefinePanelContents(
+-- Default presentation. ------------------------
+  {
+  Ident = "panel-general-contents"..info_panel_x,
+  Pos = {info_panel_x, info_panel_y}, DefaultFont = "game",
+  Contents = {
+	{ Pos = {14, 56}, Condition = {ShowOpponent = false, HideNeutral = true},
+		More = {"LifeBar", {Variable = "HitPoints", Height = 7, Width = 45}}
+	},
+	{ Pos = {38, 57}, Condition = {ShowOpponent = false, HideNeutral = true},
+		More = {"FormatedText2", {
+			Font = "small", Variable = "HitPoints", Format = "%d/%d",
+			Component1 = "Value", Component2 = "Max", Centered = true}}
+	},
+	{ Pos = {114, 25}, More = {"Text", {ShowName = true}} }, -- FIXME:split for long name
+	{ Pos = {10, 158}, More = {"Text", {Variable = "Slot"}},
+		Condition = {Slot = "only"} }, -- DEBUG ONLY.
+-- Ressource Left
+	{ Pos = {88, 86}, Condition = {ShowOpponent = false, GiveResource = "only"},
+		More = {"FormatedText2", {Format = "%s Left:%d", Variable = "GiveResource",
+					Component1 = "Name", Component2 = "Value", Centered = true}}
+	}
+
+  } },
+-- Supply Building constructed.----------------
+  {
+  Ident = "panel-building-contents"..info_panel_x,
+  Pos = {info_panel_x, info_panel_y}, DefaultFont = "game",
+  Condition = {ShowOpponent = false, HideNeutral = true, Build = "false", Supply = "only", Training = "false", UpgradeTo = "false"},
+-- FIXME more condition. not town hall.
+  Contents = {
+-- Food building
+        -- { Pos = {16, 71}, More = {"Text", "Usage"} },
+	{ Pos = {16, 86}, More = {"Text", {Text = "Supply : ", Variable = "Supply",
+					Component = "Max"}} },
+	{ Pos = {16, 102}, More = {"Text", {Text = "Demand : ", Variable = "Demand",
+					Component = "Max"}} },
+	{ Pos = {16, 102}, More = {"FormatedText", {Format = "Demand : ~<%d~>",
+					Variable = "Demand", Component = "Max"}}
+-- FIXME COLOR when Demand >= Supply
+    }
+
+  } },
+-- All own unit -----------------
+  {
+  Ident = "panel-all-unit-contents"..info_panel_x,
+  Pos = {info_panel_x, info_panel_y},
+  DefaultFont = "game",
+  Condition = {ShowOpponent = false, HideNeutral = true, Build = "false"},
+  Contents = {
+	{ Pos = {16, 97}, Condition = {Damage = "only"},
+		More = {"FormatedText2", {Format = "Damage: %d-%d", Variable = "Damage",
+			Component1 = "Value", Component2 = "Max"}}
+	},
+	{ Pos = {109, 97}, Condition = {Damage = "only"},-- FIXME When PiercingDamage.Diff != 0.
+		More = {"FormatedText2", {Format = "~<%+d+%d~>", Variable1 = "ExtraDamage",
+			Variable2 = "PiercingDamage", Component2 = "Diff"}}
+
+	},
+	{ Pos = {16, 111}, Condition = {AttackRange = "only"},
+		More = {"Text", {
+			 Text = "Range: ", Variable = "AttackRange" , Stat = true}}
+	},
+-- Construction
+	{ Pos = {12, 153}, Condition = {Build = "only"},
+		More = {"CompleteBar", {Variable = "Build", Width = 152, Height = 12}}
+	},
+	{ Pos = {50, 154}, Condition = {Build = "only"}, More = {"Text", "% Complete"}},
+	{ Pos = {107, 78}, Condition = {Build = "only"}, More = {"Icon", {Unit = "Worker"}}},
+-- Research
+	{ Pos = {14, 141}, Condition = {Research = "only"},
+		More = {"CompleteBar", {Variable = "Research", Width = 136, Height = 12}}
+	},
+	{ Pos = {64, 106}, Condition = {Research = "only"}, More = {"Text", "Researching"}},
+	{ Pos = {44, 141}, Condition = {Research = "only"}, More = {"Text", "% Complete"}},
+-- Training
+	{ Pos = {14, 141}, Condition = {Training = "only"},
+		More = {"CompleteBar", {Variable = "Training", Width = 136, Height = 12}}
+	},
+	{ Pos = {44, 141}, Condition = {Training = "only"}, More = {"Text", "% Complete"}},
+-- Upgrading To
+	{ Pos = {14, 141}, Condition = {UpgradeTo = "only"},
+		More = {"CompleteBar", {Variable = "UpgradeTo", Width = 136, Height = 12}}
+	},
+	{ Pos = {37,  86}, More = {"Text", "Upgrading:"}, Condition = {UpgradeTo = "only"} },
+	{ Pos = {44, 141}, More = {"Text", "% Complete"}, Condition = {UpgradeTo = "only"} },
+-- Mana
+	{ Pos = {16, 141}, Condition = {Mana = "only"},
+		More = {"CompleteBar", {Variable = "Mana", Height = 16, Width = 140, Border = true}}
+	},
+	{ Pos = {86, 141}, More = {"Text", {Variable = "Mana"}}, Condition = {Mana = "only"} },
+-- Ressource Carry
+	{ Pos = {16, 97}, Condition = {CarryResource = "only"},
+		More = {"FormatedText2", {Format = "Carry: %d %s", Variable = "CarryResource",
+				Component1 = "Value", Component2 = "Name"}}
+	}
+
+  } },
+-- Attack Unit -----------------------------
+  {
+  Ident = "panel-attack-unit-contents"..info_panel_x,
+  Pos = {info_panel_x, info_panel_y},
+  DefaultFont = "game",
+  Condition = {ShowOpponent = false, HideNeutral = true, Level = "only", Build = "false"},
+  Contents = {
+-- Unit caracteristics
+	{ Pos = {114, 37}, Condition = {Level = "only"},
+		More = {"FormatedText", {Variable = "Level", Format = "Level ~<%d~>"}}
+	},
+	{ Pos = {114, 52}, Condition = {Level = "only"},
+		More = {"FormatedText2", {Centered = true,
+			Variable1 = "Xp", Variable2 = "Kill", Format = "XP:~<%d~> Kills:~<%d~>"}}
+	},
+	{ Pos = {16, 84}, Condition = {Armor = "only"},
+		More = {"Text", {Text = "Armor: ", Variable = "Armor", Stat = true}}
+	},
+	{ Pos = {16, 125}, Condition = {SightRange = "only"},
+		More = {"Text", {Text = "Sight: ", Variable = "SightRange", Stat = true}}
+	},
+	{ Pos = {16, 138}, Condition = {Speed = "only"},
+		More = {"Text", {Text = "Speed: ", Variable = "Speed", Stat = true}}
+	} } })
+end
+
+
 function DefineEliteScreen(screen_width, screen_height)
 	info_panel_x = screen_width - 200
 	info_panel_y = 160
 
+	DefineElitePanels(info_panel_x, info_panel_y)
 	ui = {"elites", screen_width, screen_height,
 		"normal-font-color", "light-green",
 		"reverse-font-color", "yellow"}
@@ -123,10 +250,14 @@ function DefineEliteScreen(screen_width, screen_height)
 				"file", "elites/ui/ui_info.png",
 				"pos", {info_panel_x, info_panel_y},
 				"size", {200, 176}},
+			"panels", {"panel-general-contents"..info_panel_x, 
+				"panel-attack-unit-contents"..info_panel_x,
+		                "panel-all-unit-contents"..info_panel_x, 
+				"panel-building-contents"..info_panel_x},
 			"selected", {
 				"single", {
 					"icon", {
-						"pos", {screen_width - 187, 176}, "style", "icon"}
+					   "pos", {screen_width - 187, 176}, "style", "icon"}
 				},
 				"multiple", {
 					"icons", {
@@ -154,16 +285,8 @@ function DefineEliteScreen(screen_width, screen_height)
 						{"pos", {screen_width - 127, 243}, "style", "icon"},
 						{"pos", {screen_width - 112, 243}, "style", "icon"}}}},
 			"upgrading", {
-				"text", {
-					"text", "",
-					"font", "game",
-					"pos", {info_panel_x + 29, info_panel_y + 8 + 78}},
 				"icon", {"pos", {screen_width - 187, 243}, "style", "icon"}},
 			"researching", {
-				"text", {
-					"text", "",
-					"font", "game",
-					"pos", {info_panel_x + 16, info_panel_y + 8 + 78}},
 				"icon", {"pos", {screen_width - 187, 243}, "style", "icon"}},
 			"transporting", {"icons", {
 					{"pos", {screen_width - 187, 243}, "style", "icon"},
@@ -173,9 +296,7 @@ function DefineEliteScreen(screen_width, screen_height)
 					{"pos", {screen_width - 127, 243}, "style", "icon"},
 					{"pos", {screen_width - 112, 243}, "style", "icon"}}},
 			"completed-bar", {
-				"color", {50, 50, 80},
-				"pos", {screen_width - 187, 299},
-				"size", {140, 15}}},
+				"color", {50, 50, 80}}},
 		"button-panel", {
 			"panel", {
 				"file", "elites/ui/ui_" .. screen_width .. "_bpanel.png",
@@ -206,11 +327,11 @@ function DefineEliteScreen(screen_width, screen_height)
 				Caption = "Menu (~<F10~>)",
 				Style = "main"},
 			"network-menu-button", {
-				Pos = {screen_width - 200, 2},
+				Pos = {screen_width - 200, 0},
 				Caption = "Menu", 
 				Style = "network"},
 			"network-diplomacy-button", {
-				Pos = {screen_width - 100, 2},
+				Pos = {screen_width - 100, 0},
 				Caption = "Diplomacy",
 				Style = "network"}},
 		"minimap", {

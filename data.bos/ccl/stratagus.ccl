@@ -58,7 +58,7 @@
 (set-title-screen! "video/int_logo_stratagus.avi" "video/int_logo_bos.avi")
 
 ;;	Enter your title music.
-(set-title-music! "music/title.ogg")
+;(set-title-music! "music/title.ogg")
 
 ;;	Enter your default menu background.
 (set-menu-background! "graphics/screens/menu.png")

@@ -53,7 +53,6 @@
   'corpse '(unit-dead-body5 0)
   'type-land
   'right-attack
-  'repair-range 1
   'can-target-land
   'land-unit
   'demand 0
@@ -86,7 +85,7 @@
   'type-land
   'demand 0
   'right-attack
-  'can-attack 'repair-range 1
+  'can-attack
   'can-target-land
   'can-target-air
   'land-unit
@@ -119,7 +118,7 @@
   'type-land
   'demand 0
   'right-attack
-  'can-attack 'repair-range 1
+  'can-attack
   'can-target-land
   'land-unit
   'organic
@@ -150,7 +149,7 @@
   'corpse '(unit-dead-body3 0)
   'type-land
   'right-attack
-  'can-attack 'repair-range 1
+  'can-attack
   'can-target-land
   'land-unit
   'organic
@@ -202,9 +201,9 @@
     selected "engineer-selected"
     acknowledge "engineer-acknowledge"
     ready "engineer-ready"
+    repair "engineer-repair"
     help "engineer-help"
-    dead "engineer-die"
-    attack "engineer-attack"))
+    dead "engineer-die"))
 
 (define-unit-type 'unit-harvester 'name "Harvester"
   'files '(tileset-desert "elites/units/unit_harv.png")
@@ -228,7 +227,7 @@
   'type-land
   'demand 50
   'right-harvest
-  'can-attack 'repair-range 1
+  'can-attack
   'can-target-land
   'land-unit
   'coward

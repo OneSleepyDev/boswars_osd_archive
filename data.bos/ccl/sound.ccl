@@ -98,7 +98,7 @@
 (make-sound "engineer-ready" "elites/computer_voice/engineer.ready.wav")
 (make-sound "engineer-help" "elites/computer_voice/engineer.underattack.wav")
 (make-sound "engineer-die" "elites/units/engineer_die.wav")
-(make-sound "engineer-attack" "elites/units/engineer_attack.wav")
+(make-sound "engineer-repair" "elites/units/engineer_attack.wav")
 
 (make-sound "harvester-selected" "elites/units/harvester_select.wav")
 (make-sound "harvester-acknowledge" "elites/units/harvester_action.wav")
@@ -170,11 +170,6 @@
 
 ;  'work-complete (list 'elites (make-sound "basic elites voices work complete" "elites/basic_voices/work_complete.wav"))
 ;  'work-complete (list 'terras (make-sound "basic terras voices work complete" "terras/basic_voices/work_complete.wav"))
-
-  ;; Repair sound is disabled as default
-  ;;'repair #t
-  ;;'repair (sound-for-name "peasant attack")
-  ;;'repair (make-sound "peasant attack" "elites/units/peasant/attack.wav")
 
 ;  'rescue (list 'elites (make-sound "elites rescue" "elites/rescue.wav"))
 ;  'rescue (list 'terras (make-sound "terras rescue" "terras/rescue.wav"))

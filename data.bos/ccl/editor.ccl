@@ -67,8 +67,6 @@
 
   'unit-gold-mine
 
-  'unit-critter
-
 ; Placing this unit-types on map is not (yet?) supported.
 ;  'unit-dead-body
 ;  'unit-destroyed-1x1-place

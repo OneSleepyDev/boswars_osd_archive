@@ -58,7 +58,7 @@
     ;;
     ;;	Building can train which units.
     ;;
-    (list 'train 'unit-pplnt 'unit-critter)
+;    (list 'train 'unit-pplnt 'unit-critter)
     (list 'train 'unit-fort 'unit-engineer 'unit-harvester)
     (list 'train 'unit-camp 'unit-lancer)
     ;;
@@ -84,7 +84,7 @@
     ;;
     ;;	Building can train which units.
     ;;
-    (list 'train 'unit-pig-farm 'unit-critter)
+;    (list 'train 'unit-pig-farm 'unit-critter)
     (list 'train 'unit-great-hall 'unit-peon)
     (list 'train 'unit-terras-barracks 'unit-grunt)
     ;;

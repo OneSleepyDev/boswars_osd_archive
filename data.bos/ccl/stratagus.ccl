@@ -184,7 +184,7 @@
 ;;
 ;;	(shadow-sprite file hotx hoty width height)
 ;;
-(shadow-sprite "graphics/missiles/unit_shadow.png"	3 42	32 32)
+;(shadow-sprite "graphics/missiles/unit_shadow.png"	3 42	32 32)
 (spell-sprite "graphics/ui/bloodlust,haste,slow,invisible,shield.png"
   1 1	16 16)
 

@@ -92,7 +92,8 @@
   'unit-destroyed-3x3-place 'unit-destroyed-4x4-place
   'unit-engineer 'unit-peon 'unit-engineer 'unit-peon 'unit-elites-oil-tanker 'unit-terras-oil-tanker
   'unit-harvester
-  'unit-crystal-field1)
+  'unit-crystal-field1
+  'unit-rfac)
 
 (define-missiletype-wc-names
   'missile-lightning 'missile-griffon-hammer 'missile-dragon-breath

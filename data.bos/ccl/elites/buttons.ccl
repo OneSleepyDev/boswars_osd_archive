@@ -41,13 +41,13 @@
   'action 'move
   'key "m" 'hint "~!MOVE"
   'for-unit '(unit-engineer unit-harvester unit-lancer
-    unit-critter elites-group))
+    elites-group))
 
 (define-button 'pos 2 'level 0 'icon 'icon-elites-shield1
   'action 'stop
   'key "s" 'hint "~!STOP"
   'for-unit '(unit-engineer unit-harvester unit-lancer
-    unit-critter elites-group))
+    elites-group))
 
 (define-button 'pos 3 'level 0 'icon 'icon-sword1
   'action 'attack

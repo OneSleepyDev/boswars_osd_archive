@@ -105,7 +105,7 @@
     acknowledge "engineer-acknowledge"
     ready "engineer-ready"
     help "engineer-help"
-    dead "basic elites voices dead"
+    dead "engineer-die"
     attack "engineer-attack"))
 
 (define-unit-type 'unit-harvester 'name "Mineral Harvester"

@@ -8,7 +8,6 @@ BOS.Elites
 			Tile: Size 224 224; Select Box 224 224;
 			GFX: Icon elites\build\ico_fort.png; Unit elites\build\bld_fort.png; 
 				Shadow elites\build\bld_fort_s.png; Explode nature\effects\expl_288x288x1.png;
-			SFX: Die elites\buildings\sfx_fort.die.wav; Select elites\buildings\sfx_fort.select.wav;
 			Anim: Loop 0, 1, 2, 3; Build 4, 5, 6, 7, 8; Die 8, 9, 10, 11, 12, 13, 14, 15, 16, 17;
 			Trained At: UNIT_ENG/bld_grp1/pos1;
 			
@@ -21,6 +20,8 @@ BOS.Elites
 			Tile: Size 64 64; Select Box 32 32;
 			GFX: Icon elites\units\ico_engineer.png; Unit elites\units\unit_engineer.png;
 				Shadow elites\units\unit_engineer_s.png; Corpse elites\units\unit_engineer_c.png;
+			SFX: Select elites\units\engineer_select.wav; Action elites\units\engineer_action.wav;
+				Attack elites\units\engineer_attack.wav; Die elites\units\engineer_die.wav;
 			Anim: Stand 0; Walk 5, 10, 15, 20; Attack 25, 30, 35, 40, 35, 30; Die 45, 50, 55, 60, (Corpse);
 			Other: Harvest titanium (a100, t200); Repair buildings; Button_Menu bld_grp1, bld_grp2;
 			Trained At: FORT/pos1;
@@ -33,7 +34,6 @@ BOS.Elites
 			Tile: Size 160 128; Select Box 160 128;
 			GFX: Icon elites\build\ico_camp.png; Unit elites\build\bld_camp.png;
 				Shadow elites\build\bld_camp_s.png; Explode nature\effects\expl_160x128x1.png;
-			SFX: Die elites\buildings\sfx_camp.die.wav; Select elites\buildings\sfx_camp.select.wav;
 			Anim: Loop slp_3 0, slp_3 1, slp_3 2, slp_3 3, slp_3 4; Build 5, 6, 7;
 			Trained At: UNIT_ENG/bld_grp1/pos2;
 
@@ -45,7 +45,6 @@ BOS.Elites
 			Tile: Size 64 64; Select Box 64 64;
 			GFX: Icon elites\build\ico_pplnt.png; Unit elites\build\bld_pplnt.png;
 				Shadow elites\build\bld_pplnt_s.png; Explode nature\effects\expl_160x128x1.png;
-			SFX: Die elites\buildings\sfx_pplnt.die.wav; Select elites\buildings\sfx_pplnt.select.wav;
 			Anim: Loop 0, 1, 2, 3, 4, 3, 2, 1; Build 5, 6, 7, 8;
 			Trained At: UNIT_ENG/bld_grp1/pos3;
 
@@ -57,6 +56,8 @@ BOS.Elites
 			Tile: Size 64 64; Select Box 32 32;
 			GFX: Icon elites\units\ico_lancer.png; Unit elites\units\unit_lancer.png;
 				Shadow elites\units\unit_lancer_s.png; Corpse elites\units\unit_lancer_c.png;
+			SFX: Select elites\units\lancer_select.wav; Action elites\units\lancer_action.wav;
+				Attack elites\units\lancer_attack.wav; Die elites\units\lancer_die.wav;
 			Anim: Stand 0; Walk 5, 10, 15, 20; Attack 0, 25, 0, 25, 0, 25, slp_50 0; Die 30, 35, 40, 45,(Corpse);
 			Trained At: TRN_CAMP/pos1;			
 
@@ -79,6 +80,5 @@ BOS.Elites
 			Tile: Size 128 128; Select Box 128 128;
 			GFX: Icon elites\build\ico_rfac.png; Unit elites\build\bld_rfac.png;
 				Shadow elites\build\bld_rfac_s.png; Explode nature\effects\expl_160x128x1.png;
-			SFX: Die elites\buildings\sfx_pplnt.die.wav; Select elites\buildings\sfx_pplnt.select.wav;
 			Anim: Loop 0, 1, 2, 3, 4, 3, 2, 1; Build 5, 6, 7, 8, 9;
 			Trained At: UNIT_ENG/bld_grp1/pos4;		

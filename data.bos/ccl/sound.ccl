@@ -66,15 +66,19 @@
 ;;
 
 ;; UNITS
-(make-sound "lancer-selected" "elites/unit_lancer_selected.wav")
-(make-sound "lancer-acknowledge" "elites/unit_lancer_yes.wav")
+(make-sound "lancer-selected" "elites/units/lancer_select.wav")
+(make-sound "lancer-acknowledge" "elites/units/lancer_action.wav")
 (make-sound "lancer-ready" "elites/computer_voice/assault.unit.ready.wav")
 (make-sound "lancer-help" "elites/computer_voice/assault.unit.underattack.wav")
-(make-sound "lancer-die" "elites/unit_lancer_die.wav")
-(make-sound "lancer-attack" "elites/unit_lancer_fire.wav")
+(make-sound "lancer-die" "elites/units/lancer_die.wav")
+(make-sound "lancer-attack" "elites/units/lancer_attack.wav")
 
+(make-sound "engineer-selected" "elites/units/engineer_select.wav")
+(make-sound "engineer-acknowledge" "elites/units/engineer_action.wav")
 (make-sound "engineer-ready" "elites/computer_voice/engineer.ready.wav")
 (make-sound "engineer-help" "elites/computer_voice/engineer.underattack.wav")
+(make-sound "engineer-die" "elites/units/engineer_die.wav")
+(make-sound "engineer-attack" "elites/units/engineer_attack.wav")
 
 (make-sound "harvester-ready" "elites/computer_voice/harvester.completed.wav")
 (make-sound "harvester-help" "elites/computer_voice/harvester.underattack.wav")

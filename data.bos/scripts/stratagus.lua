@@ -194,6 +194,8 @@ end
 DefineTileset("tileset-desert", "class", "desert", "name", "Desert", "file", "scripts/tilesets/desert.lua")
 DefineTileset("tileset-winter", "class", "winter", "name", "Winter", "file", "scripts/tile_winter.lua")
 
+Load("preferences1.lua")
+
 --; Uses Stratagus Library path!
 Load("scripts/bos.lua")
 Load("scripts/icons.lua")
@@ -214,5 +216,7 @@ Load("scripts/credits.lua")
 Load("scripts/tips.lua")
 Load("scripts/ranks.lua")
 Load("scripts/menus.lua")
+
+Load("preferences2.lua")
 
 print("... ready!")

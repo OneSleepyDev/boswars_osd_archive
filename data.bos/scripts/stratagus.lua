@@ -140,8 +140,7 @@ SetFogOfWar(true)
 --	Enable minimap terrain by default.
 SetMinimapTerrain(true)
 
---  Alpha fog of war by default
-AlphaFogOfWar()
+--  Set Fog of War opacity
 SetFogOfWarOpacity(128)
 
 -------------------------------------------------------------------------------

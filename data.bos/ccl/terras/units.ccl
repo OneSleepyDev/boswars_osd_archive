@@ -105,6 +105,7 @@
     selected "peon-selected"
     acknowledge "peon-acknowledge"
     ready "peon-ready"
+    harvest crystal "peon-attack"
     help "basic terras voices help 1"
     dead "basic terras voices dead"
     attack "peon-attack"))

@@ -237,6 +237,7 @@
     acknowledge "engineer-acknowledge"
     ready "engineer-ready"
     repair "engineer-repair"
+    harvest titanium "engineer-harvest"
     help "engineer-help"
     dead "engineer-die"))
 
@@ -279,9 +280,9 @@
     selected "harvester-selected"
     acknowledge "harvester-acknowledge"
     ready "harvester-ready"
+    harvest crystal "harvester-harvest"
     help "harvester-help"
-    dead "harvester-die"
-    attack "harvester-attack"))
+    dead "harvester-die"))
 
 (define-unit-type 'unit-pplnt 'name "Power Plant"
   'files '(tileset-desert "elites/build/bld_pplnt.png")

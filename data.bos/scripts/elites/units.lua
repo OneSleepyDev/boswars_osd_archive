@@ -307,7 +307,7 @@ DefineUnitType("unit-vault", {
 	SightRange = 4, Armor = 30, BasicDamage = 0, PiercingDamage = 0,
 	Missile = "missile-none", Priority = 35, AnnoyComputerFactor = 45,
 	Points = 200, Supply = 200, ExplodeWhenKilled = "missile-288x288-explosion",
-	Corpse = {"build-dead-body1", 0}, Type = "land", Building = true,
+	Corpse = {"build-dead-body3", 0}, Type = "land", Building = true,
 	CanStore = {"crystal", "titanium", "gas"},
 	Sounds = {
 		"selected", "dev-selected",

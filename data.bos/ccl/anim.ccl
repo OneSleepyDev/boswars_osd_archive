@@ -217,8 +217,8 @@
 
 (define-animations 'animations-elitebuild3
   'die '(	; #2801
-    #( 0 0 2000 20) #( 0 0 200   20) #( 0 0 200   20) #( 0 0 200  21)
-    #( 0 0 200  21) #( 3 0   1  21)))
+    #( 0 0 2000 15) #( 0 0 200   15) #( 0 0 200   15) #( 0 0 200  16)
+    #( 0 0 200  16) #( 3 0   1  16)))
 
 (define-animations 'animations-elitebuild4
   'die '(	; #2801

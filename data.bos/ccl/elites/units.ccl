@@ -400,6 +400,36 @@
 ;    attack "town-hall-attack"
   ))
 
+(define-unit-type 'unit-vfac 'name "Vehicle Factory"
+  'files '(tileset-desert "elites/build/bld_vfac.png")
+  'size '(160 160)
+  'shadow '(file "elites/build/bld_vfac_s.png" size (160 160))
+  'animations 'animations-vfac 'icon 'icon-vfac
+  'costs '(time 900 titanium 800 crystal 700)
+  'repair-hp 2
+  'repair-costs '(titanium 2)
+  'construction 'construction-vfac
+  'speed 0
+  'hit-points 550
+  'draw-level 20
+  'tile-size '(5 5) 'box-size '(160 160)
+  'sight-range 2
+  'armor 30 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
+  'priority 35 'annoy-computer-factor 45
+  'demand 400
+  'points 200
+  'explode-when-killed 'missile-160x128-explosion
+  'type-land
+  'building 
+  'sounds '(
+    selected "vfac-selected"
+;    acknowledge "town-hall-acknowledge"
+    ready "vfac-ready"
+    help "vfac-help"
+    dead "vfac-dead"
+;    attack "town-hall-attack"
+  ))
+
 (define-unit-type 'unit-dead-body1 'name "Assaultunitbody"
   'files '(tileset-desert "elites/units/unit_assault_c.png")
   'size '(64 64)

@@ -119,3 +119,16 @@
       file main
       frame 6))
 )
+
+(define-construction 'construction-vfac
+  'constructions (list
+    '(percent 0
+      file main
+      frame 2)
+    '(percent 33
+      file main
+      frame 3)
+    '(percent 67
+      file main
+      frame 4))
+)

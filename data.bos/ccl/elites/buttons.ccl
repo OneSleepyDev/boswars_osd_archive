@@ -126,6 +126,11 @@
   'key "h" 'hint "BUILD ~!HOSPITAL"
   'for-unit '(unit-engineer))
 
+(define-button 'pos 6 'level 1 'icon 'icon-vfac
+  'action 'build 'value 'unit-vfac
+  'key "v" 'hint "BUILD ~!VEHICLE FACTORY"
+  'for-unit '(unit-engineer))
+
 (define-button 'pos 9 'level 1 'icon 'icon-cancel
   'action 'button 'value 0
   'key "\033" 'hint "~<ESC~> CANCEL"

@@ -140,6 +140,11 @@
 (make-sound "hosp-help" "elites/computer_voice/hospital.underattack.wav")
 (make-sound "hosp-dead" "elites/buildings/sfx_hosp.die.wav")
 
+(make-sound "vfac-selected" "elites/buildings/sfx_vfac.select.wav")
+(make-sound "vfac-ready" "elites/computer_voice/vehicle.factory.completed.wav")
+(make-sound "vfac-help" "elites/computer_voice/vehicle.factory.underattack.wav")
+(make-sound "vfac-dead" "elites/buildings/sfx_vfac.die.wav")
+
 (make-sound "grenade-impact" "elites/units/grenadier_g_hit.wav")
 (make-sound "rocket-impact" "elites/units/booza_g_hit.wav")
 

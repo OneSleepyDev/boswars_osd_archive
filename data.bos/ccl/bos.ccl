@@ -110,6 +110,7 @@
   'unit-bazoo
   'unit-medic
   'unit-hosp
+  'unit-vfac
 )
 
 (define-missiletype-wc-names

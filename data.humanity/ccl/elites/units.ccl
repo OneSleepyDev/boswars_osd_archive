@@ -104,7 +104,7 @@
   'land-unit
   'coward
   'can-gather-resource '(
-    file-when-loaded "ub/u_miner.png"  
+    file-when-loaded "ub/u_miner_w_gold.png"  
     resource-id titanium
     resource-capacity 50
     wait-at-resource 7

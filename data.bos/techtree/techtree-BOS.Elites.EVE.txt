@@ -31,6 +31,10 @@ Harvester 100%
 	elites/computer_voice/harvester.completed.wav
 Harvester Under Attack
 	elites/computer_voice/harvester.underattack.wav
+Grenadier 100%
+	elites/computer_voice/grenadier.ready.wav
+Grenadier Under Attack
+	elites/computer_voice/grenadier.underattack.wav
 
 ;Other;
 Research 100%

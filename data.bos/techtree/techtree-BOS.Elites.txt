@@ -18,7 +18,7 @@ BOS.Elites
 				FORT
 			Gives: ;
 			Stats: Unit; Armor 1; Hitpoints; 100; Sightrange 5; Speed 10; Dam 0; PDam 1; AttRange 1;
-			Tile: Size 64 64; Select Box 32 32;
+			Tile: Size 64 64;
 			GFX: Icon elites\units\ico_engineer.png; Unit elites\units\unit_engineer.png;
 				Shadow elites\units\unit_engineer_s.png; Corpse elites\units\unit_engineer_c.png;
 			SFX: Select elites\units\engineer_select.wav; Action elites\units\engineer_action.wav;
@@ -52,11 +52,11 @@ BOS.Elites
 			Trained At: UNIT_ENG/bld_grp1/pos3;
 
 		!Assault Unit TAG ASS_UNIT
-			Reqs: Time 200; Titanium 450; Crystals 100; Gas 0; Power 0;
+			Reqs: Time 200; Titanium 450; Crystals 50; Gas 0; Power 0;
 				TRN_CAMP
 			Gives: ;
 			Stats: Unit; Armor 3; Hitpoints; 100; Sightrange 6; Speed 10; Dam 3; PDam 4; AttRange 5;
-			Tile: Size 64 64; Select Box 32 32;
+			Tile: Size 64 64;
 			GFX: Icon elites\units\ico_lancer.png; Unit elites\units\unit_lancer.png;
 				Shadow elites\units\unit_lancer_s.png; Corpse elites\units\unit_lancer_c.png;
 			SFX: Select elites\units\lancer_select.wav; Action elites\units\lancer_action.wav;
@@ -88,3 +88,18 @@ BOS.Elites
 			SFX: Select elites\buildings\sfx_rfac.select.wav; Die elites\buildings\sfx_rfac.die.wav:
 			Anim: Loop 0, 1, 2, 3, 4, 3, 2, 1; Build 5, 6, 7, 8, 9;
 			Trained At: UNIT_ENG/bld_grp1/pos4;		
+	
+		!Grenadier TAG GRND
+			Reqs: Time 350; Titanium 450; Crystals 150; Gas 0; Power 0;
+				RES_EXPL
+			Gives: ;
+			Stats: Unit; Armor 1; Hitpoints 100; Sightrange 6; Speed 10; Dam 5; PDam 30; AttRange 6;
+			Tile: Size 64 64;
+			GFX: Icon elites\units\ico_grenadier.png; Unit elites\units\unit_grenadier.png;
+				Shadow elites\units\unit_grenadier_s.png; Corpse elites\units\unit_grenadier_c.png;
+			SFX: Select elites\units\grenadier_select.wav; Action elites\units\grenadier_action.wav;
+				Attack elites\units\grenadier_attack.wav; Die elites\units\grenadier_die.wav;
+			Missile: Parabolic point to point
+			Anim: Stand 0; Walk 5, 10, 15, 20; Attack 25, 30, 35, 40, slp_10 0; Die 45, 50, 55, 60,(Corpse);
+				Other: Grenade explode on hit; SFX: elites\units\grenadier_g_hit.wav; GFX: explosion; Range 2;
+			Trained At: TRN_CAMP/pos2;

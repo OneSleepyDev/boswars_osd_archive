@@ -29,12 +29,12 @@
 --	$Id$
 
 DefineButtonStyle("main", {
-  Size = {128, 20},
+  Size = {200, 20},
   Font = "game",
   TextNormalColor = "yellow",
   TextReverseColor = "white",
   TextAlign = "Center",
-  TextPos = {64, 4},
+  TextPos = {100, 4},
   Default = {
     File = "general/ui_buttons.png", Size = {300, 144}, Frame = 4,
   },
@@ -49,7 +49,7 @@ DefineButtonStyle("main", {
   Clicked = {
     File = "general/ui_buttons.png", Size = {300, 144}, Frame = 5,
     TextNormalColor = "white",
-    TextPos = {66, 6},
+    TextPos = {102, 6},
   },
   Disabled = {
     File = "general/ui_buttons.png", Size = {300, 144}, Frame = 3,

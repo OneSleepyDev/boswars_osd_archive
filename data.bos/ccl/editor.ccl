@@ -80,6 +80,7 @@
   'unit-crystal-field11
   'unit-crystal-field12
   'unit-crystal-field13
+  'unit-gold-mine
 
 ; Placing this unit-types on map is not (yet?) supported.
 ;  'unit-dead-body

@@ -68,7 +68,7 @@
 (define-icon 'icon-dorcoz
   'size '(46 38) 'normal '(0 "terras/units/ico_dorcoz.png"))
 
-(define-icon 'icon-crystal-field1
+(define-icon 'icon-crystal-field
   'size '(46 38) 'normal '(0 "nature/res/ico_crys.png"))
 (define-icon 'icon-tita
   'size '(46 38) 'normal '(0 "nature/res/ico_spike.png"))

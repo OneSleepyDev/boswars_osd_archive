@@ -46,10 +46,9 @@
   'tile-size '(1 1) 'box-size '(31 31)
   'sight-range 6 'computer-reaction-range 6 'person-reaction-range 6
   'armor 2 'basic-damage 6 'piercing-damage 3 'missile 'missile-none
-  'max-attack-range 6
+  'max-attack-range 5
   'priority 60
   'points 50
-  'demand 1
   'corpse '(unit-dead-body 6)
   'type-land
   'right-attack
@@ -78,15 +77,14 @@
   'draw-level 40
   'tile-size '(1 1) 'box-size '(31 31)
   'sight-range 5 'computer-reaction-range 6 'person-reaction-range 4
-  'armor 1 'basic-damage 0 'piercing-damage 1 'missile 'missile-none
+  'armor 0 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
   'max-attack-range 1
   'priority 50
   'points 30
-  'demand 1
   'corpse '(unit-dead-body 6)
   'type-land
   'right-harvest
-  'can-attack 'repair-range 1
+  'repair-range 1
   'can-target-land
   'land-unit
   'coward
@@ -107,13 +105,13 @@
     dead "engineer-die"
     attack "engineer-attack"))
 
-(define-unit-type 'unit-harvester 'name "Mineral Harvester"
+(define-unit-type 'unit-harvester 'name "Harvester"
   'files '(tileset-desert "elites/units/unit_harv.png")
   'size '(96 96)
   'shadow '(file "elites/units/unit_harv_s.png" size (96 96))
   'draw-level 19
   'animations 'animations-harvester 'icon 'icon-harvester
-  'costs '(time 2000 titanium 900 crystal 200 gas 50)
+  'costs '(time 1200 titanium 900 gas 50)
   'repair-hp 1
   'repair-costs '(titanium 1)
   'speed 10
@@ -125,8 +123,7 @@
   'max-attack-range 0
   'priority 50
   'points 30
-  'demand 2
-  'corpse '(unit-dead-body 6)
+  'explode-when-killed 'missile-160x128-explosion
   'type-land
   'right-harvest
   'can-attack 'repair-range 1

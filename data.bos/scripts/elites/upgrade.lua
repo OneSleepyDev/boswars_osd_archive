@@ -62,6 +62,7 @@ DefineUpgrade("upgrade-pdril", "icon", "icon-pdril",
 DefineUpgrade("upgrade-void", "icon", "icon-void",
 	"costs", {2000, 0, 0, 0, 0, 0, 0})
 
+
 DefineModifier("upgrade-expl2",
 	{"piercing-damage", 5},
 	{"apply-to", "unit-grenadier"})
@@ -78,6 +79,10 @@ DefineModifier("upgrade-pdril",
 --	{"harvesting", 30}
 	{"apply-to", "unit-engineer"}, {"apply-to", "unit-harvester"})
 
+DefineModifier("upgrade-void",
+	{"piercing-damage", 10},
+	{"apply-to", "unit-bazoo"}, {"apply-to", "unit-assault"})
+
 DefineAllow("upgrade-expl", "AAAAAAAAAAAAAAAA")
 DefineAllow("upgrade-expl2", "AAAAAAAAAAAAAAAA")
 DefineAllow("upgrade-tdril", "AAAAAAAAAAAAAAAA")
@@ -85,18 +90,18 @@ DefineAllow("upgrade-ddril", "AAAAAAAAAAAAAAAA")
 DefineAllow("upgrade-pdril", "AAAAAAAAAAAAAAAA")
 DefineAllow("upgrade-void", "AAAAAAAAAAAAAAAA")
 
-DefineDependency("upgrade-void", {"upgrade-expl2", "upgrade-pdril"})
+-- DefineDependency("upgrade-void", {"upgrade-expl2", "upgrade-pdril"})
 DefineDependency("unit-bazoo", {"upgrade-expl2"})
 DefineDependency("unit-grenadier", {"upgrade-expl"})
-DefineDependency("unit-expl2", {"upgrade-expl"})
-DefineDependency("unit-ddril", {"upgrade-tdril"})
-DefineDependency("unit-pdril", {"upgrade-ddril"})
+-- DefineDependency("unit-expl2", {"upgrade-expl"})
+-- DefineDependency("unit-ddril", {"upgrade-tdril"})
+-- DefineDependency("unit-pdril", {"upgrade-ddril"})
 
 DefineDependency("unit-dev-yard", {"unit-vault"})
 DefineDependency("unit-camp", {"unit-vault"})
 DefineDependency("unit-rfac", {"unit-vault"})
 DefineDependency("unit-medic", {"unit-hosp"})
 DefineDependency("unit-gen", {"unit-vault"})
-DefineDependency("unit-hosp", {"unit-vault", "upgrade-void"})
-DefineDependency("unit-vfac", {"unit-vault", "upgrade-void"})
-DefineDependency("unit-msilo", {"unit-vault", "upgrade-void"})
+DefineDependency("unit-hosp", {"unit-vault", "unit-camp"})
+DefineDependency("unit-vfac", {"unit-vault", "unit-rfac"})
+DefineDependency("unit-msilo", {"unit-vault", "unit-rfac", "unit-dev-yard"})

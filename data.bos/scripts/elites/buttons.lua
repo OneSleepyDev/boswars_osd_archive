@@ -150,12 +150,6 @@ DefineButton({
 	ForUnit = {"unit-vault"}})
 
 DefineButton({
-	Pos = 2, Level = 0, Icon = "icon-harvester",
-	Action = "train-unit", Value = "unit-harvester",
-	Allowed = "check-no-research", Key = "h", Hint = "BUILD MINERAL ~!HARVESTER",
-	ForUnit = {"unit-vault"}})
-
-DefineButton({
 	Pos = 1, Level = 0, Icon = "icon-assault",
 	Action = "train-unit", Value = "unit-assault",
 	Key = "a" , Hint = "TRAIN ~!ASSAULT UNIT",
@@ -174,16 +168,23 @@ DefineButton({
 	ForUnit = {"unit-camp"}})
 
 DefineButton({
-	Pos = 4, Level = 0, Icon = "icon-medic",
+	Pos = 1, Level = 0, Icon = "icon-medic",
 	Action = "train-unit", Value = "unit-medic",
 	Key = "m", Hint = "TRAIN ~!MEDIC",
-	ForUnit = {"unit-camp"}})
+	ForUnit = {"unit-hosp"}})
 
 DefineButton({
 	Pos = 1, Level = 0, Icon = "icon-apcs",
 	Action = "train-unit", Value = "unit-apcs",
 	Key = "a", Hint = "BUILD ~!APC SMOLDER",
 	ForUnit = {"unit-vfac"}})
+
+DefineButton({
+	Pos = 2, Level = 0, Icon = "icon-harvester",
+	Action = "train-unit", Value = "unit-harvester",
+	Allowed = "check-no-research", Key = "h", Hint = "BUILD MINERAL ~!HARVESTER",
+	ForUnit = {"unit-vfac"}})
+
 
 -- upgrades -------------------------------------------------------------------
 

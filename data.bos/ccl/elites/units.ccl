@@ -49,7 +49,7 @@
   'max-attack-range 5
   'priority 60
   'points 50
-  'corpse '(unit-dead-body 6)
+  'corpse '(unit-dead-body1 0)
   'type-land
   'right-attack
   'can-attack 'repair-range 1
@@ -80,7 +80,7 @@
   'max-attack-range 6
   'priority 60
   'points 50
-  'corpse '(unit-dead-body 6)
+  'corpse '(unit-dead-body3 0)
   'type-land
   'right-attack
   'can-attack 'repair-range 1
@@ -112,7 +112,7 @@
   'max-attack-range 1
   'priority 50
   'points 30
-  'corpse '(unit-dead-body 6)
+  'corpse '(unit-dead-body2 0)
   'type-land
   'right-harvest
   'repair-range 1
@@ -302,6 +302,50 @@
 ;    attack "town-hall-attack"
   ))
 
+(define-unit-type 'unit-dead-body1 'name "Assaultunitbody"
+  'files '(tileset-desert "elites/units/unit_assault_c.png")
+  'size '(64 64)
+  'animations 'animations-elitecorpse1 'icon 'icon-cancel
+  'speed 0
+  'hit-points 999
+  'draw-level 30
+  'tile-size '(1 1) 'box-size '(31 31)
+  'sight-range 1
+  'basic-damage 0 'piercing-damage 0 'missile 'missile-none
+  'priority 0
+  'type-land
+  'vanishes
+  'sounds '())
+
+(define-unit-type 'unit-dead-body2 'name "Engineerbody"
+  'files '(tileset-desert "elites/units/unit_engineer_c.png")
+  'size '(64 64)
+  'animations 'animations-elitecorpse1 'icon 'icon-cancel
+  'speed 0
+  'hit-points 999
+  'draw-level 30
+  'tile-size '(1 1) 'box-size '(31 31)
+  'sight-range 1
+  'basic-damage 0 'piercing-damage 0 'missile 'missile-none
+  'priority 0
+  'type-land
+  'vanishes
+  'sounds '())
+
+(define-unit-type 'unit-dead-body3 'name "Grenadierbody"
+  'files '(tileset-desert "elites/units/unit_grenadier_c.png")
+  'size '(64 64)
+  'animations 'animations-elitecorpse1 'icon 'icon-cancel
+  'speed 0
+  'hit-points 999
+  'draw-level 30
+  'tile-size '(1 1) 'box-size '(31 31)
+  'sight-range 1
+  'basic-damage 0 'piercing-damage 0 'missile 'missile-none
+  'priority 0
+  'type-land
+  'vanishes
+  'sounds '())
 
 (define-unit-type 'unit-elites-start-location 'name "Start Location"
   'files '(tileset-desert "elites/x_startpoint.png")

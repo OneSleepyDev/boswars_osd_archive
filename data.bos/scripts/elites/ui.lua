@@ -173,14 +173,14 @@ function DefineEliteScreen(screen_width, screen_height)
 				screen_height - 32}},
 		"menu-panel", {
 			"menu-button", {
-				"pos", {screen_width - 200, 0}, "size", {128, 20},
-				"caption", "Menu (~<F10~>)", "font", "game", "style", "main"},
+				"pos", {screen_width - 200, 0},
+				"caption", "Menu (~<F10~>)", "style", "main"},
 			"network-menu-button", {
-				"pos", {screen_width - 200, 2}, "size", {80, 19},
-				"caption", "Menu", "font", "game", "style", "network"},
+				"pos", {screen_width - 200, 2},
+				"caption", "Menu", "style", "network"},
 			"network-diplomacy-button", {
-				"pos", {screen_width - 100, 2}, "size", {80, 19},
-				"caption", "Diplomacy", "font", "game", "style", "network"}},
+				"pos", {screen_width - 100, 2},
+				"caption", "Diplomacy", "style", "network"}},
 		"minimap", {
 			"file", "graphics/elites/ui/ui_minimap.png",
 			"panel-pos", {screen_width - 200, 24},

@@ -190,7 +190,8 @@ function DefineEliteScreen(screen_width, screen_height)
 			"file", "graphics/elites/ui/ui_" .. screen_width .. "_stat.png",
 			"pos", {0, screen_height - 16},
 			"text-pos", {2 + 36, screen_height - 14},
-			"font", "game"},
+			"font", "game",
+			"width", screen_width - 200 - 100},
 		"cursors", {
 			"point", "cursor-point",
 			"glass", "cursor-glass",

@@ -30,9 +30,9 @@
 
 (define-font 'small	"graphics/general/small.png"	 7  6)
 (define-font 'game	"graphics/general/game.png"	13 14)
-(define-font 'large	"graphics/general/large.png"	17 17)
-(define-font 'small-title "graphics/general/large.png" 17 17)
-(define-font 'large-title "graphics/general/large.png" 17 17)
+(define-font 'large	"graphics/general/large.png"	20 20)
+(define-font 'small-title "graphics/general/large.png" 20 20)
+(define-font 'large-title "graphics/general/large.png" 20 20)
 
 ;;	FIXME: only yellow, white, and grey are correct.
 

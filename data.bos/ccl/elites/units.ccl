@@ -442,9 +442,9 @@
   ))
 
 (define-unit-type 'unit-vfac 'name "Vehicle Factory"
-  'files '(tileset-desert "elites/build/bld_vfac.png")
-  'size '(160 160)
-  'shadow '(file "elites/build/bld_vfac_s.png" size (160 160))
+  'files '(tileset-desert "elites/build/vehicle_factory.png")
+  'size '(224 160)
+  'shadow '(file "elites/build/vehicle_factory_s.png" size (224 160))
   'animations 'animations-vfac 'icon 'icon-vfac
   'costs '(time 900 titanium 800 crystal 700)
   'repair-hp 2
@@ -453,13 +453,14 @@
   'speed 0
   'hit-points 550
   'draw-level 110
-  'tile-size '(5 5) 'box-size '(160 160)
+  'tile-size '(7 5) 'box-size '(220 156)
   'sight-range 2
   'armor 30 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
   'priority 35 'annoy-computer-factor 45
   'demand 400
   'points 200
   'explode-when-killed 'missile-160x128-explosion
+  'corpse '(build-dead-body6 0)
   'type-land
   'building 
   'sounds '(
@@ -618,6 +619,22 @@
   'hit-points 999
   'draw-level 30
   'tile-size '(4 3) 'box-size '(124 92)
+  'sight-range 1
+  'basic-damage 0 'piercing-damage 0 'missile 'missile-none
+  'priority 0
+  'type-land
+  'building
+  'vanishes
+  'sounds '())
+
+(define-unit-type 'build-dead-body6 'name "FactoryCrater"
+  'files '(tileset-desert "elites/build/vehicle_factory.png")
+  'size '(224 160)
+  'animations 'animations-elitebuild6 'icon 'icon-cancel
+  'speed 0
+  'hit-points 999
+  'draw-level 30
+  'tile-size '(7 5) 'box-size '(220 156)
   'sight-range 1
   'basic-damage 0 'piercing-damage 0 'missile 'missile-none
   'priority 0

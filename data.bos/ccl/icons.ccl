@@ -82,7 +82,9 @@
 (define-icon 'icon-hosp_b
   'size '(46 38) 'normal '(7 "elites/units/engineer_icons.png"))
 (define-icon 'icon-vfac
-  'size '(46 38) 'normal '(0 "elites/build/ico_vfac.png"))
+  'size '(46 38) 'normal '(0 "elites/build/vehicle_factory_i.png"))
+(define-icon 'icon-vfac_b
+  'size '(46 38) 'normal '(8 "elites/units/engineer_icons.png"))
 
 (define-icon 'icon-expl
   'size '(46 38) 'normal '(0 "elites/research/res_expl.png"))

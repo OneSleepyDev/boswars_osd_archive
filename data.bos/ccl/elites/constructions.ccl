@@ -208,11 +208,32 @@
   'constructions (list
     '(percent 0
       file main
-      frame 2)
-    '(percent 33
+      frame 20)
+    '(percent 10
       file main
-      frame 3)
-    '(percent 67
+      frame 21)
+    '(percent 20
       file main
-      frame 4))
+      frame 22)
+    '(percent 30
+      file main
+      frame 23)
+    '(percent 40
+      file main
+      frame 24)
+    '(percent 50
+      file main
+      frame 25)
+    '(percent 60
+      file main
+      frame 26)
+    '(percent 70
+      file main
+      frame 27)
+    '(percent 80
+      file main
+      frame 28)
+    '(percent 90
+      file main
+      frame 0))
 )

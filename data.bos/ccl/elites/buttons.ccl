@@ -126,7 +126,7 @@
   'key "h" 'hint "BUILD ~!HOSPITAL"
   'for-unit '(unit-engineer))
 
-(define-button 'pos 6 'level 1 'icon 'icon-vfac
+(define-button 'pos 6 'level 1 'icon 'icon-vfac_b
   'action 'build 'value 'unit-vfac
   'key "v" 'hint "BUILD ~!VEHICLE FACTORY"
   'for-unit '(unit-engineer))

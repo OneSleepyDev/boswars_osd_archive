@@ -380,9 +380,9 @@
   ))
 
 (define-unit-type 'unit-rfac 'name "Research Facility"
-  'files '(tileset-desert "elites/build/bld_rfac.png")
+  'files '(tileset-desert "elites/build/research_facility.png")
   'size '(128 128)
-  'shadow '(file "elites/build/bld_rfac_s.png" size (128 128))
+  'shadow '(file "elites/build/research_facility_s.png" size (128 128))
   'animations 'animations-rfac 'icon 'icon-rfac
   'costs '(time 500 titanium 500 crystal 300)
   'repair-hp 2
@@ -391,13 +391,14 @@
   'speed 0
   'hit-points 350
   'draw-level 110
-  'tile-size '(4 4) 'box-size '(128 128)
+  'tile-size '(4 4) 'box-size '(124 124)
   'sight-range 1
   'armor 30 'basic-damage 0 'piercing-damage 0 'missile 'missile-none
   'priority 35 'annoy-computer-factor 45
   'demand 300
   'points 200
   'explode-when-killed 'missile-160x128-explosion
+  'corpse '(build-dead-body4 0)
   'type-land
   'building 
   'sounds '(
@@ -584,6 +585,22 @@
   'hit-points 999
   'draw-level 30
   'tile-size '(5 4) 'box-size '(156 124)
+  'sight-range 1
+  'basic-damage 0 'piercing-damage 0 'missile 'missile-none
+  'priority 0
+  'type-land
+  'building
+  'vanishes
+  'sounds '())
+
+(define-unit-type 'build-dead-body4 'name "RfacCrater"
+  'files '(tileset-desert "elites/build/research_facility.png")
+  'size '(128 128)
+  'animations 'animations-elitebuild4 'icon 'icon-cancel
+  'speed 0
+  'hit-points 999
+  'draw-level 30
+  'tile-size '(4 4) 'box-size '(124 124)
   'sight-range 1
   'basic-damage 0 'piercing-damage 0 'missile 'missile-none
   'priority 0

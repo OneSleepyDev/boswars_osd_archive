@@ -116,7 +116,7 @@
   'key "g" 'hint "BUILD ~!GENERATOR"
   'for-unit '(unit-engineer))
 
-(define-button 'pos 4 'level 1 'icon 'icon-rfac
+(define-button 'pos 4 'level 1 'icon 'icon-rfac_b
   'action 'build 'value 'unit-rfac
   'key "r" 'hint "BUILD ~!RESEARCH FACILITY"
   'for-unit '(unit-engineer))

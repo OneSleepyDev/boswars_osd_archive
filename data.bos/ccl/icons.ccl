@@ -74,7 +74,9 @@
 (define-icon 'icon-dev_b
   'size '(46 38) 'normal '(0 "elites/units/engineer_icons.png"))
 (define-icon 'icon-rfac
-  'size '(46 38) 'normal '(0 "elites/build/ico_rfac.png"))
+  'size '(46 38) 'normal '(0 "elites/build/research_facility_i.png"))
+(define-icon 'icon-rfac_b
+  'size '(46 38) 'normal '(6 "elites/units/engineer_icons.png"))
 (define-icon 'icon-hosp
   'size '(46 38) 'normal '(0 "elites/build/ico_hosp.png"))
 (define-icon 'icon-vfac

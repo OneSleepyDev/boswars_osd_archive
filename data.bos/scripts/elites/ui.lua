@@ -71,7 +71,6 @@ function AppendElements(t, elements)
 end
 
 function AddFiller(ui, graphic, position)
-        print("filler")
 	table.insert(ui, "filler")
 	table.insert(ui, {File = graphic, Pos = position})
 end
@@ -247,7 +246,6 @@ function DefineEliteScreen(screen_width, screen_height)
 		"defeat-background", "screens/general.png"
 	}
 	AppendElements(ui,ui2)
-	print(unpack(ui))
 	DefineUI(unpack(ui))
 end
 

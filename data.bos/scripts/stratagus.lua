@@ -212,10 +212,15 @@ Load("scripts/upgrade.lua")
 Load("scripts/fonts.lua")
 Load("scripts/buttons.lua")
 Load("scripts/ui.lua")
---Load("scripts/unit-drone.lua")
-Load("scripts/elites/unit-camera.lua")
-Load("scripts/elites/unit-radar.lua")
-Load("scripts/elites/unit-buggy.lua")
+
+-- Load extra units
+list = ListDirectory("scripts/elites/")
+for i,f in list do
+  if(string.find(f, "^unit%-.*%.lua$")) then 
+    print("Loading unit: " .. f) 
+    Load("scripts/elites/"..f)
+  end
+end
 
 Load("scripts/ai.lua")
 --Load("scripts/campaigns.lua")

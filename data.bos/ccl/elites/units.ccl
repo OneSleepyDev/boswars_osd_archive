@@ -87,7 +87,6 @@
   'points 50
   'corpse '(unit-dead-body5 0)
   'type-land
-  'right-attack
   'can-target-land
   'land-unit
   'demand 0
